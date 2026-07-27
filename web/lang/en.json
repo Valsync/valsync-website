@@ -5,22 +5,33 @@
     "updates": "Updates",
     "privacy": "Privacy",
     "terms": "Terms",
-    "download": "Join waitlist",
+    "download": "Download App",
+    "profile": "Profile",
+    "search": "Search",
+    "leaderboards": "Leaderboards",
+    "lineups": "Lineups",
+    "meta": "Meta",
+    "livematch": "Live Match",
+    "pricing": "Pricing",
+    "search_cta": "Look up a player",
     "mob_home": "Home",
     "mob_web": "Web",
     "mob_pricing": "Pricing",
     "mob_faq": "FAQ"
   },
   "hero": {
-    "badge": "Privacy-first Valorant companion app",
-    "title1": "Your Valorant night, ",
-    "title2": "without the noise.",
-    "lead": "VALSYNC keeps Valorant store checker workflows, Night Market watchlists, party status, loadouts, and match review in one calm readout built for the minutes before queue.",
-    "cta1": "Join waitlist",
-    "cta2": "Preview the readout",
-    "trust1": "Riot sign-in handoff",
-    "trust2": "Zero ad slots",
-    "trust3": "Match-night workflow"
+    "word1": "Track",
+    "word2": "Analyze",
+    "word3": "Improve",
+    "word4": "Dominate",
+    "headline_pre": "The Ultimate",
+    "headline_post": "Valorant Intelligence Platform",
+    "sub1": "Analyze players.",
+    "sub2": "Track performance.",
+    "sub3": "Discover lineups.",
+    "sub4": "Dominate every match.",
+    "cta_primary": "Analyze Player",
+    "cta_secondary": "Live Match"
   },
   "hud": {
     "label": "Live companion",
@@ -172,6 +183,18 @@
     "lead": "Join the list for the privacy-first Valorant companion app built around store checker workflows, party prep, and quiet match review.",
     "button": "Join waitlist"
   },
+  "countdown": {
+    "eyebrow": "Public launch",
+    "title": "VALSYNC goes worldwide in",
+    "target": "Tomorrow at 12:00 PM Istanbul (UTC+3) - Google Play",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "tag": "Worldwide on the Play Store",
+    "widget_label": "Launch in",
+    "widget_target": "Google Play - Tomorrow 12:00 Istanbul"
+  },
   "releases": {
     "badge": "Release history",
     "title": "From first build to the latest signal.",
@@ -270,6 +293,168 @@
       "p9": "We reserve the right to update these Terms at any time. Material changes will be communicated through the App or our website. Continued use after changes constitutes acceptance.",
       "p10": "We may suspend or terminate your access to the App at any time for violations of these Terms or Riot Games' policies. You may stop using the App at any time by uninstalling it from your device.",
       "p11": "For questions about these Terms, contact us at <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a>."
+    }
+  },
+  "search": {
+    "placeholder": "Search Riot ID...  Example: TenZ#NA1",
+    "clear": "Clear",
+    "region": "Region",
+    "loading": "Searching...",
+    "go": "Search",
+    "error": "Player not found. Try a popular search.",
+    "autocomplete": "Suggestions",
+    "recent": "Recent searches",
+    "popular": "Popular searches"
+  },
+  "fgrid": {
+    "title": "Everything you need to win",
+    "lead": "One platform for every angle of your game.",
+    "c1": {
+      "title": "Live Match Insights",
+      "desc": "Know your enemies before the match starts.",
+      "tags": "Rank|Win Rate|K/D|Smurf Detection"
+    },
+    "c2": {
+      "title": "Competitive Leaderboards",
+      "desc": "Browse the best players across every region.",
+      "tags": "Regional|Global|Season"
+    },
+    "c3": {
+      "title": "Performance Analytics",
+      "desc": "Track your climb with precision.",
+      "tags": "Rank Progression|Agent Mastery|Consistency"
+    },
+    "c4": {
+      "title": "Agent Intelligence",
+      "desc": "Master the meta, agent by agent.",
+      "tags": "Win Rates|Counter Matchups|Meta Trends"
+    },
+    "c5": {
+      "title": "Map Intelligence",
+      "desc": "Read every site like a pro.",
+      "tags": "Heatmaps|Attack vs Defense|Retake Success"
+    },
+    "c6": {
+      "title": "Lineup Library",
+      "desc": "Find the perfect play for any map.",
+      "tags": "Filter by Map|Video Previews|Step-by-step"
+    }
+  },
+  "lmp": {
+    "eyebrow": "Pre-round read",
+    "title": "Know the enemy before the round starts.",
+    "lead": "Read the lobby. See the threat. Decide your plan.",
+    "win_label": "Predicted Win Chance",
+    "mvp": "MVP Prediction",
+    "threat": "Highest Threat",
+    "avg_acs": "Avg ACS",
+    "avg_hs": "Avg HS%"
+  },
+  "lb": {
+    "eyebrow": "Top of the ladder",
+    "title": "The Radiant 5, ranked by win rate.",
+    "lead": "Refreshed every hour. Season 2026 — Act 3.",
+    "global": "Global",
+    "region": "Region",
+    "view": "View Leaderboard"
+  },
+  "sp": {
+    "eyebrow": "By the numbers",
+    "title": "Operating at the speed of the game.",
+    "lead": "Read-heavy, real-time, public-data only."
+  },
+  "recent": {
+    "eyebrow": "Change log",
+    "title": "What shipped, and when.",
+    "lead": "Every release, one row.",
+    "new": "NEW",
+    "shipped": "Shipped",
+    "latest": "Latest"
+  },
+  "fcta": {
+    "eyebrow": "Final word",
+    "title": "Look up a player. Then go next.",
+    "lead": "Open VALSYNC, paste a Riot ID, and the read-out fills in. No sign-up to look up the first one.",
+    "cta": "Search Your Riot ID"
+  },
+  "competitors": {
+    "eyebrow": "How VALSYNC compares",
+    "title": "The trackers out there. What's wrong with each.",
+    "lead": "Public criticisms, documented. Not a hit piece — a read so you can choose.",
+    "col_product": "Product",
+    "col_scope": "Scope",
+    "col_issue": "Known issue",
+    "col_answer": "VALSYNC's answer",
+    "disclaimer": "Issues summarized from public reports, community threads, and each product's own disclosures. Where a product doesn't actually compete with VALSYNC, the row says so.",
+    "opgg": {
+      "name": "OP.GG",
+      "scope": "Personal tracker · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Free tier is ad-supported; player insights and history behind the OP.GG Ad-free subscription.",
+      "answer": "No ads. No tracker subscription wall. Every lookup is full data, free, no sign-up."
+    },
+    "ugg": {
+      "name": "U.GG",
+      "scope": "Personal tracker · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Sample-size and data-freshness complaints surfaced publicly (Riot devs, community) — match data often lags the lobby.",
+      "answer": "Live read-outs fetched on the search, not cached — what you see is current as the lobby."
+    },
+    "blitz": {
+      "name": "Blitz.gg",
+      "scope": "In-game overlay · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Antivirus flags on the overlay injector, intrusive ads, autoplay-with-audio reports, and repeated player calls to remove it from matches.",
+      "answer": "No overlay injector. No in-game hook. Web and companion app, no AV flags, no audio popups."
+    },
+    "mobalytics": {
+      "name": "Mobalytics",
+      "scope": "Personal tracker + AI coach · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Tier lists and rankings rely on expert panels, not pure data. The product pushes a paid AI-coach funnel on top of the tracker.",
+      "answer": "Your own data drives every read. No paid AI coach funnel — the app stays the readout."
+    },
+    "porofessor": {
+      "name": "Porofessor.gg",
+      "scope": "In-game overlay · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Desktop app is ad-supported; recent ownership change has community asking who runs the data now. Not a Valorant tool.",
+      "answer": "Different game — but if you want a tracker without ad inventory and an opaque new owner, that's the brief we ship to."
+    },
+    "vlr": {
+      "name": "VLR.gg",
+      "scope": "Pro-scene coverage · Valorant",
+      "scope_kind": "esports",
+      "issue": "Community-run fansite. Power rankings are editor picks, not data; rank ordering is regularly disputed.",
+      "answer": "Rank ordering from match data, not editor picks. Same data pulled on the search, not curated."
+    },
+    "thespike": {
+      "name": "THESPIKE.GG",
+      "scope": "Pro-scene coverage · Valorant",
+      "scope_kind": "esports",
+      "issue": "Esports data only. The proprietary rating metric is debated. No personal-stat lookup for ranked players.",
+      "answer": "Personal and pro lookups in one place. The same read-out vocabulary, not a different rating system per audience."
+    },
+    "leetify": {
+      "name": "Leetify",
+      "scope": "Personal tracker · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "CS2 only. No Valorant support. Paywalled match imports and analysis.",
+      "answer": "Different game. If VALSYNC ever shipped CS2, it would be the same posture: no ads, no paywall, no import fees."
+    },
+    "faceit": {
+      "name": "FACEIT",
+      "scope": "Matchmaking + anti-cheat · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "CS2 only. A paid matchmaking layer, not a personal-stat tracker — does not cover Valorant.",
+      "answer": "Different game, different product. Tracker-only, no matchmaking lock-in."
+    },
+    "log": {
+      "name": "League of Graphs",
+      "scope": "Personal tracker · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "League of Legends only. No Valorant data. Wrong game.",
+      "answer": "Different game. VALSYNC's read-out vocabulary is built around Valorant — agents, RR, ACS — not LoL."
     }
   }
 }

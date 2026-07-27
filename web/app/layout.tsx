@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Saira } from "next/font/google";
+import { Barlow_Condensed, JetBrains_Mono } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import { I18nProvider } from "@/lib/i18n";
 import Nav from "@/components/Nav";
 import MobileBottomNav from "@/components/MobileBottomNav";
@@ -9,10 +10,17 @@ import BackToTop from "@/components/BackToTop";
 import GlowProvider from "@/components/GlowProvider";
 import "./globals.css";
 
-const saira = Saira({
+// ponytail: same fonts the Android app ships (res/font/*).
+const display = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-saira",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-mono",
   display: "swap",
 });
 
@@ -69,7 +77,7 @@ const jsonLd = {
       name: "VALSYNC",
       url: SITE_URL,
       logo: `${SITE_URL}mr7gmipd-playstore.png`,
-      sameAs: [],
+      sameAs: ["https://x.com/valsyncgg", "https://discord.gg/5WHvNtskew"],
     },
     {
       "@type": "MobileApplication",
@@ -101,7 +109,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={saira.variable} data-scroll-behavior="smooth">
+    <html lang="en" className={`${display.variable} ${mono.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
         <div id="auth-loader" className="auth-loader" role="status" aria-live="polite" aria-label="Loading VALSYNC">
           <div className="auth-loader-scan">
@@ -165,12 +173,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <I18nProvider>
           <GlowProvider>
-            <Nav />
-            <MobileBottomNav />
-            <GazaBanner />
-            {children}
-            <Footer />
-            <BackToTop />
+            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+              <Nav />
+              <MobileBottomNav />
+              <GazaBanner />
+              {children}
+              <Footer />
+              <BackToTop />
+            </ThemeProvider>
           </GlowProvider>
         </I18nProvider>
         <script

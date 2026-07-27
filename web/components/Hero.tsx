@@ -1,110 +1,40 @@
 "use client";
 import { useState } from "react";
-import { useI18n } from "@/lib/i18n";
-
-const COPY: Record<string, [string, string]> = {
-  home: ["Home base", "The main VALSYNC readout."],
-  store: ["Store watch", "Night Market ready when you are."],
-  party: ["Party sync", "Know the stack before queue."],
-  matches: ["Match review", "Keep the useful rounds in focus."],
-  loadout: ["Loadout deck", "Your collection, presets, and favorites."],
-  social: ["Social view", "Friends and party context in one place."],
-};
-const PANELS = ["home", "store", "party", "matches", "loadout", "social"];
+import CommandLine from "./CommandLine";
+import Readout from "./Readout";
+import { POPULAR_PLAYERS, type PlayerPreview } from "@/lib/mock";
 
 export default function Hero() {
-  const { t } = useI18n();
-  const [active, setActive] = useState(0);
-
-  const setPanel = (next: number) =>
-    setActive((next + PANELS.length) % PANELS.length);
+  const [subject, setSubject] = useState<PlayerPreview>(POPULAR_PLAYERS[0]);
 
   return (
-    <section className="section hero" id="top">
-      <div className="container hero-split">
+    <section className="hero" id="top">
+      <div className="container hero-grid">
         <div>
-          <p className="eyebrow hero-kicker">{t("hero.badge")}</p>
-          <h1>
-            <span>{t("hero.title1")}</span>
-            <em>{t("hero.title2")}</em>
-          </h1>
-          <p className="lead">{t("hero.lead")}</p>
-          <div className="hero-cta">
-            <a className="btn btn-primary" href="#download">{t("hero.cta1")}</a>
-            <a className="btn btn-secondary btn-arrow" href="#demo">{t("hero.cta2")}</a>
+          <div className="hero-meta">
+            <span className="ticker"><span className="live" /> Season 2026 — Act 3</span>
+            <span className="ticker">Patch 9.11</span>
+            <span className="ticker">8,412 sessions indexed today</span>
           </div>
-          <div className="trust-row">
-            <span>{t("hero.trust1")}</span>
-            <span>{t("hero.trust2")}</span>
-            <span>{t("hero.trust3")}</span>
+          <h1 className="hero-title h1">
+            The scoreboard<br />
+            for <span className="accent">Valorant</span>.<br />
+            <span className="it">Search a Riot ID.</span>
+          </h1>
+          <p className="hero-sub">
+            Look up a player. See their rank, region, win rate, last twenty rounds,
+            and the agents they play. <b>One lookup, no clutter.</b>
+          </p>
+          <CommandLine onResult={setSubject} />
+          <div className="cmd-hint">
+            <span><kbd>⌘</kbd>K focus</span>
+            <span><kbd>↵</kbd> run lookup</span>
+            <span>NA · EU · AP · KR · BR · LATAM</span>
           </div>
         </div>
-
-        <aside className="hud-shell" aria-label="VALSYNC tactical HUD preview">
-          <div className="hud-grid" />
-          <div className="hud-content">
-            <div className="hud-top">
-              <span>{t("hud.label")}</span>
-              <span className="num">23:14</span>
-            </div>
-            <div className="phone">
-              <div className="phone-screen">
-                <div className="phone-head">
-                  <div className="phone-title">{COPY[PANELS[active]][0]}</div>
-                  <div className="phone-sub">{COPY[PANELS[active]][1]}</div>
-                </div>
-                {PANELS.map((panel, i) => (
-                  <div
-                    key={panel}
-                    className={`screen-panel${i === active ? " is-active" : ""}`}
-                  >
-                    <img
-                      className="app-shot"
-                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/screenshot-${panel}.jpg`}
-                      alt={`VALSYNC ${panel} screen`}
-                    />
-                    <div className="shot-caption">
-                      <strong>{COPY[panel][0]}</strong>
-                      <span>{COPY[panel][1]}</span>
-                    </div>
-                  </div>
-                ))}
-                <div className="phone-controls">
-                  <button
-                    className="phone-arrow"
-                    type="button"
-                    aria-label="Previous app screen"
-                    onClick={() => setPanel(active - 1)}
-                  >
-                    &lsaquo;
-                  </button>
-                  <button
-                    className="phone-arrow"
-                    type="button"
-                    aria-label="Next app screen"
-                    onClick={() => setPanel(active + 1)}
-                  >
-                    &rsaquo;
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="telemetry-strip">
-              <div className="mini-readout">
-                <span className="meta">{t("hud.noise")}</span>
-                <strong className="num">{t("hud.noise_val")}</strong>
-              </div>
-              <div className="mini-readout">
-                <span className="meta">{t("hud.tracking")}</span>
-                <strong className="num">{t("hud.tracking_val")}</strong>
-              </div>
-              <div className="mini-readout">
-                <span className="meta">{t("hud.sync")}</span>
-                <strong className="num">{t("hud.sync_val")}</strong>
-              </div>
-            </div>
-          </div>
-        </aside>
+        <div>
+          <Readout player={subject} />
+        </div>
       </div>
     </section>
   );

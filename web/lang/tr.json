@@ -5,22 +5,33 @@
     "updates": "Güncellemeler",
     "privacy": "Gizlilik",
     "terms": "Koşullar",
-    "download": "Bekleme listesine katıl",
+    "download": "Uygulamayı İndir",
+    "profile": "Profil",
+    "search": "Ara",
+    "leaderboards": "Sıralamalar",
+    "lineups": "Taktikler",
+    "meta": "Meta",
+    "livematch": "Canlı Maç",
     "mob_home": "Ana Sayfa",
     "mob_web": "Web",
     "mob_pricing": "Fiyatlandırma",
-    "mob_faq": "SSS"
+    "mob_faq": "SSS",
+    "pricing": "Fiyatlandırma",
+    "search_cta": "Oyuncu Ara"
   },
   "hero": {
-    "badge": "Gizlilik odaklı Valorant yardımcısı",
-    "title1": "Valorant gecen, ",
-    "title2": "gürültüsüz.",
-    "lead": "VALSYNC; Valorant mağaza kontrollerini, Gece Pazarı takibini, parti durumunu, dizilimleri ve maç incelemelerini sıraya girmeden önce ihtiyaç duyduğun sakin bir panelde toplar.",
-    "cta1": "Bekleme listesine katıl",
-    "cta2": "Paneli önizle",
-    "trust1": "Riot ile güvenli giriş",
-    "trust2": "Reklam alanı yok",
-    "trust3": "Maç öncesi akış"
+    "word1": "Takip Et",
+    "word2": "Analiz Et",
+    "word3": "Geliştir",
+    "word4": "Hükmet",
+    "headline_pre": "En İyi",
+    "headline_post": "Valorant İstihbarat Platformu",
+    "sub1": "Oyuncuları analiz et.",
+    "sub2": "Performansı takip et.",
+    "sub3": "Taktikleri keşfet.",
+    "sub4": "Her maçta hükmet.",
+    "cta_primary": "Oyuncuyu Analiz Et",
+    "cta_secondary": "Canlı Maç"
   },
   "hud": {
     "label": "Canlı yardımcı panel",
@@ -172,6 +183,18 @@
     "lead": "Mağaza kontrolleri, parti hazırlığı ve sade maç incelemesi için tasarlanan gizlilik odaklı Valorant yardımcısının listesine katıl.",
     "button": "Bekleme listesine katıl"
   },
+  "countdown": {
+    "eyebrow": "Halka açık lansman",
+    "title": "VALSYNC dünya genelinde yayında",
+    "target": "Yarın saat 12:00 İstanbul (UTC+3) - Google Play",
+    "days": "Gün",
+    "hours": "Saat",
+    "minutes": "Dakika",
+    "seconds": "Saniye",
+    "tag": "Google Play'de dünya genelinde",
+    "widget_label": "Lansmana kalan",
+    "widget_target": "Google Play - Yarın 12:00 İstanbul"
+  },
   "releases": {
     "badge": "Sürüm geçmişi",
     "title": "İlk sürümden en güncel sinyale.",
@@ -271,5 +294,175 @@
       "p10": "Bu Koşulları veya Riot Games politikalarını ihlal etmeniz durumunda Uygulamaya erişiminizi istediğimiz zaman askıya alabilir veya sonlandırabiliriz. Uygulamayı cihazınızdan kaldırarak istediğiniz zaman kullanmayı bırakabilirsiniz.",
       "p11": "Bu Koşullar hakkında sorularınız için <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a> adresinden bizimle iletişime geçin."
     }
+  },
+  "search": {
+    "placeholder": "Riot ID ara...  Örnek: TenZ#NA1",
+    "clear": "Temizle",
+    "region": "Bölge",
+    "loading": "Aranıyor...",
+    "go": "Ara",
+    "error": "Oyuncu bulunamadı. Popüler bir arama dene.",
+    "autocomplete": "Öneriler",
+    "recent": "Son aramalar",
+    "popular": "Popüler aramalar"
+  },
+  "fgrid": {
+    "title": "Kazanmak için ihtiyacın olan her şey",
+    "lead": "Oyununun her açısı için tek platform.",
+    "c1": {
+      "title": "Canlı Maç İçgörüleri",
+      "desc": "Maç başlamadan düşmanlarını tanı.",
+      "tags": "Rütbe|Kazanma Oranı|K/D|Smurf Tespiti"
+    },
+    "c2": {
+      "title": "Rekabet Sıralamaları",
+      "desc": "Her bölgenin en iyi oyuncularına göz at.",
+      "tags": "Bölgesel|Küresel|Sezon"
+    },
+    "c3": {
+      "title": "Performans Analizi",
+      "desc": "Tırmanışını hassas takip et.",
+      "tags": "Rütbe İlerlemesi|Ajan Ustalığı|Tutarlılık"
+    },
+    "c4": {
+      "title": "Ajan Zekası",
+      "desc": "Metayı ajan ajan ustalaş.",
+      "tags": "Kazanma Oranları|Karşı Eşleşmeler|Meta Trendleri"
+    },
+    "c5": {
+      "title": "Harita Zekası",
+      "desc": "Her siteyi bir profesyonel gibi oku.",
+      "tags": "Isı Haritaları|Saldırı vs Savunma|Yeniden Ele Geçirme"
+    },
+    "c6": {
+      "title": "Taktik Kütüphanesi",
+      "desc": "Her harita için mükemmel oyunu bul.",
+      "tags": "Haritaya Göre Filtrele|Video Önizlemeleri|Adım Adım"
+    }
+  },
+  "lmp": {
+    "title": "Canlı Maç Önizlemesi",
+    "lead": "Rakip takımı ve şansını tur başlamadan gör.",
+    "win_label": "Tahmini Kazanma Şansı",
+    "mvp": "MVP Tahmini",
+    "threat": "En Büyük Tehdit",
+    "acs": "Ortalama ACS",
+    "hs": "Ortalama HS%",
+    "eyebrow": "Tur öncesi okuma",
+    "avg_acs": "Ort. ACS",
+    "avg_hs": "Ort. HS%"
+  },
+  "lb": {
+    "title": "Rekabet Sıralamaları",
+    "lead": "En iyilerin en iyileri, canlı sıralı.",
+    "global": "Küresel",
+    "region": "Bölge",
+    "view": "Sıralamayı Gör",
+    "eyebrow": "Sıralamanın zirvesi"
+  },
+  "why": {
+    "title": "Neden VALSYNC",
+    "lead": "Hepsi bir arada Valorant istihbarat platformu.",
+    "them_label": "Onlar",
+    "us_label": "Biz"
+  },
+  "sp": {
+    "title": "Büyük ölçekte güvenilir",
+    "eyebrow": "Rakamlarla",
+    "lead": "Yoğun veri, gerçek zamanlı, yalnızca kamuya açık kaynaklardan."
+  },
+  "recent": {
+    "title": "Son Güncellemeler",
+    "lead": "Yeni istihbarat, sürekli teslim edilir.",
+    "new": "YENİ",
+    "eyebrow": "Değişiklik günlüğü",
+    "shipped": "Yayımlandı",
+    "latest": "En Yeni"
+  },
+  "fcta": {
+    "title": "Gelişmeye Hazır mısın?",
+    "cta": "Riot ID'ni Ara",
+    "eyebrow": "Son söz",
+    "lead": "VALSYNC'i aç, bir Riot ID yapıştır, okuma kendini doldurur. İlk arama için kayıt gerekmez."
+  },
+  "competitors": {
+    "eyebrow": "VALSYNC nasıl karşılaştırılır",
+    "title": "Oradaki takipçiler. Her birinde yanlış olan ne.",
+    "lead": "Kamuya açık, belgelenmiş eleştiriler. İftira değil — seçebilesin diye bir okuma.",
+    "col_product": "Ürün",
+    "col_scope": "Kapsam",
+    "col_issue": "Bilinen sorun",
+    "disclaimer": "Sorunlar kamuya açık raporlardan, topluluk tartışmalarından ve her ürünün kendi açıklamalarından özetlendi. Bir ürün gerçekten VALSYNC ile rekabet etmiyorsa, satır bunu söylüyor.",
+    "opgg": {
+      "answer": "Reklâm yok. Takipçi için ücretli duvar yok. Her arama tam veriyi verir, ücretsiz, kayıtsız.",
+      "name": "OP.GG",
+      "scope": "Kişisel takipçi · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Ücretsiz katman reklâm destekli; oyuncu içgörüleri ve geçmiş OP.GG Ad-free aboneliğinin arkasında."
+    },
+    "ugg": {
+      "answer": "Canlı okumalar aramada çekilir, önbellekten değil — gördüğün lobi anındaki güncel haldir.",
+      "name": "U.GG",
+      "scope": "Kişisel takipçi · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Numune büyüklüğü ve veri tazeliği konusunda belgelenmiş şikâyetler (Riot geliştiricileri, topluluk) — maç verileri genelde lobinin gerisinde."
+    },
+    "blitz": {
+      "answer": "Yerleşim enjektörü yok. Oyun içi bağlantı yok. Web ve yardımcı uygulama, antivirüs uyarısı yok, sesli açılır pencere yok.",
+      "name": "Blitz.gg",
+      "scope": "Oyun içi yerleşim · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Yerleşim enjektöründe antivirüs uyarıları, müdahaleci reklamlar, sesli otomatik oynatma, maçlardan kaldırılması için oyunculardan gelen tekrarlayan talepler."
+    },
+    "mobalytics": {
+      "answer": "Her okumayı kendi verilerin yönlendirir. Ücretli yapay zekâ koç hunisi yok — uygulama okuma paneli olarak kalır.",
+      "name": "Mobalytics",
+      "scope": "Kişisel takipçi + yapay zekâ koç · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Tier listeleri ve sıralamalar ham veri yerine uzman panellerine dayanıyor. Ürün, takipçinin üstüne ücretli yapay zekâ koç hunisi ekliyor."
+    },
+    "porofessor": {
+      "answer": "Farklı oyun — ama reklâmsız ve belirsiz yeni sahipsiz bir takipçi istiyorsan, gönderdiğimiz kısa buyurun o işte.",
+      "name": "Porofessor.gg",
+      "scope": "Oyun içi yerleşim · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Masaüstü uygulaması reklâm destekli; son sahiplik değişikliği toplulukta verileri kimin yönettiği sorusunu açtı. Valorant aracı değil."
+    },
+    "vlr": {
+      "answer": "Sıralama maç verisinden, editör seçiminden değil. Aynı veriler aramada çekilir, seçilmez.",
+      "name": "VLR.gg",
+      "scope": "Profesyonel sahne kapsamı · Valorant",
+      "scope_kind": "esports",
+      "issue": "Topluluk merkezli fansite. Güç sıralamaları editör seçimi, veri değil; rütbe sırası düzenli olarak tartışılıyor."
+    },
+    "thespike": {
+      "answer": "Kişisel ve profesyonel aramalar tek yerde. Tek bir okuma dili, izleyici başına farklı puanlama sistemi değil.",
+      "name": "THESPIKE.GG",
+      "scope": "Profesyonel sahne kapsamı · Valorant",
+      "scope_kind": "esports",
+      "issue": "Yalnızca espor verisi. Özel puan metriği tartışmalı. Sıralı oyuncular için kişisel istatistik araması yok."
+    },
+    "leetify": {
+      "answer": "Farklı oyun. VALSYNC bir gün CS2 sürerse aynı tutum geçerli: reklâm yok, ücretli duvar yok, içe aktarma ücreti yok.",
+      "name": "Leetify",
+      "scope": "Kişisel takipçi · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "Yalnızca CS2. Valorant desteği yok. Maç içe aktarımı ve analiz ücretli duvarın arkasında."
+    },
+    "faceit": {
+      "answer": "Farklı oyun, farklı ürün. Yalnızca takipçi, eşleştirme kilidi yok.",
+      "name": "FACEIT",
+      "scope": "Eşleştirme + hile engelleme · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "Yalnızca CS2. Ücretli bir eşleştirme katmanı, kişisel istatistik takipçisi değil — Valorant'ı kapsamaz."
+    },
+    "log": {
+      "answer": "Farklı oyun. VALSYNC'in okuma dili Valorant için kuruldu — ajanlar, RR, ACS — LoL için değil.",
+      "name": "League of Graphs",
+      "scope": "Kişisel takipçi · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Yalnızca League of Legends. Valorant verisi yok. Yanlış oyun."
+    },
+    "col_answer": "VALSYNC'in yanıtı"
   }
 }

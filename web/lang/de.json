@@ -5,22 +5,33 @@
     "updates": "Updates",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
-    "download": "Warteliste beitreten",
+    "download": "App herunterladen",
+    "profile": "Profil",
+    "search": "Suche",
+    "leaderboards": "Ranglisten",
+    "lineups": "Lineups",
+    "meta": "Meta",
+    "livematch": "Live-Match",
     "mob_home": "Start",
     "mob_web": "Web",
     "mob_pricing": "Preise",
-    "mob_faq": "FAQ"
+    "mob_faq": "FAQ",
+    "pricing": "Preise",
+    "search_cta": "Spieler suchen"
   },
   "hero": {
-    "badge": "Datenschutzorientierter Valorant-Begleiter",
-    "title1": "Deine Valorant-Nacht, ",
-    "title2": "ohne Ablenkung.",
-    "lead": "VALSYNC bündelt Valorant-Shop-Checks, Night-Market-Beobachtung, Party-Status, Loadouts und Match-Reviews in einer ruhigen Ansicht für die Minuten vor der Queue.",
-    "cta1": "Warteliste beitreten",
-    "cta2": "Ansicht ansehen",
-    "trust1": "Sicherer Riot-Login",
-    "trust2": "Keine Werbeflächen",
-    "trust3": "Vor-dem-Match-Ablauf"
+    "word1": "Verfolge",
+    "word2": "Analysiere",
+    "word3": "Verbessere",
+    "word4": "Dominiere",
+    "headline_pre": "Die ultimative",
+    "headline_post": "Valorant-Intelligence-Plattform",
+    "sub1": "Analysiere Spieler.",
+    "sub2": "Verfolge Leistung.",
+    "sub3": "Entdecke Lineups.",
+    "sub4": "Dominiere jedes Match.",
+    "cta_primary": "Spieler analysieren",
+    "cta_secondary": "Live-Match"
   },
   "hud": {
     "label": "Live-Begleitansicht",
@@ -172,6 +183,18 @@
     "lead": "Tritt der Liste für den datenschutzorientierten Valorant-Begleiter bei, gebaut für Shop-Checks, Party-Vorbereitung und ruhige Match-Reviews.",
     "button": "Warteliste beitreten"
   },
+  "countdown": {
+    "eyebrow": "Öffentlicher Launch",
+    "title": "VALSYNC geht weltweit live in",
+    "target": "Morgen um 12:00 Uhr Istanbul (UTC+3) - Google Play",
+    "days": "Tage",
+    "hours": "Stunden",
+    "minutes": "Minuten",
+    "seconds": "Sekunden",
+    "tag": "Weltweit im Google Play Store",
+    "widget_label": "Launch in",
+    "widget_target": "Google Play - Morgen 12:00 Istanbul"
+  },
   "releases": {
     "badge": "Versionsverlauf",
     "title": "Vom ersten Build bis zum neuesten Signal.",
@@ -271,5 +294,175 @@
       "p10": "Wir können deinen Zugriff auf die App jederzeit aussetzen oder beenden, wenn du diese Bedingungen oder die Richtlinien von Riot Games verletzt. Du kannst die Nutzung der App jederzeit durch Deinstallation von deinem Gerät beenden.",
       "p11": "Bei Fragen zu diesen Bedingungen kontaktiere uns unter <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a>."
     }
+  },
+  "search": {
+    "placeholder": "Riot-ID suchen...  Beispiel: TenZ#NA1",
+    "clear": "Leeren",
+    "region": "Region",
+    "loading": "Suche...",
+    "go": "Suchen",
+    "error": "Spieler nicht gefunden. Versuche eine beliebte Suche.",
+    "autocomplete": "Vorschläge",
+    "recent": "Letzte Suchen",
+    "popular": "Beliebte Suchen"
+  },
+  "fgrid": {
+    "title": "Alles, was du zum Siegen brauchst",
+    "lead": "Eine Plattform für jede Perspektive deines Spiels.",
+    "c1": {
+      "title": "Live-Match-Einblicke",
+      "desc": "Kenne deine Gegner, bevor das Match startet.",
+      "tags": "Rang|Win Rate|K/D|Smurf-Erkennung"
+    },
+    "c2": {
+      "title": "Wettbewerbs-Ranglisten",
+      "desc": "Stöbere durch die besten Spieler jeder Region.",
+      "tags": "Regional|Global|Saison"
+    },
+    "c3": {
+      "title": "Leistungsanalyse",
+      "desc": "Verfolge deinen Aufstieg präzise.",
+      "tags": "Rangfortschritt|Agenten-Meisterschaft|Beständigkeit"
+    },
+    "c4": {
+      "title": "Agenten-Intelligenz",
+      "desc": "Meistere die Meta, Agent für Agent.",
+      "tags": "Win Rates|Counter-Matchups|Meta-Trends"
+    },
+    "c5": {
+      "title": "Karten-Intelligenz",
+      "desc": "Lies jeden Site wie ein Profi.",
+      "tags": "Heatmaps|Angriff vs. Verteidigung|Retake-Erfolg"
+    },
+    "c6": {
+      "title": "Lineup-Bibliothek",
+      "desc": "Finde den perfekten Play für jede Map.",
+      "tags": "Nach Map filtern|Video-Vorschau|Schritt für Schritt"
+    }
+  },
+  "lmp": {
+    "title": "Live-Match-Vorschau",
+    "lead": "Sieh das Gegnerteam und deine Chancen vor der Runde.",
+    "win_label": "Erwartete Siegeschance",
+    "mvp": "MVP-Vorhersage",
+    "threat": "Größte Bedrohung",
+    "acs": "Durchschnitt ACS",
+    "hs": "Durchschnitt HS%",
+    "eyebrow": "Vor-der-Runde",
+    "avg_acs": "Durchschn. ACS",
+    "avg_hs": "Durchschn. HS%"
+  },
+  "lb": {
+    "title": "Wettbewerbs-Ranglisten",
+    "lead": "Die Besten der Besten, live gereiht.",
+    "global": "Global",
+    "region": "Region",
+    "view": "Rangliste ansehen",
+    "eyebrow": "Spitze der Rangliste"
+  },
+  "why": {
+    "title": "Warum VALSYNC",
+    "lead": "Die All-in-One-Valorant-Intelligence-Plattform.",
+    "them_label": "Die",
+    "us_label": "Wir"
+  },
+  "sp": {
+    "title": "Vertraut im großen Maßstab",
+    "eyebrow": "In Zahlen",
+    "lead": "Lesbar, in Echtzeit, ausschließlich öffentliche Daten."
+  },
+  "recent": {
+    "title": "Letzte Updates",
+    "lead": "Neue Intelligence, ständig geliefert.",
+    "new": "NEU",
+    "eyebrow": "Änderungsprotokoll",
+    "shipped": "Veröffentlicht",
+    "latest": "Neueste"
+  },
+  "fcta": {
+    "title": "Bereit, dich zu verbessern?",
+    "cta": "Deine Riot-ID suchen",
+    "eyebrow": "Letztes Wort",
+    "lead": "VALSYNC öffnen, eine Riot-ID einfügen, und die Auswertung füllt sich. Keine Anmeldung für die erste Suche."
+  },
+  "competitors": {
+    "eyebrow": "So schlägt sich VALSYNC",
+    "title": "Die Tracker da draußen. Was an jedem falsch läuft.",
+    "lead": "Belegte Kritik aus der Öffentlichkeit. Keine Häme — eine Übersicht, damit du wählen kannst.",
+    "col_product": "Produkt",
+    "col_scope": "Bereich",
+    "col_issue": "Belegtes Problem",
+    "disclaimer": "Probleme zusammengefasst aus öffentlichen Berichten, Community-Diskussionen und den eigenen Angaben der Produkte. Wo ein Produkt nicht wirklich mit VALSYNC konkurriert, sagt die Zeile das.",
+    "opgg": {
+      "answer": "Keine Werbung. Keine Tracker-Paywall. Jede Suche liefert volle Daten, kostenlos, ohne Anmeldung.",
+      "name": "OP.GG",
+      "scope": "Persönlicher Tracker · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Die kostenlose Stufe ist werbefinanziert; Spielereinsichten und Verlauf hinter dem OP.GG Ad-free Abo."
+    },
+    "ugg": {
+      "answer": "Live-Auswertungen werden bei der Suche abgerufen, nicht aus dem Cache — was du siehst, ist aktueller Stand der Lobby.",
+      "name": "U.GG",
+      "scope": "Persönlicher Tracker · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Belegte Beschwerden zu Stichprobengröße und Datenfrische (Riot-Entwickler, Community) — Matchdaten hängen oft der Lobby hinterher."
+    },
+    "blitz": {
+      "answer": "Kein Overlay-Injektor. Kein In-Game-Hook. Web- und Begleit-App, keine AV-Flags, keine Audio-Popups.",
+      "name": "Blitz.gg",
+      "scope": "In-Game-Overlay · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Antiviren-Flags auf dem Overlay-Injektor, aufdringliche Werbung, Auto-Play mit Ton, wiederholte Forderungen von Spielern, es aus Matches zu entfernen."
+    },
+    "mobalytics": {
+      "answer": "Deine eigenen Daten steuern jede Auswertung. Kein kostenpflichtiger KI-Coach-Trichter — die App bleibt Auswertung.",
+      "name": "Mobalytics",
+      "scope": "Persönlicher Tracker + KI-Coach · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Tier-Listen und Rankings stützen sich auf Expertenpanels, nicht auf Rohdaten. Das Produkt pusht einen kostenpflichtigen KI-Coach-Trichter über dem Tracker."
+    },
+    "porofessor": {
+      "answer": "Anderes Spiel — aber wenn du einen Tracker ohne Werbung und ohne undurchsichtigen neuen Eigentümer willst, danach liefern wir.",
+      "name": "Porofessor.gg",
+      "scope": "In-Game-Overlay · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Desktop-App ist werbefinanziert; ein kürzlicher Besitzerwechsel wirft Community-Fragen auf, wer die Daten jetzt betreibt. Kein Valorant-Tool."
+    },
+    "vlr": {
+      "answer": "Rang-Reihenfolge aus Match-Daten, nicht aus Redaktionswahl. Dieselben Daten werden bei der Suche gezogen, nicht kuratiert.",
+      "name": "VLR.gg",
+      "scope": "Profiszene-Coverage · Valorant",
+      "scope_kind": "esports",
+      "issue": "Community-Fansite. Power-Rankings sind Redaktionsauswahl, keine Daten; die Reihenfolge wird regelmäßig bestritten."
+    },
+    "thespike": {
+      "answer": "Persönliche und Profi-Suchen an einem Ort. Eine Auswertungs-Sprache, nicht ein anderes Bewertungssystem pro Zielgruppe.",
+      "name": "THESPIKE.GG",
+      "scope": "Profiszene-Coverage · Valorant",
+      "scope_kind": "esports",
+      "issue": "Nur E-Sport-Daten. Die eigene Bewertungsmetrik ist umstritten. Keine persönliche Statsuche für Ranglistenspieler."
+    },
+    "leetify": {
+      "answer": "Anderes Spiel. Falls VALSYNC je CS2 bringt, gilt dieselbe Haltung: keine Werbung, keine Paywall, keine Importgebühren.",
+      "name": "Leetify",
+      "scope": "Persönlicher Tracker · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "Nur CS2. Kein Valorant-Support. Match-Importe und Analyse hinter Paywall."
+    },
+    "faceit": {
+      "answer": "Anderes Spiel, anderes Produkt. Nur Tracker, kein Matchmaking-Lock-in.",
+      "name": "FACEIT",
+      "scope": "Matchmaking + Anti-Cheat · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "Nur CS2. Eine kostenpflichtige Matchmaking-Schicht, kein persönlicher Stat-Tracker — kein Valorant."
+    },
+    "log": {
+      "answer": "Anderes Spiel. VALSYNCs Auswertungs-Sprache ist um Valorant gebaut — Agenten, RR, ACS — nicht um LoL.",
+      "name": "League of Graphs",
+      "scope": "Persönlicher Tracker · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Nur League of Legends. Keine Valorant-Daten. Falsches Spiel."
+    },
+    "col_answer": "VALSYNCs Antwort"
   }
 }
