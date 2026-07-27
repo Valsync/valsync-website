@@ -1,0 +1,8 @@
+# robots.txt for VALSYNC
+User-agent: *
+Allow: /
+
+# Explicitly allow Google app-ads.txt crawler
+User-agent: Google-adstxt
+Allow: /app-ads.txt
+Allow: /
