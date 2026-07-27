@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/app-ads.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
