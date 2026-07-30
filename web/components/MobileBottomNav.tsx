@@ -5,13 +5,13 @@ import { useI18n } from "@/lib/i18n";
 import { Home, LayoutGrid, MonitorSmartphone, Clock, Tag, Shield, FileText } from "lucide-react";
 
 const tabs = [
-  { key: "home",     icon: Home,              href: "#top",       labelKey: "nav.mob_home",    external: false },
-  { key: "features", icon: LayoutGrid,         href: "#features",  labelKey: "nav.features",    external: false },
-  { key: "app",      icon: MonitorSmartphone,  href: "#demo",      labelKey: "nav.app",         external: false },
-  { key: "updates",  icon: Clock,              href: "#updates",   labelKey: "nav.updates",     external: false },
-  { key: "pricing",  icon: Tag,                href: "#pricing",   labelKey: "nav.mob_pricing", external: false },
-  { key: "privacy",  icon: Shield,             href: "/privacy",   labelKey: "nav.privacy",     external: true },
-  { key: "terms",    icon: FileText,           href: "/terms",     labelKey: "nav.terms",       external: true },
+  { key: "home",     icon: Home,              href: "#top",          labelKey: "nav.mob_home",    external: false },
+  { key: "search",   icon: LayoutGrid,         href: "#leaderboards", labelKey: "nav.leaderboards", external: false },
+  { key: "live",     icon: MonitorSmartphone,  href: "#live-match",   labelKey: "nav.livematch",   external: false },
+  { key: "updates",  icon: Clock,              href: "#updates",      labelKey: "nav.updates",     external: false },
+  { key: "pricing",  icon: Tag,                href: "#pricing",      labelKey: "nav.mob_pricing", external: false },
+  { key: "privacy",  icon: Shield,             href: "/privacy",      labelKey: "nav.privacy",     external: true },
+  { key: "terms",    icon: FileText,           href: "/terms",        labelKey: "nav.terms",       external: true },
 ] as const;
 
 export default function MobileBottomNav() {

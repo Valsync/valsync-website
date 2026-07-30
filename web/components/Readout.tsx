@@ -34,7 +34,7 @@ export default function Readout({ player }: { player: PlayerPreview }) {
       <div className="readout-body">
         <div className="readout-name">
           <div className="player">{player.name}<span className="tag">#{player.tag}</span></div>
-          <div className="flag">{player.region} · NA1</div>
+          <div className="flag">{player.region} · {player.tag}</div>
         </div>
         <div className="readout-meta">
           <div className="cell">

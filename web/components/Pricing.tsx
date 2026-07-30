@@ -10,8 +10,6 @@ const EASE_OUT = [0.16, 1, 0.3, 1] as const;
 const plans = [
   {
     key: "starter",
-    monthlyPrice: 0,
-    yearlyPrice: 0,
     popular: true,
   },
 ] as const;
@@ -32,15 +30,6 @@ const headerVariants = {
     opacity: 1,
     y: 0,
     transition: { duration: 0.7, ease: EASE_OUT },
-  },
-};
-
-const toggleVariants = {
-  hidden: { opacity: 0, scale: 0.94 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.5, ease: EASE_OUT, delay: 0.15 },
   },
 };
 
@@ -76,6 +65,7 @@ const featureItemVariants = {
 export default function Pricing() {
   const { t } = useI18n();
   const shouldReduceMotion = useReducedMotion();
+  const B = process.env.NEXT_PUBLIC_BASE_PATH;
 
   return (
     <section className="section" id="pricing">
@@ -93,16 +83,13 @@ export default function Pricing() {
           <motion.h2 className="h2" variants={headerVariants}>
             {t("pricing.title")}
           </motion.h2>
-          <motion.p
-            className="lead mx-auto mt-4"
-            variants={headerVariants}
-          >
-            Valsync is Free until now
+          <motion.p className="lead mx-auto mt-4" variants={headerVariants}>
+            VALSYNC is free for every player, during the public launch.
           </motion.p>
         </motion.div>
 
         <motion.div
-          className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-1 max-w-md mx-auto"
+          className="mt-14 grid grid-cols-1 gap-6 max-w-md mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
@@ -115,53 +102,32 @@ export default function Pricing() {
               whileHover={
                 shouldReduceMotion
                   ? undefined
-                  : {
-                      y: -6,
-                      scale: plan.popular ? 1.02 : 1.01,
-                      transition: { type: "spring", stiffness: 320, damping: 22 },
-                    }
+                  : { y: -4, transition: { type: "spring", stiffness: 320, damping: 22 } }
               }
               className={cn(
-                "card relative flex flex-col p-7 md:p-8",
-                plan.popular && "md:-mt-4 md:mb-4"
+                "card pricing-card relative flex flex-col p-7 md:p-8",
+                plan.popular && "is-popular"
               )}
-              data-glow={plan.popular ? "" : undefined}
-              style={
-                plan.popular
-                  ? ({
-                      "--base": "170",
-                      "--spread": "120",
-                      "--size": "260",
-                      "--border": "1",
-                    } as React.CSSProperties)
-                  : undefined
-              }
             >
               {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--cyan)] px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-[var(--bg)]">
+                <span className="pricing-badge">
                   {t("pricing.badge_popular")}
                 </span>
               )}
 
               <div className="text-center">
                 <h3 className="h3">{t(`pricing.${plan.key}.name`)}</h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">
-                  {t(`pricing.${plan.key}.description`)}
-                </p>
+                <p className="pricing-desc">{t(`pricing.${plan.key}.description`)}</p>
               </div>
 
               <div className="relative mx-auto mt-6 flex h-16 items-baseline justify-center">
-                <span className="text-4xl font-extrabold tracking-tight md:text-5xl">
-                  {t("pricing.free_price")}
-                </span>
+                <span className="pricing-price">{t("pricing.free_price")}</span>
               </div>
 
-              <p className="mt-1 text-center text-xs text-[var(--muted)]">
-                {t("pricing.free_billing")}
-              </p>
+              <p className="pricing-billing">{t("pricing.free_billing")}</p>
 
               <motion.ul
-                className="mt-8 flex flex-1 flex-col gap-3"
+                className="pricing-features"
                 variants={featureListVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -170,33 +136,23 @@ export default function Pricing() {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <motion.li
                     key={i}
-                    className="flex items-start gap-3 text-sm text-[var(--fg)]"
+                    className="pricing-feature"
                     variants={featureItemVariants}
                   >
-                    <span
-                      className={cn(
-                        "mt-0.5 inline-flex shrink-0 items-center justify-center rounded-md p-0.5",
-                        plan.popular
-                          ? "bg-[color-mix(in_oklch,var(--cyan)_12%,transparent)] text-[var(--cyan)]"
-                          : "bg-[color-mix(in_oklch,var(--fg)_7%,transparent)] text-[var(--fg)]"
-                      )}
-                    >
-                      <Check className="h-4 w-4" strokeWidth={2.5} />
+                    <span className="pricing-feature-check" aria-hidden>
+                      <Check className="h-3.5 w-3.5" strokeWidth={2.5} />
                     </span>
                     <span>{t(`pricing.${plan.key}.feature_${i}`)}</span>
                   </motion.li>
                 ))}
               </motion.ul>
 
-              <motion.button
-                className={cn(
-                  "btn mt-8 w-full",
-                  plan.popular ? "btn-primary" : "btn-secondary"
-                )}
-                whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
+              <a
+                href={`${B}/#final`}
+                className={cn("btn mt-8 w-full", plan.popular ? "btn-primary" : "btn-secondary")}
               >
                 {t(`pricing.${plan.key}.cta`)}
-              </motion.button>
+              </a>
             </motion.article>
           ))}
         </motion.div>

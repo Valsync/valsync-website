@@ -23,7 +23,7 @@ export default function Updates() {
                 {u.version}
               </span>
               <span className="body">{u.body}<span className="date">{u.date}</span></span>
-              <span className="meta">{u.tag === "latest" ? t("recent.latest") : t("recent.shipped")}</span>
+              <span className="meta">{u.date}</span>
             </div>
           ))}
         </div>

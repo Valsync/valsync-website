@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/39z97ohf9csu5.css","style"]
+:HL["/valsync-website/_next/static/chunks/12lw2k8ny_bxk.css","style"]
 :HL["loader-logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"nxiXjxLlI-XKmQIXKyvdO"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"M0ew7oDJIxyAtzpj9yK0r"}

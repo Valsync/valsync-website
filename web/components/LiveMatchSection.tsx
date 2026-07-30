@@ -24,11 +24,11 @@ export default function LiveMatchSection() {
             </div>
             {ENEMY_TEAM.map((p, i) => (
               <div className={`lm-player${p.threat ? " is-threat" : ""}`} key={`${p.agent}-${i}`}>
-                <span className="agent">{p.agent.slice(0, 2).toUpperCase()}</span>
-                <span className="rank">{p.rank}</span>
+                <span className="agent" aria-hidden>{p.agent.slice(0, 2).toUpperCase()}</span>
                 <span className="name">{p.agent}</span>
+                <span className="rank">{p.rank}</span>
                 <span className="acs">{p.acs}</span>
-                {p.threat ? <span className="threat">Threat</span> : <span className="threat" style={{ color: "var(--faint)" }}>—</span>}
+                <span className={`threat${p.threat ? "" : " is-empty"}`}>{p.threat ? "Threat" : "—"}</span>
               </div>
             ))}
           </div>
