@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
-import Countdown from "@/components/Countdown";
 import LiveMatchSection from "@/components/LiveMatchSection";
 import LeaderboardSection from "@/components/LeaderboardSection";
 import StatsGrid from "@/components/StatsGrid";
@@ -15,7 +14,6 @@ export default function Home() {
     <main id="content">
       <Hero />
       <Ticker />
-      <Countdown />
       <LiveMatchSection />
       <LeaderboardSection />
       <StatsGrid />
