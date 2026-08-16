@@ -2,3 +2,11 @@
 *.log
 .DS_Store
 Thumbs.db
+
+# local scratch / tool state (never part of the site)
+_diag/
+_diag_page.html
+_diag_page_prod.html
+.mimosa/
+web/.mimosa/
+.zcode/
