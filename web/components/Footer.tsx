@@ -1,12 +1,16 @@
 "use client";
-import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+
+// Dev serves the Next app at :3000 with real routes (/privacy); the static
+// export + root mirror are flat files at the same level, so pages link as
+// privacy.html. Do not use next/link here: it re-applies basePath on top of
+// the ${B} prefix and produces /valsync-website/valsync-website/... links.
+const dev = process.env.NODE_ENV === "development";
 
 type FooterLink = {
   key: string;
   href: string;
   labelKey: string;
-  external?: boolean;
 };
 
 type FooterSection = {
@@ -28,8 +32,8 @@ const SECTIONS: readonly FooterSection[] = [
   {
     eyebrow: "Legal",
     links: [
-      { key: "privacy", href: "/privacy", labelKey: "nav.privacy", external: true },
-      { key: "terms", href: "/terms", labelKey: "nav.terms", external: true },
+      { key: "privacy", href: dev ? "/privacy" : "privacy.html", labelKey: "nav.privacy" },
+      { key: "terms", href: dev ? "/terms" : "terms.html", labelKey: "nav.terms" },
     ],
   },
 ];
@@ -43,10 +47,10 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link href={`${B}/#top`} className="logo" aria-label="VALSYNC">
+            <a href={`${B}/#top`} className="logo" aria-label="VALSYNC">
               <img className="logo-mark" src={`${B}/mr7gmipd-playstore.png`} alt="" />
               <span>VALSYNC</span>
-            </Link>
+            </a>
             <p className="footer-tagline">Tactical companion for Valorant. No ads. No tracking. No noise.</p>
             <div className="footer-social">
               <a
@@ -85,9 +89,9 @@ export function Footer() {
               <ul className="footer-col-list">
                 {section.links.map((link) => (
                   <li key={link.key}>
-                    <Link href={link.external ? `${B}${link.href}` : link.href}>
+                    <a href={link.href}>
                       {t(link.labelKey)}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

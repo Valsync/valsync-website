@@ -3,13 +3,15 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH;
+
 const SLIDES = [
-  { src: "/img/screenshot-home.jpg", alt: "Dashboard with live stats, rank, and RR tracker", caption: "Dashboard — live stats, rank, RR tracker", eager: true },
-  { src: "/img/screenshot-matches.jpg", alt: "Match history list with K/D, ACS, map, and RR changes", caption: "Match history — round-by-round detail" },
-  { src: "/img/screenshot-store.jpg", alt: "Daily store with weapon skin offers and countdown timer", caption: "Daily store — offers + countdown" },
-  { src: "/img/screenshot-loadout.jpg", alt: "Weapon armory showing owned and available skins", caption: "Loadout — weapon skin collection" },
-  { src: "/img/screenshot-party.jpg", alt: "Party screen with agent plan and access controls", caption: "Party — agent plan, join codes" },
-  { src: "/img/screenshot-social.jpg", alt: "Friends list showing online status and current match maps", caption: "Social — friends, presence, chat" },
+  { src: `${B}/img/screenshot-home.jpg`, alt: "Dashboard with live stats, rank, and RR tracker", caption: "Dashboard — live stats, rank, RR tracker", eager: true },
+  { src: `${B}/img/screenshot-matches.jpg`, alt: "Match history list with K/D, ACS, map, and RR changes", caption: "Match history — round-by-round detail" },
+  { src: `${B}/img/screenshot-store.jpg`, alt: "Daily store with weapon skin offers and countdown timer", caption: "Daily store — offers + countdown" },
+  { src: `${B}/img/screenshot-loadout.jpg`, alt: "Weapon armory showing owned and available skins", caption: "Loadout — weapon skin collection" },
+  { src: `${B}/img/screenshot-party.jpg`, alt: "Party screen with agent plan and access controls", caption: "Party — agent plan, join codes" },
+  { src: `${B}/img/screenshot-social.jpg`, alt: "Friends list showing online status and current match maps", caption: "Social — friends, presence, chat" },
 ];
 
 export default function MobileDemo() {

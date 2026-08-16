@@ -3,6 +3,11 @@ import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
 import LangSwitch from "./LangSwitch";
 
+// Dev serves the Next app at :3000 with real routes (/privacy); the static
+// export + root mirror are flat files at the same level, so pages link as
+// privacy.html.
+const dev = process.env.NODE_ENV === "development";
+
 export default function Nav() {
   const { t } = useI18n();
   const pathname = usePathname();
@@ -25,8 +30,8 @@ export default function Nav() {
             <a href={`${B}${prefix}#live-match`}>{t("nav.livematch")}</a>
             <a href={`${B}${prefix}#updates`}>{t("nav.updates")}</a>
             <a href={`${B}${prefix}#pricing`}>{t("nav.pricing")}</a>
-            <a href={`${B}/privacy`}>{t("nav.privacy")}</a>
-            <a href={`${B}/terms`}>{t("nav.terms")}</a>
+            <a href={dev ? "/privacy" : "privacy.html"}>{t("nav.privacy")}</a>
+            <a href={dev ? "/terms" : "terms.html"}>{t("nav.terms")}</a>
           </div>
           <div className="nav-actions">
             <LangSwitch />

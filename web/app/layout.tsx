@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "A calm Valorant companion app for store checks, Night Market watchlists, party status, match review, and tactical prep with no ads or tracking.",
     url: SITE_URL,
     siteName: "VALSYNC",
-    images: [{ url: "/img/screenshot-home.jpg", width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}img/screenshot-home.jpg`, width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "VALSYNC - Privacy-First Valorant Companion App",
     description:
       "Store checker, Night Market watchlist, party status, and match review for Valorant players. No ads. No tracking.",
-    images: ["/img/screenshot-home.jpg"],
+    images: [`${SITE_URL}img/screenshot-home.jpg`],
   },
   icons: { icon: `${B}/favicon.ico` },
 };
