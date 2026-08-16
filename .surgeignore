@@ -1,0 +1,10 @@
+# Deploy the root static mirror only — everything else is source/scratch
+.git/
+web/
+_diag/
+.opencode/
+.mimosa/
+.zcode/
+specs/
+_diag_page*.html
+*.md
