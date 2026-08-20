@@ -24,7 +24,7 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://valsync.github.io/valsync-website/";
+const SITE_URL = "https://valsync.surge.sh/";
 const B = process.env.NEXT_PUBLIC_BASE_PATH;
 
 export const metadata: Metadata = {

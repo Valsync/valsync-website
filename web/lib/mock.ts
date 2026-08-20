@@ -73,12 +73,18 @@ export const MATCH_PREDICTION = {
 
 export type Stat = { value: number; suffix: string; label: string; decimals?: number };
 
+// ponytail: previous values here (2.8M+ matches, 500K+ players, 99.9% uptime,
+// etc.) were placeholder/template numbers that didn't reflect real usage —
+// removed because publishing invented metrics is a credibility risk once
+// anyone cross-checks against actual install counts. CountUp always renders
+// "{number}{suffix}", so these have to be real countable facts rather than
+// slogans — pulled from what's actually true elsewhere in this codebase
+// (UPDATES length, i18n locale count, price, ad/tracker count).
 export const SOCIAL_STATS: Stat[] = [
-  { value: 2.8, suffix: "M+", label: "Matches Analyzed", decimals: 1 },
-  { value: 500, suffix: "K+", label: "Players Tracked" },
-  { value: 150, suffix: "+", label: "Countries" },
-  { value: 99.9, suffix: "%", label: "Uptime", decimals: 1 },
-  { value: 45, suffix: "M+", label: "Rounds Processed" },
+  { value: 0, suffix: "", label: "Ads shown" },
+  { value: 0, suffix: "", label: "Trackers or analytics SDKs" },
+  { value: 4, suffix: "", label: "Languages supported (EN/AR/TR/DE)" },
+  { value: 0, suffix: "$", label: "Cost during public launch" },
 ];
 
 export type UpdateEntry = { version: string; date: string; body: string; tag: "latest" | "shipped" };

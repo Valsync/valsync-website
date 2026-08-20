@@ -35,6 +35,14 @@ export default function Nav() {
           </div>
           <div className="nav-actions">
             <LangSwitch />
+            <a
+              className="btn btn-ghost"
+              href="https://play.google.com/store/apps/details?id=com.valsync.app"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              {t("nav.download")}
+            </a>
             <a className="btn btn-primary" href={`${B}${prefix}#final`}>{t("nav.search_cta")}</a>
           </div>
         </nav>

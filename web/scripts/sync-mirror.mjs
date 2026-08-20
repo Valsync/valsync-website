@@ -3,8 +3,8 @@
  * sync-mirror.mjs — regenerate the root static mirror from web/out/.
  *
  * The repo root is served by hosts with different bases:
- *   - GitHub Pages:  https://valsync.github.io/valsync-website/  (subpath)
- *   - Surge/Netlify: https://valsync.surge.sh / custom domain      (root)
+ *   - Surge/Netlify: https://valsync.surge.sh / custom domain      (root, CANONICAL)
+ *   - GitHub Pages:  https://valsync.github.io/valsync-website/  (subpath, mirror)
  *
  * web/out/ is built with GITHUB_PAGES=true, so every asset/link carries the
  * absolute /valsync-website prefix — which 404s on root-domain hosts. The
@@ -86,10 +86,12 @@ const REWRITES = [
   [".\\/\\/", ".\\/"],
 ];
 
-// Canonical host URLs keep their /valsync-website path (metadata, social
-// cards, robots). The rewrite patterns never match these (the prefix there
-// is preceded by ".io", not a quote), but the verify step whitelists them.
-const CANONICAL_HOST = "valsync.github.io";
+// GitHub Pages is the mirror host, not canonical (canonical is
+// valsync.surge.sh — see web/app/layout.tsx SITE_URL). If any copied file
+// still references the full valsync.github.io/valsync-website URL (e.g. a
+// future alternate/mirror link), the verify step below whitelists that one
+// occurrence so it isn't flagged as a leftover unprefixed path.
+const MIRROR_HOST = "valsync.github.io";
 
 function fail(msg) {
   console.error(`\nsync-mirror: FAIL — ${msg}\n`);
@@ -170,12 +172,12 @@ console.log(`rewrote ${rewritten.length} files, checked ${checked.length}`);
 const leftovers = [];
 for (const rel of checked) {
   const content = readFileSync(join(ROOT, rel), "utf8");
-  // strip the canonical host's own URLs (host + path, plain and JSON-escaped)
+  // strip the mirror host's own URLs (host + path, plain and JSON-escaped)
   // before scanning for leftovers
   const scrubbed = content
-    .split(`${CANONICAL_HOST}/valsync-website`)
+    .split(`${MIRROR_HOST}/valsync-website`)
     .join("")
-    .split(`${CANONICAL_HOST}\\/valsync-website`)
+    .split(`${MIRROR_HOST}\\/valsync-website`)
     .join("");
   if (scrubbed.includes("/valsync-website")) {
     leftovers.push(rel);

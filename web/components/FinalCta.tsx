@@ -19,7 +19,15 @@ export default function FinalCta() {
             <div className="cmd-hint" style={{ paddingTop: 16 }}>
               <span><kbd>↵</kbd> {t("fcta.cta")}</span>
             </div>
-            <div style={{ marginTop: 16, display: "flex", gap: 12, alignItems: "center" }}>
+            <div style={{ marginTop: 16, display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+              <a
+                className="btn btn-secondary"
+                href="https://play.google.com/store/apps/details?id=com.valsync.app"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {t("fcta.download")}
+              </a>
               <a href="https://liberapay.com/AbdullahElTiby/donate">
                 <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" />
               </a>

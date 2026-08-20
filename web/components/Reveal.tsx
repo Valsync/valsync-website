@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState, type ReactNode, type ElementType } from "react";
+import { createElement, useEffect, useRef, useState, type ReactNode, type ElementType } from "react";
 
 export default function Reveal({
   children,
@@ -36,9 +36,16 @@ export default function Reveal({
     return () => obs.disconnect();
   }, []);
 
-  return (
-    <Tag ref={ref as React.Ref<HTMLElement>} className={`${className} ${inView ? "in-view" : ""}`.trim()} {...rest}>
-      {children}
-    </Tag>
+  return createElement(
+    Tag,
+    // eslint-disable-next-line react-hooks/refs -- the ref prop is a callback that only touches ref.current after mount
+    {
+      ref: (el: HTMLElement | null) => {
+        ref.current = el;
+      },
+      className: `${className} ${inView ? "in-view" : ""}`.trim(),
+      ...rest,
+    },
+    children
   );
 }

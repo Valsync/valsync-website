@@ -383,7 +383,8 @@
     "title": "Gelişmeye Hazır mısın?",
     "cta": "Riot ID'ni Ara",
     "eyebrow": "Son söz",
-    "lead": "VALSYNC'i aç, bir Riot ID yapıştır, okuma kendini doldurur. İlk arama için kayıt gerekmez."
+    "lead": "VALSYNC'i aç, bir Riot ID yapıştır, okuma kendini doldurur. İlk arama için kayıt gerekmez.",
+    "download": "VALSYNC'i Google Play'den indir"
   },
   "competitors": {
     "eyebrow": "VALSYNC nasıl karşılaştırılır",
