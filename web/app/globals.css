@@ -1265,15 +1265,14 @@ img {
   background: rgb(255 82 93 / 0.06);
   box-shadow: inset 2px 0 0 var(--red);
 }
+/* Agent portrait, not an initial. The official display icons are transparent
+   PNGs with a lot of headroom, so the tile keeps its own ground and the art
+   sits on top scaled slightly past the box to fill the notch. */
 .lm-agent {
   width: 26px;
   height: 26px;
-  display: grid;
-  place-items: center;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 0.8125rem;
-  color: var(--bg-deep);
+  flex: none;
+  object-fit: cover;
   background: var(--fg-dim);
   --c: 4px;
   clip-path: polygon(var(--c) 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%, 0 var(--c));

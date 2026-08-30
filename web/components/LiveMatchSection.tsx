@@ -29,6 +29,8 @@ const RANK_COLOR: Record<Rank, string> = {
 const R = 52;
 const CIRC = 2 * Math.PI * R;
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH;
+
 export default function LiveMatchSection() {
   const { t } = useI18n();
   const reduce = useReducedMotion();
@@ -71,9 +73,16 @@ export default function LiveMatchSection() {
                 variants={slideItem}
                 custom={i}
               >
-                <span className="lm-agent" aria-hidden>
-                  {p.agent.charAt(0)}
-                </span>
+                {/* Plain img: the static export runs without image optimization. */}
+                <img
+                  className="lm-agent"
+                  src={`${B}/img/agents/${p.agent.toLowerCase()}.png`}
+                  alt=""
+                  width={26}
+                  height={26}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span className="t-title">{p.agent}</span>
                 <span className="lm-rank" style={{ color: RANK_COLOR[p.rank] }}>
                   {p.rank}
