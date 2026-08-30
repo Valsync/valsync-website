@@ -65,12 +65,27 @@ export const SOCIAL_STATS: Stat[] = [
 
 export type UpdateEntry = { version: string; date: string; body: string; tag: "latest" | "shipped" };
 
-// ponytail: real release history. v1.0.0–v1.0.9 from VALSYNC_BRIEF.md / PRODUCT.md;
-// v1.1.2 from the Android app git log (build.gradle.kts + release commit).
-// The first entry is the most recent (Latest); earlier ones are Shipped.
+// Real release history, taken from versionName bumps in the Android app's
+// build.gradle.kts git log plus the shipped release notes. The first entry is
+// the most recent (Latest); earlier ones are Shipped. Keep this in step with
+// the app — a stale changelog reads as an abandoned project.
 export const UPDATES: UpdateEntry[] = [
-  { version: "v1.1.2", date: "2026-07-20", tag: "latest",
-    body: "Friend opened-Valorant alerts, per-player match heat map, login terms & privacy links to surge.sh" },
+  { version: "v1.7.0", date: "2026-08-21", tag: "latest",
+    body: "Language and feature requests from Settings, party invites with alerts, ad-free days for watching an ad, redesigned tactical HUD" },
+  { version: "v1.5.1", date: "2026-08-16", tag: "shipped",
+    body: "In-app bug reports with screenshot attachment, localization completion" },
+  { version: "v1.5.0", date: "2026-08-16", tag: "shipped",
+    body: "Server Status screen, Riot and Cloudflare connectivity diagnostics, 27-locale translation sweep" },
+  { version: "v1.4.0", date: "2026-08-11", tag: "shipped",
+    body: "Ad monetization with native ad cards, battle pass card rebuild" },
+  { version: "v1.3.9", date: "2026-08-05", tag: "shipped",
+    body: "Live session fixes and login stability" },
+  { version: "v1.3.4", date: "2026-08-02", tag: "shipped",
+    body: "Settings UI polish, account name backfilled on login" },
+  { version: "v1.3.3", date: "2026-07-31", tag: "shipped",
+    body: "Match history filters, synergy cards, advisor updates" },
+  { version: "v1.1.2", date: "2026-07-20", tag: "shipped",
+    body: "Friend opened-Valorant alerts, per-player match heat map, login terms & privacy links" },
   { version: "v1.0.9", date: "2026-07-09", tag: "shipped",
     body: "Background notifications, login consent gate, VALSYNC Plus pricing, filters" },
   { version: "v1.0.6", date: "2026-07-06", tag: "shipped",
