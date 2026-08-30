@@ -11,9 +11,9 @@ function Row({ p, onPick }: { p: PlayerPreview; onPick: (p: PlayerPreview) => vo
     <button type="button" className="cmd-row" onClick={() => onPick(p)}>
       <span className="name mono">{p.name}<span className="tag">#{p.tag}</span></span>
       <span className="meta-line">
-        <span className="chip rank">{p.rank}</span>
-        <span className="chip region">{p.region}</span>
-        <span className="chip">{p.agent}</span>
+        <span className="cmd-chip cmd-chip-rank">{p.rank}</span>
+        <span className="cmd-chip">{p.region}</span>
+        <span className="cmd-chip">{p.agent}</span>
       </span>
     </button>
   );
@@ -79,7 +79,10 @@ export default function CommandLine({ onResult }: { onResult?: (p: PlayerPreview
   return (
     <div ref={wrapRef}>
       <div className="cmd">
-        <span className="cmd-prompt" aria-hidden>VALSYNC&nbsp;›</span>
+        <span className="cmd-prompt" aria-hidden>
+          <span className="pip" />
+          VALSYNC
+        </span>
         <input
           ref={inputRef}
           className="cmd-input"
@@ -94,7 +97,7 @@ export default function CommandLine({ onResult }: { onResult?: (p: PlayerPreview
           {REGIONS.map((r) => <option key={r} value={r}>{r}</option>)}
         </select>
         <button type="button" className="cmd-go" onClick={() => run()} disabled={state === "loading"}>
-          {state === "loading" ? "..." : "Run"} <span aria-hidden>↵</span>
+          {state === "loading" ? t("search.loading") : t("search.go")} <span aria-hidden>↵</span>
         </button>
       </div>
 
@@ -107,7 +110,7 @@ export default function CommandLine({ onResult }: { onResult?: (p: PlayerPreview
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.14 }}
           >
-            {state === "error" && <div className="cmd-error">No player found. Try TenZ#NA1 or aspas#BR1.</div>}
+            {state === "error" && <div className="cmd-error">{t("search.error")}</div>}
             {suggestions.length > 0 ? (
               <>
                 <div className="group-label">{t("search.autocomplete")}</div>

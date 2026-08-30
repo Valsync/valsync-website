@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "sync-mirror": "node scripts/sync-mirror.mjs"
+    "sync-mirror": "node scripts/sync-mirror.mjs",
+    "reply": "node scripts/support-reply.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^9.7.0",

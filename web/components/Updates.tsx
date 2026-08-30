@@ -1,33 +1,47 @@
 "use client";
+import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { UPDATES } from "@/lib/mock";
-import Reveal from "./Reveal";
+import SectionHead from "./hud/SectionHead";
+import { slideItem, staggerParent } from "./hud/motion";
 
 export default function Updates() {
   const { t } = useI18n();
+
   return (
-    <Reveal className="section reveal" id="updates">
+    <section className="section" id="updates">
       <div className="container">
-        <div className="sec-head">
-          <div>
-            <p className="eyebrow"><span className="dot" /> {t("recent.eyebrow")}</p>
-            <h2 className="h2" style={{ marginTop: 12 }}>{t("recent.title")}</h2>
-          </div>
-          <p className="meta text-mute">{t("recent.lead")}</p>
-        </div>
-        <div className="log">
+        <SectionHead
+          eyebrow={t("recent.eyebrow")}
+          title={t("recent.title")}
+          note={t("recent.lead")}
+        />
+
+        <motion.div
+          className="log"
+          variants={staggerParent(0.06)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           {UPDATES.map((u) => (
-            <div className="log-row" key={u.version}>
-              <span className="ver">
-                <span className={`tag ${u.tag}`}>{u.tag === "latest" ? t("recent.latest") : t("recent.shipped")}</span>
-                {u.version}
+            <motion.article className="log-row" key={u.version} variants={slideItem}>
+              <span className="log-version">{u.version}</span>
+              <span
+                className="chip chip-static"
+                data-active={u.tag === "latest"}
+                style={{ justifySelf: "start" }}
+              >
+                {u.tag === "latest" ? t("recent.latest") : t("recent.shipped")}
               </span>
-              <span className="body">{u.body}<span className="date">{u.date}</span></span>
-              <span className="meta">{u.date}</span>
-            </div>
+              <p className="log-body">{u.body}</p>
+              <time className="t-mono" dateTime={u.date}>
+                {u.date}
+              </time>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </Reveal>
+    </section>
   );
 }

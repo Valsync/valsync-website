@@ -1,58 +1,156 @@
 "use client";
+import { motion, useInView, useReducedMotion } from "framer-motion";
+import { useRef } from "react";
 import { useI18n } from "@/lib/i18n";
-import { ENEMY_TEAM, MATCH_PREDICTION } from "@/lib/mock";
-import Reveal from "./Reveal";
+import { ENEMY_TEAM, MATCH_PREDICTION, type Rank } from "@/lib/mock";
+import BracketLabel from "./hud/BracketLabel";
+import Panel from "./hud/Panel";
+import SectionHead from "./hud/SectionHead";
+import CountUp from "./CountUp";
+import { easeOut, riseItem, slideItem, staggerParent, viewportOnce } from "./hud/motion";
+
+/**
+ * Rank tint, keyed the way the app keys it (theme/Color.kt: valRankTierColor).
+ * The app matches on the numeric tier rather than the name — a localized rank
+ * label would never match an English keyword — but the mock data here is
+ * English-only display copy, so a name map is the honest equivalent.
+ */
+const RANK_COLOR: Record<Rank, string> = {
+  Radiant: "var(--rank-radiant)",
+  "Immortal 3": "var(--rank-immortal)",
+  "Immortal 2": "var(--rank-immortal)",
+  "Immortal 1": "var(--rank-immortal)",
+  "Ascendant 3": "var(--rank-ascendant)",
+  "Ascendant 2": "var(--rank-ascendant)",
+  "Ascendant 1": "var(--rank-ascendant)",
+  "Diamond 3": "var(--rank-diamond)",
+};
+
+const R = 52;
+const CIRC = 2 * Math.PI * R;
 
 export default function LiveMatchSection() {
   const { t } = useI18n();
+  const reduce = useReducedMotion();
+  const dialRef = useRef<HTMLDivElement>(null);
+  const dialInView = useInView(dialRef, { once: true, amount: 0.5 });
+
+  const pct = MATCH_PREDICTION.winChance / 100;
+
   return (
-    <Reveal className="section reveal" id="live-match">
+    <section className="section" id="live-match">
       <div className="container">
-        <div className="sec-head">
-          <div>
-            <p className="eyebrow"><span className="dot" /> {t("lmp.eyebrow")}</p>
-            <h2 className="h2" style={{ marginTop: 12 }}>{t("lmp.title")}</h2>
-          </div>
-          <p className="meta text-mute">{t("lmp.lead")}</p>
-        </div>
+        <SectionHead
+          eyebrow={t("lmp.eyebrow")}
+          title={t("lmp.title")}
+          lead={t("lmp.lead")}
+          note="Sample lobby — the shape of the real read-out."
+        />
 
-        <div className="lm-grid">
-          <div className="lm-team" role="table" aria-label="Enemy team">
-            <div className="lm-team-head">
-              <span>Enemy · 5</span>
-              <span className="enemy">Threat · {ENEMY_TEAM.filter((p) => p.threat).length}</span>
+        <motion.div
+          className="lm-wrap"
+          variants={staggerParent(0.09)}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+        >
+          <Panel className="lm-roster" accent="red" grid scanlines variants={riseItem}>
+            <div className="lm-head">
+              <BracketLabel tone="red">Enemy team</BracketLabel>
+              <span className="t-micro">
+                {t("lmp.avg_acs")} {MATCH_PREDICTION.avgAcs} · {t("lmp.avg_hs")}{" "}
+                {MATCH_PREDICTION.avgHs}%
+              </span>
             </div>
+
             {ENEMY_TEAM.map((p, i) => (
-              <div className={`lm-player${p.threat ? " is-threat" : ""}`} key={`${p.agent}-${i}`}>
-                <span className="agent" aria-hidden>{p.agent.slice(0, 2).toUpperCase()}</span>
-                <span className="name">{p.agent}</span>
-                <span className="rank">{p.rank}</span>
-                <span className="acs">{p.acs}</span>
-                <span className={`threat${p.threat ? "" : " is-empty"}`}>{p.threat ? "Threat" : "—"}</span>
-              </div>
+              <motion.div
+                className="lm-row"
+                key={p.agent}
+                data-threat={p.threat}
+                variants={slideItem}
+                custom={i}
+              >
+                <span className="lm-agent" aria-hidden>
+                  {p.agent.charAt(0)}
+                </span>
+                <span className="t-title">{p.agent}</span>
+                <span className="lm-rank" style={{ color: RANK_COLOR[p.rank] }}>
+                  {p.rank}
+                </span>
+                <span className="lm-acs" style={{ color: p.threat ? "var(--red)" : "var(--fg)" }}>
+                  {p.acs}
+                </span>
+              </motion.div>
             ))}
-          </div>
+          </Panel>
 
-          <div className="lm-pred">
-            <div className="label">{t("lmp.win_label")}</div>
-            <div className="win">{MATCH_PREDICTION.winChance}<span className="pct">%</span></div>
-            <div className="stats">
-              <div>
-                <div className="k">{t("lmp.mvp")}</div>
-                <div className="v" style={{ color: "var(--amber)" }}>{MATCH_PREDICTION.mvp}</div>
-              </div>
-              <div>
-                <div className="k">{t("lmp.avg_acs")}</div>
-                <div className="v">{MATCH_PREDICTION.avgAcs}</div>
-              </div>
-              <div>
-                <div className="k">{t("lmp.avg_hs")}</div>
-                <div className="v">{MATCH_PREDICTION.avgHs}<span style={{ fontSize: "0.6em", color: "var(--faint)" }}>%</span></div>
+          <Panel className="lm-dial" accent="cyan" fill="deep" brackets variants={riseItem}>
+            <div className="lm-gauge" ref={dialRef}>
+              <svg viewBox="0 0 128 128" role="img" aria-label={`${t("lmp.win_label")}: ${MATCH_PREDICTION.winChance}%`}>
+                <circle
+                  cx="64"
+                  cy="64"
+                  r={R}
+                  fill="none"
+                  stroke="rgb(255 255 255 / 0.07)"
+                  strokeWidth="8"
+                />
+                <motion.circle
+                  cx="64"
+                  cy="64"
+                  r={R}
+                  fill="none"
+                  stroke="var(--cyan)"
+                  strokeWidth="8"
+                  strokeLinecap="butt"
+                  strokeDasharray={CIRC}
+                  transform="rotate(-90 64 64)"
+                  initial={{ strokeDashoffset: CIRC }}
+                  animate={
+                    dialInView || reduce
+                      ? { strokeDashoffset: CIRC * (1 - pct) }
+                      : undefined
+                  }
+                  transition={{ duration: 1.3, ease: easeOut }}
+                />
+              </svg>
+              <div className="lm-gauge-value">
+                <div className="t-num c-cyan" style={{ fontSize: "3rem" }}>
+                  <CountUp to={MATCH_PREDICTION.winChance} suffix="%" />
+                </div>
+                <div className="t-micro" style={{ marginTop: 6 }}>
+                  {t("lmp.win_label")}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+
+            <dl className="lm-facts">
+              <div className="lm-fact">
+                <dt className="t-micro">{t("lmp.mvp")}</dt>
+                <dd className="t-title" style={{ margin: 0 }}>
+                  {MATCH_PREDICTION.mvp}
+                </dd>
+              </div>
+              <div className="lm-fact">
+                <dt className="t-micro">{t("lmp.threat")}</dt>
+                <dd
+                  className="t-title"
+                  style={{ margin: 0, color: RANK_COLOR[MATCH_PREDICTION.highestThreat as Rank] }}
+                >
+                  {MATCH_PREDICTION.highestThreat}
+                </dd>
+              </div>
+              <div className="lm-fact">
+                <dt className="t-micro">{t("lmp.avg_acs")}</dt>
+                <dd className="t-title mono" style={{ margin: 0 }}>
+                  {MATCH_PREDICTION.avgAcs}
+                </dd>
+              </div>
+            </dl>
+          </Panel>
+        </motion.div>
       </div>
-    </Reveal>
+    </section>
   );
 }

@@ -1,13 +1,14 @@
 "use client";
 import { useI18n } from "@/lib/i18n";
 import AiExplainer from "./AiExplainer";
+import BracketLabel from "./hud/BracketLabel";
 
 type Item = { type: "h" | "p" | "ul"; n: number; count?: number };
 
 const STRUCTURES: Record<string, Item[]> = {
   privacy: [
     { type: "h", n: 1 }, { type: "p", n: 1 },
-    { type: "h", n: 2 }, { type: "p", n: 2 }, { type: "ul", n: 1, count: 5 },
+    { type: "h", n: 2 }, { type: "p", n: 2 }, { type: "ul", n: 1, count: 4 },
     { type: "h", n: 3 }, { type: "p", n: 3 },
     { type: "h", n: 4 }, { type: "p", n: 4 },
     { type: "h", n: 5 }, { type: "p", n: 5 }, { type: "ul", n: 2, count: 2 },
@@ -64,16 +65,16 @@ export default function LegalPage({ doc }: { doc: "privacy" | "terms" }) {
 
       <section className="legal-head">
         <div className="container">
-          <p className="eyebrow"><span className="dot" /> {eyebrow}</p>
-          <h1 className="h1" style={{ marginTop: 16 }}>{t(`legal.${doc}.title`)}</h1>
-          <p className="meta text-mute" style={{ marginTop: 12 }}>{t(`legal.${doc}.updated`)}</p>
+          <BracketLabel tone="red">{eyebrow}</BracketLabel>
+          <h1 className="t-display-lg" style={{ marginTop: 16 }}>{t(`legal.${doc}.title`)}</h1>
+          <p className="t-mono" style={{ marginTop: 14 }}>{t(`legal.${doc}.updated`)}</p>
         </div>
       </section>
 
       <section className="legal-body">
         <div className="container legal-grid">
           <aside className="legal-toc" aria-label="On this page">
-            <p className="eyebrow">Sections</p>
+            <p className="t-micro" style={{ marginBottom: 14 }}>Sections</p>
             <ol>
               {toc.map((h, i) => (
                 <li key={h.n}>
@@ -90,8 +91,9 @@ export default function LegalPage({ doc }: { doc: "privacy" | "terms" }) {
             {items.map((item, i) => {
               if (item.type === "h") {
                 return (
+                  // The heading copy is already numbered ("1. Our Commitment"),
+                  // so there is no separate index column here.
                   <h2 key={i} id={`sec-${item.n}`} className="legal-h">
-                    <span className="legal-h-num">{String(item.n).padStart(2, "0")}</span>
                     <span dangerouslySetInnerHTML={th(`legal.${doc}.h${item.n}`)} />
                   </h2>
                 );

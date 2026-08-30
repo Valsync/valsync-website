@@ -1,45 +1,61 @@
 "use client";
-import {
-  LayoutDashboard,
-  LogIn,
-  MegaphoneOff,
-  ShieldCheck,
-  Store,
-  Users,
-  type LucideIcon,
-} from "lucide-react";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
-import Reveal from "./Reveal";
-import { BouncyAccordion } from "./ui/be-ui-bouncy-accordion";
+import SectionHead from "./hud/SectionHead";
+import { easeOut } from "./hud/motion";
 
-const FAQ_ITEMS: { id: string; icon: LucideIcon }[] = [
-  { id: "1", icon: LogIn },
-  { id: "2", icon: MegaphoneOff },
-  { id: "3", icon: LayoutDashboard },
-  { id: "4", icon: Store },
-  { id: "5", icon: Users },
-  { id: "6", icon: ShieldCheck },
-];
+const IDS = ["1", "2", "3", "4", "5", "6"] as const;
 
 export default function Faq() {
   const { t } = useI18n();
+  const [open, setOpen] = useState<string | null>("1");
+
   return (
-    <Reveal className="section" id="faq">
-      <div className="container grid-2-1">
-        <div>
-          <h2>{t("faq.title")}</h2>
-        </div>
-        <BouncyAccordion
-          className="w-full"
-          defaultValue="1"
-          items={FAQ_ITEMS.map(({ id, icon: Icon }) => ({
-            id,
-            title: t(`faq.q${id}`),
-            description: t(`faq.a${id}`),
-            icon: <Icon className="h-4 w-4" />,
-          }))}
+    <section className="section" id="faq">
+      <div className="container">
+        <SectionHead
+          eyebrow="FAQ"
+          title={t("faq.title")}
+          note="Six questions we get asked before every install."
         />
+
+        <div className="faq-list">
+          {IDS.map((id) => {
+            const isOpen = open === id;
+            return (
+              <div className="faq-item" key={id}>
+                <h3 style={{ margin: 0 }}>
+                  <button
+                    className="faq-q"
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-a-${id}`}
+                    onClick={() => setOpen(isOpen ? null : id)}
+                  >
+                    <span>{t(`faq.q${id}`)}</span>
+                    <span className="faq-sign" aria-hidden />
+                  </button>
+                </h3>
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      className="faq-a"
+                      id={`faq-a-${id}`}
+                      role="region"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.34, ease: easeOut }}
+                    >
+                      <p>{t(`faq.a${id}`)}</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </Reveal>
+    </section>
   );
 }

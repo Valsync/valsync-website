@@ -1,34 +1,45 @@
 "use client";
+import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { SOCIAL_STATS } from "@/lib/mock";
-import Reveal from "./Reveal";
+import SectionHead from "./hud/SectionHead";
 import CountUp from "./CountUp";
+import { fadeItem, staggerParent, viewportOnce } from "./hud/motion";
 
-const TONE: ("crimson" | "amber" | "green" | "sky" | undefined)[] = ["amber", "green", "sky", "crimson", "green"];
+// Every figure here is a zero or a small count, so the tint carries the
+// meaning: cyan for the things we don't do, gold for the things we ship.
+const TONE = ["var(--cyan)", "var(--cyan)", "var(--gold)", "var(--cyan)"];
 
 export default function StatsGrid() {
   const { t } = useI18n();
+
   return (
-    <Reveal className="section reveal" id="stats">
+    <section className="section" id="stats">
       <div className="container">
-        <div className="sec-head">
-          <div>
-            <p className="eyebrow"><span className="dot" /> {t("sp.eyebrow")}</p>
-            <h2 className="h2" style={{ marginTop: 12 }}>{t("sp.title")}</h2>
-          </div>
-          <p className="meta text-mute">{t("sp.lead")}</p>
-        </div>
-        <div className="stats-grid">
+        <SectionHead
+          eyebrow={t("sp.eyebrow")}
+          title={t("sp.title")}
+          note={t("sp.lead")}
+          tone="cyan"
+        />
+
+        <motion.div
+          className="stat-grid"
+          variants={staggerParent(0.09)}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+        >
           {SOCIAL_STATS.map((s, i) => (
-            <div className="stat-cell" key={i}>
-              <div className="k">{s.label}</div>
-              <div className={`v ${TONE[i] ?? ""}`}>
-                <CountUp to={s.value} decimals={s.decimals ?? 0} suffix={s.suffix} />
+            <motion.div className="stat-cell" key={s.label} variants={fadeItem}>
+              <div className="stat-value" style={{ color: TONE[i % TONE.length] }}>
+                <CountUp to={s.value} decimals={s.decimals ?? 0} prefix={s.prefix} suffix={s.suffix} />
               </div>
-            </div>
+              <div className="stat-label">{s.label}</div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </Reveal>
+    </section>
   );
 }

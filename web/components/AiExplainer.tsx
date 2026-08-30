@@ -21,7 +21,7 @@ export default function AiExplainer({ doc }: { doc: "privacy" | "terms" }) {
   const [toast, setToast] = useState("");
 
   useEffect(() => {
-    const legal = document.querySelector("main .legal");
+    const legal = document.querySelector("main .legal-article");
     const legalText = (legal as HTMLElement | null)?.innerText?.trim() ?? "";
     const pageUrl = location.href.split("#")[0];
     const docLabel = t(`legal.${doc}.title`);
@@ -55,9 +55,9 @@ export default function AiExplainer({ doc }: { doc: "privacy" | "terms" }) {
   return (
     <>
       <section className="ai-explain container" aria-label="AI explainer">
-        <h2 style={{ fontSize: "var(--fs-h3)", marginBottom: 8 }}>{t("legal.ai.title")}</h2>
-        <p className="lead" style={{ margin: 0 }}>{t("legal.ai.lead")}</p>
-        <p className="meta" style={{ marginTop: 12 }}>{t("legal.ai.note")}</p>
+        <h2 className="t-headline">{t("legal.ai.title")}</h2>
+        <p className="t-lead" style={{ marginTop: 10 }}>{t("legal.ai.lead")}</p>
+        <p className="t-mono" style={{ marginTop: 12 }}>{t("legal.ai.note")}</p>
         <div className="ai-row">
           {PROVIDERS.map((p) => (
             <a

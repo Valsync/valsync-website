@@ -47,3 +47,14 @@
 - GitHub Pages: `valsync.github.io/valsync-website`. Set `GITHUB_PAGES=true` so `web/next.config.ts` applies the `basePath`.
 - Netlify + Surge: publish the repo root (the static mirror, not `web/out/`). Netlify's `netlify.toml` also sets CORS headers for `app-ads.txt` and `robots.txt`.
 - The mirror is generated from `web/out/` by `npm run sync-mirror` — the rewrite makes it work at both the root domain and the `/valsync-website/` subpath. Build then sync; never copy `web/out/` to the root by hand.
+
+## Support replies
+- `support/<ticket-id>.json` files are read by the VALSYNC Android app, which polls
+  `https://valsync.surge.sh/support/` for the ticket ids it minted and shows the reply under
+  Settings → My reports. This is the whole reply channel — there is no backend.
+- Write one with `cd web && npm run reply -- <ticket-id> "<message>" [status]`, then deploy.
+  The ticket id comes from the `[brackets]` in the report email's subject.
+- `support/` is deliberately **not** in the `COPY` allowlist in `web/scripts/sync-mirror.mjs`,
+  so regenerating the mirror leaves replies alone. Keep it that way.
+- These files are public to anyone holding the (unguessable) ticket id — unlisted, not private.
+  No personal data; reply by email for anything sensitive. See `support/README.md`.

@@ -2,21 +2,19 @@
 import { useState, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
-import { Home, LayoutGrid, MonitorSmartphone, Clock, Tag, Shield, FileText } from "lucide-react";
+import { Clock, Home, LayoutGrid, MonitorSmartphone, Tag } from "lucide-react";
 
-// Dev serves the Next app at :3000 with real routes (/privacy); the static
-// export + root mirror are flat files at the same level, so pages link as
-// privacy.html.
 const dev = process.env.NODE_ENV === "development";
 
+// Five tabs, not seven: at 360px a seventh cell is 46px wide and every label
+// wraps to two lines. Privacy and Terms live in the footer, which is where
+// people go looking for them anyway.
 const tabs = [
-  { key: "home",     icon: Home,              href: "#top",          labelKey: "nav.mob_home" },
-  { key: "search",   icon: LayoutGrid,         href: "#leaderboards", labelKey: "nav.leaderboards" },
-  { key: "live",     icon: MonitorSmartphone,  href: "#live-match",   labelKey: "nav.livematch" },
-  { key: "updates",  icon: Clock,              href: "#updates",      labelKey: "nav.updates" },
-  { key: "pricing",  icon: Tag,                href: "#pricing",      labelKey: "nav.mob_pricing" },
-  { key: "privacy",  icon: Shield,             href: dev ? "/privacy" : "privacy.html", labelKey: "nav.privacy" },
-  { key: "terms",    icon: FileText,           href: dev ? "/terms" : "terms.html",     labelKey: "nav.terms" },
+  { key: "home",    icon: Home,              href: "#top",          labelKey: "nav.mob_home" },
+  { key: "app",     icon: MonitorSmartphone, href: "#app",          labelKey: "nav.app" },
+  { key: "search",  icon: LayoutGrid,        href: "#leaderboards", labelKey: "nav.leaderboards" },
+  { key: "updates", icon: Clock,             href: "#updates",      labelKey: "nav.updates" },
+  { key: "pricing", icon: Tag,               href: "#pricing",      labelKey: "nav.mob_pricing" },
 ] as const;
 
 export default function MobileBottomNav() {
