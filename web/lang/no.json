@@ -1,0 +1,493 @@
+{
+  "nav": {
+    "features": "Funksjoner",
+    "app": "App",
+    "updates": "Oppdateringer",
+    "privacy": "Personvern",
+    "terms": "Vilkår",
+    "download": "Last ned app",
+    "profile": "Profil",
+    "search": "Søk",
+    "leaderboards": "Ranglister",
+    "lineups": "Lineups",
+    "meta": "Meta",
+    "livematch": "Live-kamp",
+    "pricing": "Priser",
+    "search_cta": "Søk opp en spiller",
+    "mob_home": "Hjem",
+    "mob_web": "Web",
+    "mob_pricing": "Priser",
+    "mob_faq": "FAQ",
+    "get_app": "Hent appen"
+  },
+  "hero": {
+    "word1": "Spor",
+    "word2": "Analyser",
+    "word3": "Forbedre",
+    "word4": "Dominer",
+    "headline_pre": "Den ultimate",
+    "headline_post": "Valorant Intelligence-plattformen",
+    "sub1": "Analyser spillere.",
+    "sub2": "Spor prestasjoner.",
+    "sub3": "Oppdag lineups.",
+    "sub4": "Dominer hver kamp.",
+    "cta_primary": "Analyser spiller",
+    "cta_secondary": "Live-kamp"
+  },
+  "hud": {
+    "label": "Live-companion",
+    "noise": "Plattform",
+    "noise_val": "Android",
+    "tracking": "Data",
+    "tracking_val": "Riot API",
+    "sync": "Sync",
+    "sync_val": "Lokalt først",
+    "phone_label": "Hovedbase",
+    "phone_sub": "VALSYNC-hovedvisningen."
+  },
+  "features": {
+    "title": "Companion-appen som ikke konkurrerer med kampen.",
+    "store": {
+      "title": "Butikk uten fane-kaos",
+      "desc": "Følg Valorant-butikken, Night Market og skin-ønskelisten din i én rolig butikksjekk — bygget for sjekkene spillere faktisk gjentar."
+    },
+    "party": {
+      "title": "Lagstatus på et blikk",
+      "desc": "Se lagstatus, hvem som er pålogget, hvem som er i kamp, og hvilken rolle laget mangler før lobbyen blir bråkete."
+    },
+    "review": {
+      "title": "Gjennomgang uten stat-støy",
+      "desc": "Få Valorant-kampgjennomgang, karttendenser og samlingskontekst — uten å gjøre appen til et datalager."
+    }
+  },
+  "demo": {
+    "title": "Visningen følger måten spillere forbereder seg på.",
+    "lead": "Start med Valorant-butikksjekken, sjekk laget, gå gjennom forrige kamp — og lås så loadouten. VALSYNC holder disse løkkene tett samlet uten å gi deg enda en tracker å holde styr på.",
+    "signal1": "Butikksjekk",
+    "signal1_val": "skins",
+    "signal2": "Lag-sjekk",
+    "signal2_val": "party",
+    "signal3": "Rundegjennomgang",
+    "signal3_val": "matches",
+    "card_label": "Live-companion",
+    "card_title": "Fire sjekker før kampen — på én flate.",
+    "card_desc": "Hver modul har én jobb: Valorant-butikksjekk, lagstatus, kamper eller loadout. Grensesnittet holder seg rolig til noe endrer neste kø.",
+    "card_s1": "Butikk",
+    "card_s1_val": "ønskeliste",
+    "card_s2": "Party",
+    "card_s2_val": "stack",
+    "card_s3": "Kamper",
+    "card_s3_val": "gjennomgang"
+  },
+  "screens": {
+    "eyebrow": "Selve appen",
+    "title": "Seks skjermer. Étt språk.",
+    "lead": "Ingen mockups nedenfor — dette er de ekte flatene VALSYNC leverer. Samme skrå paneler, samme mono-visninger, samme ro.",
+    "note": "Android · v1.7.0 · mørkt taktisk tema",
+    "home": {
+      "name": "Hjem",
+      "desc": "Rang, nylig form og hva som har endret seg siden sist du køet — skjermen som svarer på «hvor står jeg?»"
+    },
+    "store": {
+      "name": "Butikk",
+      "desc": "Daily shop, Night Market og skin-ønskelisten din. Én flate i stedet for en nettleser full av faner."
+    },
+    "matches": {
+      "name": "Kamper",
+      "desc": "Rundesignaler først, sekundære stats etterpå. Kampgjennomgang som forblir lesbar."
+    },
+    "loadout": {
+      "name": "Loadout",
+      "desc": "Våpenkammeret: hvert våpen, hvert skin du eier, utstyrt med ett trykk."
+    },
+    "party": {
+      "name": "Party",
+      "desc": "Hvem som er pålogget, hvem som er i kamp, og hvilken rolle laget fortsatt mangler."
+    },
+    "social": {
+      "name": "Sosialt",
+      "desc": "Venner og meldinger via Riots egen infrastruktur. Ingenting lagres hos oss."
+    }
+  },
+  "privacy": {
+    "badge": "Personvernprofil",
+    "title": "Din Riot-økt forlater aldri enheten din.",
+    "lead": "VALSYNC kjører ingen egne servere. Innlogging lagres lokalt med Android Keystore-kryptering, og spilldata går direkte fra Riots API til telefonen din.",
+    "ads_title": "Lokalt først",
+    "ads_desc": "Riot-tokener krypteres på enheten din og forlater den aldri.",
+    "track_title": "Ingen servere",
+    "track_desc": "Spilldata går fra Riots API til telefonen din. Vi lagrer ingenting av det.",
+    "riot_title": "Riot-overlevering",
+    "riot_desc": "Språket rundt innlogging forblir tydelig og udramatisk.",
+    "surface_title": "Flate overflater",
+    "surface_desc": "Dybde kommer fra tone og kanter, aldri fra glow-effekter."
+  },
+  "comparison": {
+    "title": "Et renere alternativ til fane-kaos og tracker-støy.",
+    "lead": "VALSYNC er ikke enda et sted å bla i stats. Det er snarveien fra «hva har endret seg?» til «klar til kø.»",
+    "before": "Før",
+    "store": {
+      "title": "Butikksjekk",
+      "desc": "Stadig nettleser-refresh og banner-tunge sider gjør en rask sjekk til en distraksjon.",
+      "after": "Én ønskeliste-flate"
+    },
+    "party": {
+      "title": "Lagforberedelse",
+      "desc": "Chat-varsler sier hvem som svarte. VALSYNC sier om laget er klart.",
+      "after": "Lagstatus i sikte"
+    },
+    "matches": {
+      "title": "Kampgjennomgang",
+      "desc": "Nyttig kampkontekst forblir lesbar i stedet for å bli en vegg av sekundære stats.",
+      "after": "Rundesignaler først"
+    },
+    "priv": {
+      "title": "Personvern",
+      "desc": "Grensesnittet er rolig fordi produktet ikke er bygget for å kapre oppmerksomhet.",
+      "after": "Lokalt først som standard"
+    }
+  },
+  "faq": {
+    "title": "Bygget for spillere som vil ha signal, ikke show.",
+    "q1": "Trenger jeg en Riot-konto?",
+    "a1": "VALSYNC er bygget rundt Riot-pålogging, så kontospesifikke flater forblir hos spilleren som eier dem.",
+    "q2": "Hvilke plattformer finnes VALSYNC på?",
+    "a2": "Android via Google Play. En nettleserversjon er underveis — samme visninger, ingen installasjon.",
+    "q3": "Hva kan jeg sjekke i appen?",
+    "a3": "Forhåndsvisningen dekker VALSYNC-hovedløkken: Home, Store, Party, Matches, Loadout og Social.",
+    "q4": "Hvordan fungerer butikksjekkeren?",
+    "a4": "VALSYNC viser Valorant-butikken, Night Market og en skin-ønskeliste så du ser hva som er tilgjengelig med et blikk, uten å åpne flere nettleserfaner.",
+    "q5": "Kan jeg følge laget eller partyet mitt?",
+    "a5": "Ja. Party-modulen viser hvem som er pålogget, hvem som er i kamp, og hvilke roller laget mangler før lobbyen fylles opp.",
+    "q6": "Samler eller selger VALSYNC dataene mine?",
+    "a6": "Riot-innloggingen din blir på enheten, kryptert via Android Keystore. VALSYNC kjører ingen egne servere, så kamp- og butikkdata går direkte fra Riots API til telefonen din."
+  },
+  "pricing": {
+    "eyebrow": "Priser",
+    "title": "Kø-klare planer for hver agent.",
+    "lead": "Velg et nivå som matcher kampkvelden din. Avslutt når som helst.",
+    "toggle_label": "Faktureringsperiode",
+    "toggle_monthly": "Månedlig",
+    "toggle_yearly": "Årlig",
+    "badge_popular": "Mest populær",
+    "free_price": "Gratis",
+    "custom_price": "Tilpasset",
+    "per_month": "/mnd",
+    "monthly_billing": "Faktureres månedlig",
+    "yearly_billing": "Faktureres årlig",
+    "free_billing": "Ingen kort kreves",
+    "enterprise_billing": "La oss bygge sammen",
+    "starter": {
+      "name": "Starter",
+      "description": "For spillere som vil ha en rolig butikksjekk og lagoversikt.",
+      "cta": "Kom i gang",
+      "feature_1": "Daglig butikksjekk",
+      "feature_2": "Lagstatusvisning",
+      "feature_3": "Nylig kamphistorikk",
+      "feature_4": "Community release notes",
+      "feature_5": "E-poststøtte"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "For spillere som vil ha Night Market-varsler og dypere kampgjennomgang.",
+      "cta": "Start Pro-prøve",
+      "feature_1": "Alt i Starter",
+      "feature_2": "Night Market ønskeliste-varsler",
+      "feature_3": "Avansert kampgjennomgang",
+      "feature_4": "Ubegrenset skin-ønskeliste",
+      "feature_5": "Prioritert støtte"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "For lag og skapere som trenger verktøy for hele squaden.",
+      "cta": "Kontakt salg",
+      "feature_1": "Alt i Pro",
+      "feature_2": "Squad-administrasjon",
+      "feature_3": "Tilpassede integrasjoner",
+      "feature_4": "Dedikert account manager",
+      "feature_5": "SLA & oppetidsgarantier"
+    }
+  },
+  "cta": {
+    "badge": "VALSYNC venteliste",
+    "title": "Forbered raskere. Forbli privat. Kø roligere.",
+    "lead": "Bli med på listen for den personvernfokuserte Valorant-companionen bygget rundt butikksjekker, lagforberedelse og rolig kampgjennomgang.",
+    "button": "Bli med på ventelisten"
+  },
+  "countdown": {
+    "eyebrow": "Offentlig lansering",
+    "title": "VALSYNC lanseres globalt om",
+    "target": "I morgen kl. 12:00 Istanbul (UTC+3) - Google Play",
+    "days": "Dager",
+    "hours": "Timer",
+    "minutes": "Minutter",
+    "seconds": "Sekunder",
+    "tag": "Globalt i Play Store",
+    "widget_label": "Lansering om",
+    "widget_target": "Google Play - I morgen 12:00 Istanbul"
+  },
+  "releases": {
+    "badge": "Release-historikk",
+    "title": "Fra første build til siste signal.",
+    "lead": "Hver utgitte versjon av VALSYNC, fra early access til de nyeste kveldsvisningene. Direkte fra commit-loggen.",
+    "latest": "Siste"
+  },
+  "webapp": {
+    "badge": "Kommer på web",
+    "title": "Samme visning. Nå i en fane.",
+    "lead": "VALSYNC kommer til nettleseren. Samme visninger, samme taktiske companion — åpne den hvor som helst, ingen installasjon nødvendig.",
+    "cta": "Gi beskjed"
+  },
+  "footer": {
+    "left": "VALSYNC - taktisk companion for Valorant",
+    "right": "Taktisk prep til kampkvelden."
+  },
+  "legal": {
+    "ai": {
+      "title": "Vil ha det i klartekst?",
+      "lead": "Trykk på en AI-assistent — vi kopierer sideteksten og åpner chatten klar for deg.",
+      "note": "Hvis chatten ikke fanger opp prompten automatisk, lim den inn fra utklippstavlen.",
+      "toast": "Prompt kopiert — lim den inn i {provider}.",
+      "prompt": "Vennligst les VALSYNCs {doc} på {url} og forklar den i enkelt, tydelig språk. Fremhev de viktigste punktene en bruker bør kjenne til. Svar på brukerens språk."
+    },
+    "privacy": {
+      "title": "Personvernerklæring",
+      "updated": "Sist oppdatert: Juni 2026",
+      "h1": "1. Vårt løfte",
+      "h2": "2. Informasjon vi ikke samler inn",
+      "h3": "3. Riot Games-autentisering",
+      "h4": "4. Spilldata",
+      "h5": "5. Valgfrie funksjoner",
+      "h6": "6. Kildekode",
+      "h7": "7. Tredjepartstjenester",
+      "h8": "8. Barns personvern",
+      "h9": "9. Datasikkerhet",
+      "h10": "10. Dine rettigheter",
+      "h11": "11. Endringer i erklæringen",
+      "h12": "12. Kontakt",
+      "p1": "VALSYNC er bygget på ett prinsipp: dataene dine er dine. Vi samler dem ikke inn, vi vil ikke ha dem, og vi har designet appen slik at ingenting forlater enheten din med mindre du selv starter det (f.eks. å sende en chatmelding til en venn).",
+      "p2": "VALSYNC samler ikke inn, lagrer eller overfører noe av følgende:",
+      "ul1": {
+        "li1": "<strong>Personlige identifikatorer:</strong> Ingen e-postadresser, telefonnumre eller ekte navn samles inn.",
+        "li2": "<strong>Bruksanalyse:</strong> Ingen crash-rapporter, ingen øktsporing, ingen funksjonstelemetri. Vi aner ikke hvordan du bruker appen, og det vil vi heller ikke.",
+        "li3": "<strong>Enhetsinformasjon:</strong> Ingen enhetsfingeravtrykk eller maskinvare-IDer samles inn av VALSYNC.",
+        "li4": "<strong>Posisjonsdata:</strong> Ingen GPS, grov posisjon eller IP-basert geolokasjon."
+      },
+      "p3": "For å fungere krever VALSYNC at du logger inn med Riot Games-kontoen din. Riot-legitimasjonen din håndteres direkte via Riots offisielle OAuth-flow — vi ser aldri passordet ditt. De resulterende autentiseringstokenene lagres utelukkende på enheten din med Android Keystore-basert AES-256-kryptering. Disse tokenene forlater aldri enheten din og sendes aldri til VALSYNC-servere (vi har ingen).",
+      "p4": "Alle spilldata som vises i appen (stats, butikkinnhold, kamphistorikk, vennelister) hentes i sanntid fra Riot Games' offisielle API. Disse dataene går direkte fra Riots servere til enheten din. VALSYNC mellomlagrer, lagrer eller behandler ikke disse dataene på noen mellomserver.",
+      "p5": "Noen funksjoner krever datadeling du selv styrer:",
+      "ul2": {
+        "li1": "<strong>Party-chat og direktemeldinger:</strong> Når du sender en chatmelding, overføres den til mottakeren via Riots XMPP-infrastruktur. VALSYNC lagrer eller logger ikke disse meldingene.",
+        "li2": "<strong>Match Replay-telemetri:</strong> Hvis du aktiverer lokal telemetri-innsamling for kampgjennomgang, lagres replay-data i app-privat lokal lagring på enheten din. Den lastes aldri opp noe sted."
+      },
+      "p6": "VALSYNC er ikke åpen kildekode. Kildekoden er proprietær og distribueres ikke offentlig. Selv om koden ikke er tilgjengelig for innsyn, redegjør vi for datapraksisen vår i denne erklæringen.",
+      "p7": "VALSYNC integrerer følgende tjenester:",
+      "ul3": {
+        "li1": "<strong>Riot Games API:</strong> Kreves for kjernefunksjonalitet. Regulert av <a href=\"https://www.riotgames.com/en/privacy-notice\">Riot Games' Privacy Notice</a>."
+      },
+      "p8": "VALSYNC integrerer ingen analyse- eller crash-rapporterings-SDK, bruker ingen loggende CDN og behandler ingen betalinger.",
+      "p9": "VALSYNC er ikke rettet mot barn under 13 år. Siden vi ikke samler inn personopplysninger fra noen, har vi ingen mekanisme for bevisst å samle informasjon fra barn. Appens funksjonalitet krever en Riot Games-konto, som selv krever at Riots alderskrav overholdes.",
+      "p10": "Siden VALSYNC nesten ikke lagrer data (kun dine krypterte Riot-tokener lokalt), er angrepsflaten minimal. Riot-autentiseringstokenene i lokal lagring krypteres med Android Keystore. Appen kommuniserer utelukkende via HTTPS til Riots offisielle API-endepunkter.",
+      "p11": "Siden vi ikke samler inn personopplysninger, er det ingenting å få innsyn i, rette, slette eller eksportere. Hvis du avinstallerer appen, fjernes alle lokalt lagrede data (krypterte tokener, lagrede replays, mellomlagrede spilldata) sammen med den. Du kan når som helst tilbakekalle VALSYNCs tilgang til Riot-kontoen din via <a href=\"https://account.riotgames.com/\">Riots kontoadministrasjon</a>.",
+      "p12": "Hvis denne erklæringen noen gang endres, publiserer vi den oppdaterte versjonen her og noterer endringen i appen. Gitt vår zero-collection-arkitektur forventes endringer å være minimale og sjeldne.",
+      "p13": "For personvernspørsmål, send e-post til <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a>."
+    },
+    "terms": {
+      "title": "Vilkår for bruk",
+      "updated": "Sist oppdatert: Juni 2026",
+      "h1": "1. Aksept av vilkår",
+      "h2": "2. Beskrivelse av tjenesten",
+      "h3": "3. Forhold til Riot Games",
+      "h4": "4. Brukeransvar",
+      "h5": "5. Personvern og data",
+      "h6": "6. Immateriell eiendom",
+      "h7": "7. Ansvarsfraskrivelse",
+      "h8": "8. Ansvarsbegrensning",
+      "h9": "9. Endringer",
+      "h10": "10. Oppsigelse",
+      "h11": "11. Kontakt",
+      "p1": "Ved å laste ned, installere eller bruke VALSYNC-applikasjonen («appen») godtar du å være bundet av disse vilkårene for bruk. Hvis du ikke godtar vilkårene, skal du ikke bruke appen.",
+      "p2": "VALSYNC er en uavhengig, uoffisiell companion-app for Riot Games' Valorant. Appen gir tilgang til spillrelaterte data og sosiale funksjoner via Riot Games' offisielle API, i samsvar med Riots utviklerretningslinjer.",
+      "p3": "VALSYNC er ikke tilknyttet, godkjent av eller sponset av Riot Games, Inc. Valorant og alle relaterte varemerker, logoer og eiendeler er varemerker for Riot Games, Inc. Appen opererer under Riots API-vilkår og retningslinjer for community-utviklere.",
+      "p4": "Du er ansvarlig for:",
+      "ul1": {
+        "li1": "Å holde Riot Games-kontolegitimasjonen din konfidensiell",
+        "li2": "Å bruke appen i samsvar med Riot Games' tjenestevilkår",
+        "li3": "Å sikre at enheten din oppfyller minstekravene for å kjøre appen",
+        "li4": "Ikke å bruke appen til juks, utnyttelse eller aktiviteter som bryter med Riot Games' retningslinjer"
+      },
+      "p5": "VALSYNC samler ikke inn, lagrer eller overfører personopplysninger til tredjeparter. Dine Riot-autentiseringstokener lagres lokalt på enheten din med Android Keystore-basert AES-kryptering. For detaljer, se vår <a href=\"privacy.html\">Personvernerklæring</a>.",
+      "p6": "VALSYNC-applikasjonen, inkludert kildekode, navn og logo, er proprietær. VALSYNC er ikke åpen kildekode, og alle rettigheter forbeholdes VALSYNC-prosjektet. Kildekoden må ikke kopieres, endres, distribueres eller brukes til å lage avledede verk uten uttrykkelig skriftlig tillatelse. Alle Riot Games-varemerker, inkludert Valorant og tilknyttede eiendeler, forblir Riot Games, Inc.s eiendom.",
+      "p7": "Appen leveres «SOM DEN ER» og «SOM TILGJENGELIG» uten noen form for garanti. Vi garanterer ikke uavbrutt tilgang, feilfri drift eller nøyaktigheten til viste data. Spilldata avhenger av Riot Games' API-tilgjengelighet.",
+      "p8": "I den grad loven tillater skal VALSYNC og bidragsyterne ikke holdes ansvarlige for skader som oppstår ved din bruk eller manglende evne til å bruke appen, inkludert men ikke begrenset til tap av data, problemer med spillkonto eller indirekte skader.",
+      "p9": "Vi forbeholder oss retten til å oppdatere disse vilkårene når som helst. Vesentlige endringer kommuniseres via appen eller nettsiden vår. Fortsatt bruk etter endringer utgjør aksept.",
+      "p10": "Vi kan suspendere eller avslutte tilgangen din til appen når som helst ved brudd på disse vilkårene eller Riot Games' retningslinjer. Du kan når som helst slutte å bruke appen ved å avinstallere den fra enheten din.",
+      "p11": "For spørsmål om disse vilkårene, kontakt oss på <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a>."
+    }
+  },
+  "search": {
+    "placeholder": "Søk Riot ID...  Eksempel: TenZ#NA1",
+    "clear": "Tøm",
+    "region": "Region",
+    "loading": "Søker...",
+    "go": "Søk",
+    "error": "Spiller ikke funnet. Prøv et populært søk.",
+    "autocomplete": "Forslag",
+    "recent": "Nylige søk",
+    "popular": "Populære søk"
+  },
+  "fgrid": {
+    "title": "Alt du trenger for å vinne",
+    "lead": "Én plattform for hver vinkel av spillet ditt.",
+    "c1": {
+      "title": "Live-kampinnsikt",
+      "desc": "Kjenn fiendene dine før kampen starter.",
+      "tags": "Rang|Win Rate|K/D|Smurf-deteksjon"
+    },
+    "c2": {
+      "title": "Konkurranse-ranglister",
+      "desc": "Bla gjennom de beste spillerne i hver region — kommer i en fremtidig app-oppdatering.",
+      "tags": "Regional|Global|Sesong"
+    },
+    "c3": {
+      "title": "Prestasjonsanalyse",
+      "desc": "Følg klatringen din med presisjon.",
+      "tags": "Rangprogresjon|Agent-mestring|Stabilitet"
+    },
+    "c4": {
+      "title": "Agent-intelligens",
+      "desc": "Mestre metaen, agent for agent.",
+      "tags": "Win Rates|Counter-matchups|Meta-trender"
+    },
+    "c5": {
+      "title": "Kartintelligens",
+      "desc": "Les hvert site som en proff.",
+      "tags": "Heatmaps|Angrep vs forsvar|Retake-suksess"
+    },
+    "c6": {
+      "title": "Lineup-bibliotek",
+      "desc": "Finn det perfekte playet for ethvert kart.",
+      "tags": "Filtrer etter map|Video-forhåndsvisning|Steg for steg"
+    }
+  },
+  "lmp": {
+    "eyebrow": "Før-rundeblikk",
+    "title": "Kjenn fienden før runden starter.",
+    "lead": "Les lobbyen. Se trusselen. Legg planen.",
+    "win_label": "Forventet vinnersjanse",
+    "mvp": "MVP-prognose",
+    "threat": "Største trussel",
+    "avg_acs": "Snitt ACS",
+    "avg_hs": "Snitt HS%"
+  },
+  "lb": {
+    "eyebrow": "Toppen av stigen",
+    "title": "De 5 Radiant, rangert etter win rate.",
+    "lead": "Stigene er ikke live ennå — dette er en forhåndsvisning av visningen som kommer i en fremtidig app-oppdatering.",
+    "badge": "Kommer snart",
+    "sample": "Eksempeldata — ikke live rangering.",
+    "global": "Global",
+    "region": "Region",
+    "view": "Kommer snart"
+  },
+  "sp": {
+    "eyebrow": "I tall",
+    "title": "Kjører i spillets tempo.",
+    "lead": "Tung på lesing, sanntid, kun offentlige data."
+  },
+  "recent": {
+    "eyebrow": "Endringslogg",
+    "title": "Hva som ble levert, og når.",
+    "lead": "Hver release, én rad.",
+    "new": "NY",
+    "shipped": "Lansert",
+    "latest": "Siste"
+  },
+  "fcta": {
+    "eyebrow": "Siste ord",
+    "title": "Søk opp en spiller. Gå så videre.",
+    "lead": "Åpne VALSYNC, lim inn en Riot ID, så fylles visningen. Ingen registrering for første oppslag.",
+    "cta": "Søk din Riot ID",
+    "download": "Hent VALSYNC på Google Play"
+  },
+  "competitors": {
+    "eyebrow": "Hvordan VALSYNC sammenlignes",
+    "title": "Trackerne der ute. Hva som er galt med hver enkelt.",
+    "lead": "Offentlig kritikk, dokumentert. Ikke et angrep — en oversikt så du kan velge.",
+    "col_product": "Produkt",
+    "col_scope": "Omfang",
+    "col_issue": "Kjent problem",
+    "col_answer": "VALSYNCs svar",
+    "disclaimer": "Problemer oppsummert fra offentlige rapporter, community-tråder og hvert produkts egne redegjørelser. Der et produkt ikke faktisk konkurrerer med VALSYNC, sier raden det.",
+    "opgg": {
+      "name": "OP.GG",
+      "scope": "Personlig tracker · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Spillerinnsikt og kamphistorikk ligger bak OP.GG-abonnementet.",
+      "answer": "Ingen abonnementsmur på trackeren. Hvert oppslag gir full data, gratis, uten registrering."
+    },
+    "ugg": {
+      "name": "U.GG",
+      "scope": "Personlig tracker · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Klager på utvalgsstørrelse og dataferskhet har dukket opp offentlig (Riot-utviklere, community) — kampdata henger ofte etter lobbyen.",
+      "answer": "Live-visninger hentet ved søket, ikke cached — det du ser er oppdatert med lobbyen."
+    },
+    "blitz": {
+      "name": "Blitz.gg",
+      "scope": "In-game overlay · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Antivirus-varsler på overlay-injectoren, autoplay-med-lyd-rapporter og gjentatte spillerkrav om å fjerne det fra kamper.",
+      "answer": "Ingen overlay-injector. Ingen in-game hook. Web- og companion-app, ingen AV-varsler, ingen lyd-popups."
+    },
+    "mobalytics": {
+      "name": "Mobalytics",
+      "scope": "Personlig tracker + AI-coach · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Tierlister og rangeringer bygger på ekspertpaneler, ikke rene data. Produktet presser en betalt AI-coach-trakt oppå trackeren.",
+      "answer": "Dine egne data driver hver visning. Ingen betalt AI-coach-trakt — appen forblir visningen."
+    },
+    "porofessor": {
+      "name": "Porofessor.gg",
+      "scope": "In-game overlay · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Et nylig eierskifte får communityet til å spørre hvem som driver dataene nå. Ikke et Valorant-verktøy.",
+      "answer": "Annet spill — men vil du ha en tracker som ikke er bak betalingsmur og ikke skifter eier, er det det vi leverer."
+    },
+    "vlr": {
+      "name": "VLR.gg",
+      "scope": "Pro-scene dekning · Valorant",
+      "scope_kind": "esports",
+      "issue": "Community-fansite. Power-rangeringer er redaktørvalg, ikke data; rekkefølgen bestrides jevnlig.",
+      "answer": "Rangrekkefølge fra kampdata, ikke redaktørvalg. Samme data hentet ved søket, ikke kuratert."
+    },
+    "thespike": {
+      "name": "THESPIKE.GG",
+      "scope": "Pro-scene dekning · Valorant",
+      "scope_kind": "esports",
+      "issue": "Kun esport-data. Den proprietære rating-metrikken diskuteres. Ingen personlig stat-oppslag for rangerte spillere.",
+      "answer": "Personlige og pro-oppslag på ett sted. Samme visningsspråk, ikke et separat ratingsystem per målgruppe."
+    },
+    "leetify": {
+      "name": "Leetify",
+      "scope": "Personlig tracker · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "Kun CS2. Ingen Valorant-støtte. Betalingsmur på kamp-importer og analyse.",
+      "answer": "Annet spill. Hvis VALSYNC noen gang lanserte CS2, ville det være samme linje: ingen betalingsmur, ingen importgebyrer."
+    },
+    "faceit": {
+      "name": "FACEIT",
+      "scope": "Matchmaking + anti-cheat · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "Kun CS2. Et betalt matchmaking-lag, ikke en personlig stat-tracker — dekker ikke Valorant.",
+      "answer": "Annet spill, annet produkt. Kun tracker, ingen matchmaking-lock-in."
+    },
+    "log": {
+      "name": "League of Graphs",
+      "scope": "Personlig tracker · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Kun League of Legends. Ingen Valorant-data. Feil spill.",
+      "answer": "Annet spill. VALSYNCs visningsspråk er bygget rundt Valorant — agenter, RR, ACS — ikke LoL."
+    }
+  }
+}

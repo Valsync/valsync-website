@@ -1,0 +1,493 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "app": "App",
+    "updates": "Mises à jour",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "download": "Télécharger l'app",
+    "profile": "Profil",
+    "search": "Recherche",
+    "leaderboards": "Classements",
+    "lineups": "Lineups",
+    "meta": "Méta",
+    "livematch": "Match en direct",
+    "pricing": "Tarifs",
+    "search_cta": "Rechercher un joueur",
+    "mob_home": "Accueil",
+    "mob_web": "Web",
+    "mob_pricing": "Tarifs",
+    "mob_faq": "FAQ",
+    "get_app": "Obtenir l'app"
+  },
+  "hero": {
+    "word1": "Suivre",
+    "word2": "Analyser",
+    "word3": "Progresser",
+    "word4": "Dominer",
+    "headline_pre": "L'ultime",
+    "headline_post": "Plateforme d'intelligence Valorant",
+    "sub1": "Analysez les joueurs.",
+    "sub2": "Suivez vos performances.",
+    "sub3": "Découvrez des lineups.",
+    "sub4": "Dominez chaque match.",
+    "cta_primary": "Analyser un joueur",
+    "cta_secondary": "Match en direct"
+  },
+  "hud": {
+    "label": "Compagnon en direct",
+    "noise": "Plateforme",
+    "noise_val": "Android",
+    "tracking": "Données",
+    "tracking_val": "API Riot",
+    "sync": "Sync",
+    "sync_val": "Local-first",
+    "phone_label": "Base de contrôle",
+    "phone_sub": "L'affichage principal de VALSYNC."
+  },
+  "features": {
+    "title": "L'application compagnon arrête de parasiter votre partie.",
+    "store": {
+      "title": "Boutique sans chaos d'onglets",
+      "desc": "Suivez la boutique Valorant, le Night Market et votre liste de souhaits de skins depuis un vérificateur épuré, conçu pour les gestes répétés des joueurs."
+    },
+    "party": {
+      "title": "État du groupe en un coup d'œil",
+      "desc": "Voyez le statut du groupe, qui est en ligne, en pleine partie, et quel rôle il manque au stack avant que le salon ne devienne bruyant."
+    },
+    "review": {
+      "title": "Analyse sans déluge de stats",
+      "desc": "Affichez l'analyse de match Valorant, les tendances de cartes et le contexte de votre collection sans transformer l'application en entrepôt de données."
+    }
+  },
+  "demo": {
+    "title": "L'affichage s'adapte à la préparation des joueurs.",
+    "lead": "Commencez par vérifier la boutique Valorant, contrôlez le stack, analysez le dernier match, puis verrouillez votre inventaire. VALSYNC regroupe ces étapes sans forcer les joueurs à gérer un énième outil de suivi.",
+    "signal1": "Vérif boutique",
+    "signal1_val": "skins",
+    "signal2": "Vérif groupe",
+    "signal2_val": "groupe",
+    "signal3": "Analyse de manche",
+    "signal3_val": "matchs",
+    "card_label": "Compagnon en direct",
+    "card_title": "Quatre vérifications d'avant-match sur un seul écran.",
+    "card_desc": "Chaque module a une tâche précise : boutique Valorant, statut du groupe, matchs ou inventaire. L'interface reste calme jusqu'à ce que la prochaine file d'attente ne change la donne.",
+    "card_s1": "Boutique",
+    "card_s1_val": "liste de souhaits",
+    "card_s2": "Groupe",
+    "card_s2_val": "stack",
+    "card_s3": "Matchs",
+    "card_s3_val": "analyse"
+  },
+  "screens": {
+    "eyebrow": "L'application en action",
+    "title": "Six écrans. Un seul langage.",
+    "lead": "Aucun rendu fictif ci-dessous — voici les véritables écrans de VALSYNC. Mêmes panneaux biseautés, mêmes affichages mono, même calme.",
+    "note": "Android · v1.7.0 · thème tactique sombre",
+    "home": {
+      "name": "Accueil",
+      "desc": "Rang, forme récente et ce qui a changé depuis votre dernière file d'attente — l'écran unique pour savoir où vous en êtes."
+    },
+    "store": {
+      "name": "Boutique",
+      "desc": "Boutique quotidienne, Night Market et liste de souhaits de skins. Une seule interface plutôt qu'un navigateur saturé d'onglets."
+    },
+    "matches": {
+      "name": "Matchs",
+      "desc": "Les signaux de manche d'abord, les statistiques secondaires ensuite. Une analyse de match qui reste lisible."
+    },
+    "loadout": {
+      "name": "Inventaire",
+      "desc": "L'arsenal : chaque arme, chaque skin possédé, équipé en un clin d'œil."
+    },
+    "party": {
+      "name": "Groupe",
+      "desc": "Qui est en ligne, qui est en pleine partie et quel rôle il manque encore au stack."
+    },
+    "social": {
+      "name": "Social",
+      "desc": "Amis et messages acheminés via l'infrastructure officielle de Riot. Rien n'est stocké chez nous."
+    }
+  },
+  "privacy": {
+    "badge": "Politique de confidentialité",
+    "title": "Votre session Riot ne quitte jamais votre appareil.",
+    "lead": "VALSYNC ne fait tourner aucun serveur. L'authentification est stockée localement avec le chiffrement Android Keystore, et les données de jeu transitent directement de l'API Riot à votre téléphone.",
+    "ads_title": "Local-first",
+    "ads_desc": "Les jetons Riot sont chiffrés sur votre appareil et ne le quittent jamais.",
+    "track_title": "Sans serveur",
+    "track_desc": "Les données de jeu passent de l'API Riot à votre téléphone. Nous n'en stockons aucune.",
+    "riot_title": "Authentification Riot",
+    "riot_desc": "Le processus de connexion reste explicite, direct et sans détour.",
+    "surface_title": "Interfaces épurées",
+    "surface_desc": "Le relief vient du ton et des bordures, jamais de surcouches d'effets brillants."
+  },
+  "comparison": {
+    "title": "Une alternative épurée à l'accumulation d'onglets et aux trackers bruyants.",
+    "lead": "VALSYNC n'est pas un endroit de plus pour parcourir des statistiques. C'est le chemin le plus court entre \"qu'est-ce qui a changé ?\" et \"prêt à lancer\".",
+    "before": "Avant",
+    "store": {
+      "title": "Vérif boutique",
+      "desc": "Les rafraîchissements de page et les bannières publicitaires transforment un contrôle rapide en distraction.",
+      "after": "Une liste de souhaits centralisée"
+    },
+    "party": {
+      "title": "Préparation du groupe",
+      "desc": "Les notifications de chat vous disent qui a répondu. VALSYNC vous dit si le stack est prêt.",
+      "after": "État de l'escouade visible"
+    },
+    "matches": {
+      "title": "Analyse de match",
+      "desc": "Le contexte utile du match reste lisible au lieu de devenir un mur de statistiques secondaires.",
+      "after": "Signaux de manche d'abord"
+    },
+    "priv": {
+      "title": "Confidentialité",
+      "desc": "L'interface est calme parce que le produit n'est pas conçu pour capturer votre attention.",
+      "after": "Local-first par défaut"
+    }
+  },
+  "faq": {
+    "title": "Conçu pour les joueurs qui veulent des signaux clairs, pas du spectacle.",
+    "q1": "Ai-je besoin d'un compte Riot ?",
+    "a1": "VALSYNC repose sur l'authentification officielle Riot, de sorte que les écrans liés à votre compte restent réservés au joueur qui le possède.",
+    "q2": "Sur quelles plateformes VALSYNC est-il disponible ?",
+    "a2": "Android, via Google Play. Une version pour navigateur est en préparation — mêmes affichages, sans installation.",
+    "q3": "Que puis-je vérifier depuis l'application ?",
+    "a3": "La préversion couvre la boucle principale de VALSYNC : Accueil, Boutique, Groupe, Matchs, Inventaire et Social.",
+    "q4": "Comment fonctionne le vérificateur de boutique ?",
+    "a4": "VALSYNC affiche la boutique Valorant, le Night Market et une liste de souhaits de skins pour vous permettre de voir ce qui est disponible en un coup d'œil, sans ouvrir de multiples onglets.",
+    "q5": "Puis-je suivre mon escouade ou mon groupe ?",
+    "a5": "Oui. Le module de groupe indique qui est en ligne, qui est en pleine partie et quels rôles il manque au stack avant que le salon ne se remplisse.",
+    "q6": "VALSYNC collecte-t-il ou vend-il mes données ?",
+    "a6": "Votre connexion Riot reste sur votre appareil, chiffrée par Android Keystore. VALSYNC ne gère aucun serveur, ainsi les données de match et de boutique transitent de l'API Riot directement vers votre téléphone."
+  },
+  "pricing": {
+    "eyebrow": "Tarifs",
+    "title": "Des abonnements prêts pour la file d'attente, pour chaque agent.",
+    "lead": "Choisissez le niveau qui correspond à votre rythme de match. Annulez à tout moment.",
+    "toggle_label": "Période de facturation",
+    "toggle_monthly": "Mensuel",
+    "toggle_yearly": "Annuel",
+    "badge_popular": "Le plus populaire",
+    "free_price": "Gratuit",
+    "custom_price": "Sur mesure",
+    "per_month": "/mois",
+    "monthly_billing": "Facturé mensuellement",
+    "yearly_billing": "Facturé annuellement",
+    "free_billing": "Aucune carte bancaire requise",
+    "enterprise_billing": "Bâtissons ensemble",
+    "starter": {
+      "name": "Starter",
+      "description": "Pour les joueurs qui veulent un vérificateur de boutique épuré et un aperçu du groupe.",
+      "cta": "Commencer",
+      "feature_1": "Vérificateur de boutique quotidien",
+      "feature_2": "Affichage de l'état du groupe",
+      "feature_3": "Historique des matchs récents",
+      "feature_4": "Notes de mise à jour communautaires",
+      "feature_5": "Support par e-mail"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Pour les joueurs qui veulent des alertes Night Market et des analyses de match plus poussées.",
+      "cta": "Essayer Pro gratuitement",
+      "feature_1": "Tout ce qui est dans Starter",
+      "feature_2": "Alertes de liste de souhaits Night Market",
+      "feature_3": "Analyse de match avancée",
+      "feature_4": "Liste de souhaits de skins illimitée",
+      "feature_5": "Support prioritaire"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Pour les équipes et créateurs ayant besoin d'outils à l'échelle de l'escouade.",
+      "cta": "Contacter le service commercial",
+      "feature_1": "Tout ce qui est dans Pro",
+      "feature_2": "Gestion d'escouade",
+      "feature_3": "Intégrations personnalisées",
+      "feature_4": "Gestionnaire de compte dédié",
+      "feature_5": "Garanties de disponibilité (SLA)"
+    }
+  },
+  "cta": {
+    "badge": "Liste d'attente VALSYNC",
+    "title": "Préparez-vous plus vite. Restez discret. Lancez sereinement.",
+    "lead": "Rejoignez la liste d'attente pour l'application compagnon Valorant axée sur le respect de la vie privée, conçue pour surveiller la boutique, préparer le groupe et analyser les matchs dans le calme.",
+    "button": "Rejoindre la liste d'attente"
+  },
+  "countdown": {
+    "eyebrow": "Lancement public",
+    "title": "VALSYNC arrive dans le monde entier dans",
+    "target": "Demain à 12:00 PM Istanbul (UTC+3) - Google Play",
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes",
+    "tag": "Disponible mondialement sur le Play Store",
+    "widget_label": "Lancement dans",
+    "widget_target": "Google Play - Demain 12:00 Istanbul"
+  },
+  "releases": {
+    "badge": "Historique des versions",
+    "title": "De la première version au tout dernier signal.",
+    "lead": "Chaque version publiée de VALSYNC, du lancement en accès anticipé aux nouveaux affichages de match. Directement extrait du journal des commits.",
+    "latest": "Dernière"
+  },
+  "webapp": {
+    "badge": "Bientôt sur le web",
+    "title": "Même affichage. Désormais dans un onglet.",
+    "lead": "VALSYNC arrive sur navigateur. Même affichage, même compagnon tactique — ouvrez-le partout, sans installation.",
+    "cta": "M'avertir"
+  },
+  "footer": {
+    "left": "VALSYNC - compagnon tactique pour Valorant",
+    "right": "Préparation tactique pour les matchs."
+  },
+  "legal": {
+    "ai": {
+      "title": "Vous voulez cela en langage simple ?",
+      "lead": "Sélectionnez n'importe quel assistant IA — nous copierons le texte de la page et ouvrirons le chat pour vous.",
+      "note": "Si le chat ne récupère pas automatiquement le message, collez-le depuis votre presse-papiers.",
+      "toast": "Prompt copié — collez-le dans {provider}.",
+      "prompt": "Veuillez lire le document {doc} de VALSYNC disponible à l'adresse {url} et l'expliquer en langage simple et clair. Mettez en évidence les points les plus importants qu'un utilisateur devrait connaître. Répondez dans la langue de l'utilisateur."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : juin 2026",
+      "h1": "1. Notre engagement",
+      "h2": "2. Informations que nous ne collectons pas",
+      "h3": "3. Authentification Riot Games",
+      "h4": "4. Données de jeu",
+      "h5": "5. Fonctionnalités facultatives",
+      "h6": "6. Code source",
+      "h7": "7. Services tiers",
+      "h8": "8. Confidentialité des enfants",
+      "h9": "9. Sécurité des données",
+      "h10": "10. Vos droits",
+      "h11": "11. Modifications de la politique",
+      "h12": "12. Contact",
+      "p1": "VALSYNC repose sur un principe unique : vos données vous appartiennent. Nous ne les collectons pas, nous n'en voulons pas, et nous avons conçu l'App pour que rien ne quitte votre appareil à moins que vous ne l'initiiez explicitement (par exemple, envoyer un message de chat à un ami).",
+      "p2": "VALSYNC ne collecte, ne stocke ni ne transmet aucun des éléments suivants :",
+      "ul1": {
+        "li1": "<strong>Identifiants personnels :</strong> Aucune adresse e-mail, numéro de téléphone ou nom réel n'est collecté.",
+        "li2": "<strong>Analyses d'utilisation :</strong> Aucun rapport de plantage, aucun suivi de session, aucune télémétrie d'utilisation des fonctionnalités. Nous n'avons aucune idée de la façon dont vous utilisez l'App, et nous ne voulons pas le savoir.",
+        "li3": "<strong>Informations sur l'appareil :</strong> Aucune empreinte d'appareil ni identifiant matériel n'est collecté par VALSYNC.",
+        "li4": "<strong>Données de localisation :</strong> Aucun GPS, aucune localisation approximative ni géolocalisation basée sur l'IP."
+      },
+      "p3": "Pour fonctionner, VALSYNC nécessite que vous vous connectiez avec votre compte Riot Games. Vos identifiants Riot sont gérés directement par le flux OAuth officiel de Riot — nous ne voyons jamais votre mot de passe. Les jetons d'authentification qui en résultent sont stockés exclusivement sur votre appareil à l'aide d'un chiffrement AES-256 basé sur Android Keystore. Ces jetons ne quittent jamais votre appareil et ne sont jamais transmis aux serveurs de VALSYNC (nous n'en avons aucun).",
+      "p4": "Toutes les données de jeu affichées dans l'App (statistiques, contenu de la boutique, historique des matchs, liste d'amis) sont récupérées en temps réel depuis l'API officielle de Riot Games. Ces données passent directement des serveurs de Riot à votre appareil. VALSYNC ne met pas en cache, ne stocke ni ne traite ces données sur un quelconque serveur intermédiaire.",
+      "p5": "Certaines fonctionnalités nécessitent un partage de données que vous contrôlez explicitement :",
+      "ul2": {
+        "li1": "<strong>Chat de groupe & Messages directs :</strong> Lorsque vous envoyez un message de chat, il est transmis au destinataire via l'infrastructure XMPP de Riot. VALSYNC ne stocke ni n'enregistre ces messages.",
+        "li2": "<strong>Télémétrie des replays de match :</strong> Si vous choisissez d'activer la capture de télémétrie locale pour l'analyse des matchs, les données de replay sont stockées dans l'espace de stockage local privé de l'application sur votre appareil. Elles ne sont jamais téléversées nulle part."
+      },
+      "p6": "VALSYNC n'est pas open source. Son code source est propriétaire et n'est pas distribué publiquement. Bien que le code ne soit pas disponible pour inspection, nous divulguons nos pratiques en matière de données dans cette politique.",
+      "p7": "VALSYNC s'intègre aux services suivants :",
+      "ul3": {
+        "li1": "<strong>API Riot Games :</strong> Requise pour les fonctionnalités de base. Régie par la <a href=\"https://www.riotgames.com/en/privacy-notice\">Riot Games' Privacy Notice</a>."
+      },
+      "p8": "VALSYNC n'intègre aucun SDK d'analyse ou de rapport de plantage, n'utilise aucun CDN de journalisation et ne traite aucun paiement.",
+      "p9": "VALSYNC ne s'adresse pas aux enfants de moins de 13 ans. Comme nous ne collectons aucune donnée personnelle de qui que ce soit, nous n'avons aucun mécanisme pour collecter sciemment des informations sur les enfants. Les fonctionnalités de l'App nécessitent un compte Riot Games, qui exige lui-même le respect des limites d'âge de Riot.",
+      "p10": "Puisque VALSYNC ne stocke presque aucune donnée (uniquement vos jetons Riot chiffrés localement), la surface d'attaque est minimale. Les jetons d'authentification Riot stockés localement sont chiffrés à l'aide d'Android Keystore. L'App communique exclusivement via HTTPS avec les points de terminaison officiels de l'API de Riot.",
+      "p11": "Puisque nous ne collectons aucune donnée personnelle, il n'y a rien à consulter, corriger, supprimer ou exporter. Si vous désinstallez l'App, toutes les données stockées localement (jetons chiffrés, replays sauvegardés, données de jeu en cache) sont supprimées avec elle. Vous pouvez révoquer l'accès de VALSYNC à votre compte Riot à tout moment via la <a href=\"https://account.riotgames.com/\">gestion de compte Riot</a>.",
+      "p12": "Si cette politique venait à changer, nous publierions la version mise à jour ici et mentionnerions le changement dans l'App. Compte tenu de notre architecture sans collecte de données, les modifications devraient être minimales et rares.",
+      "p13": "Pour toute question relative à la confidentialité, écrivez à <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a>."
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "updated": "Dernière mise à jour : juin 2026",
+      "h1": "1. Acceptation des conditions",
+      "h2": "2. Description du service",
+      "h3": "3. Relation avec Riot Games",
+      "h4": "4. Responsabilités de l'utilisateur",
+      "h5": "5. Confidentialité & Données",
+      "h6": "6. Propriété intellectuelle",
+      "h7": "7. Exclusion de garanties",
+      "h8": "8. Limitation de responsabilité",
+      "h9": "9. Modifications",
+      "h10": "10. Résiliation",
+      "h11": "11. Contact",
+      "p1": "En téléchargeant, installant ou utilisant l'application VALSYNC (« l'App »), vous acceptez d'être lié par ces Conditions d'utilisation. Si vous n'acceptez pas ces conditions, n'utilisez pas l'App.",
+      "p2": "VALSYNC est une application compagnon indépendante et non officielle pour Valorant de Riot Games. L'App fournit un accès aux données liées au jeu et à des fonctionnalités sociales via l'API officielle de Riot Games, conformément aux politiques de Riot pour les développeurs.",
+      "p3": "VALSYNC n'est pas affilié à, approuvé par ou sponsorisé par Riot Games, Inc. Valorant et toutes les marques, logos et ressources associés sont des marques commerciales de Riot Games, Inc. L'App fonctionne selon les conditions de l'API de Riot et les directives de la communauté des développeurs.",
+      "p4": "Vous êtes responsable de :",
+      "ul1": {
+        "li1": "Préserver la confidentialité des identifiants de votre compte Riot Games",
+        "li2": "Utiliser l'App conformément aux Conditions d'utilisation de Riot Games",
+        "li3": "Vous assurer que votre appareil répond à la configuration minimale requise pour exécuter l'App",
+        "li4": "Ne pas utiliser l'App pour tricher, exploiter des failles ou toute activité enfreignant les politiques de Riot Games"
+      },
+      "p5": "VALSYNC ne collecte, ne stocke ni ne transmet de données personnelles à des tiers. Vos jetons d'authentification Riot sont stockés localement sur votre appareil à l'aide d'un chiffrement AES basé sur Android Keystore. Pour plus de détails, consultez notre <a href=\"privacy.html\">Politique de confidentialité</a>.",
+      "p6": "L'application VALSYNC, y compris son code source, son nom et son logo, est propriétaire. VALSYNC n'est pas open source et tous les droits sont réservés par le projet VALSYNC. Le code source ne peut être copié, modified, distribué ou utilisé pour créer des œuvres dérivées sans autorisation écrite expresse. Toutes les marques déposées de Riot Games, y compris Valorant et les ressources associées, restent la propriété de Riot Games, Inc.",
+      "p7": "L'App est fournie « EN L'ÉTAT » et « SELON DISPONIBILITÉ », sans garantie d'aucune sorte. Nous ne garantissons pas un accès ininterrompu, un fonctionnement sans erreur ni l'exactitude des données affichées. Les données de jeu dépendent de la disponibilité de l'API de Riot Games.",
+      "p8": "Dans la mesure maximale permise par la loi, VALSYNC et ses contributeurs ne sauraient être tenus responsables des dommages résultant de votre utilisation ou de votre incapacité à utiliser l'App, y compris mais sans s'y limiter, la perte de données, les problèmes de compte de jeu ou les dommages indirects.",
+      "p9": "We reserve the right to update these Terms at any time. Material changes will be communicated through the App or our website. Continued use after changes constitutes acceptance.",
+      "p10": "We may suspend or terminate your access to the App at any time for violations of these Terms or Riot Games' policies. You may stop using the App at any time by uninstalling it from your device.",
+      "p11": "Pour toute question concernant ces Conditions, contactez-nous à <a href=\"mailto:abdullaheltiby@tutamail.com\">abdullaheltiby@tutamail.com</a>."
+    }
+  },
+  "search": {
+    "placeholder": "Rechercher un Riot ID... Exemple : TenZ#NA1",
+    "clear": "Effacer",
+    "region": "Région",
+    "loading": "Recherche...",
+    "go": "Rechercher",
+    "error": "Joueur non trouvé. Essayez une recherche populaire.",
+    "autocomplete": "Suggestions",
+    "recent": "Recherches récentes",
+    "popular": "Recherches populaires"
+  },
+  "fgrid": {
+    "title": "Tout ce dont vous avez besoin pour gagner",
+    "lead": "Une seule plateforme pour chaque aspect de votre jeu.",
+    "c1": {
+      "title": "Aperçus du match en direct",
+      "desc": "Découvrez vos ennemis avant le début de la partie.",
+      "tags": "Rang|Win Rate|K/D|Détection de smurf"
+    },
+    "c2": {
+      "title": "Classements compétitifs",
+      "desc": "Parcourez les meilleurs joueurs de chaque région — bientôt dans une prochaine mise à jour.",
+      "tags": "Régional|Global|Saison"
+    },
+    "c3": {
+      "title": "Analyses de performance",
+      "desc": "Suivez votre progression avec précision.",
+      "tags": "Progression|Maîtrise d'agent|Régularité"
+    },
+    "c4": {
+      "title": "Intelligence des agents",
+      "desc": "Maîtrisez la méta, agent par agent.",
+      "tags": "Win Rates|Counter-Matchups|Tendances méta"
+    },
+    "c5": {
+      "title": "Intelligence des cartes",
+      "desc": "Lisez chaque site comme un pro.",
+      "tags": "Heatmaps|Attaque vs Défense|Succès de retake"
+    },
+    "c6": {
+      "title": "Bibliothèque de lineups",
+      "desc": "Trouvez le coup parfait pour chaque carte.",
+      "tags": "Filtrer par map|Aperçus vidéo|Pas à pas"
+    }
+  },
+  "lmp": {
+    "eyebrow": "Lecture d'avant-manche",
+    "title": "Connaissez l'ennemi avant le début de la manche.",
+    "lead": "Analysez le salon. Repérez la menace. Décidez de votre plan.",
+    "win_label": "Chances de victoire estimées",
+    "mvp": "Prédiction du MVP",
+    "threat": "Plus grande menace",
+    "avg_acs": "ACS moyen",
+    "avg_hs": "Avg HS%"
+  },
+  "lb": {
+    "eyebrow": "Sommet du classement",
+    "title": "Le Top 5 Radiant, classé par taux de victoire.",
+    "lead": "Les classements ne sont pas encore en ligne — ceci est un aperçu de la vue qui sera déployée dans une future mise à jour.",
+    "badge": "Bientôt disponible",
+    "sample": "Exemple de données — pas de classement réel.",
+    "global": "Global",
+    "region": "Région",
+    "view": "Bientôt disponible"
+  },
+  "sp": {
+    "eyebrow": "En chiffres",
+    "title": "Opère à la vitesse du jeu.",
+    "lead": "Lecture intensive, temps réel, données publiques uniquement."
+  },
+  "recent": {
+    "eyebrow": "Journal des modifications",
+    "title": "Ce qui a été livré, et quand.",
+    "lead": "Chaque version, une ligne.",
+    "new": "NOUVEAU",
+    "shipped": "Livré",
+    "latest": "Dernière"
+  },
+  "fcta": {
+    "eyebrow": "Le mot de la fin",
+    "title": "Recherchez un joueur. Puis passez au suivant.",
+    "lead": "Ouvrez VALSYNC, collez un Riot ID et l'affichage se remplit. Pas d'inscription requise pour votre première recherche.",
+    "cta": "Rechercher votre Riot ID",
+    "download": "Obtenir VALSYNC sur Google Play"
+  },
+  "competitors": {
+    "eyebrow": "Comment VALSYNC se positionne",
+    "title": "Les outils de suivi du marché. Ce qui cloche avec chacun.",
+    "lead": "Critiques publiques documentées. Pas un règlement de comptes — un comparatif pour vous aider à choisir.",
+    "col_product": "Produit",
+    "col_scope": "Portée",
+    "col_issue": "Problème connu",
+    "col_answer": "La réponse de VALSYNC",
+    "disclaimer": "Problèmes synthétisés à partir de rapports publics, de discussions de la communauté et des déclarations de chaque produit. Lorsqu'un produit ne concurrence pas directement VALSYNC, la ligne l'indique.",
+    "opgg": {
+      "name": "OP.GG",
+      "scope": "Tracker personnel · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Les statistiques des joueurs et l'historique des matchs sont réservés aux abonnés OP.GG.",
+      "answer": "Pas d'abonnement requis. Chaque recherche renvoie des données complètes, gratuitement, sans inscription."
+    },
+    "ugg": {
+      "name": "U.GG",
+      "scope": "Tracker personnel · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Des plaintes concernant la taille de l'échantillon et la fraîcheur des données ont été émises publiquement (développeurs Riot, communauté) ; les données de match accusent souvent un retard sur le salon.",
+      "answer": "Affichages en direct récupérés à la recherche, pas de mise en cache — ce que vous voyez est synchrone avec le salon."
+    },
+    "blitz": {
+      "name": "Blitz.gg",
+      "scope": "Overlay en jeu · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Alertes antivirus sur l'injecteur d'overlay, signalements de lecture automatique avec audio et demandes répétées des joueurs pour le retirer des matchs.",
+      "answer": "Pas d'injecteur d'overlay. Pas de crochet en jeu. Application web et compagnon, pas d'alertes AV, pas de fenêtres audio intempestives."
+    },
+    "mobalytics": {
+      "name": "Mobalytics",
+      "scope": "Tracker personnel + coach IA · Valorant",
+      "scope_kind": "tracker",
+      "issue": "Les tier lists et les classements reposent sur des panels d'experts, pas sur des données pures. Le produit pousse vers un entonnoir de vente de coach IA payant.",
+      "answer": "Vos propres données guident chaque analyse. Pas de tunnel de vente de coach IA — l'application reste uniquement votre outil de lecture."
+    },
+    "porofessor": {
+      "name": "Porofessor.gg",
+      "scope": "Overlay en jeu · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "Un récent changement de propriétaire amène la communauté à se demander qui gère les données désormais. Ce n'est pas un outil Valorant.",
+      "answer": "Jeu différent — mais si vous voulez un tracker qui n'est pas derrière un mur payant et qui ne change pas de mains, c'est exactement notre cahier des charges."
+    },
+    "vlr": {
+      "name": "VLR.gg",
+      "scope": "Couverture de la scène pro · Valorant",
+      "scope_kind": "esports",
+      "issue": "Site géré par la communauté. Les classements de puissance sont des choix éditoriaux, pas des données ; l'ordre des rangs est régulièrement contesté.",
+      "answer": "Classement basé sur les données de match, pas sur des choix éditoriaux. Les mêmes données sont récupérées à la recherche, sans modération."
+    },
+    "thespike": {
+      "name": "THESPIKE.GG",
+      "scope": "Couverture de la scène pro · Valorant",
+      "scope_kind": "esports",
+      "issue": "Données e-sport uniquement. La métrique d'évaluation propriétaire est débattue. Pas de recherche de statistiques personnelles pour les joueurs classés.",
+      "answer": "Recherches personnelles et pro au même endroit. Même vocabulaire d'affichage, pas de système d'évaluation différent par public."
+    },
+    "leetify": {
+      "name": "Leetify",
+      "scope": "Tracker personnel · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "CS2 uniquement. Pas de support Valorant. Importation et analyse de matchs payantes.",
+      "answer": "Jeu différent. Si VALSYNC devait un jour s'ouvrir à CS2, ce serait avec la même philosophie : pas de mur payant, pas de frais d'importation."
+    },
+    "faceit": {
+      "name": "FACEIT",
+      "scope": "Matchmaking + anti-triche · Counter-Strike 2",
+      "scope_kind": "off-genre",
+      "issue": "CS2 uniquement. Une couche de matchmaking payante, pas un tracker de statistiques personnelles — ne couvre pas Valorant.",
+      "answer": "Jeu différent, produit différent. Tracker uniquement, pas de verrouillage de matchmaking."
+    },
+    "log": {
+      "name": "League of Graphs",
+      "scope": "Tracker personnel · League of Legends",
+      "scope_kind": "off-genre",
+      "issue": "League of Legends uniquement. Pas de données Valorant. Mauvais jeu.",
+      "answer": "Jeu différent. Le vocabulaire d'affichage de VALSYNC est conçu pour Valorant — agents, RR, ACS — pas LoL."
+    }
+  }
+}
