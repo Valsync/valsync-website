@@ -70,7 +70,9 @@ export type UpdateEntry = { version: string; date: string; body: string; tag: "l
 // the most recent (Latest); earlier ones are Shipped. Keep this in step with
 // the app — a stale changelog reads as an abandoned project.
 export const UPDATES: UpdateEntry[] = [
-  { version: "v1.7.0", date: "2026-08-21", tag: "latest",
+  { version: "v1.8.1", date: "2026-08-30", tag: "latest",
+    body: "In-app support inbox with reply notifications, match share cards and party invites, lobby equipped skins, agent-select signal analysis" },
+  { version: "v1.7.0", date: "2026-08-21", tag: "shipped",
     body: "Language and feature requests from Settings, party invites with alerts, ad-free days for watching an ad, redesigned tactical HUD" },
   { version: "v1.5.1", date: "2026-08-16", tag: "shipped",
     body: "In-app bug reports with screenshot attachment, localization completion" },
