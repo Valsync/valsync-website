@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Søk Riot ID...  Eksempel: TenZ#NA1",
-    "clear": "Tøm",
-    "region": "Region",
-    "loading": "Søker...",
-    "go": "Søk",
-    "error": "Spiller ikke funnet. Prøv et populært søk.",
-    "autocomplete": "Forslag",
-    "recent": "Nylige søk",
-    "popular": "Populære søk"
+    "placeholder": "Søk Riot ID...  Eksempel: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Alt du trenger for å vinne",
@@ -489,5 +482,8 @@
       "issue": "Kun League of Legends. Ingen Valorant-data. Feil spill.",
       "answer": "Annet spill. VALSYNCs visningsspråk er bygget rundt Valorant — agenter, RR, ACS — ikke LoL."
     }
+  },
+  "common": {
+    "soon": "Kommer snart"
   }
 }

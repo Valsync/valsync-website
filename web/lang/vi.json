@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Tìm Riot ID...  Ví dụ: TenZ#NA1",
-    "clear": "Xóa",
-    "region": "Khu vực",
-    "loading": "Đang tìm...",
-    "go": "Tìm",
-    "error": "Không tìm thấy người chơi. Thử tìm kiếm phổ biến.",
-    "autocomplete": "Gợi ý",
-    "recent": "Tìm gần đây",
-    "popular": "Tìm phổ biến"
+    "placeholder": "Tìm Riot ID...  Ví dụ: Player#NA1",
+    "region": "Khu vực"
   },
   "fgrid": {
     "title": "Mọi thứ bạn cần để thắng",
@@ -489,5 +482,8 @@
       "issue": "Chỉ League of Legends. Không dữ liệu Valorant. Sai game.",
       "answer": "Khác game. Vốn từ bảng đọc của VALSYNC xây quanh Valorant — agent, RR, ACS — không phải LoL."
     }
+  },
+  "common": {
+    "soon": "Sắp ra mắt"
   }
 }

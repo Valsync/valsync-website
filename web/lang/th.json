@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "ค้นหา Riot ID...  ตัวอย่าง: TenZ#NA1",
-    "clear": "ล้าง",
-    "region": "ภูมิภาค",
-    "loading": "กำลังค้นหา...",
-    "go": "ค้นหา",
-    "error": "ไม่พบผู้เล่น ลองค้นหายอดนิยม",
-    "autocomplete": "คำแนะนำ",
-    "recent": "ค้นหาล่าสุด",
-    "popular": "ค้นหายอดนิยม"
+    "placeholder": "ค้นหา Riot ID...  ตัวอย่าง: Player#NA1",
+    "region": "ภูมิภาค"
   },
   "fgrid": {
     "title": "ทุกสิ่งที่คุณต้องการเพื่อชนะ",
@@ -489,5 +482,8 @@
       "issue": "เฉพาะ League of Legends ไม่มีข้อมูล Valorant ผิดเกม",
       "answer": "คนละเกม คำศัพท์การอ่านของ VALSYNC สร้างรอบ Valorant — เอเจนต์ RR ACS — ไม่ใช่ LoL"
     }
+  },
+  "common": {
+    "soon": "เร็วๆ นี้"
   }
 }

@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Caută Riot ID...  Exemplu: TenZ#NA1",
-    "clear": "Curăță",
-    "region": "Regiune",
-    "loading": "Se caută...",
-    "go": "Caută",
-    "error": "Jucător negăsit. Încearcă o căutare populară.",
-    "autocomplete": "Sugestii",
-    "recent": "Căutări recente",
-    "popular": "Căutări populare"
+    "placeholder": "Caută Riot ID...  Exemplu: Player#NA1",
+    "region": "Regiune"
   },
   "fgrid": {
     "title": "Tot ce-ți trebuie să câștigi",
@@ -489,5 +482,8 @@
       "issue": "Doar League of Legends. Fără date Valorant. Joc greșit.",
       "answer": "Joc diferit. Vocabularul de afișaj VALSYNC e construit în jurul Valorant — agenți, RR, ACS — nu LoL."
     }
+  },
+  "common": {
+    "soon": "În curând"
   }
 }

@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Riot ID सर्च करें...  उदाहरण: TenZ#NA1",
-    "clear": "क्लियर",
-    "region": "रीजन",
-    "loading": "सर्च हो रहा है...",
-    "go": "सर्च",
-    "error": "खिलाड़ी नहीं मिला। पॉपुलर सर्च ट्राय करें।",
-    "autocomplete": "सुझाव",
-    "recent": "हाल की सर्च",
-    "popular": "पॉपुलर सर्च"
+    "placeholder": "Riot ID सर्च करें...  उदाहरण: Player#NA1",
+    "region": "रीजन"
   },
   "fgrid": {
     "title": "जीत के लिए जो चाहिए, सब कुछ",
@@ -489,5 +482,8 @@
       "issue": "सिर्फ League of Legends। कोई Valorant डेटा नहीं। गलत गेम।",
       "answer": "अलग गेम। VALSYNC की रीडआउट वोकैबुलरी Valorant के इर्द-गिर्द बनी है — agents, RR, ACS — LoL नहीं।"
     }
+  },
+  "common": {
+    "soon": "जल्द आ रहा है"
   }
 }

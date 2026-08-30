@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Buscar Riot ID... Ejemplo: TenZ#NA1",
-    "clear": "Limpiar",
-    "region": "Región",
-    "loading": "Buscando...",
-    "go": "Buscar",
-    "error": "Jugador no encontrado. Prueba con una búsqueda popular.",
-    "autocomplete": "Sugerencias",
-    "recent": "Búsquedas recientes",
-    "popular": "Búsquedas populares"
+    "placeholder": "Buscar Riot ID... Ejemplo: Player#NA1",
+    "region": "Región"
   },
   "fgrid": {
     "title": "Todo lo que necesitas para ganar",
@@ -489,5 +482,8 @@
       "issue": "Solo League of Legends. Sin datos de Valorant. Juego incorrecto.",
       "answer": "Juego diferente. El vocabulario de lectura de VALSYNC está diseñado en torno a Valorant — agentes, RR, ACS — no a LoL."
     }
+  },
+  "common": {
+    "soon": "Próximamente"
   }
 }

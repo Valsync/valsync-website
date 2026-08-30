@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Riot ID 검색...  예: TenZ#NA1",
-    "clear": "지우기",
-    "region": "지역",
-    "loading": "검색 중...",
-    "go": "검색",
-    "error": "플레이어를 찾을 수 없습니다. 인기 검색어를 시도해 보세요.",
-    "autocomplete": "추천",
-    "recent": "최근 검색",
-    "popular": "인기 검색"
+    "placeholder": "Riot ID 검색...  예: Player#NA1",
+    "region": "지역"
   },
   "fgrid": {
     "title": "승리에 필요한 모든 것",
@@ -489,5 +482,8 @@
       "issue": "League of Legends 전용. Valorant 데이터 없음. 게임이 다릅니다.",
       "answer": "다른 게임. VALSYNC의 리드아웃 언어는 LoL이 아닌 Valorant — 요원, RR, ACS — 를 중심으로 만들어졌습니다."
     }
+  },
+  "common": {
+    "soon": "출시 예정"
   }
 }

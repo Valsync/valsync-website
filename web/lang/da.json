@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Søg Riot ID...  Eksempel: TenZ#NA1",
-    "clear": "Ryd",
-    "region": "Region",
-    "loading": "Søger...",
-    "go": "Søg",
-    "error": "Spiller ikke fundet. Prøv en populær søgning.",
-    "autocomplete": "Forslag",
-    "recent": "Seneste søgninger",
-    "popular": "Populære søgninger"
+    "placeholder": "Søg Riot ID...  Eksempel: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Alt hvad du behøver for at vinde",
@@ -489,5 +482,8 @@
       "issue": "Kun League of Legends. Ingen Valorant-data. Forkert spil.",
       "answer": "Andet spil. VALSYNCs visningssprog er bygget omkring Valorant — agenter, RR, ACS — ikke LoL."
     }
+  },
+  "common": {
+    "soon": "Kommer snart"
   }
 }

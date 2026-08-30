@@ -2289,6 +2289,25 @@ img {
   pointer-events: none;
 }
 
+/* Player lookup is not offered from the site yet, so the console renders as
+   an inert preview beneath a status chip — same treatment as the ladder. */
+.fcta-soon {
+  margin-bottom: 14px;
+}
+.cmd-shell-preview {
+  opacity: 0.72;
+}
+.cmd.is-disabled .cmd-input,
+.cmd.is-disabled .cmd-region {
+  cursor: default;
+  color: var(--fg-faint);
+}
+.cmd-go.is-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--fg-faint);
+}
+
 /* ═══ pricing layout ══════════════════════════════════════════════════════ */
 
 .price-wrap {

@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Cari Riot ID...  Contoh: TenZ#NA1",
-    "clear": "Hapus",
-    "region": "Wilayah",
-    "loading": "Mencari...",
-    "go": "Cari",
-    "error": "Pemain tak ditemukan. Coba pencarian populer.",
-    "autocomplete": "Saran",
-    "recent": "Pencarian terbaru",
-    "popular": "Pencarian populer"
+    "placeholder": "Cari Riot ID...  Contoh: Player#NA1",
+    "region": "Wilayah"
   },
   "fgrid": {
     "title": "Semua yang kau butuh untuk menang",
@@ -489,5 +482,8 @@
       "issue": "Hanya League of Legends. Tak ada data Valorant. Game yang salah.",
       "answer": "Game berbeda. Kosakata readout VALSYNC dibangun untuk Valorant — agent, RR, ACS — bukan LoL."
     }
+  },
+  "common": {
+    "soon": "Segera hadir"
   }
 }

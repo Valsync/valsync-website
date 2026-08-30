@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Riot ID ara...  Örnek: TenZ#NA1",
-    "clear": "Temizle",
-    "region": "Bölge",
-    "loading": "Aranıyor...",
-    "go": "Ara",
-    "error": "Oyuncu bulunamadı. Popüler bir arama dene.",
-    "autocomplete": "Öneriler",
-    "recent": "Son aramalar",
-    "popular": "Popüler aramalar"
+    "placeholder": "Riot ID ara...  Örnek: Player#NA1",
+    "region": "Bölge"
   },
   "fgrid": {
     "title": "Kazanmak için ihtiyacın olan her şey",
@@ -497,5 +490,8 @@
       "issue": "Yalnızca League of Legends. Valorant verisi yok. Yanlış oyun."
     },
     "col_answer": "VALSYNC'in yanıtı"
+  },
+  "common": {
+    "soon": "Yakında"
   }
 }

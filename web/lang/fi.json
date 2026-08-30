@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Hae Riot ID...  Esimerkki: TenZ#NA1",
-    "clear": "Tyhjennä",
-    "region": "Alue",
-    "loading": "Haetaan...",
-    "go": "Hae",
-    "error": "Pelaajaa ei löytynyt. Kokeile suosittua hakua.",
-    "autocomplete": "Ehdotukset",
-    "recent": "Viimeisimmät haut",
-    "popular": "Suositut haut"
+    "placeholder": "Hae Riot ID...  Esimerkki: Player#NA1",
+    "region": "Alue"
   },
   "fgrid": {
     "title": "Kaikki mitä tarvitset voittoon",
@@ -489,5 +482,8 @@
       "issue": "Vain League of Legends. Ei Valorant-dataa. Väärä peli.",
       "answer": "Eri peli. VALSYNCin näkymäsanasto on rakennettu Valorantin ympärille — agentit, RR, ACS — ei LoLin."
     }
+  },
+  "common": {
+    "soon": "Tulossa pian"
   }
 }

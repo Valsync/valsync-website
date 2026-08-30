@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Buscar Riot ID... Exemplo: TenZ#NA1",
-    "clear": "Limpar",
-    "region": "Região",
-    "loading": "Buscando...",
-    "go": "Buscar",
-    "error": "Jogador não encontrado. Tente uma busca popular.",
-    "autocomplete": "Sugestões",
-    "recent": "Buscas recentes",
-    "popular": "Buscas populares"
+    "placeholder": "Buscar Riot ID... Exemplo: Player#NA1",
+    "region": "Região"
   },
   "fgrid": {
     "title": "Tudo o que você precisa para vencer",
@@ -489,5 +482,8 @@
       "issue": "Apenas League of Legends. Sem dados de Valorant. Jogo errado.",
       "answer": "Jogo diferente. A linguagem do painel do VALSYNC é feita para o Valorant — agentes, RR, ACS — e não LoL."
     }
+  },
+  "common": {
+    "soon": "Em breve"
   }
 }

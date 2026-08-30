@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "搜索 Riot ID…  示例：TenZ#NA1",
-    "clear": "清除",
-    "region": "地区",
-    "loading": "搜索中…",
-    "go": "搜索",
-    "error": "未找到玩家。试试热门搜索。",
-    "autocomplete": "建议",
-    "recent": "最近搜索",
-    "popular": "热门搜索"
+    "placeholder": "搜索 Riot ID…  示例：Player#NA1",
+    "region": "地区"
   },
   "fgrid": {
     "title": "制胜所需，一应俱全",
@@ -489,5 +482,8 @@
       "issue": "仅支持 League of Legends。无 Valorant 数据。游戏不对。",
       "answer": "不同游戏。VALSYNC 的面板语言围绕 Valorant 构建——特工、RR、ACS——而非 LoL。"
     }
+  },
+  "common": {
+    "soon": "即将上线"
   }
 }

@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Riot IDを検索...  例: TenZ#NA1",
-    "clear": "クリア",
-    "region": "リージョン",
-    "loading": "検索中...",
-    "go": "検索",
-    "error": "プレイヤーが見つかりません。人気の検索を試してください。",
-    "autocomplete": "候補",
-    "recent": "最近の検索",
-    "popular": "人気の検索"
+    "placeholder": "Riot IDを検索...  例: Player#NA1",
+    "region": "リージョン"
   },
   "fgrid": {
     "title": "勝利に必要なすべてを",
@@ -489,5 +482,8 @@
       "issue": "League of Legends専用。Valorantデータなし。ゲーム違い。",
       "answer": "別ゲーム。VALSYNCの表示言語はValorant——エージェント、RR、ACS——を中心に作られており、LoL向けではない。"
     }
+  },
+  "common": {
+    "soon": "近日公開"
   }
 }

@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "ابحث عن معرّف Riot...  مثال: TenZ#NA1",
-    "clear": "مسح",
-    "region": "المنطقة",
-    "loading": "جارٍ البحث...",
-    "go": "بحث",
-    "error": "اللاعب غير موجود. جرّب بحثاً شائعاً.",
-    "autocomplete": "اقتراحات",
-    "recent": "عمليات البحث الأخيرة",
-    "popular": "عمليات البحث الشائعة"
+    "placeholder": "ابحث عن معرّف Riot...  مثال: Player#NA1",
+    "region": "المنطقة"
   },
   "fgrid": {
     "title": "كل ما تحتاجه للفوز",
@@ -497,5 +490,8 @@
       "issue": "League of Legends فقط. لا بيانات Valorant. لعبة خاطئة."
     },
     "col_answer": "إجابة VALSYNC"
+  },
+  "common": {
+    "soon": "قريبًا"
   }
 }

@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Hledat Riot ID...  Příklad: TenZ#NA1",
-    "clear": "Vymazat",
-    "region": "Region",
-    "loading": "Hledám...",
-    "go": "Hledat",
-    "error": "Hráč nenalezen. Zkus oblíbené hledání.",
-    "autocomplete": "Návrhy",
-    "recent": "Nedávná hledání",
-    "popular": "Oblíbená hledání"
+    "placeholder": "Hledat Riot ID...  Příklad: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Vše, co potřebuješ k výhře",
@@ -489,5 +482,8 @@
       "issue": "Pouze League of Legends. Žádná data Valorant. Špatná hra.",
       "answer": "Jiná hra. Jazyk přehledů VALSYNC je postaven kolem Valorant — agenti, RR, ACS — ne LoL."
     }
+  },
+  "common": {
+    "soon": "Již brzy"
   }
 }

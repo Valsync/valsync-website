@@ -12,30 +12,6 @@ export type Rank =
   | "Ascendant 1"
   | "Diamond 3";
 
-export type PlayerPreview = {
-  name: string;
-  tag: string;
-  region: Region;
-  rank: Rank;
-  agent: string;
-  winRate: number;
-};
-
-export const POPULAR_PLAYERS: PlayerPreview[] = [
-  { name: "TenZ", tag: "NA1", region: "NA", rank: "Radiant", agent: "Jett", winRate: 68 },
-  { name: "aspas", tag: "BR1", region: "BR", rank: "Radiant", agent: "Raze", winRate: 71 },
-  { name: "yay", tag: "NA1", region: "NA", rank: "Radiant", agent: "Chamber", winRate: 66 },
-  { name: "Demon1", tag: "NA1", region: "NA", rank: "Immortal 3", agent: "Yoru", winRate: 63 },
-  { name: "Derke", tag: "EU1", region: "EU", rank: "Radiant", agent: "Jett", winRate: 64 },
-  { name: "Chronicle", tag: "EU1", region: "EU", rank: "Immortal 3", agent: "Fade", winRate: 61 },
-];
-
-export const RECENT_PLAYERS: PlayerPreview[] = [
-  { name: "Sacy", tag: "BR1", region: "BR", rank: "Immortal 2", agent: "Sova", winRate: 58 },
-  { name: "Zekken", tag: "NA1", region: "NA", rank: "Radiant", agent: "Raze", winRate: 65 },
-  { name: "Less", tag: "BR1", region: "BR", rank: "Immortal 3", agent: "Killjoy", winRate: 60 },
-];
-
 export type LeaderboardEntry = {
   rank: number;
   name: string;

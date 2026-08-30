@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Zoek Riot ID...  Bijv. TenZ#NA1",
-    "clear": "Wissen",
-    "region": "Regio",
-    "loading": "Zoeken...",
-    "go": "Zoeken",
-    "error": "Speler niet gevonden. Probeer een populaire zoekopdracht.",
-    "autocomplete": "Suggesties",
-    "recent": "Recente zoekopdrachten",
-    "popular": "Populaire zoekopdrachten"
+    "placeholder": "Zoek Riot ID...  Bijv. Player#NA1",
+    "region": "Regio"
   },
   "fgrid": {
     "title": "Alles wat je nodig hebt om te winnen",
@@ -489,5 +482,8 @@
       "issue": "Alleen League of Legends. Geen Valorant-data. Verkeerd spel.",
       "answer": "Ander spel. VALSYNCs readout-vocabulaire is gebouwd rond Valorant — agents, RR, ACS — niet LoL."
     }
+  },
+  "common": {
+    "soon": "Binnenkort"
   }
 }

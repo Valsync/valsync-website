@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Search Riot ID...  Example: TenZ#NA1",
-    "clear": "Clear",
-    "region": "Region",
-    "loading": "Searching...",
-    "go": "Search",
-    "error": "Player not found. Try a popular search.",
-    "autocomplete": "Suggestions",
-    "recent": "Recent searches",
-    "popular": "Popular searches"
+    "placeholder": "Search Riot ID...  Example: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Everything you need to win",
@@ -489,5 +482,8 @@
       "issue": "League of Legends only. No Valorant data. Wrong game.",
       "answer": "Different game. VALSYNC's read-out vocabulary is built around Valorant — agents, RR, ACS — not LoL."
     }
+  },
+  "common": {
+    "soon": "Coming soon"
   }
 }

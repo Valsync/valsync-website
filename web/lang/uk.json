@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Пошук Riot ID...  Наприклад: TenZ#NA1",
-    "clear": "Очистити",
-    "region": "Регіон",
-    "loading": "Пошук...",
-    "go": "Знайти",
-    "error": "Гравця не знайдено. Спробуй популярний запит.",
-    "autocomplete": "Підказки",
-    "recent": "Нещодавні запити",
-    "popular": "Популярні запити"
+    "placeholder": "Пошук Riot ID...  Наприклад: Player#NA1",
+    "region": "Регіон"
   },
   "fgrid": {
     "title": "Все, що потрібно для перемоги",
@@ -489,5 +482,8 @@
       "issue": "Лише League of Legends. Немає даних Valorant. Не та гра.",
       "answer": "Інша гра. Мова монітора VALSYNC збудована навколо Valorant — агенти, RR, ACS — а не LoL."
     }
+  },
+  "common": {
+    "soon": "Скоро"
   }
 }

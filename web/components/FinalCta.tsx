@@ -37,12 +37,13 @@ export default function FinalCta() {
             </motion.p>
 
             <motion.div variants={riseItem} style={{ marginTop: 34 }}>
-              <div className="cmd-shell">
+              <div className="fcta-soon">
+                <span className="chip chip-static lb-soon-chip">{t("common.soon")}</span>
+              </div>
+              {/* Inert preview: the lookup runs in the app, not here. */}
+              <div className="cmd-shell cmd-shell-preview">
                 <CommandLine />
               </div>
-              <p className="cmd-hint" style={{ marginTop: 14 }}>
-                <kbd>↵</kbd> {t("fcta.cta")}
-              </p>
             </motion.div>
 
             <motion.div className="fcta-actions" variants={riseItem}>

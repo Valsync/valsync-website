@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Keresd a Riot ID-t...  Példa: TenZ#NA1",
-    "clear": "Törlés",
-    "region": "Régió",
-    "loading": "Keresés...",
-    "go": "Keresés",
-    "error": "Játékos nem található. Próbálj népszerű keresést.",
-    "autocomplete": "Javaslatok",
-    "recent": "Legutóbbi keresések",
-    "popular": "Népszerű keresések"
+    "placeholder": "Keresd a Riot ID-t...  Példa: Player#NA1",
+    "region": "Régió"
   },
   "fgrid": {
     "title": "Minden, ami a győzelemhez kell",
@@ -489,5 +482,8 @@
       "issue": "Csak League of Legends. Nincs Valorant-adat. Rossz játék.",
       "answer": "Más játék. A VALSYNC kijelző-szókincse Valorant köré épül — ügynökök, RR, ACS — nem LoL-ra."
     }
+  },
+  "common": {
+    "soon": "Hamarosan"
   }
 }

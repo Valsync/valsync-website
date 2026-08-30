@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Riot-ID suchen...  Beispiel: TenZ#NA1",
-    "clear": "Leeren",
-    "region": "Region",
-    "loading": "Suche...",
-    "go": "Suchen",
-    "error": "Spieler nicht gefunden. Versuche eine beliebte Suche.",
-    "autocomplete": "Vorschläge",
-    "recent": "Letzte Suchen",
-    "popular": "Beliebte Suchen"
+    "placeholder": "Riot-ID suchen...  Beispiel: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Alles, was du zum Siegen brauchst",
@@ -497,5 +490,8 @@
       "issue": "Nur League of Legends. Keine Valorant-Daten. Falsches Spiel."
     },
     "col_answer": "VALSYNCs Antwort"
+  },
+  "common": {
+    "soon": "Demnächst"
   }
 }

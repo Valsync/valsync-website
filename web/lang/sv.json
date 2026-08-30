@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Sök Riot-ID...  Exempel: TenZ#NA1",
-    "clear": "Rensa",
-    "region": "Region",
-    "loading": "Söker...",
-    "go": "Sök",
-    "error": "Spelare hittades inte. Prova en populär sökning.",
-    "autocomplete": "Förslag",
-    "recent": "Senaste sökningar",
-    "popular": "Populära sökningar"
+    "placeholder": "Sök Riot-ID...  Exempel: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Allt du behöver för att vinna",
@@ -489,5 +482,8 @@
       "issue": "Endast League of Legends. Ingen Valorant-data. Fel spel.",
       "answer": "Annat spel. VALSYNCs vyvokabulär är byggd kring Valorant — agenter, RR, ACS — inte LoL."
     }
+  },
+  "common": {
+    "soon": "Kommer snart"
   }
 }

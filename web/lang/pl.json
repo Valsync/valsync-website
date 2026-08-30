@@ -326,15 +326,8 @@
     }
   },
   "search": {
-    "placeholder": "Szukaj Riot ID...  Np.: TenZ#NA1",
-    "clear": "Wyczyść",
-    "region": "Region",
-    "loading": "Wyszukiwanie...",
-    "go": "Szukaj",
-    "error": "Gracz nie znaleziony. Spróbuj popularnego wyszukiwania.",
-    "autocomplete": "Sugestie",
-    "recent": "Ostatnie wyszukiwania",
-    "popular": "Popularne wyszukiwania"
+    "placeholder": "Szukaj Riot ID...  Np.: Player#NA1",
+    "region": "Region"
   },
   "fgrid": {
     "title": "Wszystko, czego potrzebujesz, by wygrać",
@@ -489,5 +482,8 @@
       "issue": "Tylko League of Legends. Brak danych Valorant. Zła gra.",
       "answer": "Inna gra. Słownik odczytów VALSYNC jest zbudowany wokół Valorant — agenci, RR, ACS — nie LoL."
     }
+  },
+  "common": {
+    "soon": "Wkrótce"
   }
 }
