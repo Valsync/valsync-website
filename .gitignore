@@ -10,3 +10,6 @@ _diag_page_prod.html
 .mimosa/
 web/.mimosa/
 .zcode/
+
+# Local Netlify folder
+.netlify

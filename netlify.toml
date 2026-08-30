@@ -1,5 +1,20 @@
+# Netlify builds the Next app from source rather than serving the repo root.
+#
+# `publish = "."` served the whole repository — including web/app, web/components
+# and web/lib, which made the site's source publicly fetchable at /web/lib/....
+# Building from web/ publishes only the export.
+#
+# No GITHUB_PAGES here on purpose: that variable bakes the absolute
+# /valsync-website basePath needed by the Pages subpath, which 404s on a root
+# domain. The plain build emits root-relative paths, which is what Netlify wants.
+# The generated root mirror stays in the repo for GitHub Pages and Surge.
 [build]
-  publish = "."
+  base = "web"
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
 
 [[headers]]
   for = "/app-ads.txt"
