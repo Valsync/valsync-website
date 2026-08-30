@@ -17,7 +17,8 @@
     "mob_home": "Home",
     "mob_web": "Web",
     "mob_pricing": "Pricing",
-    "mob_faq": "FAQ"
+    "mob_faq": "FAQ",
+    "get_app": "Get app"
   },
   "hero": {
     "word1": "Track",
@@ -35,10 +36,10 @@
   },
   "hud": {
     "label": "Live companion",
-    "noise": "Noise",
-    "noise_val": "0 ads",
-    "tracking": "Tracking",
-    "tracking_val": "Off",
+    "noise": "Platform",
+    "noise_val": "Android",
+    "tracking": "Data",
+    "tracking_val": "Riot API",
     "sync": "Sync",
     "sync_val": "Local-first",
     "phone_label": "Home base",
@@ -56,7 +57,7 @@
     },
     "review": {
       "title": "Review without stat spam",
-      "desc": "Surface Valorant match review, map tendencies, and collection context without turning the app into an ad-filled data warehouse."
+      "desc": "Surface Valorant match review, map tendencies, and collection context without turning the app into a data warehouse."
     }
   },
   "demo": {
@@ -78,14 +79,44 @@
     "card_s3": "Matches",
     "card_s3_val": "review"
   },
+  "screens": {
+    "eyebrow": "The app itself",
+    "title": "Six screens. One vocabulary.",
+    "lead": "No mockups below — these are the real surfaces VALSYNC ships. Same chamfered panels, same mono readouts, same calm.",
+    "note": "Android · v1.7.0 · dark tactical theme",
+    "home": {
+      "name": "Home",
+      "desc": "Rank, recent form, and what changed since you last queued — the one screen that answers “where am I?”"
+    },
+    "store": {
+      "name": "Store",
+      "desc": "Daily shop, Night Market, and your skin watchlist. One surface instead of a browser full of tabs."
+    },
+    "matches": {
+      "name": "Matches",
+      "desc": "Round signals first, secondary stats second. Match review that stays readable."
+    },
+    "loadout": {
+      "name": "Loadout",
+      "desc": "The armory: every weapon, every owned skin, equipped in a tap."
+    },
+    "party": {
+      "name": "Party",
+      "desc": "Who is online, who is mid-match, and which role the stack is still missing."
+    },
+    "social": {
+      "name": "Social",
+      "desc": "Friends and messages routed through Riot's own infrastructure. Nothing stored by us."
+    }
+  },
   "privacy": {
     "badge": "Privacy posture",
-    "title": "The no-monetization promise is visible in the interface.",
-    "lead": "VALSYNC keeps the product surface calm because it is not trying to harvest attention. Every major panel answers a player question, then gets out of the way.",
-    "ads_title": "0 ads",
-    "ads_desc": "No banner slots or engagement traps competing with prep.",
-    "track_title": "No tracking",
-    "track_desc": "Telemetry colors explain product state, not user surveillance.",
+    "title": "Your Riot session never leaves your device.",
+    "lead": "VALSYNC runs no servers of its own. Authentication is stored locally under Android Keystore encryption, and game data travels from Riot's API straight to your phone.",
+    "ads_title": "Local-first",
+    "ads_desc": "Riot tokens are encrypted on your device and never leave it.",
+    "track_title": "No servers",
+    "track_desc": "Game data goes from Riot's API to your phone. We store none of it.",
     "riot_title": "Riot handoff",
     "riot_desc": "Authentication language stays explicit and low-drama.",
     "surface_title": "Flat surfaces",
@@ -113,15 +144,15 @@
     "priv": {
       "title": "Privacy",
       "desc": "The interface is quiet because the product is not built around attention capture.",
-      "after": "No ad inventory"
+      "after": "Local-first by default"
     }
   },
   "faq": {
     "title": "Built for players who want signal, not spectacle.",
     "q1": "Do I need a Riot account?",
     "a1": "VALSYNC is designed around Riot sign-in handoff, so account-specific surfaces stay tied to the player who owns them.",
-    "q2": "Where do ads show up?",
-    "a2": "They do not. The product promise is a Valorant companion app without banner slots, engagement traps, or monetized tracking.",
+    "q2": "Which platforms is VALSYNC on?",
+    "a2": "Android, through Google Play. A browser version is in progress — same read-outs, no install.",
     "q3": "What can I check from the app?",
     "a3": "The preview covers the main VALSYNC loop: Home, Store, Party, Matches, Loadout, and Social.",
     "q4": "How does the store checker work?",
@@ -129,12 +160,12 @@
     "q5": "Can I track my squad or party?",
     "a5": "Yes. The party module shows who is online, who is mid-match, and what roles the stack is missing before the lobby fills up.",
     "q6": "Does VALSYNC collect or sell my data?",
-    "a6": "No. The product promise is a companion without banner ads, tracking pixels, or data brokerage. Telemetry surfaces explain product state, never user surveillance."
+    "a6": "Your Riot authentication stays on your device, encrypted by Android Keystore. VALSYNC runs no servers of its own, so match and store data passes from Riot's API straight to your phone."
   },
   "pricing": {
     "eyebrow": "Pricing",
     "title": "Queue-ready plans for every agent.",
-    "lead": "Pick a tier that matches your match-night workflow. No ads, no tracking, cancel anytime.",
+    "lead": "Pick a tier that matches your match-night workflow. Cancel anytime.",
     "toggle_label": "Billing period",
     "toggle_monthly": "Monthly",
     "toggle_yearly": "Yearly",
@@ -204,12 +235,12 @@
   "webapp": {
     "badge": "Coming to the web",
     "title": "Same readout. Now in a tab.",
-    "lead": "VALSYNC is coming to the browser. Same zero-ad privacy, same tactical companion — open it anywhere, no install needed.",
+    "lead": "VALSYNC is coming to the browser. Same read-outs, same tactical companion — open it anywhere, no install needed.",
     "cta": "Get notified"
   },
   "footer": {
     "left": "VALSYNC - tactical companion for Valorant",
-    "right": "No ads. No tracking. No noise."
+    "right": "Tactical prep for match night."
   },
   "legal": {
     "ai": {
@@ -239,9 +270,8 @@
       "ul1": {
         "li1": "<strong>Personal identifiers:</strong> No email addresses, phone numbers, or real names are collected.",
         "li2": "<strong>Usage analytics:</strong> No crash reporters, no session tracking, no feature-usage telemetry. We have no idea how you use the App, and we do not want to.",
-        "li3": "<strong>Device information:</strong> No device fingerprints, advertising IDs (AAID/GAID), or hardware identifiers.",
-        "li4": "<strong>Location data:</strong> No GPS, coarse location, or IP-based geolocation.",
-        "li5": "<strong>Advertising data:</strong> No ad SDKs, no tracking pixels, no retargeting identifiers. There are no ads in VALSYNC and there never will be."
+        "li3": "<strong>Device information:</strong> No device fingerprints or hardware identifiers are collected by VALSYNC.",
+        "li4": "<strong>Location data:</strong> No GPS, coarse location, or IP-based geolocation."
       },
       "p3": "To function, VALSYNC requires you to sign in with your Riot Games account. Your Riot credentials are handled directly by Riot's official OAuth flow — we never see your password. The resulting authentication tokens are stored exclusively on your device using Android Keystore-backed AES-256 encryption. These tokens never leave your device and are never transmitted to VALSYNC servers (we do not have any).",
       "p4": "All game data displayed in the App (stats, store contents, match history, friend lists) is fetched in real time from Riot Games' official API. This data passes directly from Riot's servers to your device. VALSYNC does not cache, store, or process this data on any intermediate server.",
@@ -250,12 +280,12 @@
         "li1": "<strong>Party Chat & Direct Messages:</strong> When you send a chat message, it is transmitted to the recipient through Riot's XMPP infrastructure. VALSYNC does not store or log these messages.",
         "li2": "<strong>Match Replay Telemetry:</strong> If you choose to enable local telemetry capture for match review, replay data is stored in app-private local storage on your device. It is never uploaded anywhere."
       },
-      "p6": "VALSYNC is not open source. Its source code is proprietary and is not publicly distributed. While the code is not available for inspection, we disclose our data practices transparently in this policy, and the App contains no third-party analytics, advertising, or tracking SDKs.",
+      "p6": "VALSYNC is not open source. Its source code is proprietary and is not publicly distributed. While the code is not available for inspection, we disclose our data practices in this policy.",
       "p7": "VALSYNC integrates with the following services:",
       "ul3": {
         "li1": "<strong>Riot Games API:</strong> Required for core functionality. Governed by <a href=\"https://www.riotgames.com/en/privacy-notice\">Riot Games' Privacy Notice</a>."
       },
-      "p8": "We use no other third-party services. No analytics, no crash reporting, no ad networks, no CDN with logging, no payment processors.",
+      "p8": "VALSYNC integrates no analytics or crash-reporting SDK, uses no logging CDN, and processes no payments.",
       "p9": "VALSYNC is not directed at children under 13. As we collect no personal data from anyone, we have no mechanism to knowingly collect information from children. The App's functionality requires a Riot Games account, which itself requires compliance with Riot's age requirements.",
       "p10": "Since VALSYNC stores almost no data (only your encrypted Riot tokens locally), the attack surface is minimal. The Riot authentication tokens in local storage are encrypted using Android Keystore. The App communicates exclusively over HTTPS to Riot's official API endpoints.",
       "p11": "Because we collect no personal data, there is nothing to access, correct, delete, or export. If you uninstall the App, all locally stored data (encrypted tokens, any saved replays, cached game data) is removed with it. You can revoke VALSYNC's access to your Riot account at any time through <a href=\"https://account.riotgames.com/\">Riot's account management</a>.",
@@ -316,7 +346,7 @@
     },
     "c2": {
       "title": "Competitive Leaderboards",
-      "desc": "Browse the best players across every region.",
+      "desc": "Browse the best players across every region — landing in a future app update.",
       "tags": "Regional|Global|Season"
     },
     "c3": {
@@ -353,10 +383,12 @@
   "lb": {
     "eyebrow": "Top of the ladder",
     "title": "The Radiant 5, ranked by win rate.",
-    "lead": "Refreshed every hour. Season 2026 — Act 3.",
+    "lead": "Ladders aren't live yet — this is a preview of the view shipping in a future app update.",
+    "badge": "Coming soon",
+    "sample": "Sample data — not live rankings.",
     "global": "Global",
     "region": "Region",
-    "view": "View Leaderboard"
+    "view": "Coming soon"
   },
   "sp": {
     "eyebrow": "By the numbers",
@@ -391,8 +423,8 @@
       "name": "OP.GG",
       "scope": "Personal tracker · Valorant",
       "scope_kind": "tracker",
-      "issue": "Free tier is ad-supported; player insights and history behind the OP.GG Ad-free subscription.",
-      "answer": "No ads. No tracker subscription wall. Every lookup is full data, free, no sign-up."
+      "issue": "Player insights and match history sit behind the OP.GG subscription.",
+      "answer": "No subscription wall on the tracker. Every lookup returns full data, free, with no sign-up."
     },
     "ugg": {
       "name": "U.GG",
@@ -405,7 +437,7 @@
       "name": "Blitz.gg",
       "scope": "In-game overlay · Valorant",
       "scope_kind": "tracker",
-      "issue": "Antivirus flags on the overlay injector, intrusive ads, autoplay-with-audio reports, and repeated player calls to remove it from matches.",
+      "issue": "Antivirus flags on the overlay injector, autoplay-with-audio reports, and repeated player calls to remove it from matches.",
       "answer": "No overlay injector. No in-game hook. Web and companion app, no AV flags, no audio popups."
     },
     "mobalytics": {
@@ -419,8 +451,8 @@
       "name": "Porofessor.gg",
       "scope": "In-game overlay · League of Legends",
       "scope_kind": "off-genre",
-      "issue": "Desktop app is ad-supported; recent ownership change has community asking who runs the data now. Not a Valorant tool.",
-      "answer": "Different game — but if you want a tracker without ad inventory and an opaque new owner, that's the brief we ship to."
+      "issue": "A recent ownership change has the community asking who runs the data now. Not a Valorant tool.",
+      "answer": "Different game — but if you want a tracker that isn't behind a paywall and isn't changing hands, that's the brief we ship to."
     },
     "vlr": {
       "name": "VLR.gg",
@@ -441,7 +473,7 @@
       "scope": "Personal tracker · Counter-Strike 2",
       "scope_kind": "off-genre",
       "issue": "CS2 only. No Valorant support. Paywalled match imports and analysis.",
-      "answer": "Different game. If VALSYNC ever shipped CS2, it would be the same posture: no ads, no paywall, no import fees."
+      "answer": "Different game. If VALSYNC ever shipped CS2 it would be the same posture: no paywall, no import fees."
     },
     "faceit": {
       "name": "FACEIT",

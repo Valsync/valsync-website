@@ -17,7 +17,8 @@
     "mob_pricing": "Fiyatlandırma",
     "mob_faq": "SSS",
     "pricing": "Fiyatlandırma",
-    "search_cta": "Oyuncu Ara"
+    "search_cta": "Oyuncu Ara",
+    "get_app": "Uygulama"
   },
   "hero": {
     "word1": "Takip Et",
@@ -35,10 +36,10 @@
   },
   "hud": {
     "label": "Canlı yardımcı panel",
-    "noise": "Gürültü",
-    "noise_val": "0 reklam",
-    "tracking": "Takip",
-    "tracking_val": "Kapalı",
+    "noise": "Platform",
+    "noise_val": "Android",
+    "tracking": "Veri",
+    "tracking_val": "Riot API",
     "sync": "Senkron",
     "sync_val": "Önce cihaz",
     "phone_label": "Ana panel",
@@ -56,7 +57,7 @@
     },
     "review": {
       "title": "İstatistik kalabalığı olmadan inceleme",
-      "desc": "Uygulamayı reklam dolu bir veri deposuna çevirmeden maç özetlerini, harita eğilimlerini ve koleksiyon bağlamını öne çıkar."
+      "desc": "Uygulamayı bir veri deposuna çevirmeden maç özetlerini, harita eğilimlerini ve koleksiyon bağlamını öne çıkar."
     }
   },
   "demo": {
@@ -78,14 +79,44 @@
     "card_s3": "Maçlar",
     "card_s3_val": "inceleme"
   },
+  "screens": {
+    "eyebrow": "Uygulamanın kendisi",
+    "title": "Altı ekran. Tek bir dil.",
+    "lead": "Aşağıdakiler maket değil — VALSYNC'in gerçek ekranları. Aynı pahlı paneller, aynı mono göstergeler, aynı sakinlik.",
+    "note": "Android · v1.7.0 · koyu taktik tema",
+    "home": {
+      "name": "Ana ekran",
+      "desc": "Rütbe, son form ve en son sıraya girdiğinden beri ne değişti — “neredeyim?” sorusunu yanıtlayan ekran."
+    },
+    "store": {
+      "name": "Mağaza",
+      "desc": "Günlük mağaza, Night Market ve skin takip listen. Sekme dolu bir tarayıcı yerine tek bir yüzey."
+    },
+    "matches": {
+      "name": "Maçlar",
+      "desc": "Önce tur sinyalleri, sonra ikincil istatistikler. Okunabilir kalan maç incelemesi."
+    },
+    "loadout": {
+      "name": "Dizilim",
+      "desc": "Cephanelik: her silah, sahip olduğun her skin, tek dokunuşla kuşanılır."
+    },
+    "party": {
+      "name": "Parti",
+      "desc": "Kim çevrimiçi, kim maçta ve ekipte hangi rol hâlâ eksik."
+    },
+    "social": {
+      "name": "Sosyal",
+      "desc": "Arkadaşlar ve mesajlar Riot'un kendi altyapısından geçer. Bizde hiçbir şey saklanmaz."
+    }
+  },
   "privacy": {
-    "badge": "Gizlilik yaklaşımı",
-    "title": "Reklamsız kalma sözü arayüzde de hissedilir.",
-    "lead": "VALSYNC dikkat toplamaya çalışmadığı için arayüzünü sakin tutar. Her ana panel bir oyuncu sorusunu yanıtlar ve sonra geri çekilir.",
-    "ads_title": "0 reklam",
-    "ads_desc": "Hazırlığını bölen banner alanları veya etkileşim tuzakları yok.",
-    "track_title": "Takip yok",
-    "track_desc": "Telemetri renkleri kullanıcı gözetimini değil, ürün durumunu açıklar.",
+    "badge": "Gizlilik duruşu",
+    "title": "Riot oturumun cihazından hiç çıkmaz.",
+    "lead": "VALSYNC'in kendi sunucusu yoktur. Oturum bilgisi Android Keystore şifrelemesiyle cihazında saklanır ve oyun verisi Riot API'sinden doğrudan telefonuna gelir.",
+    "ads_title": "Önce cihaz",
+    "ads_desc": "Riot anahtarları cihazında şifrelenir ve oradan hiç çıkmaz.",
+    "track_title": "Sunucu yok",
+    "track_desc": "Oyun verisi Riot API'sinden telefonuna gelir. Bizde hiçbiri saklanmaz.",
     "riot_title": "Riot girişi",
     "riot_desc": "Kimlik doğrulama dili açık, sade ve abartısız kalır.",
     "surface_title": "Düz yüzeyler",
@@ -113,15 +144,15 @@
     "priv": {
       "title": "Gizlilik",
       "desc": "Arayüz sakindir çünkü ürün dikkat yakalamak için tasarlanmamıştır.",
-      "after": "Reklam envanteri yok"
+      "after": "Varsayılan olarak cihaz öncelikli"
     }
   },
   "faq": {
     "title": "Gösteriş değil, net sinyal isteyen oyuncular için yapıldı.",
     "q1": "Riot hesabına ihtiyacım var mı?",
     "a1": "VALSYNC, Riot ile giriş akışına göre tasarlanır. Böylece hesaba özel ekranlar sadece o hesabın sahibine bağlı kalır.",
-    "q2": "Reklamlar nerede görünür?",
-    "a2": "Hiçbir yerde. Ürün vaadi; banner alanları, etkileşim tuzakları ve para kazanma amaçlı takip olmadan çalışan bir Valorant yardımcısıdır.",
+    "q2": "VALSYNC hangi platformlarda?",
+    "a2": "Google Play üzerinden Android'de. Tarayıcı sürümü geliştiriliyor — aynı paneller, kurulum gerekmeden.",
     "q3": "Uygulamadan neleri kontrol edebilirim?",
     "a3": "Önizleme ana VALSYNC döngüsünü kapsar: Ana Sayfa, Mağaza, Takım, Maçlar, Teçhizat ve Sosyal.",
     "q4": "Mağaza kontrolü nasıl çalışır?",
@@ -129,12 +160,12 @@
     "q5": "Takımımı veya grubumu takip edebilir miyim?",
     "a5": "Evet. Parti modülü, lobi dolmadan önce kimin çevrimiçi olduğunu, kimin maçta olduğunu ve ekibin hangi rollerde eksiği olduğunu gösterir.",
     "q6": "VALSYNC verilerimi toplar veya satar mı?",
-    "a6": "Hayır. VALSYNC; banner reklamlar, izleme pikselleri veya veri satışı olmadan çalışan bir yardımcıdır. Telemetri ekranları kullanıcıyı izlemek için değil, ürün durumunu açıklamak için vardır."
+    "a6": "Riot oturumun cihazında kalır, Android Keystore ile şifrelenir. VALSYNC'in kendi sunucusu yoktur; maç ve mağaza verisi Riot API'sinden doğrudan telefonuna gelir."
   },
   "pricing": {
     "eyebrow": "Fiyatlandırma",
     "title": "Her ajan için sıraya hazır planlar.",
-    "lead": "Maç gecesi akışına uygun bir katman seç. Reklam yok, takip yok, istediğin zaman iptal.",
+    "lead": "Maç gecesi akışına uygun bir katman seç. İstediğin zaman iptal et.",
     "toggle_label": "Fatura dönemi",
     "toggle_monthly": "Aylık",
     "toggle_yearly": "Yıllık",
@@ -204,12 +235,12 @@
   "webapp": {
     "badge": "Web'e geliyor",
     "title": "Aynı panel. Şimdi tarayıcı sekmesinde.",
-    "lead": "VALSYNC tarayıcıya geliyor. Aynı reklamsız gizlilik, aynı taktiksel yardımcı — istediğin yerden aç, kurulum gerekmez.",
+    "lead": "VALSYNC tarayıcıya geliyor. Aynı paneller, aynı taktiksel yardımcı — istediğin yerden aç, kurulum gerekmez.",
     "cta": "Bildirim al"
   },
   "footer": {
     "left": "VALSYNC - Valorant için taktiksel yardımcı",
-    "right": "Reklam yok. Takip yok. Gürültü yok."
+    "right": "Maç gecesi için taktik hazırlık."
   },
   "legal": {
     "ai": {
@@ -239,9 +270,8 @@
       "ul1": {
         "li1": "<strong>Kişisel tanımlayıcılar:</strong> E-posta adresleri, telefon numaraları veya gerçek isimler toplanmaz.",
         "li2": "<strong>Kullanım analitiği:</strong> Çökme raporlayıcıları, oturum izleme, özellik kullanım telemetrisi yok. Uygulamayı nasıl kullandığınız hakkında hiçbir fikrimiz yok ve olmasını da istemiyoruz.",
-        "li3": "<strong>Cihaz bilgileri:</strong> Cihaz parmak izleri, reklam kimlikleri (AAID/GAID) veya donanım tanımlayıcıları yok.",
-        "li4": "<strong>Konum verileri:</strong> GPS, yaklaşık konum veya IP tabanlı coğrafi konum yok.",
-        "li5": "<strong>Reklam verileri:</strong> Reklam SDK'ları, izleme pikselleri, yeniden hedefleme tanımlayıcıları yok. VALSYNC'te reklam yok ve asla olmayacak."
+        "li3": "<strong>Cihaz bilgileri:</strong> VALSYNC cihaz parmak izi veya donanım tanımlayıcısı toplamaz.",
+        "li4": "<strong>Konum verileri:</strong> GPS, yaklaşık konum veya IP tabanlı coğrafi konum yok."
       },
       "p3": "VALSYNC'in çalışması için Riot Games hesabınızla oturum açmanız gerekir. Riot kimlik bilgileriniz doğrudan Riot'ın resmi OAuth akışı tarafından işlenir — şifrenizi asla görmeyiz. Ortaya çıkan kimlik doğrulama jetonları, Android Keystore destekli AES-256 şifrelemesi kullanılarak yalnızca cihazınızda saklanır. Bu jetonlar cihazınızdan asla ayrılmaz ve VALSYNC sunucularına asla iletilmez (bizim sunucumuz yok).",
       "p4": "Uygulamada gösterilen tüm oyun verileri (istatistikler, mağaza içeriği, maç geçmişi, arkadaş listeleri) Riot Games'in resmi API'sinden gerçek zamanlı olarak alınır. Bu veriler doğrudan Riot sunucularından cihazınıza aktarılır. VALSYNC bu verileri herhangi bir aracı sunucuda önbelleğe almaz, saklamaz veya işlemez.",
@@ -250,12 +280,12 @@
         "li1": "<strong>Takım Sohbeti ve Doğrudan Mesajlar:</strong> Bir sohbet mesajı gönderdiğinizde, alıcıya Riot'ın XMPP altyapısı aracılığıyla iletilir. VALSYNC bu mesajları saklamaz veya günlüğe kaydetmez.",
         "li2": "<strong>Maç Tekrar Telemetrisi:</strong> Maç incelemesi için yerel telemetri yakalamayı etkinleştirirseniz, tekrar verileri cihazınızdaki uygulamaya özel yerel depolamada saklanır. Hiçbir yere yüklenmez."
       },
-      "p6": "VALSYNC açık kaynak değildir. Kaynak kodu mülkiyet niteliğindedir ve herkese açık olarak dağıtılmaz. Kaynak kodu incelemeye açık olmasa da, veri uygulamalarımızı bu politikada şeffaf bir şekilde açıklıyoruz ve Uygulama hiçbir üçüncü taraf analitik, reklam veya izleme SDK'sı içermiyor.",
+      "p6": "VALSYNC açık kaynak değildir. Kaynak kodu özeldir ve kamuya dağıtılmaz. Kod incelemeye açık olmasa da veri uygulamalarımızı bu politikada açıklıyoruz.",
       "p7": "VALSYNC aşağıdaki hizmetlerle entegre olur:",
       "ul3": {
         "li1": "<strong>Riot Games API:</strong> Temel işlevsellik için gereklidir. <a href=\"https://www.riotgames.com/en/privacy-notice\">Riot Games Gizlilik Bildirimi</a> kapsamında yönetilir."
       },
-      "p8": "Başka üçüncü taraf hizmet kullanmıyoruz. Analitik, çökme raporlaması, reklam ağı, günlük kaydı olan CDN veya ödeme işlemcisi yok.",
+      "p8": "VALSYNC hiçbir analitik veya çökme raporlama SDK'sı içermez, günlük tutan bir CDN kullanmaz ve ödeme işlemez.",
       "p9": "VALSYNC 13 yaşın altındaki çocuklara yönelik değildir. Herhangi bir kişiden kişisel veri toplamadığımız için, çocuklardan bilerek bilgi toplamamıza olanak tanıyan bir mekanizmamız yoktur. Uygulamanın işlevselliği, Riot'ın yaş gereksinimlerine uyum gerektiren bir Riot Games hesabı gerektirir.",
       "p10": "VALSYNC neredeyse hiç veri saklamadığı için (yalnızca yerel olarak şifrelenmiş Riot jetonlarınız), saldırı yüzeyi minimumdur. Yerel depolamadaki Riot kimlik doğrulama jetonları Android Keystore kullanılarak şifrelenir. Uygulama yalnızca Riot'ın resmi API uç noktalarıyla HTTPS üzerinden iletişim kurar.",
       "p11": "Hiçbir kişisel veri toplamadığımız için erişilecek, düzeltilecek, silinecek veya dışa aktarılacak bir şey yoktur. Uygulamayı kaldırırsanız, yerel olarak saklanan tüm veriler (şifrelenmiş jetonlar, kaydedilmiş tekrarlar, önbelleğe alınmış oyun verileri) kaldırılır. VALSYNC'in Riot hesabınıza erişimini istediğiniz zaman <a href=\"https://account.riotgames.com/\">Riot hesap yönetimi</a> üzerinden iptal edebilirsiniz.",
@@ -316,7 +346,7 @@
     },
     "c2": {
       "title": "Rekabet Sıralamaları",
-      "desc": "Her bölgenin en iyi oyuncularına göz at.",
+      "desc": "Her bölgenin en iyi oyuncularına göz at — ileriki bir uygulama güncellemesinde geliyor.",
       "tags": "Bölgesel|Küresel|Sezon"
     },
     "c3": {
@@ -353,12 +383,14 @@
     "avg_hs": "Ort. HS%"
   },
   "lb": {
+    "eyebrow": "Sıralamanın zirvesi",
     "title": "Rekabet Sıralamaları",
-    "lead": "En iyilerin en iyileri, canlı sıralı.",
+    "lead": "Sıralamalar henüz yayında değil — bu, ileriki bir uygulama güncellemesinde gelecek görünümün ön izlemesi.",
+    "badge": "Yakında",
+    "sample": "Örnek veri — gerçek sıralama değil.",
     "global": "Küresel",
     "region": "Bölge",
-    "view": "Sıralamayı Gör",
-    "eyebrow": "Sıralamanın zirvesi"
+    "view": "Yakında"
   },
   "why": {
     "title": "Neden VALSYNC",
@@ -395,11 +427,11 @@
     "col_issue": "Bilinen sorun",
     "disclaimer": "Sorunlar kamuya açık raporlardan, topluluk tartışmalarından ve her ürünün kendi açıklamalarından özetlendi. Bir ürün gerçekten VALSYNC ile rekabet etmiyorsa, satır bunu söylüyor.",
     "opgg": {
-      "answer": "Reklâm yok. Takipçi için ücretli duvar yok. Her arama tam veriyi verir, ücretsiz, kayıtsız.",
+      "answer": "Takip aracında abonelik duvarı yok. Her arama tam veriyi verir, ücretsiz, kayıt istemeden.",
       "name": "OP.GG",
       "scope": "Kişisel takipçi · Valorant",
       "scope_kind": "tracker",
-      "issue": "Ücretsiz katman reklâm destekli; oyuncu içgörüleri ve geçmiş OP.GG Ad-free aboneliğinin arkasında."
+      "issue": "Oyuncu içgörüleri ve maç geçmişi OP.GG aboneliğinin arkasında."
     },
     "ugg": {
       "answer": "Canlı okumalar aramada çekilir, önbellekten değil — gördüğün lobi anındaki güncel haldir.",
@@ -413,7 +445,7 @@
       "name": "Blitz.gg",
       "scope": "Oyun içi yerleşim · Valorant",
       "scope_kind": "tracker",
-      "issue": "Yerleşim enjektöründe antivirüs uyarıları, müdahaleci reklamlar, sesli otomatik oynatma, maçlardan kaldırılması için oyunculardan gelen tekrarlayan talepler."
+      "issue": "Overlay enjektörü için antivirüs uyarıları, sesli otomatik oynatma şikâyetleri ve oyuncuların maçlardan kaldırılması yönündeki tekrarlanan çağrıları."
     },
     "mobalytics": {
       "answer": "Her okumayı kendi verilerin yönlendirir. Ücretli yapay zekâ koç hunisi yok — uygulama okuma paneli olarak kalır.",
@@ -423,11 +455,11 @@
       "issue": "Tier listeleri ve sıralamalar ham veri yerine uzman panellerine dayanıyor. Ürün, takipçinin üstüne ücretli yapay zekâ koç hunisi ekliyor."
     },
     "porofessor": {
-      "answer": "Farklı oyun — ama reklâmsız ve belirsiz yeni sahipsiz bir takipçi istiyorsan, gönderdiğimiz kısa buyurun o işte.",
+      "answer": "Farklı oyun — ama ücretli duvarın arkasında olmayan ve el değiştirmeyen bir takip aracı istiyorsan, hedeflediğimiz şey bu.",
       "name": "Porofessor.gg",
       "scope": "Oyun içi yerleşim · League of Legends",
       "scope_kind": "off-genre",
-      "issue": "Masaüstü uygulaması reklâm destekli; son sahiplik değişikliği toplulukta verileri kimin yönettiği sorusunu açtı. Valorant aracı değil."
+      "issue": "Yakın zamandaki sahiplik değişikliği, topluluğun veriyi artık kimin yönettiğini sormasına yol açtı. Valorant aracı değil."
     },
     "vlr": {
       "answer": "Sıralama maç verisinden, editör seçiminden değil. Aynı veriler aramada çekilir, seçilmez.",
@@ -444,7 +476,7 @@
       "issue": "Yalnızca espor verisi. Özel puan metriği tartışmalı. Sıralı oyuncular için kişisel istatistik araması yok."
     },
     "leetify": {
-      "answer": "Farklı oyun. VALSYNC bir gün CS2 sürerse aynı tutum geçerli: reklâm yok, ücretli duvar yok, içe aktarma ücreti yok.",
+      "answer": "Farklı oyun. VALSYNC bir gün CS2 sürerse aynı tutum geçerli: ücretli duvar yok, içe aktarma ücreti yok.",
       "name": "Leetify",
       "scope": "Kişisel takipçi · Counter-Strike 2",
       "scope_kind": "off-genre",

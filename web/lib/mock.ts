@@ -45,12 +45,15 @@ export type LeaderboardEntry = {
   region: Region;
 };
 
+// Placeholder handles, not real players: the ladder is not live yet, so the
+// rows must not read as real rankings or attribute invented win rates to
+// anyone. Swap this for the API once the app ships a leaderboard.
 export const LEADERBOARD: LeaderboardEntry[] = [
-  { rank: 1, name: "yay",    tag: "NA1", tier: "Radiant", winRate: 98, region: "NA" },
-  { rank: 2, name: "aspas",  tag: "BR1", tier: "Radiant", winRate: 97, region: "BR" },
-  { rank: 3, name: "TenZ",   tag: "NA1", tier: "Radiant", winRate: 96, region: "NA" },
-  { rank: 4, name: "Derke",  tag: "EU1", tier: "Radiant", winRate: 95, region: "EU" },
-  { rank: 5, name: "Demon1", tag: "NA1", tier: "Radiant", winRate: 94, region: "NA" },
+  { rank: 1, name: "Player One",   tag: "NA1", tier: "Radiant", winRate: 71, region: "NA" },
+  { rank: 2, name: "Player Two",   tag: "BR1", tier: "Radiant", winRate: 69, region: "BR" },
+  { rank: 3, name: "Player Three", tag: "NA1", tier: "Radiant", winRate: 68, region: "NA" },
+  { rank: 4, name: "Player Four",  tag: "EU1", tier: "Radiant", winRate: 66, region: "EU" },
+  { rank: 5, name: "Player Five",  tag: "NA1", tier: "Radiant", winRate: 65, region: "NA" },
 ];
 
 export type EnemyPlayer = { rank: Rank; agent: string; acs: number; threat: boolean };
@@ -71,20 +74,17 @@ export const MATCH_PREDICTION = {
   avgHs: 27,
 };
 
-export type Stat = { value: number; suffix: string; label: string; decimals?: number };
+export type Stat = { value: number; prefix?: string; suffix: string; label: string; decimals?: number };
 
-// ponytail: previous values here (2.8M+ matches, 500K+ players, 99.9% uptime,
-// etc.) were placeholder/template numbers that didn't reflect real usage —
-// removed because publishing invented metrics is a credibility risk once
-// anyone cross-checks against actual install counts. CountUp always renders
-// "{number}{suffix}", so these have to be real countable facts rather than
-// slogans — pulled from what's actually true elsewhere in this codebase
-// (UPDATES length, i18n locale count, price, ad/tracker count).
+// Every figure here has to be a real countable fact, because CountUp renders
+// "{prefix}{number}{suffix}" — a slogan cannot go in this slot. Each one is
+// checkable against something else in the repo: the locale files, UPDATES
+// below, the app's tab bar, and the Play listing price.
 export const SOCIAL_STATS: Stat[] = [
-  { value: 0, suffix: "", label: "Ads shown" },
-  { value: 0, suffix: "", label: "Trackers or analytics SDKs" },
+  { value: 6, suffix: "", label: "App surfaces (Home/Store/Matches/Loadout/Party/Social)" },
   { value: 4, suffix: "", label: "Languages supported (EN/AR/TR/DE)" },
-  { value: 0, suffix: "$", label: "Cost during public launch" },
+  { value: 7, suffix: "", label: "Releases shipped since early access" },
+  { value: 0, prefix: "$", suffix: "", label: "Cost to download" },
 ];
 
 export type UpdateEntry = { version: string; date: string; body: string; tag: "latest" | "shipped" };
