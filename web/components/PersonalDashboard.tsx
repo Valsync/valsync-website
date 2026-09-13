@@ -2,30 +2,19 @@
 
 import { motion } from "framer-motion";
 import { Activity, ArrowUpRight, Crosshair, ShieldCheck, Trophy } from "lucide-react";
-import { beginRiotSignIn, usePersonalStats } from "@/lib/personal-stats";
+import { usePersonalStats } from "@/lib/personal-stats";
+import { PERSONAL_AGENTS, PERSONAL_PROFILE, PERSONAL_STATS } from "@/lib/mock";
 import BracketLabel from "./hud/BracketLabel";
 import Panel from "./hud/Panel";
 import SectionHead from "./hud/SectionHead";
 import { riseItem, staggerParent, viewportOnce } from "./hud/motion";
 
 export default function PersonalDashboard() {
-  const { status, data } = usePersonalStats();
-
-  if (status !== "ready" || !data) {
-    const unavailable = status === "unavailable";
-    return (
-      <section className="section" id="dashboard">
-        <div className="container">
-          <Panel className="profile-connect" accent="cyan" fill="deep" grid scanlines brackets>
-            <BracketLabel tone="cyan">Private player data</BracketLabel>
-            <h2 className="t-display">{status === "loading" ? "Checking your secure session…" : unavailable ? "Personal stats live in the app." : "Link your Riot account."}</h2>
-            <p className="t-lead">{status === "loading" ? "Your VALSYNC dashboard will appear here when the session is ready." : unavailable ? "This static site cannot hold a Riot session. Download VALSYNC to view your private account data securely." : "Sign in to display only your own rank, recent competitive matches, and agent performance."}</p>
-            {status === "anonymous" && <button className="btn btn-primary" onClick={beginRiotSignIn}>Sign in with Riot</button>}
-          </Panel>
-        </div>
-      </section>
-    );
-  }
+  const { data: liveData } = usePersonalStats();
+  // Static hosts retain the full dashboard experience. A configured Netlify
+  // deployment transparently swaps these preview values for the account's
+  // live, server-fetched Riot data.
+  const data = liveData ?? { profile: PERSONAL_PROFILE, stats: PERSONAL_STATS, agents: PERSONAL_AGENTS, matches: [] };
   const { profile } = data;
 
   return (
