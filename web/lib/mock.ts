@@ -111,3 +111,37 @@ export const FLOATING_STATS = [
   "ACS 312",
   "K/D 1.48",
 ];
+
+// The public landing page must never pretend to expose a real ladder or
+// someone else's account. This is an intentionally anonymous demo profile
+// that shows the exact shape a signed-in player's personal dashboard takes.
+export const PERSONAL_PROFILE = {
+  name: "Your VALORANT ID",
+  tag: "#0000",
+  region: "EU",
+  rank: "Ascendant 2" as Rank,
+  rr: 74,
+  rrToNext: 26,
+  season: "EP9 // ACT 3",
+  lastSync: "Synced just now",
+};
+
+export const PERSONAL_STATS = [
+  { label: "Win rate", value: "58.3%", detail: "+4.1% this act", tone: "cyan" },
+  { label: "K / D", value: "1.21", detail: "Above your average", tone: "red" },
+  { label: "Average combat score", value: "236", detail: "+18 over last 10", tone: "gold" },
+  { label: "Headshot rate", value: "28.6%", detail: "Top 32% of your rank", tone: "cyan" },
+] as const;
+
+export const PERSONAL_MATCHES = [
+  { result: "Victory", score: "13 — 9", map: "Sunset", agent: "Omen", kda: "21 / 14 / 8", rr: "+19", time: "42 min ago" },
+  { result: "Defeat", score: "11 — 13", map: "Haven", agent: "Sova", kda: "17 / 18 / 6", rr: "−16", time: "3 hr ago" },
+  { result: "Victory", score: "13 — 7", map: "Lotus", agent: "Killjoy", kda: "19 / 11 / 5", rr: "+22", time: "Yesterday" },
+  { result: "Victory", score: "13 — 10", map: "Ascent", agent: "Jett", kda: "24 / 16 / 3", rr: "+18", time: "Yesterday" },
+] as const;
+
+export const PERSONAL_AGENTS = [
+  { agent: "Omen", played: 24, winRate: 63, acs: 228 },
+  { agent: "Killjoy", played: 18, winRate: 61, acs: 217 },
+  { agent: "Sova", played: 12, winRate: 58, acs: 221 },
+] as const;

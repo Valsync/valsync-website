@@ -23,10 +23,9 @@ export default function Nav() {
   const progress = useSpring(scrollYProgress, { stiffness: 240, damping: 40, restDelta: 0.001 });
 
   const links = [
-    { href: `${B}${prefix}#features`, label: t("nav.features") },
+    { href: `${B}${prefix}#dashboard`, label: t("nav.my_stats") },
     { href: `${B}${prefix}#app`, label: t("nav.app") },
-    { href: `${B}${prefix}#live-match`, label: t("nav.livematch") },
-    { href: `${B}${prefix}#leaderboards`, label: t("nav.leaderboards") },
+    { href: `${B}${prefix}#matches`, label: "My matches" },
     { href: `${B}${prefix}#updates`, label: t("nav.updates") },
     { href: `${B}${prefix}#pricing`, label: t("nav.pricing") },
     { href: dev ? "/privacy" : "privacy.html", label: t("nav.privacy") },

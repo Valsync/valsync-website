@@ -12,7 +12,7 @@ const dev = process.env.NODE_ENV === "development";
 const tabs = [
   { key: "home",    icon: Home,              href: "#top",          labelKey: "nav.mob_home" },
   { key: "app",     icon: MonitorSmartphone, href: "#app",          labelKey: "nav.app" },
-  { key: "search",  icon: LayoutGrid,        href: "#leaderboards", labelKey: "nav.leaderboards" },
+  { key: "stats",   icon: LayoutGrid,        href: "#dashboard",    labelKey: "nav.my_stats" },
   { key: "updates", icon: Clock,             href: "#updates",      labelKey: "nav.updates" },
   { key: "pricing", icon: Tag,               href: "#pricing",      labelKey: "nav.mob_pricing" },
 ] as const;

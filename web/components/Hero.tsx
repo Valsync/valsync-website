@@ -85,8 +85,8 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 className="t-hero hero-title" variants={riseItem}>
-            {t("hero.headline_pre")}
-            <span>{t("hero.headline_post")}</span>
+            Your Valorant
+            <span>decoded.</span>
           </motion.h1>
 
           <motion.div className="hero-rotator" variants={riseItem} aria-hidden>
@@ -107,21 +107,21 @@ export default function Hero() {
           </motion.div>
 
           <motion.ul className="hero-sub" variants={riseItem}>
-            <li>{t("hero.sub1")}</li>
-            <li>{t("hero.sub2")}</li>
-            <li>{t("hero.sub3")}</li>
-            <li>{t("hero.sub4")}</li>
+            <li>Your rank, form and progress.</li>
+            <li>Your matches, without the noise.</li>
+            <li>Your agent pool and tendencies.</li>
+            <li>Your next reason to queue.</li>
           </motion.ul>
 
           <motion.div className="hero-cta" variants={riseItem}>
             <motion.a
               className="btn btn-primary"
-              href="#live-match"
+              href="#dashboard"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.97 }}
               transition={tapSpring}
             >
-              {t("hero.cta_primary")}
+              View my stats
             </motion.a>
             <motion.a
               className="btn btn-ghost"

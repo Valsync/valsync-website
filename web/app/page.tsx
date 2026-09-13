@@ -1,11 +1,7 @@
 import Hero from "@/components/Hero";
-import Ticker from "@/components/Ticker";
-import Features from "@/components/Features";
 import Screens from "@/components/Screens";
-import LiveMatchSection from "@/components/LiveMatchSection";
-import LeaderboardSection from "@/components/LeaderboardSection";
-import StatsGrid from "@/components/StatsGrid";
-import Competitors from "@/components/Competitors";
+import PersonalDashboard from "@/components/PersonalDashboard";
+import PersonalMatches from "@/components/PersonalMatches";
 import Updates from "@/components/Updates";
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
@@ -17,13 +13,9 @@ export default function Home() {
   return (
     <main id="content">
       <Hero />
-      <Ticker />
-      <Features />
+      <PersonalDashboard />
+      <PersonalMatches />
       <Screens />
-      <LiveMatchSection />
-      <LeaderboardSection />
-      <StatsGrid />
-      <Competitors />
       <Updates />
       <Faq />
       <Pricing />
