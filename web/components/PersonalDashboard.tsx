@@ -12,14 +12,15 @@ export default function PersonalDashboard() {
   const { status, data } = usePersonalStats();
 
   if (status !== "ready" || !data) {
+    const unavailable = status === "unavailable";
     return (
       <section className="section" id="dashboard">
         <div className="container">
           <Panel className="profile-connect" accent="cyan" fill="deep" grid scanlines brackets>
             <BracketLabel tone="cyan">Private player data</BracketLabel>
-            <h2 className="t-display">{status === "loading" ? "Checking your secure session…" : "Link your Riot account."}</h2>
-            <p className="t-lead">{status === "loading" ? "Your VALSYNC dashboard will appear here when the session is ready." : "Sign in to display only your own rank, recent competitive matches, and agent performance."}</p>
-            {status !== "loading" && <button className="btn btn-primary" onClick={beginRiotSignIn}>Sign in with Riot</button>}
+            <h2 className="t-display">{status === "loading" ? "Checking your secure session…" : unavailable ? "Personal stats live in the app." : "Link your Riot account."}</h2>
+            <p className="t-lead">{status === "loading" ? "Your VALSYNC dashboard will appear here when the session is ready." : unavailable ? "This static site cannot hold a Riot session. Download VALSYNC to view your private account data securely." : "Sign in to display only your own rank, recent competitive matches, and agent performance."}</p>
+            {status === "anonymous" && <button className="btn btn-primary" onClick={beginRiotSignIn}>Sign in with Riot</button>}
           </Panel>
         </div>
       </section>
