@@ -6,6 +6,7 @@ import { Crosshair, ShieldCheck, X, Zap } from "lucide-react";
 import {
   beginRiotSignIn,
   connectWithRiotId,
+  riotSignInEnabled,
   VALORANT_RANKS,
 } from "@/lib/personal-stats";
 import { REGIONS, type Region } from "@/lib/mock";
@@ -101,29 +102,33 @@ export default function RiotConnectModal({
                 </button>
               </div>
 
-              <div className="riot-rso-banner">
-                <div className="riot-rso-info">
-                  <div className="riot-rso-badge">
-                    <Zap size={14} /> Official Riot Sign-On
+              {riotSignInEnabled && (
+                <>
+                  <div className="riot-rso-banner">
+                    <div className="riot-rso-info">
+                      <div className="riot-rso-badge">
+                        <Zap size={14} /> Official Riot Sign-On
+                      </div>
+                      <p className="t-mono text-xs text-muted">
+                        Authenticate directly through Riot Games SSO for live session sync.
+                      </p>
+                    </div>
+                    <motion.button
+                      type="button"
+                      className="btn btn-primary btn-sm"
+                      onClick={beginRiotSignIn}
+                      whileTap={{ scale: 0.96 }}
+                      transition={tapSpring}
+                    >
+                      Sign in with Riot
+                    </motion.button>
                   </div>
-                  <p className="t-mono text-xs text-muted">
-                    Authenticate directly through Riot Games SSO for live session sync.
-                  </p>
-                </div>
-                <motion.button
-                  type="button"
-                  className="btn btn-primary btn-sm"
-                  onClick={beginRiotSignIn}
-                  whileTap={{ scale: 0.96 }}
-                  transition={tapSpring}
-                >
-                  Sign in with Riot
-                </motion.button>
-              </div>
 
-              <div className="riot-modal-divider">
-                <span>OR CONNECT VIA RIOT ID</span>
-              </div>
+                  <div className="riot-modal-divider">
+                    <span>OR CONNECT VIA RIOT ID</span>
+                  </div>
+                </>
+              )}
 
               <form onSubmit={handleConnect} className="riot-modal-form">
                 {error && <div className="riot-modal-error">{error}</div>}

@@ -73,6 +73,9 @@ type State = {
 const STORAGE_KEY = "valsync_player_session";
 const listeners = new Set<(state: State) => void>();
 
+// Static hosts (GitHub Pages, Surge) have no Netlify functions; only Netlify builds set this flag.
+export const riotSignInEnabled = process.env.NEXT_PUBLIC_RIOT_STATS_ENABLED === "true";
+
 let cached: State = { status: "loading", data: null, isLive: false };
 let pending: Promise<State> | null = null;
 
@@ -101,6 +104,17 @@ async function load(): Promise<State> {
   const stored = getStoredSession();
   if (stored) {
     cached = { status: "ready", data: stored, isLive: true };
+  }
+
+  if (!riotSignInEnabled) {
+    if (stored) {
+      const readyState: State = { status: "ready", data: stored, isLive: true };
+      notify(readyState);
+      return readyState;
+    }
+    const anonState: State = { status: "anonymous", data: null, isLive: false };
+    notify(anonState);
+    return anonState;
   }
 
   pending = (async () => {
@@ -174,6 +188,7 @@ export function usePersonalStats() {
 }
 
 export function beginRiotSignIn() {
+  if (!riotSignInEnabled) return;
   if (typeof window !== "undefined") {
     window.location.assign("/.netlify/functions/riot-auth-start");
   }
@@ -182,7 +197,9 @@ export function beginRiotSignIn() {
 export function signOut() {
   if (typeof window !== "undefined") {
     localStorage.removeItem(STORAGE_KEY);
-    void fetch("/.netlify/functions/riot-auth-logout", { credentials: "same-origin" }).catch(() => {});
+    if (riotSignInEnabled) {
+      void fetch("/.netlify/functions/riot-auth-logout", { credentials: "same-origin" }).catch(() => {});
+    }
   }
   notify({ status: "anonymous", data: null, isLive: false });
 }

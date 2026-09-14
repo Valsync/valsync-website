@@ -13,6 +13,7 @@ import {
   beginRiotSignIn,
   getNextRank,
   getRankColor,
+  riotSignInEnabled,
   signOut,
   usePersonalStats,
 } from "@/lib/personal-stats";
@@ -23,7 +24,7 @@ import RiotConnectModal from "./RiotConnectModal";
 import { riseItem, staggerParent, tapSpring, viewportOnce } from "./hud/motion";
 
 export default function PersonalDashboard() {
-  const { status, data, isLive } = usePersonalStats();
+  const { data, isLive } = usePersonalStats();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // If not signed in with a Riot account, hide the stats completely and show the tactical connect prompt
@@ -64,20 +65,22 @@ export default function PersonalDashboard() {
               </p>
 
               <div className="profile-connect-actions">
-                <motion.button
-                  type="button"
-                  className="btn btn-primary"
-                  onClick={beginRiotSignIn}
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.97 }}
-                  transition={tapSpring}
-                >
-                  <Zap size={16} /> Sign in with Riot Games
-                </motion.button>
+                {riotSignInEnabled && (
+                  <motion.button
+                    type="button"
+                    className="btn btn-primary"
+                    onClick={beginRiotSignIn}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={tapSpring}
+                  >
+                    <Zap size={16} /> Sign in with Riot Games
+                  </motion.button>
+                )}
 
                 <motion.button
                   type="button"
-                  className="btn btn-ghost"
+                  className={riotSignInEnabled ? "btn btn-ghost" : "btn btn-primary"}
                   onClick={() => setIsModalOpen(true)}
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.97 }}
