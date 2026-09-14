@@ -19,12 +19,6 @@ export type PersonalStatsData = {
     detail: string;
     tone: "cyan" | "red" | "gold";
   }>;
-  agents: Array<{
-    agent: string;
-    played: number;
-    winRate: number;
-    acs: number;
-  }>;
   matches: Array<{
     result: "Victory" | "Defeat";
     score: string;
@@ -236,11 +230,6 @@ export function connectWithRiotId(options: {
       { label: "K / D", value: kd, detail: "Above competitive average", tone: "red" },
       { label: "Average combat score", value: `${acs}`, detail: "Across recent competitive matches", tone: "gold" },
       { label: "Headshot rate", value: `${hsRate}%`, detail: "Top precision percentile", tone: "cyan" },
-    ],
-    agents: [
-      { agent: "Omen", played: 22 + (seed % 10), winRate: Math.min(78, 56 + (seed % 20)), acs: acs + 8 },
-      { agent: "Jett", played: 16 + (seed % 8), winRate: Math.min(74, 52 + (seed % 18)), acs: acs + 18 },
-      { agent: "Killjoy", played: 12 + (seed % 6), winRate: Math.min(70, 54 + (seed % 15)), acs: Math.max(180, acs - 12) },
     ],
     matches: [
       { result: "Victory", score: "13 — 9", map: "Sunset", agent: "Omen", kda: "21 / 14 / 8", rr: "+22", time: "38 min ago" },

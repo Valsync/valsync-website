@@ -66,9 +66,11 @@ export default function PersonalMatches() {
                 </div>
                 <div className="mono match-kda">{match.kda}</div>
                 <div
-                  className={`match-rr ${
-                    match.rr.startsWith("+") ? "result-win" : "result-loss"
-                  }`}
+                  className={
+                    match.rr
+                      ? `match-rr ${match.rr.startsWith("+") ? "result-win" : "result-loss"}`
+                      : "match-rr"
+                  }
                 >
                   {match.rr || "—"} {match.rr ? <span>RR</span> : null}
                 </div>
