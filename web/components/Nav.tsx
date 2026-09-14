@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
+import { signOut, usePersonalStats } from "@/lib/personal-stats";
 import LangSwitch from "./LangSwitch";
 import { tapSpring } from "./hud/motion";
 
@@ -16,6 +17,7 @@ export default function Nav() {
   const pathname = usePathname();
   const prefix = pathname === "/" ? "" : "/";
   const B = process.env.NEXT_PUBLIC_BASE_PATH;
+  const { data, isLive } = usePersonalStats();
 
   // Read progress, drawn as a hairline under the bar — the site's version of
   // the app's thin telemetry meters.
@@ -25,7 +27,7 @@ export default function Nav() {
   const links = [
     { href: `${B}${prefix}#dashboard`, label: t("nav.my_stats") },
     { href: `${B}${prefix}#app`, label: t("nav.app") },
-    { href: `${B}${prefix}#matches`, label: "My matches" },
+    ...(isLive ? [{ href: `${B}${prefix}#matches`, label: "My matches" }] : []),
     { href: `${B}${prefix}#updates`, label: t("nav.updates") },
     { href: `${B}${prefix}#pricing`, label: t("nav.pricing") },
     { href: dev ? "/privacy" : "privacy.html", label: t("nav.privacy") },
@@ -51,6 +53,31 @@ export default function Nav() {
           </div>
           <div className="nav-actions">
             <LangSwitch />
+
+            {isLive && data ? (
+              <div className="nav-user-group">
+                <a href={`${B}${prefix}#dashboard`} className="nav-user-badge" title="Go to your command center">
+                  <span className="live-pulse" aria-hidden />
+                  <span>{data.profile.name}</span>
+                </a>
+                <button
+                  type="button"
+                  className="btn btn-ghost btn-sm nav-user-logout"
+                  onClick={signOut}
+                  title="Sign out of Riot session"
+                >
+                  Sign out
+                </button>
+              </div>
+            ) : (
+              <a
+                className="btn btn-ghost btn-sm nav-signin-btn"
+                href={`${B}${prefix}#dashboard`}
+              >
+                Sign in
+              </a>
+            )}
+
             <motion.a
               className="btn btn-ghost btn-sm"
               href={PLAY_URL}
