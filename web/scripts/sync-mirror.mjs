@@ -38,6 +38,7 @@ const COPY = [
   "privacy.html",
   "terms.html",
   "mobile.html",
+  "diagnostics.html",
   "favicon.ico",
   "loader-logo.png",
   "mr7gmipd-playstore.png",
