@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow_Condensed, Big_Shoulders, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import { I18nProvider } from "@/lib/i18n";
+import en from "@/lang/en.json";
 import Nav from "@/components/Nav";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import GazaBanner from "@/components/GazaBanner";
@@ -10,72 +11,88 @@ import BackToTop from "@/components/BackToTop";
 import GlowProvider from "@/components/GlowProvider";
 import "./globals.css";
 
-// The same three faces the Android app bundles in res/font/*, in the same
-// three roles (theme/Type.kt): Big Shoulders is the display voice, Barlow
-// Condensed carries the UI and body, JetBrains Mono handles telemetry.
-//
-// Only Bold/ExtraBold of the display face are pulled — anything lighter loses
-// the poster weight that makes a headline read as a HUD readout, which is the
-// same reason the app ships only those two cuts.
-const bigShoulders = Big_Shoulders({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-bigshoulders",
-  display: "swap",
-  // Google publishes no override metrics for this face, so Next can't build a
-  // size-adjusted fallback. Name a condensed stack by hand instead, or the
-  // pre-swap frame renders the hero in a default sans at a very different
-  // width and the headline jumps when the webfont lands.
-  adjustFontFallback: false,
+// The same fonts bundled by the Android app, self-hosted for reproducible builds.
+const bigShoulders = localFont({
+  src: [
+    { path: "./fonts/big_shoulders_display_bold.ttf", weight: "700", style: "normal" },
+    { path: "./fonts/big_shoulders_display_extrabold.ttf", weight: "800", style: "normal" },
+  ],
+  variable: "--font-bigshoulders", display: "swap", adjustFontFallback: false,
   fallback: ["Arial Narrow", "Haettenschweiler", "Impact", "system-ui", "sans-serif"],
 });
-const barlow = Barlow_Condensed({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-barlow",
-  display: "swap",
+const barlow = localFont({
+  src: [
+    { path: "./fonts/barlow_condensed_light.ttf", weight: "300", style: "normal" },
+    { path: "./fonts/barlow_condensed_regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/barlow_condensed_medium.ttf", weight: "500", style: "normal" },
+    { path: "./fonts/barlow_condensed_semibold.ttf", weight: "600", style: "normal" },
+    { path: "./fonts/barlow_condensed_bold.ttf", weight: "700", style: "normal" },
+  ], variable: "--font-barlow", display: "swap",
 });
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-jetbrains",
-  display: "swap",
+const mono = localFont({
+  src: [
+    { path: "./fonts/jetbrains_mono_regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/jetbrains_mono_bold.ttf", weight: "700", style: "normal" },
+  ], variable: "--font-jetbrains", display: "swap",
 });
 
-const SITE_URL = "https://valsync.surge.sh/";
+const SITE_URL = "https://www.valsync.website/";
 const B = process.env.NEXT_PUBLIC_BASE_PATH;
+const OG_IMAGE = `${SITE_URL}og-image.png`;
+const PLAY_URL = "https://play.google.com/store/apps/details?id=com.valsync.app";
+
+const TITLE = "VALSYNC - VALORANT Companion: Rank, Match History & Party";
+const DESCRIPTION =
+  "VALSYNC is an Android companion for VALORANT. Review your rank, RR and match history, manage loadouts and parties, and explore an illustrative signed-in walkthrough.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "VALSYNC - Privacy-First Valorant Companion App",
-  description:
-    "VALSYNC is a Valorant companion app for store checker workflows, Night Market alerts, party status, match review, and tactical readouts, built around a local-first Riot sign-in.",
+  title: { default: TITLE, template: "%s | VALSYNC" },
+  description: DESCRIPTION,
   applicationName: "VALSYNC",
-  keywords: ["Valorant", "companion app", "store checker", "Night Market", "privacy-first"],
-  robots: { index: true, follow: true },
-  alternates: { canonical: SITE_URL },
+  keywords: [
+    "VALSYNC",
+    "ValSync",
+    "Valorant companion app",
+    "Valorant party companion",
+    "Valorant loadout",
+    "Valorant tracker",
+    "Valorant match history",
+    "Valorant rank tracker",
+    "Valorant app Android",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "VALSYNC - Privacy-First Valorant Companion App",
-    description:
-      "A calm Valorant companion app for store checks, Night Market watchlists, party status, match review, and tactical prep.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: SITE_URL,
     siteName: "VALSYNC",
-    images: [{ url: `${SITE_URL}img/screenshot-home.jpg`, width: 1200, height: 630 }],
+    locale: "en_US",
     type: "website",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "VALSYNC - Valorant companion app" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VALSYNC - Privacy-First Valorant Companion App",
-    description:
-      "Store checker, Night Market watchlist, party status, and match review for Valorant players.",
-    images: [`${SITE_URL}img/screenshot-home.jpg`],
+    site: "@valsyncgg",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
   },
-  icons: { icon: `${B}/favicon.ico` },
+  icons: { icon: `${B}/favicon.ico`, apple: `${SITE_URL}mr7gmipd-playstore.png` },
 };
 
 export const viewport: Viewport = {
   themeColor: "#0A141E",
 };
+
+// Mirrors the visible FAQ (components/Faq.tsx renders faq.q1..q6 from en.json),
+// so the structured data can't drift from what's on the page.
+const FAQ_IDS = ["1", "2", "3", "4", "5", "6"] as const;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -84,28 +101,32 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": `${SITE_URL}#website`,
       name: "VALSYNC",
+      alternateName: ["ValSync", "VAL SYNC", "valsync.website"],
       url: SITE_URL,
-      description:
-        "VALSYNC is a privacy-first Valorant companion app for store checks, Night Market watchlists, party status, match review, and tactical prep.",
+      description: DESCRIPTION,
       inLanguage: "en",
+      publisher: { "@id": `${SITE_URL}#organization` },
     },
     {
       "@type": "Organization",
       "@id": `${SITE_URL}#organization`,
       name: "VALSYNC",
+      alternateName: "ValSync",
       url: SITE_URL,
-      logo: `${SITE_URL}mr7gmipd-playstore.png`,
-      sameAs: ["https://x.com/valsyncgg", "https://discord.gg/5WHvNtskew"],
+      logo: { "@type": "ImageObject", url: `${SITE_URL}mr7gmipd-playstore.png`, width: 512, height: 512 },
+      sameAs: ["https://x.com/valsyncgg", "https://discord.gg/5WHvNtskew", PLAY_URL],
     },
     {
       "@type": "MobileApplication",
       "@id": `${SITE_URL}#app`,
       name: "VALSYNC",
+      alternateName: "VALSYNC - Valorant Companion",
       url: SITE_URL,
+      installUrl: PLAY_URL,
+      downloadUrl: PLAY_URL,
       applicationCategory: "GameApplication",
       operatingSystem: "Android",
-      description:
-        "A Valorant companion app for store checker workflows, Night Market alerts, party status, match review, loadouts, and tactical readouts.",
+      description: DESCRIPTION,
       image: `${SITE_URL}img/screenshot-home.jpg`,
       publisher: { "@id": `${SITE_URL}#organization` },
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -113,14 +134,11 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       "@id": `${SITE_URL}#faq`,
-      mainEntity: [
-        { "@type": "Question", name: "Do I need a Riot account?", acceptedAnswer: { "@type": "Answer", text: "VALSYNC is designed around Riot sign-in handoff, so account-specific Valorant surfaces stay tied to the player who owns them." } },
-        { "@type": "Question", name: "Which platforms is VALSYNC on?", acceptedAnswer: { "@type": "Answer", text: "Android, through Google Play. A browser version is in progress with the same read-outs and no install." } },
-        { "@type": "Question", name: "What can I check from the app?", acceptedAnswer: { "@type": "Answer", text: "VALSYNC covers Home, Store, Party, Matches, Loadout, and Social views for Valorant players." } },
-        { "@type": "Question", name: "How does the store checker work?", acceptedAnswer: { "@type": "Answer", text: "VALSYNC surfaces the Valorant shop, Night Market, and a skin watchlist so players can check what is available without opening multiple browser tabs." } },
-        { "@type": "Question", name: "Can I track my squad or party?", acceptedAnswer: { "@type": "Answer", text: "Yes. The party module shows who is online, who is mid-match, and what roles the stack is missing before the lobby fills up." } },
-        { "@type": "Question", name: "Where is my Riot login stored?", acceptedAnswer: { "@type": "Answer", text: "On your device, encrypted with Android Keystore. VALSYNC runs no servers of its own, so match and store data passes from Riot's API straight to your phone." } },
-      ],
+      mainEntity: FAQ_IDS.map((id) => ({
+        "@type": "Question",
+        name: en.faq[`q${id}`],
+        acceptedAnswer: { "@type": "Answer", text: en.faq[`a${id}`] },
+      })),
     },
   ],
 };

@@ -32,10 +32,7 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Product</h4>
-            <a href={`${B}${prefix}#dashboard`}>My stats</a>
             <a href={`${B}${prefix}#app`}>{t("nav.app")}</a>
-            <a href={`${B}${prefix}#matches`}>My matches</a>
-            <a href={`${B}${prefix}#updates`}>{t("nav.updates")}</a>
             <a href={`${B}${prefix}#pricing`}>{t("nav.pricing")}</a>
           </div>
 
@@ -52,6 +49,7 @@ export default function Footer() {
             </a>
             <a href={dev ? "/privacy" : "privacy.html"}>{t("nav.privacy")}</a>
             <a href={dev ? "/terms" : "terms.html"}>{t("nav.terms")}</a>
+            <a href={dev ? "/delete-account" : "delete-account.html"}>Delete account</a>
           </div>
         </div>
 

@@ -1,8 +1,12 @@
 # robots.txt for VALSYNC
 User-agent: *
 Allow: /
+# Support replies are fetched by the app, not meant for search results.
+Disallow: /support/
 
 # Explicitly allow Google app-ads.txt crawler
 User-agent: Google-adstxt
 Allow: /app-ads.txt
 Allow: /
+
+Sitemap: https://www.valsync.website/sitemap.xml

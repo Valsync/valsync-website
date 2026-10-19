@@ -3,7 +3,7 @@
  * sync-mirror.mjs — regenerate the root static mirror from web/out/.
  *
  * The repo root is served by hosts with different bases:
- *   - Surge/Netlify: https://valsync.surge.sh / custom domain      (root, CANONICAL)
+ *   - Surge/Netlify: https://www.valsync.website      (root, CANONICAL)
  *   - GitHub Pages:  https://valsync.github.io/valsync-website/  (subpath, mirror)
  *
  * web/out/ is built with GITHUB_PAGES=true, so every asset/link carries the
@@ -33,11 +33,14 @@ const ROOT = resolve(WEB, "..");
 // Files/dirs copied verbatim from web/out/ into the repo root.
 const COPY = [
   "index.html",
+  "diagnostics.html",
   "404.html",
   "_not-found.html",
   "privacy.html",
+  "delete-account.html",
   "terms.html",
   "mobile.html",
+  "play.html",
   "favicon.ico",
   "loader-logo.png",
   "mr7gmipd-playstore.png",
@@ -48,6 +51,8 @@ const COPY = [
   "window.svg",
   "app-ads.txt",
   "robots.txt",
+  "sitemap.xml",
+  "og-image.png",
   ".nojekyll",
   "_next",
   "assets",
@@ -61,10 +66,12 @@ const COPY = [
 const JUNK = [
   "index.txt",
   "privacy.txt",
+  "delete-account.txt",
   "terms.txt",
   "mobile.txt",
   "_not-found.txt",
   "privacy",
+  "delete-account",
   "terms",
   "mobile",
 ];
@@ -87,7 +94,7 @@ const REWRITES = [
 ];
 
 // GitHub Pages is the mirror host, not canonical (canonical is
-// valsync.surge.sh — see web/app/layout.tsx SITE_URL). If any copied file
+// www.valsync.website — see web/app/layout.tsx SITE_URL). If any copied file
 // still references the full valsync.github.io/valsync-website URL (e.g. a
 // future alternate/mirror link), the verify step below whitelists that one
 // occurrence so it isn't flagged as a leftover unprefixed path.

@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   ...(basePath ? { basePath } : {}),
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath || "",
+    NEXT_PUBLIC_COMPANION_HOST: process.env.NETLIFY === "true" ? "netlify" : "static",
   },
 };
 

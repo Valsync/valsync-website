@@ -7,23 +7,13 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
+import { WEB_APP_URL } from "@/lib/companion";
 import { useI18n } from "@/lib/i18n";
 import BracketLabel from "./hud/BracketLabel";
 import { easeOut, riseItem, staggerParent, tapSpring } from "./hud/motion";
 
-const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const PLAY_URL = "https://play.google.com/store/apps/details?id=com.valsync.app";
-
-// The device cycles the real app, not a mockup. Each frame carries the label
-// the app itself uses for that screen.
-const SCREENS = [
-  { src: "screenshot-home.jpg", label: "HOME" },
-  { src: "screenshot-store.jpg", label: "STORE" },
-  { src: "screenshot-matches.jpg", label: "MATCHES" },
-  { src: "screenshot-loadout.jpg", label: "LOADOUT" },
-  { src: "screenshot-party.jpg", label: "PARTY" },
-  { src: "screenshot-social.jpg", label: "SOCIAL" },
-] as const;
+const B = process.env.NEXT_PUBLIC_BASE_PATH;
 
 const ROTATOR_KEYS = ["hero.word1", "hero.word2", "hero.word3", "hero.word4"];
 
@@ -33,7 +23,6 @@ export default function Hero() {
   const ref = useRef<HTMLElement>(null);
 
   const [word, setWord] = useState(0);
-  const [screen, setScreen] = useState(0);
 
   // Parallax on the way out — the copy drifts up a little slower than the
   // device, which is what sells the depth without a scroll hijack.
@@ -51,13 +40,6 @@ export default function Hero() {
     return () => clearInterval(id);
   }, [reduce]);
 
-  useEffect(() => {
-    if (reduce) return;
-    const id = setInterval(() => setScreen((s) => (s + 1) % SCREENS.length), 3600);
-    return () => clearInterval(id);
-  }, [reduce]);
-
-  const active = SCREENS[screen];
 
   return (
     <section className="hero" id="top" ref={ref}>
@@ -106,6 +88,8 @@ export default function Hero() {
             </span>
           </motion.div>
 
+          <a className="btn btn-primary" href={WEB_APP_URL}>{t("companion.open")}</a>
+
           <motion.ul className="hero-sub" variants={riseItem}>
             <li>Your rank, form and progress.</li>
             <li>Your matches, without the noise.</li>
@@ -116,12 +100,12 @@ export default function Hero() {
           <motion.div className="hero-cta" variants={riseItem}>
             <motion.a
               className="btn btn-primary"
-              href="#dashboard"
+              href="#app"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.97 }}
               transition={tapSpring}
             >
-              View my stats
+              {t("appGallery.explore")}
             </motion.a>
             <motion.a
               className="btn btn-ghost"
@@ -143,8 +127,8 @@ export default function Hero() {
               <dd className="c-red">{t("hud.noise_val")}</dd>
             </div>
             <div>
-              <dt>{t("hud.tracking")}</dt>
-              <dd className="c-cyan">{t("hud.tracking_val")}</dd>
+              <dt>Game data</dt>
+              <dd className="c-cyan">Riot services</dd>
             </div>
             <div>
               <dt>{t("hud.sync")}</dt>
@@ -162,21 +146,7 @@ export default function Hero() {
         >
           <span className="hero-device-notch" aria-hidden />
           <div className="hero-device-screen">
-            <AnimatePresence initial={false}>
-              <motion.img
-                key={active.src}
-                src={`${B}/img/${active.src}`}
-                alt={`VALSYNC ${active.label.toLowerCase()} screen`}
-                width={1080}
-                height={2400}
-                loading="eager"
-                initial={{ opacity: 0, scale: 1.03 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.7, ease: easeOut }}
-                style={{ position: "absolute", inset: 0 }}
-              />
-            </AnimatePresence>
+            <img src={`${B}/img/app-home.webp`} alt={t("appGallery.home.alt")} width="540" height="1200" fetchPriority="high" />
           </div>
 
           <motion.div
@@ -187,7 +157,7 @@ export default function Hero() {
             transition={{ delay: 0.7, duration: 0.5, ease: easeOut }}
           >
             <span className="pip" style={{ ["--pip-color" as string]: "var(--cyan)" }} aria-hidden />
-            <span className="c-cyan">{active.label}</span>
+            <span className="c-cyan">{t("appGallery.heroTag")}</span>
           </motion.div>
 
           <motion.div

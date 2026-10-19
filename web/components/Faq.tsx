@@ -1,14 +1,20 @@
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useI18n } from "@/lib/i18n";
 import SectionHead from "./hud/SectionHead";
 import { easeOut } from "./hud/motion";
 
 const IDS = ["1", "2", "3", "4", "5", "6"] as const;
+const QUESTIONS = [
+  ["Do I need a Riot account?", "Public reference content and this prototype need no account. Personal stats, loadout, party, social and Premier features require Riot sign-in in the Android app."],
+  ["Which platforms does Valsync support?", "Valsync is an Android app. This website provides product information and an illustrative reviewer walkthrough."],
+  ["What can I check in the app?", "The current navigation covers Home, History, Loadout, Party, Social, Wiki and Premier. Personal store and Night Market tracking have been removed."],
+  ["Can I see opponents before a match?", "No. During agent select, the app shows the player and allies. It does not identify or analyze opponents before a match starts."],
+  ["Can I manage a party?", "The signed-in player can create or join a party, invite friends, share a code and start matchmaking. These actions use Riot's internal services and require Riot review."],
+  ["How does Valsync handle data?", "Riot tokens are encrypted on the Android device. The app also uses optional analytics, ads, support services and local chat history. Read the Privacy Policy for details."],
+] as const;
 
 export default function Faq() {
-  const { t } = useI18n();
   const [open, setOpen] = useState<string | null>("1");
 
   return (
@@ -16,7 +22,7 @@ export default function Faq() {
       <div className="container">
         <SectionHead
           eyebrow="FAQ"
-          title={t("faq.title")}
+          title="Questions before you install."
           note="Six questions we get asked before every install."
         />
 
@@ -32,7 +38,7 @@ export default function Faq() {
                     aria-controls={`faq-a-${id}`}
                     onClick={() => setOpen(isOpen ? null : id)}
                   >
-                    <span>{t(`faq.q${id}`)}</span>
+                    <span>{QUESTIONS[Number(id) - 1][0]}</span>
                     <span className="faq-sign" aria-hidden />
                   </button>
                 </h3>
@@ -47,7 +53,7 @@ export default function Faq() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.34, ease: easeOut }}
                     >
-                      <p>{t(`faq.a${id}`)}</p>
+                      <p>{QUESTIONS[Number(id) - 1][1]}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>

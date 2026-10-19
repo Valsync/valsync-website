@@ -10,7 +10,7 @@
 # The generated root mirror stays in the repo for GitHub Pages and Surge.
 [build]
   base = "web"
-  command = "npm run build"
+  command = "npm run build && node scripts/stage-support.mjs"
   publish = "out"
 
 [functions]

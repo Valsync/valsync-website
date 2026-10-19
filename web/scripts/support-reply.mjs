@@ -4,7 +4,7 @@
  *   npm run reply -- vs-1a2b3c4d5e6f708192a3b4c5 "Fixed in 1.7.1 — thanks for the screenshot." fixed
  *
  * Writes support/<ticket-id>.json at the repo root. The app polls exactly that path for the
- * ticket ids it minted (SupportReplyClient.BASE_URL = https://valsync.surge.sh/support), so the
+ * ticket ids it minted (SupportReplyClient.BASE_URL = https://www.valsync.website/support), so the
  * filename has to match the id in the report email's subject line byte for byte.
  *
  * Nothing is live until the site is deployed — see the reminder this prints.

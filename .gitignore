@@ -13,3 +13,10 @@ web/.mimosa/
 
 # Local Netlify folder
 .netlify
+
+# Large test builds are deployed directly to Surge, not committed to Git.
+downloads/*.apk
+downloads/*.aab
+
+# Local emulator capture originals and screenshot-only APK.
+artifacts/app-ui-2026-10-11/
