@@ -1,8 +1,5 @@
 import Hero from "@/components/Hero";
 import Screens from "@/components/Screens";
-import PersonalDashboard from "@/components/PersonalDashboard";
-import PersonalMatches from "@/components/PersonalMatches";
-import Updates from "@/components/Updates";
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
 import FinalCta from "@/components/FinalCta";
@@ -13,10 +10,7 @@ export default function Home() {
   return (
     <main id="content">
       <Hero />
-      <PersonalDashboard />
-      <PersonalMatches />
       <Screens />
-      <Updates />
       <Faq />
       <Pricing />
       <FinalCta />

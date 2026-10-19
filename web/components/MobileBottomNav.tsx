@@ -2,18 +2,14 @@
 import { useState, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
-import { Clock, Home, LayoutGrid, MonitorSmartphone, Tag } from "lucide-react";
+import { CircleHelp, Home, MonitorSmartphone, Tag } from "lucide-react";
 
 const dev = process.env.NODE_ENV === "development";
 
-// Five tabs, not seven: at 360px a seventh cell is 46px wide and every label
-// wraps to two lines. Privacy and Terms live in the footer, which is where
-// people go looking for them anyway.
 const tabs = [
   { key: "home",    icon: Home,              href: "#top",          labelKey: "nav.mob_home" },
   { key: "app",     icon: MonitorSmartphone, href: "#app",          labelKey: "nav.app" },
-  { key: "stats",   icon: LayoutGrid,        href: "#dashboard",    labelKey: "nav.my_stats" },
-  { key: "updates", icon: Clock,             href: "#updates",      labelKey: "nav.updates" },
+  { key: "faq",     icon: CircleHelp,        href: "#faq",          labelKey: "nav.mob_faq" },
   { key: "pricing", icon: Tag,               href: "#pricing",      labelKey: "nav.mob_pricing" },
 ] as const;
 
@@ -31,13 +27,18 @@ export default function MobileBottomNav() {
     setActive(idx);
   }, []);
 
+  // Static hosts expose the same route as play.html, sometimes below a base.
+  if (/\/play(?:\.html)?\/?$/.test(pathname)) return null;
+
   return (
     <nav className="mobnav" aria-label="Mobile navigation">
       {tabs.map((tab, i) => {
         const Icon = tab.icon;
         const isActive = active === i;
         const href = `${prefix}${tab.href}`;
-        return (
+        if (pathname === "/play") return null;
+
+  return (
           <a
             key={tab.key}
             className="mobnav-btn"

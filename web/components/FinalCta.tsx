@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import Panel from "./hud/Panel";
 import BracketLabel from "./hud/BracketLabel";
-import CommandLine from "./CommandLine";
 import { riseItem, staggerParent, tapSpring, viewportOnce } from "./hud/motion";
 
 const PLAY_URL = "https://play.google.com/store/apps/details?id=com.valsync.app";
@@ -29,21 +28,15 @@ export default function FinalCta() {
             </motion.div>
 
             <motion.h2 className="t-display-lg" variants={riseItem} style={{ marginTop: 18 }}>
-              {t("fcta.title")}
+              {t("appGallery.ctaTitle")}
             </motion.h2>
 
             <motion.p className="t-lead" variants={riseItem}>
-              {t("fcta.lead")}
+              {t("appGallery.ctaLead")}
             </motion.p>
 
             <motion.div variants={riseItem} style={{ marginTop: 34 }}>
-              <div className="fcta-soon">
-                <span className="chip chip-static lb-soon-chip">{t("common.soon")}</span>
-              </div>
-              {/* Inert preview: the lookup runs in the app, not here. */}
-              <div className="cmd-shell cmd-shell-preview">
-                <CommandLine />
-              </div>
+              <a className="btn btn-ghost" href="#app">{t("appGallery.explore")}</a>
             </motion.div>
 
             <motion.div className="fcta-actions" variants={riseItem}>

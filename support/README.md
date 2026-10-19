@@ -1,7 +1,7 @@
 # Support replies
 
 Each file here is one reply to one in-app bug report or feature/language request. The VALSYNC
-Android app polls `https://valsync.surge.sh/support/<ticket-id>.json` for the ticket ids it
+Android app polls `https://www.valsync.website/support/<ticket-id>.json` for the ticket ids it
 minted, and shows the reply under **Settings → My reports**.
 
 `*.md` is in `.surgeignore`, so this README stays out of the deploy. The `.json` files ship.

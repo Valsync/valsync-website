@@ -1,124 +1,52 @@
 "use client";
+
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
-import Panel from "./hud/Panel";
 import SectionHead from "./hud/SectionHead";
-import { easeOut, riseItem, staggerParent, viewportOnce } from "./hud/motion";
 
-const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const B = process.env.NEXT_PUBLIC_BASE_PATH;
+const SCREENS = ["home", "career", "mastery", "loadout", "party", "rewards"] as const;
 
-const SCREENS = [
-  { key: "home", src: "screenshot-home.jpg" },
-  { key: "store", src: "screenshot-store.jpg" },
-  { key: "matches", src: "screenshot-matches.jpg" },
-  { key: "loadout", src: "screenshot-loadout.jpg" },
-  { key: "party", src: "screenshot-party.jpg" },
-  { key: "social", src: "screenshot-social.jpg" },
-] as const;
-
-/**
- * The product gallery. Picking a row swaps the device; the accent bar is a
- * shared-layout element so it slides between rows rather than blinking from
- * one to the next.
- */
 export default function Screens() {
   const { t } = useI18n();
-  const [active, setActive] = useState(0);
-  const current = SCREENS[active];
+  const [active, setActive] = useState<(typeof SCREENS)[number]>("home");
 
   return (
     <section className="section" id="app">
       <div className="container">
-        <SectionHead
-          eyebrow={t("screens.eyebrow")}
-          title={t("screens.title")}
-          lead={t("screens.lead")}
-          note={t("screens.note")}
-          tone="cyan"
-        />
-
-        <motion.div
-          className="screens-wrap"
-          variants={staggerParent(0.08)}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-        >
-          <motion.ul className="screen-list" variants={riseItem}>
-            {SCREENS.map((s, i) => {
-              const isActive = i === active;
-              return (
-                <li key={s.key}>
-                  <button
-                    className="screen-row"
-                    data-active={isActive}
-                    onClick={() => setActive(i)}
-                    aria-expanded={isActive}
-                  >
-                    {isActive && (
-                      <motion.span
-                        className="screen-bar"
-                        layoutId="screen-bar"
-                        transition={{ type: "spring", stiffness: 380, damping: 34 }}
-                        aria-hidden
-                      />
-                    )}
-                    <span className="screen-index mono">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="screen-copy">
-                      <span className="screen-name">{t(`screens.${s.key}.name`)}</span>
-                      <AnimatePresence initial={false}>
-                        {isActive && (
-                          <motion.span
-                            className="screen-desc"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.36, ease: easeOut }}
-                          >
-                            <span>{t(`screens.${s.key}.desc`)}</span>
-                          </motion.span>
-                        )}
-                      </AnimatePresence>
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </motion.ul>
-
-          <motion.div className="screen-stage" variants={riseItem}>
-            <Panel
-              className="screen-device"
-              fill="deep"
-              accent="cyan"
-              brackets
-              grid
-            >
-              <div className="screen-device-shot">
-                <AnimatePresence mode="popLayout" initial={false}>
-                  <motion.img
-                    key={current.src}
-                    src={`${B}/img/${current.src}`}
-                    alt={`VALSYNC ${t(`screens.${current.key}.name`)}`}
-                    width={1080}
-                    height={2400}
-                    loading="lazy"
-                    initial={{ opacity: 0, y: 18 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -18 }}
-                    transition={{ duration: 0.42, ease: easeOut }}
-                  />
-                </AnimatePresence>
-              </div>
-              <p className="screen-caption t-micro">
-                {t(`screens.${current.key}.name`)}
-              </p>
-            </Panel>
-          </motion.div>
-        </motion.div>
+        <SectionHead eyebrow={t("appGallery.eyebrow")} title={t("appGallery.title")} lead={t("appGallery.lead")} note={t("appGallery.note")} tone="cyan" />
+        <div className="app-gallery">
+          <div className="app-gallery-copy">
+            <div className="app-gallery-options" role="group" aria-label={t("appGallery.choose")}>
+              {SCREENS.map((screen, index) => (
+                <button key={screen} type="button" className="app-gallery-option" aria-pressed={active === screen} aria-controls="app-gallery-preview" onClick={() => setActive(screen)}>
+                  <span className="t-micro">{String(index + 1).padStart(2, "0")}</span>
+                  <span>{t(`appGallery.${screen}.name`)}</span>
+                </button>
+              ))}
+            </div>
+            <div className="app-gallery-detail" aria-live="polite">
+              <span className="t-micro c-cyan">{t("appGallery.detailLabel")}</span>
+              <h3>{t(`appGallery.${active}.heading`)}</h3>
+              <p className="t-lead">{t(`appGallery.${active}.detail`)}</p>
+            </div>
+            <div className="app-gallery-thumbnails">
+              {(["career", "mastery", "loadout"] as const).map((screen) => (
+                <button key={screen} type="button" onClick={() => setActive(screen)} aria-label={`${t("appGallery.view")} ${t(`appGallery.${screen}.name`)}`} aria-pressed={active === screen} aria-controls="app-gallery-preview">
+                  <img src={`${B}/img/app-${screen}.webp`} alt="" width="540" height="1200" loading="lazy" decoding="async" />
+                  <span className="t-micro">{t(`appGallery.${screen}.name`)}</span>
+                </button>
+              ))}
+            </div>
+            <p className="app-gallery-note t-mono">{t("appGallery.disclaimer")}</p>
+          </div>
+          <figure className="app-gallery-stage" id="app-gallery-preview">
+            <div className="app-gallery-device">
+              <img key={active} src={`${B}/img/app-${active}.webp`} alt={t(`appGallery.${active}.alt`)} width="540" height="1200" loading="lazy" decoding="async" />
+            </div>
+            <figcaption className="screen-caption t-micro">{t(`appGallery.${active}.name`)} · {t("appGallery.capture")}</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   );

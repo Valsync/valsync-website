@@ -112,7 +112,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     const query = new URLSearchParams(window.location.search).get("lang");
     const nav = navigator.language;
     const initial =
-      [query, stored].map(matchLocale).find(Boolean) || matchLocale(nav) || "en";
+      [stored, query].map(matchLocale).find(Boolean) || matchLocale(nav) || "en";
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (initial !== "en") setLangState(initial);
   }, []);

@@ -33,11 +33,11 @@ export default function Pricing() {
               {t("pricing.title")}
             </h2>
             <p className="t-lead" style={{ marginTop: 16 }}>
-              {t("pricing.lead")}
+              The Android app has a free tier with ads and an optional Premium subscription.
             </p>
             <ul className="price-features" style={{ borderTop: 0, paddingTop: 8 }}>
-              {[1, 2, 3, 4, 5].map((i) => (
-                <li key={i}>{t(`pricing.starter.feature_${i}`)}</li>
+              {["Match history and personal stats", "Party and social tools", "Loadout and public game reference", "Premier information", "Support and app updates"].map((feature) => (
+                <li key={feature}>{feature}</li>
               ))}
             </ul>
           </motion.div>
@@ -56,7 +56,7 @@ export default function Pricing() {
 
             <h3 className="t-headline">{t("pricing.starter.name")}</h3>
             <p className="t-body" style={{ marginTop: 8 }}>
-              {t("pricing.starter.description")}
+              Free access to the core companion features, with ads.
             </p>
 
             <div className="price-amount">

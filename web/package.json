@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "eslint",
     "sync-mirror": "node scripts/sync-mirror.mjs",
-    "reply": "node scripts/support-reply.mjs"
+    "reply": "node scripts/support-reply.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "seo-check": "node scripts/seo-check.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.4",
     "@react-three/fiber": "^9.7.0",
     "@react-three/postprocessing": "^3.0.5",
     "class-variance-authority": "^0.7.1",

@@ -104,7 +104,7 @@ VALSYNC is a **privacy-first, zero-ads tactical companion for Valorant players**
 
 **URLs**:  
 - GitHub Pages: `valsync.github.io/valsync-website/`  
-- Surge: `valsync.surge.sh`  
+- Surge: `www.valsync.website`  
 - Terms: `/terms.html`  
 - Privacy: `/privacy.html`  
 - Phone Demo: `/mobile.html`  
@@ -148,7 +148,7 @@ VALSYNC is a **privacy-first, zero-ads tactical companion for Valorant players**
 |--------|-----|--------|
 | GitHub | `github.com/AbdullahElTiby/valsync-website` | `git push origin main` |
 | GitHub Pages | `valsync.github.io/valsync-website/` | Auto-deploys from `main /` root |
-| Surge | `valsync.surge.sh` | `surge . valsync.surge.sh` |
+| Surge | `www.valsync.website` | `surge . www.valsync.website` |
 
 No CI/CD pipeline — manual deploys to both.
 
