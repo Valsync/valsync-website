@@ -178,6 +178,21 @@ test("status distinguishes outage from an operational region", async () => {
   const result = body(await api.handler({ headers: {}, queryStringParameters: { action: "status" } }));
   assert.equal(result.regions.find(r => r.id === "eu").state, "incident"); assert.equal(result.regions.find(r => r.id === "kr").state, "unknown"); assert.equal(result.regions.find(r => r.id === "na").state, "operational");
 });
+test("tiers expose the live rank emblems and drop foreign image hosts", async () => {
+  const icon = "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/largeicon.png";
+  globalThis.fetch = async url => String(url).includes("competitivetiers") ? reply({ data: [
+    { uuid: "old", tiers: [{ tier: 0, tierName: "UNRANKED", largeIcon: "https://media.valorant-api.com/competitivetiers/old/0/largeicon.png" }] },
+    { uuid: "new", tiers: [
+      { tier: 0, tierName: "UNRANKED", divisionName: "UNRANKED", color: "ffffffff", largeIcon: "https://media.valorant-api.com/competitivetiers/new/0/largeicon.png" },
+      { tier: 18, tierName: "DIAMOND 1", divisionName: "DIAMOND", color: "b9e3efff", largeIcon: icon },
+      { tier: 27, tierName: "RADIANT", divisionName: "RADIANT", color: "ffffaaff", largeIcon: "https://evil.test/rank.png" },
+    ] },
+  ] }) : originalFetch(url);
+  const result = body(await api.handler({ headers: {}, queryStringParameters: { action: "tiers" } }));
+  assert.equal(result.tiers.find(t => t.tier === 18).icon, icon);
+  assert.equal(result.tiers.find(t => t.tier === 27).icon, null);
+  assert.equal(result.tiers.find(t => t.tier === 0).name, "UNRANKED");
+});
 test("all companion copy keys exist in the four required locales", () => {
   const en = JSON.parse(readFileSync(new URL("../lang/en.json", import.meta.url), "utf8")).companion;
   for (const locale of ["ar", "de", "tr"]) {
@@ -188,4 +203,10 @@ test("all companion copy keys exist in the four required locales", () => {
     }
     if (locale === "ar") assert.match(dict.dashboard, /[\u0600-\u06ff]/);
   }
+});
+
+test("performance score reads Riot's placeholder score block and clamps it", () => {
+  assert.equal(api.performanceScore({ scores: { TempValueF: 287.6 } }), 288);
+  assert.equal(api.performanceScore({ stats: { performanceScore: 612 } }), 500);
+  assert.equal(api.performanceScore({ stats: { kills: 3 } }), null);
 });

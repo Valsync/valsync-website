@@ -37,7 +37,7 @@ export default function PhonePairing({ onPaired, onClose }: { onPaired: () => vo
   }
   return <section className="wc-panel wc-pair" aria-labelledby="pair-title">
     <div className="wc-section-head"><h2 id="pair-title">{t("companion.pairPhone")}</h2><button className="btn btn-ghost" onClick={onClose}>{t("companion.close")}</button></div>
-    <p>{t("companion.pairInstructions")}</p><p>{t("companion.pairPrivacy")}</p>
+    <p>{t("companion.pairInstructions")}</p><p>{t("companion.pairLead")}</p><p>{t("companion.pairPrivacy")}</p>
     {pair && !expired && <><code className="wc-pair-code" dir="ltr">{pair.code}</code><p role="status">{t("companion.waitingPhone")}</p></>}
     {expired && <p role="status">{t("companion.pairExpired")}</p>}
     {error && <p role="alert">{t("companion.pairError")}</p>}

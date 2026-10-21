@@ -1,6 +1,6 @@
 # VALSYNC web companion
 
-The static `/play` route exports to `play.html`. Public wiki/status and private Riot requests use native Netlify Request/Response function entry points. Private features are read-only. The primary domain `www.valsync.website` is hosted on Netlify. Static mirror links point to `https://www.valsync.website/play.html`. Optional Android pairing shares read-only snapshots without moving Riot credentials; see `web/docs/phone-pairing.md`.
+The static `/play` route exports to `play.html` and is account-first: Riot sign-in and one-time Android pairing are the only ways in, and a signed-in session unlocks nothing but the player's own stats and match history. Public wiki/status and the storefront endpoint still exist in the API surface but are not part of the companion UI. Private features are read-only. The primary domain `www.valsync.website` is hosted on Netlify. Static mirror links point to `https://www.valsync.website/play.html`. Pairing is a one-time approval: the browser cookie and the pair record live for 90 days, and the site's Disconnect action revokes both; see `web/docs/phone-pairing.md`.
 
 ## Production setup
 
@@ -27,6 +27,7 @@ Do not enable private features on previews with unapproved callback domains. Pub
 - `action=store&lang=en`: daily and active Night Market offers, supplied VP costs, images and expiry times. No purchasing.
 - `action=catalog&kind=agents|weapons|maps|skins&lang=en|ar|de|tr`: public names, images, descriptions and facts. Other locales use English companion copy/content.
 - `action=status&lang=en|ar|de|tr`: public regional incidents/maintenance; failed requests produce unknown, never operational.
+- `action=tiers`: the live competitive tier table (index, name, division, colour, rank emblem URL) taken from the public tier asset; the newest table is used, and only emblems from the known Riot media host are returned.
 
 ## Sessions and failure handling
 

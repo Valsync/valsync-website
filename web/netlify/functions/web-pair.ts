@@ -8,7 +8,7 @@ async function readBody(req: Request) {
   if (!req.headers.get("content-type")?.startsWith("application/json")) throw new Error("invalid_body");
   const reader = req.body?.getReader(); let size = 0; const chunks: Uint8Array[] = [];
   if (!reader) throw new Error("invalid_body");
-  while (true) { const item = await reader.read(); if (item.done) break; size += item.value.byteLength; if (size > 262144) { await reader.cancel(); throw new Error("body_too_large"); } chunks.push(item.value); }
+  while (true) { const item = await reader.read(); if (item.done) break; size += item.value.byteLength; if (size > 393216) { await reader.cancel(); throw new Error("body_too_large"); } chunks.push(item.value); }
   return JSON.parse(Buffer.concat(chunks).toString("utf8")) as Record<string, unknown>;
 }
 export function createPairHandler(storage: () => PairStore = pairStore) {
