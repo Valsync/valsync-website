@@ -1,9 +1,9 @@
 import { netlify } from "./_riot";
 import { getBrowserPair, pairEnabled } from "./_pairing";
 import { clientPlatform, configured, getSession, json, privateDataEnabled, readSession, request, shards, UpstreamError, type HandlerEvent, type Session } from "./_riot";
-import type { CatalogData, CatalogItem, CatalogKind, DashboardData, MatchDetail, MatchesData, MatchSummary, SessionData, StatusData, StoreData, StoreOffer } from "../../lib/companion-types";
+import type { CatalogData, CatalogItem, CatalogKind, DashboardData, MatchDetail, MatchesData, MatchSummary, SessionData, StatusData, StoreData, StoreOffer, TiersData } from "../../lib/companion-types";
 
-type Player = { subject?: string; gameName?: string; tagLine?: string; teamId?: string; characterId?: string; stats?: { kills?: number; deaths?: number; assists?: number; score?: number; roundsPlayed?: number } };
+type Player = { subject?: string; gameName?: string; tagLine?: string; teamId?: string; characterId?: string; stats?: { kills?: number; deaths?: number; assists?: number; score?: number; roundsPlayed?: number; performanceScore?: number }; scores?: { TempValueF?: number } };
 type RiotMatch = { matchInfo?: { matchId?: string; mapId?: string; gameStartMillis?: number; queueID?: string }; players?: Player[]; teams?: { teamId?: string; won?: boolean; roundsWon?: number }[]; roundResults?: { roundNum?: number; winningTeam?: string; roundResult?: string }[] };
 type PublicItem = { uuid: string; displayName?: string; displayIcon?: string; fullPortrait?: string; splash?: string; description?: string; mapUrl?: string; role?: { displayName?: string }; abilities?: { displayName?: string; description?: string }[]; weaponStats?: { fireRate?: number; magazineSize?: number }; gridName?: string; skins?: PublicItem[]; levels?: PublicItem[] };
 const stamp = () => new Date().toISOString();
@@ -23,12 +23,38 @@ export async function catalog(kind: CatalogKind, lang: string): Promise<CatalogD
   const endpoint = kind === "skins" ? "weapons/skins" : kind;
   const body = await cached<{ data: PublicItem[] }>(`https://valorant-api.com/v1/${endpoint}?language=${languages[lang] ?? "en-US"}${kind === "agents" ? "&isPlayableCharacter=true" : ""}`);
   const items: CatalogItem[] = body.data.map(item => ({
-    id: kind === "maps" ? item.mapUrl ?? item.uuid : item.uuid, name: item.displayName ?? item.uuid,
+    id: kind === "maps" ? item.mapUrl ?? item.uuid : item.uuid, uuid: item.uuid,
+    // The app bleeds the map splash into the match card behind the stat
+    // column (HistoryMatchRow), so the art has to travel with the map.
+    art: kind === "maps" ? item.splash ?? null : null,
+    name: item.displayName ?? item.uuid,
     image: item.displayIcon ?? item.fullPortrait ?? item.splash ?? item.levels?.[0]?.displayIcon ?? null,
     description: item.description ?? item.gridName ?? "",
     facts: [...(item.role?.displayName ? [item.role.displayName] : []), ...(item.abilities ?? []).map(a => `${a.displayName ?? ""}: ${a.description ?? ""}`), ...(item.weaponStats ? [`${item.weaponStats.fireRate ?? "—"} / s · ${item.weaponStats.magazineSize ?? "—"}`] : [])],
   }));
   return { items, fetchedAt: stamp() };
+}
+// The live competitive tier table carries the rank emblems. The newest table
+// (highest tier index) is the one the game uses today: 0 unranked, 3 iron 1
+// ... 27 radiant. Only the known Riot media host is allowed through.
+export async function rankTiers(): Promise<TiersData> {
+  const body = await cached<{ data?: { uuid: string; tiers?: { tier: number; tierName?: string; divisionName?: string; color?: string; largeIcon?: string }[] }[] }>("https://valorant-api.com/v1/competitivetiers", 21_600_000);
+  const assets = body.data ?? [];
+  const asset = assets.reduce<{ uuid: string; tiers?: { tier: number; tierName?: string; divisionName?: string; color?: string; largeIcon?: string }[] } | null>((best, candidate) => {
+    const tiers = candidate.tiers ?? [];
+    if (!tiers.length) return best;
+    const last = Math.max(...tiers.map(t => t.tier));
+    const bestLast = best?.tiers?.length ? Math.max(...best.tiers.map(t => t.tier)) : -1;
+    return last > bestLast ? candidate : best;
+  }, null);
+  const tiers = (asset?.tiers ?? []).map(tier => ({
+    tier: tier.tier,
+    name: tier.tierName ?? "",
+    division: tier.divisionName ?? "",
+    color: tier.color ?? "",
+    icon: tier.largeIcon && /^https:\/\/media\.valorant-api\.com\/competitivetiers\//.test(tier.largeIcon) ? tier.largeIcon : null,
+  }));
+  return { tiers, fetchedAt: stamp() };
 }
 export async function serviceStatus(lang: string): Promise<StatusData> {
   type Incident = { id?: number; updated_at?: string; titles?: { locale?: string; content?: string }[]; updates?: { created_at?: string; updated_at?: string; translations?: { locale?: string; content?: string }[] }[] };
@@ -50,6 +76,11 @@ async function riotClient(session: Session) {
   const headers = { Authorization: `Bearer ${session.accessToken}`, "X-Riot-Entitlements-JWT": session.entitlementsToken, "X-Riot-ClientPlatform": clientPlatform, "X-Riot-ClientVersion": version.data.riotClientVersion, "Content-Type": "application/json" };
   return <T>(path: string, init: RequestInit = {}) => request<T>(`${origin}${path}`, { ...init, headers });
 }
+// Riot's Performance Score (players[].scores, placeholder keys since 13.06); see the app's RiotPerformanceScores.kt.
+export function performanceScore(p?: Player): number | null {
+  const raw = number(p?.stats?.performanceScore) ?? number(p?.scores?.TempValueF);
+  return raw === null ? null : Math.min(500, Math.max(0, Math.round(raw)));
+}
 export function summarize(match: RiotMatch, puuid: string, fallbackId = ""): MatchSummary {
   const me = match.players?.find(p => p.subject === puuid);
   const team = match.teams?.find(t => t.teamId === me?.teamId);
@@ -70,14 +101,18 @@ async function dashboard(session: Session): Promise<DashboardData> {
   const get = await riotClient(session);
   const [names, mmr, recent] = await Promise.all([
     get<{ GameName?: string; TagLine?: string }[]>("/name-service/v2/players", { method: "PUT", body: JSON.stringify([session.puuid]) }),
-    get<{ LatestCompetitiveUpdate?: { TierAfterUpdate?: number; RankedRatingAfterUpdate?: number } }>(`/mmr/v1/players/${session.puuid}`),
+    get<{ LatestCompetitiveUpdate?: { SeasonID?: string; TierAfterUpdate?: number; RankedRatingAfterUpdate?: number }; QueueSkills?: { competitive?: { SeasonalInfoBySeasonID?: Record<string, { NumberOfGames?: number; NumberOfWins?: number }> } } }>(`/mmr/v1/players/${session.puuid}`),
     history(session, 0, "competitive"),
   ]);
   const stats = recent.details.map(d => d.players?.find(p => p.subject === session.puuid)?.stats).filter(s => s && number(s.kills) !== null && number(s.deaths) !== null && number(s.score) !== null && number(s.roundsPlayed) !== null);
   const kills = stats.reduce((n, s) => n + s!.kills!, 0); const deaths = stats.reduce((n, s) => n + s!.deaths!, 0);
   const score = stats.reduce((n, s) => n + s!.score!, 0); const rounds = stats.reduce((n, s) => n + s!.roundsPlayed!, 0);
   const dates = recent.matches.map(m => m.startedAt).filter((n): n is number => n !== null);
-  return { profile: { name: names[0]?.GameName ?? session.puuid.slice(0, 8), tag: names[0]?.TagLine ?? "", region: session.shard, tier: number(mmr.LatestCompetitiveUpdate?.TierAfterUpdate), rr: number(mmr.LatestCompetitiveUpdate?.RankedRatingAfterUpdate) }, performance: { sampleSize: recent.matches.length, wins: recent.matches.filter(m => m.result === "win").length, winRate: recent.matches.length && recent.matches.every(m => m.result !== "unknown") ? recent.matches.filter(m => m.result === "win").length / recent.matches.length * 100 : null, kd: stats.length === recent.matches.length && stats.length && deaths ? kills / deaths : null, acs: stats.length === recent.matches.length && stats.length && rounds ? score / rounds : null, from: dates.length ? Math.min(...dates) : null, to: dates.length ? Math.max(...dates) : null }, matches: recent.matches, fetchedAt: stamp() };
+  const scores = recent.details.map(d => performanceScore(d.players?.find(p => p.subject === session.puuid))).filter((n): n is number => n !== null);
+  // The act record, as the app's Current Act card reads it: the season block of the latest ranked update.
+  const season = mmr.LatestCompetitiveUpdate?.SeasonID ? mmr.QueueSkills?.competitive?.SeasonalInfoBySeasonID?.[mmr.LatestCompetitiveUpdate.SeasonID] : undefined;
+  const actMatches = number(season?.NumberOfGames); const actWins = number(season?.NumberOfWins);
+  return { profile: { name: names[0]?.GameName ?? session.puuid.slice(0, 8), tag: names[0]?.TagLine ?? "", region: session.shard, tier: number(mmr.LatestCompetitiveUpdate?.TierAfterUpdate), rr: number(mmr.LatestCompetitiveUpdate?.RankedRatingAfterUpdate) }, performance: { sampleSize: recent.matches.length, wins: recent.matches.filter(m => m.result === "win").length, winRate: actMatches && actWins !== null ? Math.floor(actWins / actMatches * 100) : recent.matches.length && recent.matches.every(m => m.result !== "unknown") ? recent.matches.filter(m => m.result === "win").length / recent.matches.length * 100 : null, actMatches, actWins, kd: stats.length === recent.matches.length && stats.length && deaths ? kills / deaths : null, acs: stats.length === recent.matches.length && stats.length && rounds ? score / rounds : null, ps: scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null, from: dates.length ? Math.min(...dates) : null, to: dates.length ? Math.max(...dates) : null }, matches: recent.matches, fetchedAt: stamp() };
 }
 async function matchDetail(session: Session, id: string): Promise<MatchDetail | null> {
   const get = await riotClient(session);
@@ -90,7 +125,7 @@ async function matchDetail(session: Session, id: string): Promise<MatchDetail | 
     const name = identity?.GameName ?? p.gameName; const tag = identity?.TagLine ?? p.tagLine;
     return name ? `${name}${tag ? `#${tag}` : ""}` : (p.subject ?? "").slice(0, 8);
   };
-  return { match: summarize(data, session.puuid, id), players: data.players.map(p => ({ id: p.subject ?? "", name: displayName(p), team: p.teamId ?? "", agentId: p.characterId ?? "", kills: number(p.stats?.kills), deaths: number(p.stats?.deaths), assists: number(p.stats?.assists), acs: p.stats?.roundsPlayed && p.stats.score !== undefined ? p.stats.score / p.stats.roundsPlayed : null })), rounds: (data.roundResults ?? []).map(r => ({ number: (r.roundNum ?? 0) + 1, winner: r.winningTeam ?? "", reason: r.roundResult ?? "" })), fetchedAt: stamp() };
+  return { match: summarize(data, session.puuid, id), players: data.players.map(p => ({ id: p.subject ?? "", name: displayName(p), team: p.teamId ?? "", agentId: p.characterId ?? "", kills: number(p.stats?.kills), deaths: number(p.stats?.deaths), assists: number(p.stats?.assists), acs: p.stats?.roundsPlayed && p.stats.score !== undefined ? p.stats.score / p.stats.roundsPlayed : null, ps: performanceScore(p) })), rounds: (data.roundResults ?? []).map(r => ({ number: (r.roundNum ?? 0) + 1, winner: r.winningTeam ?? "", reason: r.roundResult ?? "" })), fetchedAt: stamp() };
 }
 async function store(session: Session, lang: string): Promise<StoreData> {
   type Offer = { OfferID?: string; Cost?: Record<string, number>; Rewards?: { ItemID?: string }[] };
@@ -130,6 +165,7 @@ export async function handler(event: HandlerEvent) {
       return json(200, await catalog(query.kind as CatalogKind, lang));
     }
     if (action === "status") return json(200, await serviceStatus(lang));
+    if (action === "tiers") return json(200, await rankTiers());
     if (!["dashboard", "matches", "match", "store"].includes(action)) return json(400, { error: "invalid_action" });
     if (paired?.record.snapshot) {
       const snapshot = paired.record.snapshot;

@@ -1,8 +1,10 @@
 # Android web pairing
 
-Production: https://www.valsync.website/play.html. No browser extension or Riot credentials are required on the website.
+Production: https://www.valsync.website/play.html. The companion offers two ways in: Riot sign-in, and pairing with the Android app. The pairing code is a one-time step — approve it once and this browser stays connected until the player disconnects it from the site. No browser extension or Riot credentials are required on the website.
 
 Install an Android build containing Settings > Pair web companion, sign into Riot on the phone, create a six-digit numeric code in the browser, and approve that code in Android. Approval shares a read-only snapshot of identity, rank, up to 30 matches and store offers. Keep the app foregrounded for automatic sync, or choose Sync now. The browser shows the receipt timestamp rather than claiming a live Riot connection. Disconnect from either side to revoke access.
+
+Connection lifetime: the browser cookie and the encrypted pair record both live for 90 days, and the code is only used for the initial approval. After approval the player never enters a code again in that browser profile — the companion shows their stats and match history on every visit. The toolbar carries a Disconnect action for paired sessions; it revokes the record server-side, clears the browser cookie and ends the connection on the phone as well, so the next visit asks for pairing again. Disconnecting from the Android app has the same effect.
 
 Netlify functions require WEB_PAIRING_ENABLED=true and a random WEB_PAIRING_SECRET of at least 32 characters. Preserve the existing production secret across deployments. The current Free Netlify account applies variables to all scopes; enhanced secret marking and granular scopes were rejected. The key stays in private Netlify environment configuration and is never exposed through public build variables or API responses. Snapshot records in Netlify Blobs are AES-GCM encrypted; browser cookies and phone writer credentials have separate secrets. Connections expire after 90 days, pending codes after ten minutes, and hourly cleanup removes revoked/expired records. Snapshots over 24 hours old are unavailable.
 

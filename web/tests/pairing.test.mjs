@@ -93,7 +93,7 @@ test("invalid bodies, invalid codes and mismatched media URLs are bounded", asyn
   assert.equal((await handler(request("approve", { code: pair.code, snapshot: { accountHash: "bad" } }))).status, 400);
   const safe = pairing.sanitizeSnapshot({ ...snapshot(), store: { daily: [{ id: "x", name: "Skin", image: "https://evil.example/track", vp: -100 }], nightMarket: [] } });
   assert.equal(safe.store.daily[0].image, null); assert.equal(safe.store.daily[0].vp, null);
-  const huge = request("approve", { code: pair.code, snapshot: snapshot(), padding: "x".repeat(300000) });
+  const huge = request("approve", { code: pair.code, snapshot: snapshot(), padding: "x".repeat(400000) });
   assert.equal((await handler(huge)).status, 400);
 });
 test("anonymous pairing creation is capped per IP hash", async () => {
@@ -108,4 +108,11 @@ test("six-digit approval guessing is capped independently of code creation", asy
   for (let i = 0; i < 10; i++) assert.equal((await handler(request("approve", { code: "guess", snapshot: snapshot() }))).status, 401);
   const blocked = await handler(request("approve", { code: "123456", snapshot: snapshot() }));
   assert.equal(blocked.status, 429); assert.equal(blocked.headers.get("retry-after"), "600");
+});
+
+test("phone snapshots keep the act record and performance score", () => {
+  const base = snapshot();
+  const safe = pairing.sanitizeSnapshot({ ...base, dashboard: { ...base.dashboard, performance: { sampleSize: 10, wins: 6, winRate: 54, actMatches: 41, actWins: 22, kd: 1.12, acs: 230, ps: 271, from: null, to: null } } });
+  assert.equal(safe.dashboard.performance.actMatches, 41); assert.equal(safe.dashboard.performance.actWins, 22);
+  assert.equal(safe.dashboard.performance.ps, 271); assert.equal(safe.dashboard.performance.winRate, 54);
 });
