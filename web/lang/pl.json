@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Cennik",
     "mob_faq": "FAQ",
-    "get_app": "Pobierz apkę"
+    "get_app": "Pobierz apkę",
+    "aim": "Trener celowania"
   },
   "hero": {
     "word1": "Śledź",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Wkrótce"
+  },
+  "aim": {
+    "eyebrow": "Trener celowania",
+    "title": "Trenuj celowanie w przeglądarce",
+    "lead": "Sześć ćwiczeń zbudowanych wokół tego, co naprawdę rozstrzyga pojedynki w VALORANT. Twoja czułość, FOV i celownik z gry przenoszą się dokładnie, więc to, co trenujesz tutaj, jest tym, czym strzelasz.",
+    "pill_sens": "Czułość VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Import kodu celownika",
+    "pill_local": "Bez konta, bez pobierania",
+    "touch_notice": "Trener celowania wymaga myszy i klawiatury. Otwórz tę stronę na komputerze, aby zagrać.",
+    "start": "Start",
+    "resume": "Wznów",
+    "restart": "Od nowa",
+    "retry": "Jeszcze raz",
+    "next": "Następne ćwiczenie",
+    "exit": "Wróć do ćwiczeń",
+    "click_to_start": "Kliknij, aby zacząć",
+    "paused": "Wstrzymano",
+    "esc_hint": "Naciśnij Esc w dowolnym momencie, aby wstrzymać.",
+    "hud_mode": "Ćwiczenie",
+    "hud_time": "Czas",
+    "hud_round": "Runda",
+    "hud_score": "Wynik",
+    "hud_acc": "Celność",
+    "result": "Wynik",
+    "new_best": "Nowy rekord",
+    "hits": "Trafienia",
+    "avg_ttk": "Śr. czas do zabicia",
+    "avg_reaction": "Śr. reakcja",
+    "headshots": "Strzały w głowę",
+    "best": "Rekord",
+    "rounds": "rund",
+    "tab_sens": "Czułość",
+    "tab_xhair": "Celownik",
+    "tab_targets": "Cele i dźwięk",
+    "sens": "Czułość w VALORANT",
+    "sens_note": "Ruch myszy jest odczytywany bezpośrednio, gdy przeglądarka to obsługuje (Chrome, Edge), więc zgadza się z grą 1:1. W innych przypadkach ustaw prędkość wskaźnika Windows na 6/11 i wyłącz „Zwiększ precyzję wskaźnika”.",
+    "code": "Kod celownika",
+    "import": "Importuj",
+    "code_ok": "Celownik zaimportowany.",
+    "code_bad": "To nie wygląda na kod celownika z VALORANT.",
+    "color": "Kolor",
+    "outline": "Obrys",
+    "dot": "Kropka środkowa",
+    "outer": "Linie zewnętrzne",
+    "length": "Długość wewn.",
+    "thickness": "Grubość wewn.",
+    "gap": "Odstęp wewn.",
+    "opacity": "Krycie wewn.",
+    "dot_size": "Grubość kropki",
+    "size": "Rozmiar celów",
+    "target_color": "Kolor podświetlenia wrogów",
+    "volume": "Głośność",
+    "reset": "Przywróć domyślne",
+    "colors": {
+      "red": "Czerwony",
+      "yellow": "Żółty (deuteranopia)",
+      "purple": "Fioletowy (tritanopia)",
+      "cyan": "Cyjan"
+    },
+    "skills": {
+      "speed": "Szybkość",
+      "precision": "Precyzja",
+      "flicking": "Flicki",
+      "reaction": "Reakcja",
+      "tracking": "Śledzenie",
+      "holding": "Trzymanie kąta"
+    },
+    "modes": {
+      "grid": {
+        "name": "Siatka",
+        "desc": "Trzy cele na ścianie, zawsze trzy. Zdejmuj je szybko.",
+        "how": "Strzelaj do celów jak najszybciej. Szybsze zabójstwa dają więcej punktów, pudła je odbierają."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Jeden mały cel wielkości głowy, który przeskakuje na krótkie dystanse.",
+        "how": "Małe cele, małe korekty. Klikaj tylko, gdy jesteś na celu – tu pudła kosztują więcej."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Cele w dowolnym miejscu szerokiego łuku, na przemian po obu stronach.",
+        "how": "Każdy cel pojawia się po drugiej stronie. Doskocz do niego i strzel jednym ruchem."
+      },
+      "reflex": {
+        "name": "Reakcja",
+        "desc": "Poczekaj na cel, a potem go zdejmij. 15 rund.",
+        "how": "Trzymaj środek. Gdy pojawi się cel, zestrzel go, zanim zniknie. Zbyt wczesne kliknięcie kosztuje punkty."
+      },
+      "track": {
+        "name": "Śledzenie strafe’u",
+        "desc": "Manekin strafe’ujący A-D z prędkością biegu, z nagłymi zatrzymaniami.",
+        "how": "Trzymaj celownik na manekinie przez 40 sekund. Nie trzeba klikać; czas na głowie daje dodatkowe punkty."
+      },
+      "peek": {
+        "name": "Trzymanie kąta",
+        "desc": "Manekiny wychylają się szeroko zza trzech osłon. Trzymaj kąt. 20 rund.",
+        "how": "Trzymaj kąt i strzelaj, gdy się wychylają. Strzał w głowę zabija, w ciało potrzeba dwóch. Jeśli wróci za osłonę – ucieka."
+      }
+    },
+    "disclaimer": "Wyniki i ustawienia są zapisywane tylko w tej przeglądarce. VALSYNC nie jest powiązany z Riot Games; rangi pokazane tutaj to poziomy treningowe VALSYNC, a nie rangi rankingowe.",
+    "lock_error": "Przeglądarka zablokowała przechwytywanie myszy. Otwórz stronę w osobnej karcie (nie w osadzonym widoku) i kliknij Start ponownie.",
+    "dpi": {
+      "detect": "Wykryj moje DPI",
+      "why": "Przeglądarki nie mogą odczytać DPI myszy, więc je mierzymy: przesuń mysz wzdłuż czegoś o znanej szerokości, a my policzymy zgłoszony ruch.",
+      "ref": "Odniesienie",
+      "ref_card": "Karta płatnicza (8,56 cm)",
+      "ref_ruler": "Linijka (10 cm)",
+      "ref_custom": "Własna szerokość",
+      "pass": "Próba",
+      "step": "Przyłóż mysz do lewej krawędzi odniesienia, kliknij w pole, przesuń prosto w prawo aż do drugiej krawędzi i kliknij ponownie. Nie podnoś myszy, prowadź ją prosto.",
+      "box_idle": "Kliknij, aby zacząć pomiar",
+      "box_live": "Przesuń w prawo… kliknij przy krawędzi",
+      "too_short": "To było za krótko. Przesuń na całą szerokość odniesienia.",
+      "result": "Zmierzone",
+      "suggest": "Najbliższa typowa wartość",
+      "use": "Użyj tego DPI",
+      "redo": "Zmierz ponownie",
+      "cancel": "Zamknij",
+      "os_note": "Przeglądarka nie udostępnia surowego ruchu myszy, więc pomiar uwzględnia prędkość wskaźnika Windows. Dla dokładnego wyniku ustaw 6/11 i wyłącz zwiększoną precyzję."
+    }
   }
 }

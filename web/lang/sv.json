@@ -18,7 +18,8 @@
     "mob_web": "Webb",
     "mob_pricing": "Priser",
     "mob_faq": "FAQ",
-    "get_app": "Skaffa appen"
+    "get_app": "Skaffa appen",
+    "aim": "Siktesträning"
   },
   "hero": {
     "word1": "Spåra",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Kommer snart"
+  },
+  "aim": {
+    "eyebrow": "Siktesträning",
+    "title": "Träna ditt sikte i webbläsaren",
+    "lead": "Sex övningar byggda kring det som faktiskt avgör dueller i VALORANT. Din sensitivity, FOV och ditt sikte från spelet förs över exakt, så det du tränar här är det du skjuter med.",
+    "pill_sens": "1:1 VALORANT-sensitivity",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Import av siktkod",
+    "pill_local": "Inget konto, ingen nedladdning",
+    "touch_notice": "Siktesträningen kräver mus och tangentbord. Öppna sidan på en dator för att spela.",
+    "start": "Starta",
+    "resume": "Fortsätt",
+    "restart": "Börja om",
+    "retry": "Försök igen",
+    "next": "Nästa övning",
+    "exit": "Tillbaka till övningar",
+    "click_to_start": "Klicka för att starta",
+    "paused": "Pausad",
+    "esc_hint": "Tryck på Esc när som helst för att pausa.",
+    "hud_mode": "Övning",
+    "hud_time": "Tid",
+    "hud_round": "Runda",
+    "hud_score": "Poäng",
+    "hud_acc": "Träffsäkerhet",
+    "result": "Resultat",
+    "new_best": "Nytt rekord",
+    "hits": "Träffar",
+    "avg_ttk": "Snitt tid per kill",
+    "avg_reaction": "Snitt reaktion",
+    "headshots": "Huvudskott",
+    "best": "Bästa",
+    "rounds": "rundor",
+    "tab_sens": "Sensitivity",
+    "tab_xhair": "Sikte",
+    "tab_targets": "Mål och ljud",
+    "sens": "VALORANT-sensitivity",
+    "sens_note": "Musen läses rått när webbläsaren stöder det (Chrome, Edge), så den matchar spelet 1:1. Annars bör du ha Windows pekarhastighet på 6/11 och stänga av ”Förbättra pekarprecisionen”.",
+    "code": "Siktkod",
+    "import": "Importera",
+    "code_ok": "Siktet importerades.",
+    "code_bad": "Det ser inte ut som en VALORANT-siktkod.",
+    "color": "Färg",
+    "outline": "Kontur",
+    "dot": "Mittpunkt",
+    "outer": "Yttre linjer",
+    "length": "Inre längd",
+    "thickness": "Inre tjocklek",
+    "gap": "Inre avstånd",
+    "opacity": "Inre opacitet",
+    "dot_size": "Punktens tjocklek",
+    "size": "Målstorlek",
+    "target_color": "Färgmarkering av fiender",
+    "volume": "Volym",
+    "reset": "Återställ standard",
+    "colors": {
+      "red": "Röd",
+      "yellow": "Gul (deuteranopi)",
+      "purple": "Lila (tritanopi)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Snabbhet",
+      "precision": "Precision",
+      "flicking": "Flicks",
+      "reaction": "Reaktion",
+      "tracking": "Tracking",
+      "holding": "Hålla vinkel"
+    },
+    "modes": {
+      "grid": {
+        "name": "Rutnät",
+        "desc": "Tre mål på en vägg, alltid tre. Rensa dem snabbt.",
+        "how": "Skjut målen så snabbt du kan. Snabbare kills ger fler poäng; bom kostar poäng."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Ett litet mål stort som ett huvud som hoppar korta sträckor.",
+        "how": "Små mål, små justeringar. Klicka bara när du är på det – bom kostar mer här."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Mål var som helst i en bred båge, växelvis på var sida.",
+        "how": "Varje mål dyker upp på motsatt sida. Dra dit och skjut i en rörelse."
+      },
+      "reflex": {
+        "name": "Reaktion",
+        "desc": "Vänta tills ett mål dyker upp och skjut det. 15 rundor.",
+        "how": "Håll mitten. När ett mål dyker upp, skjut det innan det försvinner. Att klicka för tidigt kostar poäng."
+      },
+      "track": {
+        "name": "Strafe-tracking",
+        "desc": "En docka som strafar A-D i löpfart, med tvära counter-strafe-stopp.",
+        "how": "Håll siktet på dockan i 40 sekunder. Du behöver inte klicka; tid på huvudet ger extra poäng."
+      },
+      "peek": {
+        "name": "Hålla vinkel",
+        "desc": "Dockor wide-peekar från tre skydd. Håll vinkeln. 20 rundor.",
+        "how": "Håll en vinkel och skjut när de peekar. Ett huvudskott dödar; kroppen kräver två träffar. Hinner den tillbaka i skydd kommer den undan."
+      }
+    },
+    "disclaimer": "Poäng och inställningar sparas bara i den här webbläsaren. VALSYNC är inte knutet till Riot Games; rankerna här är VALSYNC-träningsnivåer, inte competitive-ranker.",
+    "lock_error": "Webbläsaren blockerade musinfångning. Öppna sidan i en egen flik (inte i en inbäddad vy) och klicka på Starta igen.",
+    "dpi": {
+      "detect": "Mät min DPI",
+      "why": "Webbläsare kan inte läsa av en mus DPI, så vi mäter den: dra musen över något med känd bredd så räknar vi rörelsen den rapporterar.",
+      "ref": "Referens",
+      "ref_card": "Bankkort (8,56 cm)",
+      "ref_ruler": "Linjal (10 cm)",
+      "ref_custom": "Egen bredd",
+      "pass": "Mätning",
+      "step": "Ställ musen mot vänsterkanten på referensen, klicka i rutan, dra rakt åt höger tills den når andra kanten och klicka igen. Lyft den inte och håll den rak.",
+      "box_idle": "Klicka för att börja mäta",
+      "box_live": "Dra åt höger… klicka vid kanten",
+      "too_short": "Det var för kort. Dra över hela referensens bredd.",
+      "result": "Uppmätt",
+      "suggest": "Närmaste vanliga värde",
+      "use": "Använd denna DPI",
+      "redo": "Mät igen",
+      "cancel": "Stäng",
+      "os_note": "Webbläsaren erbjuder inte rå musinmatning, så mätningen inkluderar Windows pekarhastighet. Håll den på 6/11 utan förbättrad precision för ett exakt värde."
+    }
   }
 }

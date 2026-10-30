@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Prijzen",
     "mob_faq": "FAQ",
-    "get_app": "Download app"
+    "get_app": "Download app",
+    "aim": "Aimtrainer"
   },
   "hero": {
     "word1": "Volg",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Binnenkort"
+  },
+  "aim": {
+    "eyebrow": "Aimtrainer",
+    "title": "Train je aim in de browser",
+    "lead": "Zes oefeningen gebouwd rond wat VALORANT-duels echt beslist. Je sensitivity, FOV en crosshair uit de game komen exact over, dus wat je hier traint is waarmee je schiet.",
+    "pill_sens": "1:1 VALORANT-sensitivity",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Crosshaircode importeren",
+    "pill_local": "Geen account, geen download",
+    "touch_notice": "De aimtrainer heeft een muis en toetsenbord nodig. Open deze pagina op een computer om te spelen.",
+    "start": "Starten",
+    "resume": "Hervatten",
+    "restart": "Opnieuw starten",
+    "retry": "Opnieuw",
+    "next": "Volgende oefening",
+    "exit": "Terug naar oefeningen",
+    "click_to_start": "Klik om te starten",
+    "paused": "Gepauzeerd",
+    "esc_hint": "Druk op elk moment op Esc om te pauzeren.",
+    "hud_mode": "Oefening",
+    "hud_time": "Tijd",
+    "hud_round": "Ronde",
+    "hud_score": "Score",
+    "hud_acc": "Nauwkeurigheid",
+    "result": "Resultaat",
+    "new_best": "Nieuw record",
+    "hits": "Treffers",
+    "avg_ttk": "Gem. tijd per kill",
+    "avg_reaction": "Gem. reactie",
+    "headshots": "Headshots",
+    "best": "Beste",
+    "rounds": "rondes",
+    "tab_sens": "Sensitivity",
+    "tab_xhair": "Crosshair",
+    "tab_targets": "Doelen & geluid",
+    "sens": "VALORANT-sensitivity",
+    "sens_note": "De muis wordt rauw uitgelezen als je browser dat ondersteunt (Chrome, Edge), dus het komt 1:1 overeen met de game. Laat anders de Windows-aanwijzersnelheid op 6/11 en zet ‘Nauwkeurigheid van aanwijzer verbeteren’ uit.",
+    "code": "Crosshaircode",
+    "import": "Importeren",
+    "code_ok": "Crosshair geïmporteerd.",
+    "code_bad": "Dat lijkt geen VALORANT-crosshaircode.",
+    "color": "Kleur",
+    "outline": "Randen",
+    "dot": "Middenpunt",
+    "outer": "Buitenste lijnen",
+    "length": "Binnenlengte",
+    "thickness": "Binnendikte",
+    "gap": "Binnenafstand",
+    "opacity": "Binnendekking",
+    "dot_size": "Puntdikte",
+    "size": "Doelgrootte",
+    "target_color": "Markeerkleur vijanden",
+    "volume": "Volume",
+    "reset": "Standaardwaarden herstellen",
+    "colors": {
+      "red": "Rood",
+      "yellow": "Geel (deuteranopie)",
+      "purple": "Paars (tritanopie)",
+      "cyan": "Cyaan"
+    },
+    "skills": {
+      "speed": "Snelheid",
+      "precision": "Precisie",
+      "flicking": "Flicks",
+      "reaction": "Reactie",
+      "tracking": "Tracking",
+      "holding": "Hoek vasthouden"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grid",
+        "desc": "Drie doelen op een muur, altijd drie. Ruim ze snel op.",
+        "how": "Schiet de doelen zo snel mogelijk neer. Snellere kills leveren meer op; missers kosten punten."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Eén klein doel ter grootte van een hoofd dat korte sprongen maakt.",
+        "how": "Kleine doelen, kleine correcties. Klik alleen als je erop staat: missers kosten hier meer."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Doelen overal op een brede boog, afwisselend links en rechts.",
+        "how": "Elk doel verschijnt aan de andere kant. Flick ernaartoe en schiet in één beweging."
+      },
+      "reflex": {
+        "name": "Reactie",
+        "desc": "Wacht tot er een doel verschijnt en schiet het neer. 15 rondes.",
+        "how": "Houd het midden vast. Verschijnt er een doel, schiet het neer voor het verdwijnt. Te vroeg klikken kost punten."
+      },
+      "track": {
+        "name": "Strafe-tracking",
+        "desc": "Een dummy die op loopsnelheid A-D strafet, met counter-strafe-stops.",
+        "how": "Houd je crosshair 40 seconden op de dummy. Klikken hoeft niet; tijd op het hoofd telt extra."
+      },
+      "peek": {
+        "name": "Hoek vasthouden",
+        "desc": "Dummy’s wide-peeken vanachter drie dekkingen. Houd de hoek. 20 rondes.",
+        "how": "Houd een hoek vast en schiet als ze peeken. Een headshot doodt; op het lichaam zijn twee treffers nodig. Komt er een terug in dekking, dan ontsnapt hij."
+      }
+    },
+    "disclaimer": "Scores en instellingen worden alleen in deze browser bewaard. VALSYNC is niet verbonden aan Riot Games; de rangen hier zijn VALSYNC-oefenniveaus, geen competitieve rangen.",
+    "lock_error": "Je browser heeft het vastleggen van de muis geblokkeerd. Open de pagina in een eigen tabblad (niet ingesloten) en klik opnieuw op Starten.",
+    "dpi": {
+      "detect": "Mijn DPI meten",
+      "why": "Browsers kunnen de DPI van een muis niet uitlezen, dus meten we hem: schuif de muis over iets met een bekende breedte en wij tellen de beweging die hij doorgeeft.",
+      "ref": "Referentie",
+      "ref_card": "Bankpas (8,56 cm)",
+      "ref_ruler": "Liniaal (10 cm)",
+      "ref_custom": "Eigen breedte",
+      "pass": "Ronde",
+      "step": "Leg de muis tegen de linkerrand van je referentie, klik in het vak, schuif recht naar rechts tot hij de andere rand raakt en klik opnieuw. Niet optillen, recht houden.",
+      "box_idle": "Klik om te meten",
+      "box_live": "Schuif naar rechts… klik bij de rand",
+      "too_short": "Dat was te kort. Schuif over de volle breedte van je referentie.",
+      "result": "Gemeten",
+      "suggest": "Dichtstbijzijnde gangbare waarde",
+      "use": "Deze DPI gebruiken",
+      "redo": "Opnieuw meten",
+      "cancel": "Sluiten",
+      "os_note": "Je browser biedt geen ruwe muisinvoer, dus deze meting bevat de Windows-aanwijzersnelheid. Houd die op 6/11 zonder verbeterde precisie voor een exacte waarde."
+    }
   }
 }

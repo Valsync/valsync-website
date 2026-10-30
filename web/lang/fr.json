@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Tarifs",
     "mob_faq": "FAQ",
-    "get_app": "Obtenir l'app"
+    "get_app": "Obtenir l'app",
+    "aim": "Entraînement à la visée"
   },
   "hero": {
     "word1": "Suivre",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Bientôt disponible"
+  },
+  "aim": {
+    "eyebrow": "Entraînement à la visée",
+    "title": "Entraîne ta visée dans le navigateur",
+    "lead": "Six exercices pensés autour de ce qui fait vraiment gagner un duel sur VALORANT. Ta sensibilité, ton FOV et ton viseur en jeu sont repris à l’identique : ce que tu travailles ici, c’est ce avec quoi tu tires.",
+    "pill_sens": "Sensibilité VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Import de code de viseur",
+    "pill_local": "Sans compte, sans téléchargement",
+    "touch_notice": "L’entraînement à la visée nécessite une souris et un clavier. Ouvre cette page sur un ordinateur pour jouer.",
+    "start": "Commencer",
+    "resume": "Reprendre",
+    "restart": "Recommencer",
+    "retry": "Réessayer",
+    "next": "Exercice suivant",
+    "exit": "Retour aux exercices",
+    "click_to_start": "Clique pour commencer",
+    "paused": "En pause",
+    "esc_hint": "Appuie sur Échap à tout moment pour mettre en pause.",
+    "hud_mode": "Exercice",
+    "hud_time": "Temps",
+    "hud_round": "Manche",
+    "hud_score": "Score",
+    "hud_acc": "Précision",
+    "result": "Résultat",
+    "new_best": "Nouveau record",
+    "hits": "Touches",
+    "avg_ttk": "Temps moyen pour tuer",
+    "avg_reaction": "Réaction moyenne",
+    "headshots": "Tirs à la tête",
+    "best": "Record",
+    "rounds": "manches",
+    "tab_sens": "Sensibilité",
+    "tab_xhair": "Viseur",
+    "tab_targets": "Cibles et son",
+    "sens": "Sensibilité VALORANT",
+    "sens_note": "La souris est lue en entrée brute quand ton navigateur le permet (Chrome, Edge), donc tout correspond au jeu en 1:1. Sinon, laisse la vitesse du pointeur Windows sur 6/11 et désactive « Améliorer la précision du pointeur ».",
+    "code": "Code du viseur",
+    "import": "Importer",
+    "code_ok": "Viseur importé.",
+    "code_bad": "Ça ne ressemble pas à un code de viseur VALORANT.",
+    "color": "Couleur",
+    "outline": "Contours",
+    "dot": "Point central",
+    "outer": "Lignes extérieures",
+    "length": "Longueur intérieure",
+    "thickness": "Épaisseur intérieure",
+    "gap": "Écart intérieur",
+    "opacity": "Opacité intérieure",
+    "dot_size": "Épaisseur du point",
+    "size": "Taille des cibles",
+    "target_color": "Couleur de surbrillance ennemie",
+    "volume": "Volume",
+    "reset": "Rétablir les valeurs par défaut",
+    "colors": {
+      "red": "Rouge",
+      "yellow": "Jaune (deutéranopie)",
+      "purple": "Violet (tritanopie)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Vitesse",
+      "precision": "Précision",
+      "flicking": "Flicks",
+      "reaction": "Réaction",
+      "tracking": "Tracking",
+      "holding": "Tenue d’angle"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grille",
+        "desc": "Trois cibles sur un mur, toujours trois. Élimine-les vite.",
+        "how": "Tire sur les cibles le plus vite possible. Les éliminations rapides rapportent plus, les tirs ratés coûtent des points."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Une petite cible de la taille d’une tête qui se déplace par petits sauts.",
+        "how": "Petites cibles, petits ajustements. Ne clique que lorsque tu es dessus : les ratés coûtent plus cher ici."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Des cibles partout sur un large arc, en alternant les côtés.",
+        "how": "Chaque cible apparaît de l’autre côté. Place-toi dessus et tire d’un seul geste."
+      },
+      "reflex": {
+        "name": "Réaction",
+        "desc": "Attends qu’une cible apparaisse, puis élimine-la. 15 manches.",
+        "how": "Garde le centre. Quand une cible apparaît, élimine-la avant qu’elle disparaisse. Cliquer trop tôt coûte des points."
+      },
+      "track": {
+        "name": "Tracking strafe",
+        "desc": "Un mannequin qui strafe A-D à vitesse de course, avec des arrêts en contre-strafe.",
+        "how": "Garde ton viseur sur le mannequin pendant 40 secondes. Pas besoin de cliquer ; le temps passé sur la tête rapporte plus."
+      },
+      "peek": {
+        "name": "Tenue d’angle",
+        "desc": "Des mannequins font des wide peeks depuis trois couverts. Tiens l’angle. 20 manches.",
+        "how": "Tiens un angle et tire quand ils sortent. Un tir à la tête tue ; le corps encaisse deux balles. S’il retourne à couvert, il s’échappe."
+      }
+    },
+    "disclaimer": "Les scores et les réglages sont enregistrés uniquement dans ce navigateur. VALSYNC n’est pas affilié à Riot Games ; les rangs affichés ici sont des paliers d’entraînement VALSYNC, pas des rangs compétitifs.",
+    "lock_error": "Ton navigateur a bloqué la capture de la souris. Ouvre la page dans son propre onglet (pas dans une vue intégrée) et clique de nouveau sur Commencer.",
+    "dpi": {
+      "detect": "Détecter mon DPI",
+      "why": "Les navigateurs ne peuvent pas lire le DPI d’une souris, alors on le mesure : fais glisser la souris sur un objet de largeur connue et on compte le mouvement qu’elle renvoie.",
+      "ref": "Référence",
+      "ref_card": "Carte bancaire (8,56 cm)",
+      "ref_ruler": "Règle (10 cm)",
+      "ref_custom": "Largeur personnalisée",
+      "pass": "Passage",
+      "step": "Place la souris contre le bord gauche de ta référence, clique dans la zone, glisse tout droit vers la droite jusqu’à toucher l’autre bord, puis clique à nouveau. Ne la soulève pas, reste bien droit.",
+      "box_idle": "Clique pour commencer la mesure",
+      "box_live": "Glisse vers la droite… clique au bord",
+      "too_short": "C’était trop court. Glisse sur toute la largeur de ta référence.",
+      "result": "Mesuré",
+      "suggest": "Valeur courante la plus proche",
+      "use": "Utiliser ce DPI",
+      "redo": "Mesurer à nouveau",
+      "cancel": "Fermer",
+      "os_note": "Ton navigateur ne fournit pas l’entrée brute de la souris, donc cette mesure inclut la vitesse du pointeur Windows. Laisse-la sur 6/11, précision améliorée désactivée, pour un résultat exact."
+    }
   }
 }

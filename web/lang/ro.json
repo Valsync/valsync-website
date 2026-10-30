@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Prețuri",
     "mob_faq": "FAQ",
-    "get_app": "Ia aplicația"
+    "get_app": "Ia aplicația",
+    "aim": "Antrenament de țintire"
   },
   "hero": {
     "word1": "Urmărește",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "În curând"
+  },
+  "aim": {
+    "eyebrow": "Antrenament de țintire",
+    "title": "Antrenează-ți țintirea în browser",
+    "lead": "Șase exerciții construite în jurul a ceea ce decide cu adevărat duelurile din VALORANT. Sensibilitatea, FOV-ul și ținta din joc sunt preluate exact, așa că ce antrenezi aici e ce folosești când tragi.",
+    "pill_sens": "Sensibilitate VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Import cod de țintă",
+    "pill_local": "Fără cont, fără descărcare",
+    "touch_notice": "Antrenamentul de țintire are nevoie de mouse și tastatură. Deschide pagina pe un computer ca să joci.",
+    "start": "Începe",
+    "resume": "Continuă",
+    "restart": "De la capăt",
+    "retry": "Încearcă din nou",
+    "next": "Exercițiul următor",
+    "exit": "Înapoi la exerciții",
+    "click_to_start": "Dă clic pentru a începe",
+    "paused": "Pauză",
+    "esc_hint": "Apasă Esc oricând pentru pauză.",
+    "hud_mode": "Exercițiu",
+    "hud_time": "Timp",
+    "hud_round": "Rundă",
+    "hud_score": "Scor",
+    "hud_acc": "Precizie",
+    "result": "Rezultat",
+    "new_best": "Record nou",
+    "hits": "Lovituri",
+    "avg_ttk": "Timp mediu până la kill",
+    "avg_reaction": "Reacție medie",
+    "headshots": "Headshot-uri",
+    "best": "Record",
+    "rounds": "runde",
+    "tab_sens": "Sensibilitate",
+    "tab_xhair": "Țintă",
+    "tab_targets": "Ținte și sunet",
+    "sens": "Sensibilitate VALORANT",
+    "sens_note": "Mouse-ul este citit direct când browserul permite (Chrome, Edge), deci se potrivește 1:1 cu jocul. Altfel, lasă viteza indicatorului Windows la 6/11 și dezactivează „Îmbunătățește precizia indicatorului”.",
+    "code": "Cod de țintă",
+    "import": "Importă",
+    "code_ok": "Țintă importată.",
+    "code_bad": "Nu pare un cod de țintă VALORANT.",
+    "color": "Culoare",
+    "outline": "Contur",
+    "dot": "Punct central",
+    "outer": "Linii exterioare",
+    "length": "Lungime interioară",
+    "thickness": "Grosime interioară",
+    "gap": "Distanță interioară",
+    "opacity": "Opacitate interioară",
+    "dot_size": "Grosimea punctului",
+    "size": "Mărimea țintelor",
+    "target_color": "Culoarea evidențierii inamicilor",
+    "volume": "Volum",
+    "reset": "Resetează la implicit",
+    "colors": {
+      "red": "Roșu",
+      "yellow": "Galben (deuteranopie)",
+      "purple": "Mov (tritanopie)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Viteză",
+      "precision": "Precizie",
+      "flicking": "Flick-uri",
+      "reaction": "Reacție",
+      "tracking": "Urmărire",
+      "holding": "Ținerea unghiului"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grilă",
+        "desc": "Trei ținte pe un perete, mereu trei. Elimină-le repede.",
+        "how": "Trage în ținte cât de repede poți. Kill-urile rapide aduc mai multe puncte; ratările scad puncte."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "O țintă mică, de mărimea unui cap, care sare pe distanțe scurte.",
+        "how": "Ținte mici, ajustări mici. Dă clic doar când ești pe ea – aici ratările costă mai mult."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Ținte oriunde pe un arc larg, alternând părțile.",
+        "how": "Fiecare țintă apare în partea opusă. Ajunge la ea și trage dintr-o singură mișcare."
+      },
+      "reflex": {
+        "name": "Reacție",
+        "desc": "Așteaptă să apară o țintă, apoi doboar-o. 15 runde.",
+        "how": "Ține centrul. Când apare o țintă, elimin-o înainte să dispară. Clicul prea devreme costă puncte."
+      },
+      "track": {
+        "name": "Urmărire strafe",
+        "desc": "Un manechin care face strafe A-D cu viteza de alergare, cu opriri bruște.",
+        "how": "Ține ținta pe manechin timp de 40 de secunde. Nu trebuie să dai clic; timpul pe cap aduce puncte în plus."
+      },
+      "peek": {
+        "name": "Ține unghiul",
+        "desc": "Manechinele ies larg de după trei adăposturi. Ține unghiul. 20 de runde.",
+        "how": "Ține un unghi și trage când ies. Un headshot ucide; corpul are nevoie de două lovituri. Dacă se întoarce în adăpost, scapă."
+      }
+    },
+    "disclaimer": "Scorurile și setările sunt salvate doar în acest browser. VALSYNC nu este afiliat cu Riot Games; rangurile afișate aici sunt niveluri de antrenament VALSYNC, nu ranguri competitive.",
+    "lock_error": "Browserul a blocat capturarea mouse-ului. Deschide pagina într-o filă separată (nu într-o vizualizare încorporată) și dă din nou clic pe Începe.",
+    "dpi": {
+      "detect": "Detectează DPI-ul meu",
+      "why": "Browserele nu pot citi DPI-ul mouse-ului, așa că îl măsurăm: glisează mouse-ul peste ceva cu lățime cunoscută și numărăm mișcarea raportată.",
+      "ref": "Referință",
+      "ref_card": "Card bancar (8,56 cm)",
+      "ref_ruler": "Riglă (10 cm)",
+      "ref_custom": "Lățime proprie",
+      "pass": "Măsurătoarea",
+      "step": "Pune mouse-ul lângă marginea stângă a referinței, dă clic în casetă, glisează drept spre dreapta până atinge cealaltă margine și dă clic din nou. Nu-l ridica și ține-l drept.",
+      "box_idle": "Dă clic pentru a începe măsurarea",
+      "box_live": "Glisează spre dreapta… clic la margine",
+      "too_short": "A fost prea scurt. Glisează pe toată lățimea referinței.",
+      "result": "Măsurat",
+      "suggest": "Cea mai apropiată valoare uzuală",
+      "use": "Folosește acest DPI",
+      "redo": "Măsoară din nou",
+      "cancel": "Închide",
+      "os_note": "Browserul nu oferă intrare brută de la mouse, așa că măsurătoarea include viteza indicatorului Windows. Păstreaz-o la 6/11 fără precizie îmbunătățită pentru un rezultat exact."
+    }
   }
 }

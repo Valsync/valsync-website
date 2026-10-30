@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Precios",
     "mob_faq": "FAQ",
-    "get_app": "Instalar app"
+    "get_app": "Instalar app",
+    "aim": "Entrenador de puntería"
   },
   "hero": {
     "word1": "Sigue",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Próximamente"
+  },
+  "aim": {
+    "eyebrow": "Entrenador de puntería",
+    "title": "Entrena tu puntería en el navegador",
+    "lead": "Seis ejercicios pensados en lo que de verdad decide un duelo en VALORANT. Tu sensibilidad, tu FOV y tu mira del juego se trasladan exactamente: lo que entrenas aquí es con lo que disparas.",
+    "pill_sens": "Sensibilidad de VALORANT 1:1",
+    "pill_fov": "FOV de 103°",
+    "pill_xhair": "Importar código de mira",
+    "pill_local": "Sin cuenta, sin descargas",
+    "touch_notice": "El entrenador de puntería necesita ratón y teclado. Abre esta página en un ordenador para jugar.",
+    "start": "Empezar",
+    "resume": "Reanudar",
+    "restart": "Reiniciar",
+    "retry": "Reintentar",
+    "next": "Siguiente ejercicio",
+    "exit": "Volver a los ejercicios",
+    "click_to_start": "Haz clic para empezar",
+    "paused": "En pausa",
+    "esc_hint": "Pulsa Esc en cualquier momento para pausar.",
+    "hud_mode": "Ejercicio",
+    "hud_time": "Tiempo",
+    "hud_round": "Ronda",
+    "hud_score": "Puntos",
+    "hud_acc": "Precisión",
+    "result": "Resultado",
+    "new_best": "Nuevo récord",
+    "hits": "Impactos",
+    "avg_ttk": "Tiempo medio por baja",
+    "avg_reaction": "Reacción media",
+    "headshots": "Tiros a la cabeza",
+    "best": "Récord",
+    "rounds": "rondas",
+    "tab_sens": "Sensibilidad",
+    "tab_xhair": "Mira",
+    "tab_targets": "Objetivos y sonido",
+    "sens": "Sensibilidad de VALORANT",
+    "sens_note": "El ratón se lee en bruto cuando tu navegador lo permite (Chrome, Edge), así que coincide 1:1 con el juego. En otros casos, deja la velocidad del puntero de Windows en 6/11 y desactiva «Mejorar la precisión del puntero».",
+    "code": "Código de mira",
+    "import": "Importar",
+    "code_ok": "Mira importada.",
+    "code_bad": "Eso no parece un código de mira de VALORANT.",
+    "color": "Color",
+    "outline": "Contornos",
+    "dot": "Punto central",
+    "outer": "Líneas exteriores",
+    "length": "Longitud interior",
+    "thickness": "Grosor interior",
+    "gap": "Separación interior",
+    "opacity": "Opacidad interior",
+    "dot_size": "Grosor del punto",
+    "size": "Tamaño de los objetivos",
+    "target_color": "Color de resaltado enemigo",
+    "volume": "Volumen",
+    "reset": "Restablecer valores",
+    "colors": {
+      "red": "Rojo",
+      "yellow": "Amarillo (deuteranopía)",
+      "purple": "Morado (tritanopía)",
+      "cyan": "Cian"
+    },
+    "skills": {
+      "speed": "Velocidad",
+      "precision": "Precisión",
+      "flicking": "Flicks",
+      "reaction": "Reacción",
+      "tracking": "Tracking",
+      "holding": "Aguantar ángulos"
+    },
+    "modes": {
+      "grid": {
+        "name": "Cuadrícula",
+        "desc": "Tres objetivos en una pared, siempre tres. Elimínalos rápido.",
+        "how": "Dispara a los objetivos lo más rápido que puedas. Las bajas rápidas dan más puntos; los fallos restan."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Un objetivo pequeño, del tamaño de una cabeza, que salta distancias cortas.",
+        "how": "Objetivos pequeños, ajustes pequeños. Haz clic solo cuando estés encima: aquí los fallos cuestan más."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Objetivos en cualquier punto de un arco amplio, alternando lados.",
+        "how": "Cada objetivo aparece en el lado contrario. Llega hasta él y dispara en un solo movimiento."
+      },
+      "reflex": {
+        "name": "Reacción",
+        "desc": "Espera a que aparezca un objetivo y elimínalo. 15 rondas.",
+        "how": "Mantén el centro. Cuando aparezca un objetivo, elimínalo antes de que desaparezca. Hacer clic antes de tiempo resta puntos."
+      },
+      "track": {
+        "name": "Tracking de strafe",
+        "desc": "Un muñeco que hace strafe A-D a velocidad de carrera, con frenadas de contra-strafe.",
+        "how": "Mantén la mira sobre el muñeco durante 40 segundos. No hace falta hacer clic; el tiempo en la cabeza suma extra."
+      },
+      "peek": {
+        "name": "Aguantar ángulo",
+        "desc": "Muñecos que asoman en wide peek desde tres coberturas. Aguanta el ángulo. 20 rondas.",
+        "how": "Aguanta un ángulo y dispara cuando asomen. Un tiro a la cabeza mata; al cuerpo hacen falta dos. Si vuelve a cubrirse, se escapa."
+      }
+    },
+    "disclaimer": "Las puntuaciones y los ajustes se guardan solo en este navegador. VALSYNC no está afiliado a Riot Games; los rangos que ves aquí son niveles de práctica de VALSYNC, no rangos competitivos.",
+    "lock_error": "Tu navegador bloqueó la captura del ratón. Abre la página en su propia pestaña (no en una vista integrada) y vuelve a pulsar Empezar.",
+    "dpi": {
+      "detect": "Detectar mis DPI",
+      "why": "Los navegadores no pueden leer los DPI de un ratón, así que los medimos: desliza el ratón sobre algo de ancho conocido y contamos el movimiento que informa.",
+      "ref": "Referencia",
+      "ref_card": "Tarjeta bancaria (8,56 cm)",
+      "ref_ruler": "Regla (10 cm)",
+      "ref_custom": "Ancho personalizado",
+      "pass": "Pasada",
+      "step": "Apoya el ratón en el borde izquierdo de tu referencia, haz clic en el recuadro, deslízalo recto hacia la derecha hasta tocar el otro borde y vuelve a hacer clic. No lo levantes y mantenlo recto.",
+      "box_idle": "Haz clic para empezar a medir",
+      "box_live": "Desliza a la derecha… haz clic en el borde",
+      "too_short": "Ha sido demasiado corto. Desliza todo el ancho de la referencia.",
+      "result": "Medido",
+      "suggest": "Valor habitual más cercano",
+      "use": "Usar estos DPI",
+      "redo": "Volver a medir",
+      "cancel": "Cerrar",
+      "os_note": "Tu navegador no ofrece entrada en bruto del ratón, así que la lectura incluye la velocidad del puntero de Windows. Déjala en 6/11 y sin precisión mejorada para un valor exacto."
+    }
   }
 }

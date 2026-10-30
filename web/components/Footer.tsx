@@ -34,6 +34,7 @@ export default function Footer() {
             <h4>Product</h4>
             <a href={`${B}${prefix}#app`}>{t("nav.app")}</a>
             <a href={`${B}${prefix}#pricing`}>{t("nav.pricing")}</a>
+            <a href={dev ? "/aim" : "aim.html"}>{t("nav.aim")}</a>
           </div>
 
           <div className="footer-col">

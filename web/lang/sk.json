@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Cenník",
     "mob_faq": "FAQ",
-    "get_app": "Získať appku"
+    "get_app": "Získať appku",
+    "aim": "Tréning mierenia"
   },
   "hero": {
     "word1": "Sleduj",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Už čoskoro"
+  },
+  "aim": {
+    "eyebrow": "Tréning mierenia",
+    "title": "Trénuj mierenie v prehliadači",
+    "lead": "Šesť cvičení postavených na tom, čo vo VALORANTE naozaj rozhoduje súboje. Tvoja citlivosť, FOV aj zameriavač z hry sa prenesú presne, takže to, čo trénuješ tu, je to, čím strieľaš.",
+    "pill_sens": "Citlivosť VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Import kódu zameriavača",
+    "pill_local": "Bez účtu, bez sťahovania",
+    "touch_notice": "Tréning mierenia potrebuje myš a klávesnicu. Otvor túto stránku na počítači.",
+    "start": "Začať",
+    "resume": "Pokračovať",
+    "restart": "Znova",
+    "retry": "Skúsiť znova",
+    "next": "Ďalšie cvičenie",
+    "exit": "Späť na cvičenia",
+    "click_to_start": "Klikni pre začiatok",
+    "paused": "Pozastavené",
+    "esc_hint": "Kedykoľvek stlač Esc na pozastavenie.",
+    "hud_mode": "Cvičenie",
+    "hud_time": "Čas",
+    "hud_round": "Kolo",
+    "hud_score": "Skóre",
+    "hud_acc": "Presnosť",
+    "result": "Výsledok",
+    "new_best": "Nový rekord",
+    "hits": "Zásahy",
+    "avg_ttk": "Priem. čas na zabitie",
+    "avg_reaction": "Priem. reakcia",
+    "headshots": "Headshoty",
+    "best": "Rekord",
+    "rounds": "kôl",
+    "tab_sens": "Citlivosť",
+    "tab_xhair": "Zameriavač",
+    "tab_targets": "Ciele a zvuk",
+    "sens": "Citlivosť vo VALORANTE",
+    "sens_note": "Ak to prehliadač podporuje (Chrome, Edge), myš sa číta priamo, takže to zodpovedá hre 1:1. Inak nechaj rýchlosť ukazovateľa vo Windows na 6/11 a vypni „Zvýšiť presnosť ukazovateľa“.",
+    "code": "Kód zameriavača",
+    "import": "Importovať",
+    "code_ok": "Zameriavač importovaný.",
+    "code_bad": "Toto nevyzerá ako kód zameriavača z VALORANTU.",
+    "color": "Farba",
+    "outline": "Obrys",
+    "dot": "Stredová bodka",
+    "outer": "Vonkajšie čiary",
+    "length": "Vnútorná dĺžka",
+    "thickness": "Vnútorná hrúbka",
+    "gap": "Vnútorný odstup",
+    "opacity": "Vnútorná krycia schopnosť",
+    "dot_size": "Hrúbka bodky",
+    "size": "Veľkosť cieľov",
+    "target_color": "Farba zvýraznenia nepriateľov",
+    "volume": "Hlasitosť",
+    "reset": "Obnoviť predvolené",
+    "colors": {
+      "red": "Červená",
+      "yellow": "Žltá (deuteranopia)",
+      "purple": "Fialová (tritanopia)",
+      "cyan": "Azúrová"
+    },
+    "skills": {
+      "speed": "Rýchlosť",
+      "precision": "Presnosť",
+      "flicking": "Flicky",
+      "reaction": "Reakcia",
+      "tracking": "Sledovanie",
+      "holding": "Držanie uhla"
+    },
+    "modes": {
+      "grid": {
+        "name": "Mriežka",
+        "desc": "Tri ciele na stene, vždy tri. Zostreľ ich rýchlo.",
+        "how": "Strieľaj na ciele čo najrýchlejšie. Rýchlejšie zabitia dávajú viac bodov, minutie body berie."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Jeden malý cieľ veľkosti hlavy, ktorý preskakuje na krátke vzdialenosti.",
+        "how": "Malé ciele, malé korekcie. Klikaj, len keď si na cieli – minutie tu stojí viac."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Ciele kdekoľvek na širokom oblúku, striedavo vľavo a vpravo.",
+        "how": "Každý cieľ sa objaví na druhej strane. Dostaň sa naň a vystreľ jedným pohybom."
+      },
+      "reflex": {
+        "name": "Reakcia",
+        "desc": "Počkaj, kým sa objaví cieľ, a zostreľ ho. 15 kôl.",
+        "how": "Drž stred. Keď sa objaví cieľ, zabi ho skôr, než zmizne. Predčasné kliknutie stojí body."
+      },
+      "track": {
+        "name": "Sledovanie strafu",
+        "desc": "Figurína strafuje A-D rýchlosťou behu a prudko zastavuje.",
+        "how": "Drž zameriavač na figuríne 40 sekúnd. Klikať nemusíš; čas na hlave prináša body navyše."
+      },
+      "peek": {
+        "name": "Držanie uhla",
+        "desc": "Figuríny široko vykúkajú spoza troch krytov. Drž uhol. 20 kôl.",
+        "how": "Drž uhol a strieľaj, keď vykuknú. Headshot zabíja, do tela treba dva zásahy. Keď sa vráti do krytu, ujde."
+      }
+    },
+    "disclaimer": "Skóre a nastavenia sa ukladajú iba v tomto prehliadači. VALSYNC nie je spojený so spoločnosťou Riot Games; zobrazené ranky sú tréningové úrovne VALSYNC, nie kompetitívne ranky.",
+    "lock_error": "Prehliadač zablokoval zachytenie myši. Otvor stránku v samostatnej karte (nie vo vloženom zobrazení) a znova klikni na Začať.",
+    "dpi": {
+      "detect": "Zistiť moje DPI",
+      "why": "Prehliadače nevedia prečítať DPI myši, preto ho zmeriame: prejdi myšou cez predmet známej šírky a my spočítame hlásený pohyb.",
+      "ref": "Referencia",
+      "ref_card": "Platobná karta (8,56 cm)",
+      "ref_ruler": "Pravítko (10 cm)",
+      "ref_custom": "Vlastná šírka",
+      "pass": "Meranie",
+      "step": "Prilož myš k ľavej hrane referencie, klikni do poľa, posuň ju rovno doprava až k druhej hrane a klikni znova. Nedvíhaj ju a veď ju rovno.",
+      "box_idle": "Klikni na spustenie merania",
+      "box_live": "Posúvaj doprava… klikni pri hrane",
+      "too_short": "Bolo to príliš krátke. Prejdi celú šírku referencie.",
+      "result": "Namerané",
+      "suggest": "Najbližšia bežná hodnota",
+      "use": "Použiť toto DPI",
+      "redo": "Zmerať znova",
+      "cancel": "Zavrieť",
+      "os_note": "Prehliadač neponúka priamy vstup myši, takže meranie zahŕňa rýchlosť ukazovateľa Windows. Pre presnosť nastav 6/11 a vypni zvýšenú presnosť."
+    }
   }
 }

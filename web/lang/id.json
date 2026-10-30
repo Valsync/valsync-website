@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Harga",
     "mob_faq": "FAQ",
-    "get_app": "Dapatkan aplikasi"
+    "get_app": "Dapatkan aplikasi",
+    "aim": "Latihan Aim"
   },
   "hero": {
     "word1": "Lacak",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Segera hadir"
+  },
+  "aim": {
+    "eyebrow": "Latihan Aim",
+    "title": "Latih aim kamu di browser",
+    "lead": "Enam latihan yang dibangun dari hal yang benar-benar menentukan duel di VALORANT. Sensitivitas, FOV, dan crosshair dari game terbawa persis, jadi yang kamu latih di sini sama dengan yang kamu pakai menembak.",
+    "pill_sens": "Sensitivitas VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Impor kode crosshair",
+    "pill_local": "Tanpa akun, tanpa unduhan",
+    "touch_notice": "Latihan aim butuh mouse dan keyboard. Buka halaman ini di komputer untuk bermain.",
+    "start": "Mulai",
+    "resume": "Lanjutkan",
+    "restart": "Ulangi dari awal",
+    "retry": "Coba lagi",
+    "next": "Latihan berikutnya",
+    "exit": "Kembali ke daftar latihan",
+    "click_to_start": "Klik untuk mulai",
+    "paused": "Dijeda",
+    "esc_hint": "Tekan Esc kapan saja untuk menjeda.",
+    "hud_mode": "Latihan",
+    "hud_time": "Waktu",
+    "hud_round": "Ronde",
+    "hud_score": "Skor",
+    "hud_acc": "Akurasi",
+    "result": "Hasil",
+    "new_best": "Rekor baru",
+    "hits": "Kena",
+    "avg_ttk": "Rata-rata waktu kill",
+    "avg_reaction": "Rata-rata reaksi",
+    "headshots": "Headshot",
+    "best": "Terbaik",
+    "rounds": "ronde",
+    "tab_sens": "Sensitivitas",
+    "tab_xhair": "Crosshair",
+    "tab_targets": "Target & suara",
+    "sens": "Sensitivitas VALORANT",
+    "sens_note": "Input mouse dibaca mentah jika browser mendukung (Chrome, Edge), jadi cocok 1:1 dengan game. Selain itu, biarkan kecepatan pointer Windows di 6/11 dan matikan \"Enhance pointer precision\".",
+    "code": "Kode crosshair",
+    "import": "Impor",
+    "code_ok": "Crosshair berhasil diimpor.",
+    "code_bad": "Itu tidak terlihat seperti kode crosshair VALORANT.",
+    "color": "Warna",
+    "outline": "Garis tepi",
+    "dot": "Titik tengah",
+    "outer": "Garis luar",
+    "length": "Panjang dalam",
+    "thickness": "Ketebalan dalam",
+    "gap": "Jarak dalam",
+    "opacity": "Opasitas dalam",
+    "dot_size": "Ketebalan titik",
+    "size": "Ukuran target",
+    "target_color": "Warna sorotan musuh",
+    "volume": "Volume",
+    "reset": "Kembalikan ke bawaan",
+    "colors": {
+      "red": "Merah",
+      "yellow": "Kuning (deuteranopia)",
+      "purple": "Ungu (tritanopia)",
+      "cyan": "Sian"
+    },
+    "skills": {
+      "speed": "Kecepatan",
+      "precision": "Presisi",
+      "flicking": "Flick",
+      "reaction": "Reaksi",
+      "tracking": "Tracking",
+      "holding": "Menahan sudut"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grid",
+        "desc": "Tiga target di dinding, selalu tiga. Bersihkan dengan cepat.",
+        "how": "Tembak target secepat mungkin. Kill lebih cepat dapat poin lebih banyak; meleset mengurangi poin."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Satu target kecil seukuran kepala yang melompat jarak pendek.",
+        "how": "Target kecil, penyesuaian kecil. Klik hanya saat sudah di target — di sini meleset lebih mahal."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Target di mana saja dalam busur lebar, bergantian sisi.",
+        "how": "Setiap target muncul di sisi berlawanan. Arahkan ke sana dan tembak dalam satu gerakan."
+      },
+      "reflex": {
+        "name": "Reaksi",
+        "desc": "Tunggu target muncul, lalu jatuhkan. 15 ronde.",
+        "how": "Jaga bagian tengah. Saat target muncul, kill sebelum hilang. Klik terlalu cepat mengurangi poin."
+      },
+      "track": {
+        "name": "Strafe Track",
+        "desc": "Dummy yang strafe A-D dengan kecepatan lari, dengan berhenti mendadak.",
+        "how": "Jaga crosshair di dummy selama 40 detik. Tidak perlu klik; waktu di kepala dapat poin tambahan."
+      },
+      "peek": {
+        "name": "Tahan Sudut",
+        "desc": "Dummy wide peek dari tiga cover. Tahan sudutnya. 20 ronde.",
+        "how": "Tahan satu sudut dan tembak saat mereka peek. Headshot langsung kill; badan butuh dua tembakan. Kalau kembali ke cover, ia lolos."
+      }
+    },
+    "disclaimer": "Skor dan pengaturan hanya disimpan di browser ini. VALSYNC tidak berafiliasi dengan Riot Games; rank yang ditampilkan di sini adalah tingkat latihan VALSYNC, bukan rank kompetitif.",
+    "lock_error": "Browser kamu memblokir penangkapan mouse. Buka halaman di tab tersendiri (bukan tampilan tersemat) lalu klik Mulai lagi.",
+    "dpi": {
+      "detect": "Deteksi DPI saya",
+      "why": "Browser tidak bisa membaca DPI mouse, jadi kami mengukurnya: geser mouse melewati benda yang lebarnya diketahui dan kami hitung gerakan yang dilaporkan.",
+      "ref": "Acuan",
+      "ref_card": "Kartu bank (8,56 cm)",
+      "ref_ruler": "Penggaris (10 cm)",
+      "ref_custom": "Lebar khusus",
+      "pass": "Percobaan",
+      "step": "Tempelkan mouse ke tepi kiri acuan, klik kotak, geser lurus ke kanan sampai menyentuh tepi lainnya, lalu klik lagi. Jangan diangkat, jaga tetap lurus.",
+      "box_idle": "Klik untuk mulai mengukur",
+      "box_live": "Geser ke kanan… klik di tepi",
+      "too_short": "Terlalu pendek. Geser selebar acuan sepenuhnya.",
+      "result": "Hasil ukur",
+      "suggest": "Nilai umum terdekat",
+      "use": "Pakai DPI ini",
+      "redo": "Ukur ulang",
+      "cancel": "Tutup",
+      "os_note": "Browser kamu tidak menyediakan input mouse mentah, jadi hasilnya ikut terpengaruh kecepatan pointer Windows. Biarkan di 6/11 dan matikan peningkatan presisi agar akurat."
+    }
   }
 }

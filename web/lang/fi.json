@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Hinnat",
     "mob_faq": "UKK",
-    "get_app": "Lataa"
+    "get_app": "Lataa",
+    "aim": "Tähtäysharjoitus"
   },
   "hero": {
     "word1": "Seuraa",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Tulossa pian"
+  },
+  "aim": {
+    "eyebrow": "Tähtäysharjoitus",
+    "title": "Harjoittele tähtäystä selaimessa",
+    "lead": "Kuusi harjoitusta, jotka keskittyvät siihen, mikä VALORANTin kaksintaisteluissa oikeasti ratkaisee. Pelin herkkyys, FOV ja tähtäin siirtyvät täsmälleen, joten se mitä harjoittelet täällä, on sitä millä ammut.",
+    "pill_sens": "VALORANT-herkkyys 1:1",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Tähtäinkoodin tuonti",
+    "pill_local": "Ei tiliä, ei latausta",
+    "touch_notice": "Tähtäysharjoitus vaatii hiiren ja näppäimistön. Avaa sivu tietokoneella pelataksesi.",
+    "start": "Aloita",
+    "resume": "Jatka",
+    "restart": "Aloita alusta",
+    "retry": "Yritä uudelleen",
+    "next": "Seuraava harjoitus",
+    "exit": "Takaisin harjoituksiin",
+    "click_to_start": "Aloita klikkaamalla",
+    "paused": "Tauko",
+    "esc_hint": "Paina Esc milloin tahansa pitääksesi tauon.",
+    "hud_mode": "Harjoitus",
+    "hud_time": "Aika",
+    "hud_round": "Kierros",
+    "hud_score": "Pisteet",
+    "hud_acc": "Tarkkuus",
+    "result": "Tulos",
+    "new_best": "Uusi ennätys",
+    "hits": "Osumat",
+    "avg_ttk": "Keskim. aika tappoon",
+    "avg_reaction": "Keskim. reaktio",
+    "headshots": "Pääosumat",
+    "best": "Paras",
+    "rounds": "kierrosta",
+    "tab_sens": "Herkkyys",
+    "tab_xhair": "Tähtäin",
+    "tab_targets": "Kohteet ja ääni",
+    "sens": "VALORANT-herkkyys",
+    "sens_note": "Hiiren liike luetaan suoraan, jos selaimesi tukee sitä (Chrome, Edge), joten se vastaa peliä 1:1. Muuten pidä Windowsin osoittimen nopeus asetuksessa 6/11 ja poista ”Paranna osoittimen tarkkuutta” käytöstä.",
+    "code": "Tähtäinkoodi",
+    "import": "Tuo",
+    "code_ok": "Tähtäin tuotu.",
+    "code_bad": "Tämä ei näytä VALORANTin tähtäinkoodilta.",
+    "color": "Väri",
+    "outline": "Ääriviivat",
+    "dot": "Keskipiste",
+    "outer": "Ulkoviivat",
+    "length": "Sisäpituus",
+    "thickness": "Sisäpaksuus",
+    "gap": "Sisäväli",
+    "opacity": "Sisäpeittävyys",
+    "dot_size": "Pisteen paksuus",
+    "size": "Kohteiden koko",
+    "target_color": "Vihollisten korostusväri",
+    "volume": "Äänenvoimakkuus",
+    "reset": "Palauta oletukset",
+    "colors": {
+      "red": "Punainen",
+      "yellow": "Keltainen (deuteranopia)",
+      "purple": "Violetti (tritanopia)",
+      "cyan": "Syaani"
+    },
+    "skills": {
+      "speed": "Nopeus",
+      "precision": "Tarkkuus",
+      "flicking": "Flickit",
+      "reaction": "Reaktio",
+      "tracking": "Seuranta",
+      "holding": "Kulman pito"
+    },
+    "modes": {
+      "grid": {
+        "name": "Ruudukko",
+        "desc": "Kolme kohdetta seinällä, aina kolme. Kaada ne nopeasti.",
+        "how": "Ammu kohteet niin nopeasti kuin pystyt. Nopeammat tapot tuovat enemmän pisteitä, ohilaukaukset vievät niitä."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Yksi pieni, pään kokoinen kohde, joka hyppii lyhyitä matkoja.",
+        "how": "Pienet kohteet, pienet korjaukset. Klikkaa vasta kun olet kohteen päällä – täällä ohilaukaukset maksavat enemmän."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Kohteita missä tahansa laajalla kaarella, vuorotellen kummallakin puolella.",
+        "how": "Jokainen kohde ilmestyy vastakkaiselle puolelle. Siirry sen päälle ja ammu yhdellä liikkeellä."
+      },
+      "reflex": {
+        "name": "Reaktio",
+        "desc": "Odota kohteen ilmestymistä ja kaada se. 15 kierrosta.",
+        "how": "Pidä keskikohta. Kun kohde ilmestyy, kaada se ennen kuin se katoaa. Liian aikainen klikkaus maksaa pisteitä."
+      },
+      "track": {
+        "name": "Strafe-seuranta",
+        "desc": "Nukke, joka straffaa A-D juoksunopeudella ja pysähtyy äkisti.",
+        "how": "Pidä tähtäin nuken päällä 40 sekuntia. Klikkaaminen ei ole tarpeen; päässä vietetty aika tuo lisäpisteitä."
+      },
+      "peek": {
+        "name": "Kulman pito",
+        "desc": "Nuket peekkaavat leveästi kolmen suojan takaa. Pidä kulma. 20 kierrosta.",
+        "how": "Pidä kulma ja ammu, kun ne tulevat esiin. Pääosuma tappaa, vartaloon tarvitaan kaksi osumaa. Jos nukke palaa suojaan, se pääsee karkuun."
+      }
+    },
+    "disclaimer": "Pisteet ja asetukset tallennetaan vain tähän selaimeen. VALSYNC ei ole Riot Gamesin yhteistyökumppani; tässä näkyvät arvot ovat VALSYNCin harjoitustasoja, eivät kilpailullisia arvoja.",
+    "lock_error": "Selaimesi esti hiiren kaappauksen. Avaa sivu omaan välilehteensä (ei upotettuun näkymään) ja klikkaa Aloita uudelleen.",
+    "dpi": {
+      "detect": "Mittaa DPI",
+      "why": "Selaimet eivät pysty lukemaan hiiren DPI-arvoa, joten mittaamme sen: liu’uta hiirtä tunnetun levyisen esineen yli, niin laskemme sen ilmoittaman liikkeen.",
+      "ref": "Vertailukohde",
+      "ref_card": "Pankkikortti (8,56 cm)",
+      "ref_ruler": "Viivain (10 cm)",
+      "ref_custom": "Oma leveys",
+      "pass": "Mittaus",
+      "step": "Aseta hiiri vertailukohteen vasenta reunaa vasten, klikkaa ruutua, liu’uta suoraan oikealle kunnes se koskettaa toista reunaa, ja klikkaa uudelleen. Älä nosta, pidä suorassa.",
+      "box_idle": "Aloita mittaus klikkaamalla",
+      "box_live": "Liu’uta oikealle… klikkaa reunalla",
+      "too_short": "Liian lyhyt. Liu’uta vertailukohteen koko leveyden verran.",
+      "result": "Mitattu",
+      "suggest": "Lähin yleinen arvo",
+      "use": "Käytä tätä DPI:tä",
+      "redo": "Mittaa uudelleen",
+      "cancel": "Sulje",
+      "os_note": "Selaimesi ei tarjoa hiiren raakasyötettä, joten lukema sisältää Windowsin osoittimen nopeuden. Pidä se asetuksessa 6/11 ilman tarkkuuden parannusta."
+    }
   }
 }

@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Priser",
     "mob_faq": "FAQ",
-    "get_app": "Hent appen"
+    "get_app": "Hent appen",
+    "aim": "Siktetrener"
   },
   "hero": {
     "word1": "Spor",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Kommer snart"
+  },
+  "aim": {
+    "eyebrow": "Siktetrener",
+    "title": "Tren siktet i nettleseren",
+    "lead": "Seks øvelser bygd rundt det som faktisk avgjør dueller i VALORANT. Sensitivity, FOV og trådkorset ditt fra spillet overføres nøyaktig, så det du trener her, er det du skyter med.",
+    "pill_sens": "1:1 VALORANT-sensitivity",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Import av trådkorskode",
+    "pill_local": "Ingen konto, ingen nedlasting",
+    "touch_notice": "Siktetreneren krever mus og tastatur. Åpne denne siden på en datamaskin for å spille.",
+    "start": "Start",
+    "resume": "Fortsett",
+    "restart": "Start på nytt",
+    "retry": "Prøv igjen",
+    "next": "Neste øvelse",
+    "exit": "Tilbake til øvelser",
+    "click_to_start": "Klikk for å starte",
+    "paused": "Pause",
+    "esc_hint": "Trykk Esc når som helst for å ta pause.",
+    "hud_mode": "Øvelse",
+    "hud_time": "Tid",
+    "hud_round": "Runde",
+    "hud_score": "Poeng",
+    "hud_acc": "Treffsikkerhet",
+    "result": "Resultat",
+    "new_best": "Ny rekord",
+    "hits": "Treff",
+    "avg_ttk": "Snitt tid per kill",
+    "avg_reaction": "Snitt reaksjon",
+    "headshots": "Hodeskudd",
+    "best": "Beste",
+    "rounds": "runder",
+    "tab_sens": "Sensitivity",
+    "tab_xhair": "Trådkors",
+    "tab_targets": "Mål og lyd",
+    "sens": "VALORANT-sensitivity",
+    "sens_note": "Musen leses rått når nettleseren støtter det (Chrome, Edge), så den matcher spillet 1:1. Ellers bør du holde pekerhastigheten i Windows på 6/11 og slå av «Forbedre pekerpresisjon».",
+    "code": "Trådkorskode",
+    "import": "Importer",
+    "code_ok": "Trådkors importert.",
+    "code_bad": "Det ser ikke ut som en VALORANT-trådkorskode.",
+    "color": "Farge",
+    "outline": "Kontur",
+    "dot": "Midtprikk",
+    "outer": "Ytre linjer",
+    "length": "Indre lengde",
+    "thickness": "Indre tykkelse",
+    "gap": "Indre avstand",
+    "opacity": "Indre dekkevne",
+    "dot_size": "Prikktykkelse",
+    "size": "Målstørrelse",
+    "target_color": "Fargemarkering av fiender",
+    "volume": "Volum",
+    "reset": "Tilbakestill til standard",
+    "colors": {
+      "red": "Rød",
+      "yellow": "Gul (deuteranopi)",
+      "purple": "Lilla (tritanopi)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Fart",
+      "precision": "Presisjon",
+      "flicking": "Flicks",
+      "reaction": "Reaksjon",
+      "tracking": "Tracking",
+      "holding": "Holde vinkel"
+    },
+    "modes": {
+      "grid": {
+        "name": "Rutenett",
+        "desc": "Tre mål på en vegg, alltid tre. Rydd dem raskt.",
+        "how": "Skyt målene så raskt du kan. Raskere kills gir flere poeng; bom koster poeng."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Ett lite mål på størrelse med et hode som hopper korte avstander.",
+        "how": "Små mål, små justeringer. Klikk bare når du er på det – bom koster mer her."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Mål hvor som helst i en bred bue, annenhver side.",
+        "how": "Hvert mål dukker opp på motsatt side. Flytt deg dit og skyt i én bevegelse."
+      },
+      "reflex": {
+        "name": "Reaksjon",
+        "desc": "Vent til et mål dukker opp, og skyt det. 15 runder.",
+        "how": "Hold midten. Når et mål dukker opp, skyt det før det forsvinner. Å klikke for tidlig koster poeng."
+      },
+      "track": {
+        "name": "Strafe-tracking",
+        "desc": "En dukke som strafer A-D i løpefart, med brå counter-strafe-stopp.",
+        "how": "Hold trådkorset på dukken i 40 sekunder. Du trenger ikke klikke; tid på hodet gir ekstra poeng."
+      },
+      "peek": {
+        "name": "Holde vinkel",
+        "desc": "Dukker wide-peeker fra tre dekninger. Hold vinkelen. 20 runder.",
+        "how": "Hold en vinkel og skyt når de peeker. Et hodeskudd dreper; kroppen krever to treff. Kommer den seg tilbake i dekning, slipper den unna."
+      }
+    },
+    "disclaimer": "Poeng og innstillinger lagres bare i denne nettleseren. VALSYNC er ikke tilknyttet Riot Games; rangene her er VALSYNC-treningsnivåer, ikke competitive-ranger.",
+    "lock_error": "Nettleseren blokkerte musfangst. Åpne siden i en egen fane (ikke en innebygd visning) og klikk Start igjen.",
+    "dpi": {
+      "detect": "Finn min DPI",
+      "why": "Nettlesere kan ikke lese DPI fra en mus, så vi måler den: dra musen over noe med kjent bredde, så teller vi bevegelsen den rapporterer.",
+      "ref": "Referanse",
+      "ref_card": "Bankkort (8,56 cm)",
+      "ref_ruler": "Linjal (10 cm)",
+      "ref_custom": "Egen bredde",
+      "pass": "Måling",
+      "step": "Sett musen mot venstre kant av referansen, klikk i feltet, dra den rett mot høyre til den treffer den andre kanten, og klikk igjen. Ikke løft den, hold den rett.",
+      "box_idle": "Klikk for å starte målingen",
+      "box_live": "Dra mot høyre… klikk ved kanten",
+      "too_short": "Det var for kort. Dra over hele bredden av referansen.",
+      "result": "Målt",
+      "suggest": "Nærmeste vanlige verdi",
+      "use": "Bruk denne DPI-en",
+      "redo": "Mål på nytt",
+      "cancel": "Lukk",
+      "os_note": "Nettleseren tilbyr ikke rå musinndata, så målingen inkluderer pekerhastigheten i Windows. Hold den på 6/11 uten forbedret presisjon for et nøyaktig tall."
+    }
   }
 }
