@@ -70,7 +70,8 @@
     "mob_pricing": "Pricing",
     "mob_faq": "FAQ",
     "get_app": "Get app",
-    "my_stats": "My stats"
+    "my_stats": "My stats",
+    "aim": "Aim Trainer"
   },
   "hero": {
     "word1": "Track",
@@ -634,5 +635,162 @@
     "pairLead": "Pair the VALSYNC Android app once. This browser stays connected until you disconnect it here.",
     "phoneSyncRequired": "Open VALSYNC on your paired phone and choose Sync now. This data has not been synced yet or is more than a day old.",
     "phoneUpdated": "Last synced from phone"
+  },
+  "aim": {
+    "eyebrow": "Aim Trainer",
+    "title": "Train your aim in the browser",
+    "lead": "Six drills built around how VALORANT duels are actually won. Your in-game sensitivity, FOV and crosshair carry over exactly, so what you train here is what you shoot with.",
+    "pill_sens": "1:1 VALORANT sensitivity",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Crosshair code import",
+    "pill_local": "No account, no download",
+    "touch_notice": "The aim trainer needs a mouse and keyboard. Open this page on a computer to play.",
+    "start": "Start",
+    "resume": "Resume",
+    "restart": "Restart",
+    "retry": "Retry",
+    "next": "Next drill",
+    "exit": "Back to drills",
+    "click_to_start": "Click to start",
+    "paused": "Paused",
+    "esc_hint": "Press Esc any time to pause.",
+    "hud_mode": "Drill",
+    "hud_time": "Time",
+    "hud_round": "Round",
+    "hud_score": "Score",
+    "hud_acc": "Accuracy",
+    "result": "Result",
+    "new_best": "New best",
+    "hits": "Hits",
+    "avg_ttk": "Avg time to kill",
+    "avg_reaction": "Avg reaction",
+    "headshots": "Headshots",
+    "best": "Best",
+    "rounds": "rounds",
+    "tab_sens": "Sensitivity",
+    "tab_xhair": "Crosshair",
+    "tab_targets": "Targets & sound",
+    "sens": "VALORANT sensitivity",
+    "sens_note": "Mouse input is read raw when your browser supports it (Chrome, Edge), so this matches the game 1:1. Elsewhere, keep Windows pointer speed at 6/11 with Enhance pointer precision off.",
+    "code": "Crosshair code",
+    "import": "Import",
+    "code_ok": "Crosshair imported.",
+    "code_bad": "That doesn’t look like a VALORANT crosshair code.",
+    "color": "Color",
+    "outline": "Outlines",
+    "dot": "Center dot",
+    "outer": "Outer lines",
+    "length": "Inner length",
+    "thickness": "Inner thickness",
+    "gap": "Inner offset",
+    "opacity": "Inner opacity",
+    "dot_size": "Dot thickness",
+    "size": "Target size",
+    "target_color": "Enemy highlight color",
+    "volume": "Volume",
+    "reset": "Reset to defaults",
+    "colors": {
+      "red": "Red",
+      "yellow": "Yellow (deuteranopia)",
+      "purple": "Purple (tritanopia)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Speed",
+      "precision": "Precision",
+      "flicking": "Flicking",
+      "reaction": "Reaction",
+      "tracking": "Tracking",
+      "holding": "Angle holding"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grid",
+        "desc": "Three targets on a wall, always three. Clear them fast.",
+        "how": "Shoot the targets as fast as you can. Faster kills score more; misses cost points."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "One small, head-sized target that hops short distances.",
+        "how": "Small targets, small adjustments. Click only when you are on it — misses cost more here."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Targets anywhere across a wide arc, alternating sides.",
+        "how": "Each target spawns on the other side. Snap to it and fire in one motion."
+      },
+      "reflex": {
+        "name": "Reaction",
+        "desc": "Wait for a target to appear, then take it. 15 rounds.",
+        "how": "Hold the center. When a target appears, kill it before it vanishes. Clicking early costs points."
+      },
+      "track": {
+        "name": "Strafe Track",
+        "desc": "A dummy A-D strafing at run speed, with counter-strafe stops.",
+        "how": "Keep your crosshair on the dummy for 40 seconds. No need to click; time on the head scores extra."
+      },
+      "peek": {
+        "name": "Angle Hold",
+        "desc": "Dummies wide-peek from three covers. Hold the angle. 20 rounds.",
+        "how": "Hold an angle and shoot as they peek. A headshot kills; the body takes two hits. Let one get back to cover and it escapes."
+      }
+    },
+    "disclaimer": "Scores and settings are stored only in this browser. VALSYNC is not affiliated with Riot Games; ranks shown here are VALSYNC practice tiers, not competitive ranks.",
+    "lock_error": "Your browser blocked mouse capture. Open the page in its own tab (not an embedded view) and click Start again.",
+    "dpi": {
+      "detect": "Detect my DPI",
+      "why": "Browsers can’t read DPI from a mouse, so we measure it: slide the mouse across something of known width and we count the movement it reports.",
+      "ref": "Reference",
+      "ref_card": "Bank card (8.56 cm)",
+      "ref_ruler": "Ruler (10 cm)",
+      "ref_custom": "Custom width",
+      "pass": "Pass",
+      "step": "Put the mouse against the left edge of your reference, click the box, slide straight right until it touches the other edge, then click again. Don’t lift it, and keep it straight.",
+      "box_idle": "Click to start measuring",
+      "box_live": "Slide right… click at the edge",
+      "too_short": "That was too short. Slide the full width of your reference.",
+      "result": "Measured",
+      "suggest": "Closest common setting",
+      "use": "Use this DPI",
+      "redo": "Measure again",
+      "cancel": "Close",
+      "os_note": "Your browser doesn’t offer raw mouse input, so this reading includes Windows pointer speed. Keep it at 6/11 with Enhance pointer precision off for an accurate number."
+    },
+    "scn": {
+      "eyebrow": "Scenarios",
+      "new": "New",
+      "map": "Map",
+      "weapon": "Sidearm",
+      "enemies": "enemies",
+      "keys_hint": "WASD move · Shift walk · Ctrl crouch · R reload · Esc pause",
+      "kills": "Kills",
+      "you": "You",
+      "reloading": "Reloading",
+      "star1": "Clear every enemy",
+      "star2": "Clear them in {s} seconds or less",
+      "star3": "Take no damage",
+      "c_move": "Move",
+      "c_walk": "Walk (accurate)",
+      "c_crouch": "Crouch",
+      "c_jump": "Jump",
+      "c_reload": "Reload",
+      "c_pause": "Pause",
+      "outcome_win": "Victory",
+      "outcome_dead": "Eliminated",
+      "outcome_time": "Time’s up",
+      "killed_by": "Eliminated by {name}",
+      "cleared_in": "Round time {s} s",
+      "report": "Kill report",
+      "health_left": "Health left",
+      "head_kills": "Headshot kills",
+      "shots": "Shots fired",
+      "survivors": "{n} left standing. Their positions when the round ended.",
+      "list": {
+        "cinder-pistol-retake": {
+          "name": "Pistol Retake",
+          "brief": "Five opponents hold Cinder’s plaza and site with sidearms. Clear the lane exit, the alcove and the arch, then take the site. They react fast and shoot back, so stop before you shoot."
+        }
+      }
+    }
   }
 }

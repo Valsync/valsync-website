@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Árazás",
     "mob_faq": "GYIK",
-    "get_app": "App letöltése"
+    "get_app": "App letöltése",
+    "aim": "Célzásgyakorló"
   },
   "hero": {
     "word1": "Kövesd",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Hamarosan"
+  },
+  "aim": {
+    "eyebrow": "Célzásgyakorló",
+    "title": "Gyakorold a célzást a böngészőben",
+    "lead": "Hat gyakorlat arra építve, ami a VALORANT párharcait valóban eldönti. A játékbeli érzékenységed, FOV-od és célkereszted pontosan átkerül, így amit itt gyakorolsz, azzal lősz.",
+    "pill_sens": "1:1 VALORANT-érzékenység",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Célkereszt-kód importálása",
+    "pill_local": "Nincs fiók, nincs letöltés",
+    "touch_notice": "A célzásgyakorlóhoz egér és billentyűzet kell. A játékhoz nyisd meg ezt az oldalt számítógépen.",
+    "start": "Indítás",
+    "resume": "Folytatás",
+    "restart": "Újrakezdés",
+    "retry": "Újra",
+    "next": "Következő gyakorlat",
+    "exit": "Vissza a gyakorlatokhoz",
+    "click_to_start": "Kattints az indításhoz",
+    "paused": "Szünet",
+    "esc_hint": "Bármikor nyomd meg az Esc-et a szüneteltetéshez.",
+    "hud_mode": "Gyakorlat",
+    "hud_time": "Idő",
+    "hud_round": "Kör",
+    "hud_score": "Pont",
+    "hud_acc": "Pontosság",
+    "result": "Eredmény",
+    "new_best": "Új rekord",
+    "hits": "Találatok",
+    "avg_ttk": "Átl. idő ölésig",
+    "avg_reaction": "Átl. reakció",
+    "headshots": "Fejlövések",
+    "best": "Legjobb",
+    "rounds": "kör",
+    "tab_sens": "Érzékenység",
+    "tab_xhair": "Célkereszt",
+    "tab_targets": "Célpontok és hang",
+    "sens": "VALORANT-érzékenység",
+    "sens_note": "Ha a böngésző támogatja (Chrome, Edge), az egér nyers bemenetként kerül beolvasásra, így 1:1-ben egyezik a játékkal. Egyébként hagyd a Windows mutatósebességét 6/11-en, és kapcsold ki a „Mutató pontosságának javítása” opciót.",
+    "code": "Célkereszt-kód",
+    "import": "Importálás",
+    "code_ok": "Célkereszt importálva.",
+    "code_bad": "Ez nem tűnik VALORANT célkereszt-kódnak.",
+    "color": "Szín",
+    "outline": "Körvonal",
+    "dot": "Középpont",
+    "outer": "Külső vonalak",
+    "length": "Belső hossz",
+    "thickness": "Belső vastagság",
+    "gap": "Belső távolság",
+    "opacity": "Belső átlátszatlanság",
+    "dot_size": "Pont vastagsága",
+    "size": "Célpontméret",
+    "target_color": "Ellenfélkiemelés színe",
+    "volume": "Hangerő",
+    "reset": "Alapértékek visszaállítása",
+    "colors": {
+      "red": "Piros",
+      "yellow": "Sárga (deuteranópia)",
+      "purple": "Lila (tritanópia)",
+      "cyan": "Ciánkék"
+    },
+    "skills": {
+      "speed": "Sebesség",
+      "precision": "Precizitás",
+      "flicking": "Flickek",
+      "reaction": "Reakció",
+      "tracking": "Követés",
+      "holding": "Szögtartás"
+    },
+    "modes": {
+      "grid": {
+        "name": "Rács",
+        "desc": "Három célpont egy falon, mindig három. Szedd le őket gyorsan.",
+        "how": "Lődd le a célpontokat, amilyen gyorsan csak tudod. A gyorsabb ölés több pontot ér, a mellélövés pontlevonással jár."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Egyetlen kicsi, fejméretű célpont, amely rövid távolságokat ugrik.",
+        "how": "Kis célpontok, kis korrekciók. Csak akkor kattints, ha rajta vagy – itt a mellélövés többe kerül."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Célpontok bárhol egy széles íven, felváltva két oldalon.",
+        "how": "Minden célpont a másik oldalon jelenik meg. Egy mozdulattal érd el és lőj."
+      },
+      "reflex": {
+        "name": "Reakció",
+        "desc": "Várd meg, amíg megjelenik egy célpont, aztán szedd le. 15 kör.",
+        "how": "Tartsd a közepet. Ha megjelenik egy célpont, lődd le, mielőtt eltűnik. A korai kattintás pontba kerül."
+      },
+      "track": {
+        "name": "Strafe-követés",
+        "desc": "Futósebességgel A-D strafe-elő bábu, hirtelen megállásokkal.",
+        "how": "Tartsd a célkeresztet 40 másodpercig a bábun. Nem kell kattintani; a fejen töltött idő extra pontot ér."
+      },
+      "peek": {
+        "name": "Szögtartás",
+        "desc": "Bábuk peekelnek ki szélesen három fedezék mögül. Tartsd a szöget. 20 kör.",
+        "how": "Tarts egy szöget, és lőj, amikor kipeekelnek. A fejlövés öl, a testre két találat kell. Ha visszaér a fedezékbe, megszökik."
+      }
+    },
+    "disclaimer": "A pontszámok és beállítások csak ebben a böngészőben tárolódnak. A VALSYNC nem áll kapcsolatban a Riot Gamesszel; az itt látható rangok VALSYNC-gyakorlószintek, nem versengő rangok.",
+    "lock_error": "A böngésző letiltotta az egér rögzítését. Nyisd meg az oldalt külön lapon (ne beágyazott nézetben), és kattints újra az Indításra.",
+    "dpi": {
+      "detect": "DPI meghatározása",
+      "why": "A böngészők nem tudják kiolvasni az egér DPI-jét, ezért megmérjük: húzd végig az egeret egy ismert szélességű tárgyon, és megszámoljuk a jelentett mozgást.",
+      "ref": "Viszonyítás",
+      "ref_card": "Bankkártya (8,56 cm)",
+      "ref_ruler": "Vonalzó (10 cm)",
+      "ref_custom": "Egyéni szélesség",
+      "pass": "Mérés",
+      "step": "Tedd az egeret a viszonyítási tárgy bal széléhez, kattints a mezőbe, húzd egyenesen jobbra, amíg eléri a másik szélét, majd kattints újra. Ne emeld fel, tartsd egyenesen.",
+      "box_idle": "Kattints a mérés indításához",
+      "box_live": "Húzd jobbra… kattints a szélénél",
+      "too_short": "Ez túl rövid volt. Húzd végig a teljes szélességen.",
+      "result": "Mért érték",
+      "suggest": "Legközelebbi szokásos érték",
+      "use": "Ezt a DPI-t használom",
+      "redo": "Újramérés",
+      "cancel": "Bezárás",
+      "os_note": "A böngésző nem ad nyers egérbemenetet, így a mérés tartalmazza a Windows mutatósebességét. A pontos értékhez állítsd 6/11-re, kikapcsolt pontosításjavítással."
+    }
   }
 }

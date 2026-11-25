@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Preços",
     "mob_faq": "FAQ",
-    "get_app": "Obter app"
+    "get_app": "Obter app",
+    "aim": "Treino de mira"
   },
   "hero": {
     "word1": "Monitore",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Em breve"
+  },
+  "aim": {
+    "eyebrow": "Treino de mira",
+    "title": "Treine sua mira no navegador",
+    "lead": "Seis exercícios pensados no que realmente decide um duelo no VALORANT. Sua sensibilidade, seu FOV e sua mira do jogo são aplicados exatamente: o que você treina aqui é o que você usa para atirar.",
+    "pill_sens": "Sensibilidade do VALORANT 1:1",
+    "pill_fov": "FOV de 103°",
+    "pill_xhair": "Importação de código de mira",
+    "pill_local": "Sem conta, sem download",
+    "touch_notice": "O treino de mira precisa de mouse e teclado. Abra esta página em um computador para jogar.",
+    "start": "Começar",
+    "resume": "Continuar",
+    "restart": "Reiniciar",
+    "retry": "Tentar de novo",
+    "next": "Próximo exercício",
+    "exit": "Voltar aos exercícios",
+    "click_to_start": "Clique para começar",
+    "paused": "Pausado",
+    "esc_hint": "Pressione Esc a qualquer momento para pausar.",
+    "hud_mode": "Exercício",
+    "hud_time": "Tempo",
+    "hud_round": "Rodada",
+    "hud_score": "Pontos",
+    "hud_acc": "Precisão",
+    "result": "Resultado",
+    "new_best": "Novo recorde",
+    "hits": "Acertos",
+    "avg_ttk": "Tempo médio por abate",
+    "avg_reaction": "Reação média",
+    "headshots": "Tiros na cabeça",
+    "best": "Recorde",
+    "rounds": "rodadas",
+    "tab_sens": "Sensibilidade",
+    "tab_xhair": "Mira",
+    "tab_targets": "Alvos e som",
+    "sens": "Sensibilidade do VALORANT",
+    "sens_note": "O mouse é lido em modo bruto quando o navegador permite (Chrome, Edge), então bate 1:1 com o jogo. Em outros casos, deixe a velocidade do ponteiro do Windows em 6/11 e desative \"Aperfeiçoar a precisão do ponteiro\".",
+    "code": "Código da mira",
+    "import": "Importar",
+    "code_ok": "Mira importada.",
+    "code_bad": "Isso não parece um código de mira do VALORANT.",
+    "color": "Cor",
+    "outline": "Contornos",
+    "dot": "Ponto central",
+    "outer": "Linhas externas",
+    "length": "Comprimento interno",
+    "thickness": "Espessura interna",
+    "gap": "Afastamento interno",
+    "opacity": "Opacidade interna",
+    "dot_size": "Espessura do ponto",
+    "size": "Tamanho dos alvos",
+    "target_color": "Cor de destaque dos inimigos",
+    "volume": "Volume",
+    "reset": "Restaurar padrões",
+    "colors": {
+      "red": "Vermelho",
+      "yellow": "Amarelo (deuteranopia)",
+      "purple": "Roxo (tritanopia)",
+      "cyan": "Ciano"
+    },
+    "skills": {
+      "speed": "Velocidade",
+      "precision": "Precisão",
+      "flicking": "Flicks",
+      "reaction": "Reação",
+      "tracking": "Tracking",
+      "holding": "Segurar ângulo"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grade",
+        "desc": "Três alvos em uma parede, sempre três. Elimine-os rápido.",
+        "how": "Atire nos alvos o mais rápido possível. Abates rápidos valem mais; erros tiram pontos."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Um alvo pequeno, do tamanho de uma cabeça, que salta distâncias curtas.",
+        "how": "Alvos pequenos, ajustes pequenos. Só clique quando estiver em cima: aqui os erros custam mais."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Alvos em qualquer ponto de um arco amplo, alternando os lados.",
+        "how": "Cada alvo surge do outro lado. Chegue nele e atire em um só movimento."
+      },
+      "reflex": {
+        "name": "Reação",
+        "desc": "Espere um alvo aparecer e elimine-o. 15 rodadas.",
+        "how": "Segure o centro. Quando um alvo aparecer, elimine-o antes que suma. Clicar cedo demais tira pontos."
+      },
+      "track": {
+        "name": "Tracking de strafe",
+        "desc": "Um boneco fazendo strafe A-D na velocidade de corrida, com paradas de contra-strafe.",
+        "how": "Mantenha a mira no boneco por 40 segundos. Não precisa clicar; o tempo na cabeça vale mais."
+      },
+      "peek": {
+        "name": "Segurar ângulo",
+        "desc": "Bonecos dão wide peek de três coberturas. Segure o ângulo. 20 rodadas.",
+        "how": "Segure um ângulo e atire quando eles aparecerem. Tiro na cabeça mata; no corpo são dois. Se ele voltar para a cobertura, escapa."
+      }
+    },
+    "disclaimer": "Pontuações e configurações ficam salvas só neste navegador. A VALSYNC não é afiliada à Riot Games; os elos mostrados aqui são níveis de treino da VALSYNC, não elos competitivos.",
+    "lock_error": "Seu navegador bloqueou a captura do mouse. Abra a página em uma aba própria (não em uma visualização incorporada) e clique em Começar de novo.",
+    "dpi": {
+      "detect": "Detectar meu DPI",
+      "why": "Navegadores não conseguem ler o DPI do mouse, então nós medimos: deslize o mouse sobre algo de largura conhecida e contamos o movimento que ele informa.",
+      "ref": "Referência",
+      "ref_card": "Cartão bancário (8,56 cm)",
+      "ref_ruler": "Régua (10 cm)",
+      "ref_custom": "Largura personalizada",
+      "pass": "Passada",
+      "step": "Encoste o mouse na borda esquerda da referência, clique na caixa, deslize reto para a direita até tocar a outra borda e clique de novo. Não levante o mouse e mantenha-o reto.",
+      "box_idle": "Clique para começar a medir",
+      "box_live": "Deslize para a direita… clique na borda",
+      "too_short": "Foi curto demais. Deslize por toda a largura da referência.",
+      "result": "Medido",
+      "suggest": "Valor comum mais próximo",
+      "use": "Usar este DPI",
+      "redo": "Medir de novo",
+      "cancel": "Fechar",
+      "os_note": "Seu navegador não oferece entrada bruta do mouse, então a leitura inclui a velocidade do ponteiro do Windows. Mantenha em 6/11 e sem precisão aprimorada para um valor exato."
+    }
   }
 }

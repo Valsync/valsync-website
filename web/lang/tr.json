@@ -69,7 +69,8 @@
     "mob_faq": "SSS",
     "pricing": "Fiyatlandırma",
     "search_cta": "Oyuncu Ara",
-    "get_app": "Uygulama"
+    "get_app": "Uygulama",
+    "aim": "Nişan Antrenörü"
   },
   "hero": {
     "word1": "Takip Et",
@@ -651,5 +652,126 @@
     "pairLead": "VALSYNC Android uygulamasını bir kez eşleştir. Bu tarayıcı, bağlantıyı buradan kesene kadar bağlı kalır.",
     "phoneSyncRequired": "Eşleştirdiğin telefonda VALSYNC uygulamasını aç ve Şimdi eşitle seçeneğini kullan. Bu veriler henüz eşitlenmedi veya bir günden eski.",
     "phoneUpdated": "Telefondan son eşitleme"
+  },
+  "aim": {
+    "eyebrow": "Nişan Antrenörü",
+    "title": "Nişanını tarayıcıda geliştir",
+    "lead": "VALORANT düellolarını gerçekten neyin kazandırdığına göre tasarlanmış altı egzersiz. Oyundaki hassasiyetin, FOV’un ve nişangâhın birebir aktarılır; burada çalıştığın, oyunda ateş ettiğin şeydir.",
+    "pill_sens": "1:1 VALORANT hassasiyeti",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Nişangâh kodu içe aktarma",
+    "pill_local": "Hesap yok, indirme yok",
+    "touch_notice": "Nişan antrenörü fare ve klavye gerektirir. Oynamak için bu sayfayı bir bilgisayarda aç.",
+    "start": "Başla",
+    "resume": "Devam et",
+    "restart": "Yeniden başlat",
+    "retry": "Tekrar dene",
+    "next": "Sonraki egzersiz",
+    "exit": "Egzersizlere dön",
+    "click_to_start": "Başlamak için tıkla",
+    "paused": "Duraklatıldı",
+    "esc_hint": "İstediğin an duraklatmak için Esc’e bas.",
+    "hud_mode": "Egzersiz",
+    "hud_time": "Süre",
+    "hud_round": "Raunt",
+    "hud_score": "Puan",
+    "hud_acc": "İsabet",
+    "result": "Sonuç",
+    "new_best": "Yeni rekor",
+    "hits": "İsabetler",
+    "avg_ttk": "Ort. öldürme süresi",
+    "avg_reaction": "Ort. tepki",
+    "headshots": "Kafa vuruşları",
+    "best": "En iyi",
+    "rounds": "raunt",
+    "tab_sens": "Hassasiyet",
+    "tab_xhair": "Nişangâh",
+    "tab_targets": "Hedefler ve ses",
+    "sens": "VALORANT hassasiyeti",
+    "sens_note": "Tarayıcın destekliyorsa (Chrome, Edge) fare ham girdiyle okunur, bu yüzden oyunla 1:1 eşleşir. Diğerlerinde Windows işaretçi hızını 6/11’de bırak ve “İşaretçi hassasiyetini artır”ı kapat.",
+    "code": "Nişangâh kodu",
+    "import": "İçe aktar",
+    "code_ok": "Nişangâh içe aktarıldı.",
+    "code_bad": "Bu bir VALORANT nişangâh koduna benzemiyor.",
+    "color": "Renk",
+    "outline": "Dış hatlar",
+    "dot": "Merkez noktası",
+    "outer": "Dış çizgiler",
+    "length": "İç uzunluk",
+    "thickness": "İç kalınlık",
+    "gap": "İç boşluk",
+    "opacity": "İç opaklık",
+    "dot_size": "Nokta kalınlığı",
+    "size": "Hedef boyutu",
+    "target_color": "Düşman vurgu rengi",
+    "volume": "Ses düzeyi",
+    "reset": "Varsayılanlara dön",
+    "colors": {
+      "red": "Kırmızı",
+      "yellow": "Sarı (döteranopi)",
+      "purple": "Mor (tritanopi)",
+      "cyan": "Camgöbeği"
+    },
+    "skills": {
+      "speed": "Hız",
+      "precision": "Hassasiyet",
+      "flicking": "Flick",
+      "reaction": "Tepki",
+      "tracking": "Takip",
+      "holding": "Açı tutma"
+    },
+    "modes": {
+      "grid": {
+        "name": "Izgara",
+        "desc": "Duvarda üç hedef, her zaman üç. Hızlıca temizle.",
+        "how": "Hedefleri olabildiğince hızlı vur. Hızlı öldürmeler daha çok puan getirir, ıskalar puan kaybettirir."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Kısa mesafelerde zıplayan, kafa boyutunda küçük bir hedef.",
+        "how": "Küçük hedefler, küçük düzeltmeler. Yalnızca üzerindeyken tıkla; burada ıskalar daha pahalı."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Geniş bir yay boyunca her yerde, taraf değiştiren hedefler.",
+        "how": "Her hedef diğer tarafta belirir. Tek hareketle üstüne git ve ateş et."
+      },
+      "reflex": {
+        "name": "Tepki",
+        "desc": "Bir hedefin belirmesini bekle, sonra indir. 15 raunt.",
+        "how": "Merkezi tut. Bir hedef belirince kaybolmadan önce indir. Erken tıklamak puan kaybettirir."
+      },
+      "track": {
+        "name": "Strafe Takibi",
+        "desc": "Koşu hızında A-D strafe yapan, ani counter-strafe duruşları olan bir kukla.",
+        "how": "Nişangâhını 40 saniye boyunca kuklanın üzerinde tut. Tıklaman gerekmez; kafada geçen süre ekstra puan getirir."
+      },
+      "peek": {
+        "name": "Açı Tutma",
+        "desc": "Kuklalar üç siperden geniş peek atar. Açıyı tut. 20 raunt.",
+        "how": "Bir açı tut ve peek attıklarında ateş et. Kafa vuruşu öldürür, gövdeye iki isabet gerekir. Sipere geri dönen kaçmış sayılır."
+      }
+    },
+    "disclaimer": "Puanlar ve ayarlar yalnızca bu tarayıcıda saklanır. VALSYNC’in Riot Games ile bir bağlantısı yoktur; burada gösterilen rütbeler rekabetçi rütbeler değil, VALSYNC antrenman kademeleridir.",
+    "lock_error": "Tarayıcın fare yakalamayı engelledi. Sayfayı kendi sekmesinde (gömülü bir görünümde değil) aç ve Başla’ya yeniden tıkla.",
+    "dpi": {
+      "detect": "DPI’ımı algıla",
+      "why": "Tarayıcılar farenin DPI değerini okuyamaz, bu yüzden ölçüyoruz: fareyi genişliği bilinen bir şeyin üzerinde kaydır, bildirdiği hareketi sayalım.",
+      "ref": "Referans",
+      "ref_card": "Banka kartı (8,56 cm)",
+      "ref_ruler": "Cetvel (10 cm)",
+      "ref_custom": "Özel genişlik",
+      "pass": "Deneme",
+      "step": "Fareyi referansın sol kenarına daya, kutuya tıkla, diğer kenara değene kadar düz sağa kaydır ve tekrar tıkla. Kaldırma, düz tut.",
+      "box_idle": "Ölçmeye başlamak için tıkla",
+      "box_live": "Sağa kaydır… kenarda tıkla",
+      "too_short": "Çok kısaydı. Referansın tüm genişliği boyunca kaydır.",
+      "result": "Ölçülen",
+      "suggest": "En yakın yaygın değer",
+      "use": "Bu DPI’ı kullan",
+      "redo": "Tekrar ölç",
+      "cancel": "Kapat",
+      "os_note": "Tarayıcın ham fare girdisi sunmuyor, bu yüzden ölçüm Windows işaretçi hızını da içeriyor. Doğru sonuç için 6/11’de ve gelişmiş hassasiyet kapalı tut."
+    }
   }
 }

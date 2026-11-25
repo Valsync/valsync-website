@@ -25,6 +25,7 @@ export default function Nav() {
 
   const links = [
     { href: `${B}${prefix}#app`, label: t("nav.app") },
+    { href: dev ? "/aim" : "aim.html", label: t("nav.aim") },
     { href: `${B}${prefix}#pricing`, label: t("nav.pricing") },
     { href: dev ? "/privacy" : "privacy.html", label: t("nav.privacy") },
   ];

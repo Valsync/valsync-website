@@ -69,7 +69,8 @@
     "mob_faq": "FAQ",
     "pricing": "Preise",
     "search_cta": "Spieler suchen",
-    "get_app": "App holen"
+    "get_app": "App holen",
+    "aim": "Aim-Trainer"
   },
   "hero": {
     "word1": "Verfolge",
@@ -651,5 +652,126 @@
     "pairLead": "Kopple die VALSYNC-Android-App einmal. Dieser Browser bleibt verbunden, bis du die Verbindung hier trennst.",
     "phoneSyncRequired": "Öffne VALSYNC auf dem gekoppelten Handy und wähle Jetzt synchronisieren. Diese Daten fehlen oder sind über einen Tag alt.",
     "phoneUpdated": "Zuletzt vom Handy synchronisiert"
+  },
+  "aim": {
+    "eyebrow": "Aim-Trainer",
+    "title": "Trainiere dein Aim im Browser",
+    "lead": "Sechs Übungen, gebaut nach dem, was VALORANT-Duelle wirklich entscheidet. Deine Ingame-Sensitivität, dein FOV und dein Fadenkreuz werden exakt übernommen – was du hier trainierst, ist das, womit du schießt.",
+    "pill_sens": "1:1-VALORANT-Sensitivität",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Fadenkreuz-Code-Import",
+    "pill_local": "Kein Konto, kein Download",
+    "touch_notice": "Der Aim-Trainer braucht Maus und Tastatur. Öffne diese Seite zum Spielen an einem Computer.",
+    "start": "Starten",
+    "resume": "Fortsetzen",
+    "restart": "Neu starten",
+    "retry": "Nochmal",
+    "next": "Nächste Übung",
+    "exit": "Zurück zu den Übungen",
+    "click_to_start": "Zum Starten klicken",
+    "paused": "Pausiert",
+    "esc_hint": "Drücke jederzeit Esc zum Pausieren.",
+    "hud_mode": "Übung",
+    "hud_time": "Zeit",
+    "hud_round": "Runde",
+    "hud_score": "Punkte",
+    "hud_acc": "Genauigkeit",
+    "result": "Ergebnis",
+    "new_best": "Neue Bestleistung",
+    "hits": "Treffer",
+    "avg_ttk": "Ø Zeit bis zum Kill",
+    "avg_reaction": "Ø Reaktion",
+    "headshots": "Kopftreffer",
+    "best": "Bestwert",
+    "rounds": "Runden",
+    "tab_sens": "Sensitivität",
+    "tab_xhair": "Fadenkreuz",
+    "tab_targets": "Ziele & Sound",
+    "sens": "VALORANT-Sensitivität",
+    "sens_note": "Wenn dein Browser es unterstützt (Chrome, Edge), wird die Maus roh ausgelesen – das passt 1:1 zum Spiel. Andernfalls lass die Windows-Zeigergeschwindigkeit auf 6/11 und „Zeigerbeschleunigung verbessern“ aus.",
+    "code": "Fadenkreuz-Code",
+    "import": "Importieren",
+    "code_ok": "Fadenkreuz importiert.",
+    "code_bad": "Das sieht nicht nach einem VALORANT-Fadenkreuz-Code aus.",
+    "color": "Farbe",
+    "outline": "Umrandung",
+    "dot": "Mittelpunkt",
+    "outer": "Äußere Linien",
+    "length": "Innere Länge",
+    "thickness": "Innere Dicke",
+    "gap": "Innerer Abstand",
+    "opacity": "Innere Deckkraft",
+    "dot_size": "Punktgröße",
+    "size": "Zielgröße",
+    "target_color": "Gegner-Hervorhebungsfarbe",
+    "volume": "Lautstärke",
+    "reset": "Auf Standard zurücksetzen",
+    "colors": {
+      "red": "Rot",
+      "yellow": "Gelb (Deuteranopie)",
+      "purple": "Lila (Tritanopie)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Tempo",
+      "precision": "Präzision",
+      "flicking": "Flicks",
+      "reaction": "Reaktion",
+      "tracking": "Tracking",
+      "holding": "Winkel halten"
+    },
+    "modes": {
+      "grid": {
+        "name": "Grid",
+        "desc": "Drei Ziele an einer Wand, immer drei. Räum sie schnell ab.",
+        "how": "Schieß die Ziele so schnell du kannst ab. Schnellere Kills geben mehr Punkte, Fehlschüsse kosten Punkte."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Ein kleines Ziel in Kopfgröße, das kurze Strecken springt.",
+        "how": "Kleine Ziele, kleine Korrekturen. Klick nur, wenn du drauf bist – Fehlschüsse kosten hier mehr."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Ziele überall in einem weiten Bogen, abwechselnd links und rechts.",
+        "how": "Jedes Ziel erscheint auf der anderen Seite. Zieh rüber und schieß in einer Bewegung."
+      },
+      "reflex": {
+        "name": "Reaktion",
+        "desc": "Warte, bis ein Ziel erscheint, dann schalte es aus. 15 Runden.",
+        "how": "Halte die Mitte. Wenn ein Ziel auftaucht, erledige es, bevor es verschwindet. Zu frühes Klicken kostet Punkte."
+      },
+      "track": {
+        "name": "Strafe-Tracking",
+        "desc": "Ein Dummy, der mit Laufgeschwindigkeit A-D straft – mit Counter-Strafe-Stopps.",
+        "how": "Halte dein Fadenkreuz 40 Sekunden lang auf dem Dummy. Klicken ist nicht nötig; Zeit am Kopf zählt extra."
+      },
+      "peek": {
+        "name": "Winkel halten",
+        "desc": "Dummys peeken weit aus drei Deckungen. Halte den Winkel. 20 Runden.",
+        "how": "Halte einen Winkel und schieß, wenn sie peeken. Ein Kopftreffer tötet, der Körper braucht zwei Treffer. Schafft es einer zurück in Deckung, entkommt er."
+      }
+    },
+    "disclaimer": "Punkte und Einstellungen werden nur in diesem Browser gespeichert. VALSYNC ist nicht mit Riot Games verbunden; die angezeigten Ränge sind VALSYNC-Übungsstufen, keine Competitive-Ränge.",
+    "lock_error": "Dein Browser hat die Mauserfassung blockiert. Öffne die Seite in einem eigenen Tab (nicht eingebettet) und klicke erneut auf Starten.",
+    "dpi": {
+      "detect": "Meine DPI ermitteln",
+      "why": "Browser können die DPI einer Maus nicht auslesen, also messen wir sie: Zieh die Maus über etwas mit bekannter Breite, und wir zählen die gemeldete Bewegung.",
+      "ref": "Referenz",
+      "ref_card": "Bankkarte (8,56 cm)",
+      "ref_ruler": "Lineal (10 cm)",
+      "ref_custom": "Eigene Breite",
+      "pass": "Durchgang",
+      "step": "Leg die Maus an die linke Kante deiner Referenz, klick in das Feld, schieb sie gerade nach rechts, bis sie die andere Kante berührt, und klick erneut. Nicht anheben, gerade halten.",
+      "box_idle": "Zum Messen klicken",
+      "box_live": "Nach rechts schieben … an der Kante klicken",
+      "too_short": "Das war zu kurz. Schieb die Maus über die volle Breite der Referenz.",
+      "result": "Gemessen",
+      "suggest": "Nächster üblicher Wert",
+      "use": "Diese DPI verwenden",
+      "redo": "Neu messen",
+      "cancel": "Schließen",
+      "os_note": "Dein Browser bietet keine Rohdaten der Maus, daher enthält der Wert die Windows-Zeigergeschwindigkeit. Für ein genaues Ergebnis 6/11 und „Zeigerbeschleunigung verbessern“ aus."
+    }
   }
 }

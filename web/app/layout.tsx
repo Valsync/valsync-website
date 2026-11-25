@@ -147,7 +147,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${bigShoulders.variable} ${barlow.variable} ${mono.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
-        <div id="auth-loader" className="auth-loader" role="status" aria-live="polite" aria-label="Loading VALSYNC">
+        {/* React owns this node, so the dismiss script below only hides it:
+            removing it before hydration on a slow load makes React's next
+            insertBefore() on <body> throw NotFoundError. The script's class
+            and inline style edits are expected, hence suppressHydrationWarning. */}
+        <div id="auth-loader" className="auth-loader" role="status" aria-live="polite" aria-label="Loading VALSYNC" suppressHydrationWarning>
           <div className="auth-loader-scan">
             <div className="auth-loader-axis" />
             <div className="auth-loader-beam" />
@@ -204,7 +208,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var l=document.getElementById('auth-loader');if(!l)return;var start=performance.now();var minMs=700;var done=false;var dismiss=function(){if(done)return;done=true;var wait=Math.max(0,minMs-(performance.now()-start));setTimeout(function(){l.classList.add('is-leaving');setTimeout(function(){if(l&&l.parentNode)l.parentNode.removeChild(l);},420);},wait);};if(document.readyState==='complete')dismiss();else window.addEventListener('load',dismiss,{once:true});})();",
+              "(function(){var l=document.getElementById('auth-loader');if(!l)return;var start=performance.now();var minMs=700;var done=false;var dismiss=function(){if(done)return;done=true;var wait=Math.max(0,minMs-(performance.now()-start));setTimeout(function(){l.classList.add('is-leaving');setTimeout(function(){l.style.display='none';},420);},wait);};if(document.readyState==='complete')dismiss();else window.addEventListener('load',dismiss,{once:true});})();",
           }}
         />
         <I18nProvider>

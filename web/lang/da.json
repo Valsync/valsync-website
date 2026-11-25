@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Priser",
     "mob_faq": "FAQ",
-    "get_app": "Hent app"
+    "get_app": "Hent app",
+    "aim": "Sigtetræner"
   },
   "hero": {
     "word1": "Spor",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Kommer snart"
+  },
+  "aim": {
+    "eyebrow": "Sigtetræner",
+    "title": "Træn dit sigte i browseren",
+    "lead": "Seks øvelser bygget op om det, der faktisk afgør dueller i VALORANT. Din sensitivity, FOV og dit sigtekorn fra spillet overføres præcist, så det, du træner her, er det, du skyder med.",
+    "pill_sens": "1:1 VALORANT-sensitivity",
+    "pill_fov": "103° FOV",
+    "pill_xhair": "Import af sigtekornskode",
+    "pill_local": "Ingen konto, ingen download",
+    "touch_notice": "Sigtetræneren kræver mus og tastatur. Åbn siden på en computer for at spille.",
+    "start": "Start",
+    "resume": "Fortsæt",
+    "restart": "Start forfra",
+    "retry": "Prøv igen",
+    "next": "Næste øvelse",
+    "exit": "Tilbage til øvelser",
+    "click_to_start": "Klik for at starte",
+    "paused": "På pause",
+    "esc_hint": "Tryk på Esc når som helst for at holde pause.",
+    "hud_mode": "Øvelse",
+    "hud_time": "Tid",
+    "hud_round": "Runde",
+    "hud_score": "Point",
+    "hud_acc": "Præcision",
+    "result": "Resultat",
+    "new_best": "Ny rekord",
+    "hits": "Træffere",
+    "avg_ttk": "Gns. tid pr. kill",
+    "avg_reaction": "Gns. reaktion",
+    "headshots": "Headshots",
+    "best": "Bedste",
+    "rounds": "runder",
+    "tab_sens": "Sensitivity",
+    "tab_xhair": "Sigtekorn",
+    "tab_targets": "Mål og lyd",
+    "sens": "VALORANT-sensitivity",
+    "sens_note": "Musen læses råt, når din browser understøtter det (Chrome, Edge), så det matcher spillet 1:1. Ellers skal du holde Windows' markørhastighed på 6/11 og slå \"Forbedret markørpræcision\" fra.",
+    "code": "Sigtekornskode",
+    "import": "Importér",
+    "code_ok": "Sigtekorn importeret.",
+    "code_bad": "Det ligner ikke en VALORANT-sigtekornskode.",
+    "color": "Farve",
+    "outline": "Kontur",
+    "dot": "Midterprik",
+    "outer": "Ydre linjer",
+    "length": "Indre længde",
+    "thickness": "Indre tykkelse",
+    "gap": "Indre afstand",
+    "opacity": "Indre uigennemsigtighed",
+    "dot_size": "Prikkens tykkelse",
+    "size": "Målstørrelse",
+    "target_color": "Fjendemarkeringsfarve",
+    "volume": "Lydstyrke",
+    "reset": "Nulstil til standard",
+    "colors": {
+      "red": "Rød",
+      "yellow": "Gul (deuteranopi)",
+      "purple": "Lilla (tritanopi)",
+      "cyan": "Cyan"
+    },
+    "skills": {
+      "speed": "Hastighed",
+      "precision": "Præcision",
+      "flicking": "Flicks",
+      "reaction": "Reaktion",
+      "tracking": "Tracking",
+      "holding": "Hold en vinkel"
+    },
+    "modes": {
+      "grid": {
+        "name": "Gitter",
+        "desc": "Tre mål på en væg, altid tre. Ryd dem hurtigt.",
+        "how": "Skyd målene så hurtigt du kan. Hurtigere kills giver flere point; forbiere koster point."
+      },
+      "micro": {
+        "name": "Mikro",
+        "desc": "Ét lille mål på størrelse med et hoved, der hopper korte afstande.",
+        "how": "Små mål, små justeringer. Klik kun, når du er på det – forbiere koster mere her."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Mål overalt i en bred bue, skiftevis til hver side.",
+        "how": "Hvert mål dukker op i den modsatte side. Ram det og skyd i én bevægelse."
+      },
+      "reflex": {
+        "name": "Reaktion",
+        "desc": "Vent på, at et mål dukker op, og skyd det. 15 runder.",
+        "how": "Hold midten. Når et mål dukker op, så skyd det, før det forsvinder. At klikke for tidligt koster point."
+      },
+      "track": {
+        "name": "Strafe-tracking",
+        "desc": "En dukke, der strafer A-D i løbetempo med counter-strafe-stop.",
+        "how": "Hold sigtekornet på dukken i 40 sekunder. Du behøver ikke klikke; tid på hovedet giver ekstra point."
+      },
+      "peek": {
+        "name": "Hold vinklen",
+        "desc": "Dukker wide-peeker fra tre dækninger. Hold vinklen. 20 runder.",
+        "how": "Hold en vinkel og skyd, når de peeker. Et headshot dræber; kroppen kræver to træffere. Når den tilbage i dækning, slipper den væk."
+      }
+    },
+    "disclaimer": "Point og indstillinger gemmes kun i denne browser. VALSYNC er ikke tilknyttet Riot Games; rangerne her er VALSYNC-træningsniveauer, ikke competitive-ranger.",
+    "lock_error": "Din browser blokerede musefangst. Åbn siden i sin egen fane (ikke en indlejret visning), og klik på Start igen.",
+    "dpi": {
+      "detect": "Find min DPI",
+      "why": "Browsere kan ikke aflæse en mus' DPI, så vi måler den: før musen hen over noget med kendt bredde, så tæller vi den bevægelse, den rapporterer.",
+      "ref": "Reference",
+      "ref_card": "Betalingskort (8,56 cm)",
+      "ref_ruler": "Lineal (10 cm)",
+      "ref_custom": "Egen bredde",
+      "pass": "Måling",
+      "step": "Sæt musen mod venstre kant af din reference, klik i feltet, før den lige mod højre, til den rører den anden kant, og klik igen. Løft den ikke, og hold den lige.",
+      "box_idle": "Klik for at starte målingen",
+      "box_live": "Før til højre… klik ved kanten",
+      "too_short": "Det var for kort. Før musen hele referencens bredde.",
+      "result": "Målt",
+      "suggest": "Nærmeste almindelige værdi",
+      "use": "Brug denne DPI",
+      "redo": "Mål igen",
+      "cancel": "Luk",
+      "os_note": "Din browser tilbyder ikke rå museinput, så målingen inkluderer Windows' markørhastighed. Hold den på 6/11 uden forbedret præcision for et præcist tal."
+    }
   }
 }

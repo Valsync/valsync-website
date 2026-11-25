@@ -41,6 +41,7 @@ const COPY = [
   "terms.html",
   "mobile.html",
   "play.html",
+  "aim.html",
   "favicon.ico",
   "loader-logo.png",
   "mr7gmipd-playstore.png",

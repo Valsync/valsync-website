@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Giá",
     "mob_faq": "FAQ",
-    "get_app": "Tải app"
+    "get_app": "Tải app",
+    "aim": "Luyện aim"
   },
   "hero": {
     "word1": "Theo dõi",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "Sắp ra mắt"
+  },
+  "aim": {
+    "eyebrow": "Luyện aim",
+    "title": "Luyện aim ngay trên trình duyệt",
+    "lead": "Sáu bài tập xây dựng quanh những yếu tố thực sự quyết định các pha đấu súng trong VALORANT. Độ nhạy, FOV và tâm ngắm trong game được giữ nguyên chính xác, nên những gì bạn luyện ở đây chính là thứ bạn dùng khi bắn.",
+    "pill_sens": "Độ nhạy VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Nhập mã tâm ngắm",
+    "pill_local": "Không cần tài khoản, không cần tải",
+    "touch_notice": "Luyện aim cần chuột và bàn phím. Hãy mở trang này trên máy tính để chơi.",
+    "start": "Bắt đầu",
+    "resume": "Tiếp tục",
+    "restart": "Chơi lại từ đầu",
+    "retry": "Thử lại",
+    "next": "Bài tiếp theo",
+    "exit": "Về danh sách bài tập",
+    "click_to_start": "Nhấp để bắt đầu",
+    "paused": "Đã tạm dừng",
+    "esc_hint": "Nhấn Esc bất cứ lúc nào để tạm dừng.",
+    "hud_mode": "Bài tập",
+    "hud_time": "Thời gian",
+    "hud_round": "Vòng",
+    "hud_score": "Điểm",
+    "hud_acc": "Độ chính xác",
+    "result": "Kết quả",
+    "new_best": "Kỷ lục mới",
+    "hits": "Trúng",
+    "avg_ttk": "Thời gian hạ TB",
+    "avg_reaction": "Phản xạ TB",
+    "headshots": "Headshot",
+    "best": "Cao nhất",
+    "rounds": "vòng",
+    "tab_sens": "Độ nhạy",
+    "tab_xhair": "Tâm ngắm",
+    "tab_targets": "Mục tiêu & âm thanh",
+    "sens": "Độ nhạy VALORANT",
+    "sens_note": "Chuột được đọc trực tiếp (raw input) khi trình duyệt hỗ trợ (Chrome, Edge), nên khớp 1:1 với game. Nếu không, hãy để tốc độ con trỏ Windows ở 6/11 và tắt \"Enhance pointer precision\".",
+    "code": "Mã tâm ngắm",
+    "import": "Nhập",
+    "code_ok": "Đã nhập tâm ngắm.",
+    "code_bad": "Đây có vẻ không phải mã tâm ngắm VALORANT.",
+    "color": "Màu",
+    "outline": "Viền",
+    "dot": "Chấm giữa",
+    "outer": "Vạch ngoài",
+    "length": "Độ dài vạch trong",
+    "thickness": "Độ dày vạch trong",
+    "gap": "Khoảng cách vạch trong",
+    "opacity": "Độ mờ vạch trong",
+    "dot_size": "Độ dày chấm",
+    "size": "Kích thước mục tiêu",
+    "target_color": "Màu viền kẻ địch",
+    "volume": "Âm lượng",
+    "reset": "Khôi phục mặc định",
+    "colors": {
+      "red": "Đỏ",
+      "yellow": "Vàng (mù màu lục)",
+      "purple": "Tím (mù màu lam)",
+      "cyan": "Xanh lơ"
+    },
+    "skills": {
+      "speed": "Tốc độ",
+      "precision": "Độ chuẩn",
+      "flicking": "Vẩy tâm",
+      "reaction": "Phản xạ",
+      "tracking": "Bám mục tiêu",
+      "holding": "Giữ góc"
+    },
+    "modes": {
+      "grid": {
+        "name": "Lưới",
+        "desc": "Luôn có ba mục tiêu trên tường. Hạ chúng thật nhanh.",
+        "how": "Bắn mục tiêu nhanh nhất có thể. Hạ càng nhanh càng nhiều điểm; bắn trượt bị trừ điểm."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Một mục tiêu nhỏ cỡ cái đầu, nhảy những quãng ngắn.",
+        "how": "Mục tiêu nhỏ, chỉnh tâm nhỏ. Chỉ bấm khi đã nằm trên mục tiêu — ở đây bắn trượt bị trừ nặng hơn."
+      },
+      "flick": {
+        "name": "Vẩy tâm",
+        "desc": "Mục tiêu xuất hiện bất kỳ đâu trên một vòng cung rộng, luân phiên hai bên.",
+        "how": "Mỗi mục tiêu xuất hiện ở phía đối diện. Vẩy tới và bắn trong một động tác."
+      },
+      "reflex": {
+        "name": "Phản xạ",
+        "desc": "Chờ mục tiêu xuất hiện rồi hạ gục. 15 vòng.",
+        "how": "Giữ tâm ở giữa. Khi mục tiêu hiện ra, hạ nó trước khi biến mất. Bấm sớm bị trừ điểm."
+      },
+      "track": {
+        "name": "Bám strafe",
+        "desc": "Hình nộm strafe A-D với tốc độ chạy, có những pha dừng đột ngột.",
+        "how": "Giữ tâm trên hình nộm trong 40 giây. Không cần bấm; thời gian giữ tâm trên đầu được cộng thêm điểm."
+      },
+      "peek": {
+        "name": "Giữ góc",
+        "desc": "Hình nộm wide peek từ sau ba vật che chắn. Giữ góc. 20 vòng.",
+        "how": "Giữ một góc và bắn khi chúng peek ra. Headshot hạ ngay; thân cần hai phát. Nếu nó quay lại chỗ nấp thì coi như thoát."
+      }
+    },
+    "disclaimer": "Điểm và cài đặt chỉ được lưu trong trình duyệt này. VALSYNC không liên kết với Riot Games; các rank hiển thị ở đây là cấp độ luyện tập của VALSYNC, không phải rank thi đấu.",
+    "lock_error": "Trình duyệt đã chặn việc khóa chuột. Hãy mở trang trong một tab riêng (không phải chế độ nhúng) rồi nhấp Bắt đầu lại.",
+    "dpi": {
+      "detect": "Đo DPI chuột",
+      "why": "Trình duyệt không đọc được DPI của chuột, nên chúng tôi đo: trượt chuột qua một vật có chiều rộng đã biết và đếm chuyển động chuột báo về.",
+      "ref": "Vật tham chiếu",
+      "ref_card": "Thẻ ngân hàng (8,56 cm)",
+      "ref_ruler": "Thước (10 cm)",
+      "ref_custom": "Chiều rộng tùy chỉnh",
+      "pass": "Lần đo",
+      "step": "Đặt chuột sát mép trái vật tham chiếu, nhấp vào ô, trượt thẳng sang phải đến khi chạm mép bên kia rồi nhấp lần nữa. Không nhấc chuột, giữ thẳng.",
+      "box_idle": "Nhấp để bắt đầu đo",
+      "box_live": "Trượt sang phải… nhấp ở mép",
+      "too_short": "Quá ngắn. Hãy trượt hết chiều rộng của vật tham chiếu.",
+      "result": "Đo được",
+      "suggest": "Mức phổ biến gần nhất",
+      "use": "Dùng DPI này",
+      "redo": "Đo lại",
+      "cancel": "Đóng",
+      "os_note": "Trình duyệt không hỗ trợ đầu vào chuột thô, nên kết quả có tính cả tốc độ con trỏ Windows. Để 6/11 và tắt tăng độ chính xác con trỏ để đo chuẩn."
+    }
   }
 }

@@ -18,7 +18,8 @@
     "mob_web": "Web",
     "mob_pricing": "Prezzi",
     "mob_faq": "FAQ",
-    "get_app": "Ottieni app"
+    "get_app": "Ottieni app",
+    "aim": "Allenamento mira"
   },
   "hero": {
     "word1": "Traccia",
@@ -485,5 +486,126 @@
   },
   "common": {
     "soon": "In arrivo"
+  },
+  "aim": {
+    "eyebrow": "Allenamento mira",
+    "title": "Allena la mira nel browser",
+    "lead": "Sei esercizi costruiti su ciò che decide davvero un duello in VALORANT. Sensibilità, FOV e mirino del gioco vengono riprodotti esattamente: quello che alleni qui è quello con cui spari.",
+    "pill_sens": "Sensibilità VALORANT 1:1",
+    "pill_fov": "FOV 103°",
+    "pill_xhair": "Importazione codice mirino",
+    "pill_local": "Nessun account, nessun download",
+    "touch_notice": "L’allenamento mira richiede mouse e tastiera. Apri questa pagina su un computer per giocare.",
+    "start": "Inizia",
+    "resume": "Riprendi",
+    "restart": "Ricomincia",
+    "retry": "Riprova",
+    "next": "Esercizio successivo",
+    "exit": "Torna agli esercizi",
+    "click_to_start": "Clicca per iniziare",
+    "paused": "In pausa",
+    "esc_hint": "Premi Esc in qualsiasi momento per mettere in pausa.",
+    "hud_mode": "Esercizio",
+    "hud_time": "Tempo",
+    "hud_round": "Round",
+    "hud_score": "Punti",
+    "hud_acc": "Precisione",
+    "result": "Risultato",
+    "new_best": "Nuovo record",
+    "hits": "Colpi a segno",
+    "avg_ttk": "Tempo medio per uccisione",
+    "avg_reaction": "Reazione media",
+    "headshots": "Colpi alla testa",
+    "best": "Record",
+    "rounds": "round",
+    "tab_sens": "Sensibilità",
+    "tab_xhair": "Mirino",
+    "tab_targets": "Bersagli e audio",
+    "sens": "Sensibilità VALORANT",
+    "sens_note": "Il mouse viene letto in input diretto quando il browser lo supporta (Chrome, Edge), quindi corrisponde 1:1 al gioco. Altrimenti lascia la velocità del puntatore di Windows su 6/11 e disattiva “Migliora la precisione del puntatore”.",
+    "code": "Codice mirino",
+    "import": "Importa",
+    "code_ok": "Mirino importato.",
+    "code_bad": "Non sembra un codice mirino di VALORANT.",
+    "color": "Colore",
+    "outline": "Contorni",
+    "dot": "Punto centrale",
+    "outer": "Linee esterne",
+    "length": "Lunghezza interna",
+    "thickness": "Spessore interno",
+    "gap": "Distanza interna",
+    "opacity": "Opacità interna",
+    "dot_size": "Spessore del punto",
+    "size": "Dimensione bersagli",
+    "target_color": "Colore evidenziazione nemici",
+    "volume": "Volume",
+    "reset": "Ripristina predefiniti",
+    "colors": {
+      "red": "Rosso",
+      "yellow": "Giallo (deuteranopia)",
+      "purple": "Viola (tritanopia)",
+      "cyan": "Ciano"
+    },
+    "skills": {
+      "speed": "Velocità",
+      "precision": "Precisione",
+      "flicking": "Flick",
+      "reaction": "Reazione",
+      "tracking": "Tracking",
+      "holding": "Tenere l’angolo"
+    },
+    "modes": {
+      "grid": {
+        "name": "Griglia",
+        "desc": "Tre bersagli su un muro, sempre tre. Eliminali in fretta.",
+        "how": "Colpisci i bersagli il più velocemente possibile. Le uccisioni rapide valgono di più, i colpi mancati tolgono punti."
+      },
+      "micro": {
+        "name": "Micro",
+        "desc": "Un piccolo bersaglio grande quanto una testa che salta di poco.",
+        "how": "Bersagli piccoli, correzioni piccole. Clicca solo quando ci sei sopra: qui gli errori costano di più."
+      },
+      "flick": {
+        "name": "Flick",
+        "desc": "Bersagli ovunque su un ampio arco, alternando i lati.",
+        "how": "Ogni bersaglio compare dal lato opposto. Raggiungilo e spara con un solo movimento."
+      },
+      "reflex": {
+        "name": "Reazione",
+        "desc": "Aspetta che compaia un bersaglio, poi abbattilo. 15 round.",
+        "how": "Tieni il centro. Quando compare un bersaglio, eliminalo prima che sparisca. Cliccare in anticipo toglie punti."
+      },
+      "track": {
+        "name": "Tracking strafe",
+        "desc": "Un manichino che fa strafe A-D a velocità di corsa, con arresti in counter-strafe.",
+        "how": "Tieni il mirino sul manichino per 40 secondi. Non serve cliccare; il tempo sulla testa vale di più."
+      },
+      "peek": {
+        "name": "Tenere l’angolo",
+        "desc": "Manichini che fanno wide peek da tre coperture. Tieni l’angolo. 20 round.",
+        "how": "Tieni un angolo e spara quando escono. Un colpo alla testa uccide, al corpo ne servono due. Se torna in copertura, scappa."
+      }
+    },
+    "disclaimer": "Punteggi e impostazioni vengono salvati solo in questo browser. VALSYNC non è affiliata a Riot Games; i gradi mostrati qui sono livelli di allenamento VALSYNC, non gradi competitivi.",
+    "lock_error": "Il browser ha bloccato l’acquisizione del mouse. Apri la pagina in una scheda a sé (non in una vista incorporata) e clicca di nuovo su Inizia.",
+    "dpi": {
+      "detect": "Rileva il mio DPI",
+      "why": "I browser non possono leggere il DPI di un mouse, quindi lo misuriamo: fai scorrere il mouse su un oggetto di larghezza nota e contiamo il movimento che riporta.",
+      "ref": "Riferimento",
+      "ref_card": "Carta bancaria (8,56 cm)",
+      "ref_ruler": "Righello (10 cm)",
+      "ref_custom": "Larghezza personalizzata",
+      "pass": "Passata",
+      "step": "Appoggia il mouse al bordo sinistro del riferimento, clicca nel riquadro, fallo scorrere dritto verso destra finché tocca l’altro bordo, poi clicca di nuovo. Non sollevarlo e tienilo dritto.",
+      "box_idle": "Clicca per iniziare la misura",
+      "box_live": "Scorri a destra… clicca al bordo",
+      "too_short": "Troppo corto. Scorri per tutta la larghezza del riferimento.",
+      "result": "Misurato",
+      "suggest": "Valore comune più vicino",
+      "use": "Usa questo DPI",
+      "redo": "Misura di nuovo",
+      "cancel": "Chiudi",
+      "os_note": "Il browser non offre l’input grezzo del mouse, quindi la misura include la velocità del puntatore di Windows. Lasciala su 6/11 senza precisione migliorata per un valore esatto."
+    }
   }
 }
