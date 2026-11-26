@@ -10,6 +10,8 @@ import {
 import { WEB_APP_URL } from "@/lib/companion";
 import { useI18n } from "@/lib/i18n";
 import BracketLabel from "./hud/BracketLabel";
+import SoonBadges from "./hud/SoonBadge";
+import StoreIcon from "./hud/StoreIcon";
 import { easeOut, riseItem, staggerParent, tapSpring } from "./hud/motion";
 
 const PLAY_URL = "https://play.google.com/store/apps/details?id=com.valsync.app";
@@ -116,8 +118,10 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               transition={tapSpring}
             >
+              <StoreIcon store="play" />
               {t("nav.download")}
             </motion.a>
+            <SoonBadges />
           </motion.div>
 
           {/* The app puts its posture on screen; so does the landing page. */}

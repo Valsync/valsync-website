@@ -773,5 +773,10 @@
       "cancel": "Schließen",
       "os_note": "Dein Browser bietet keine Rohdaten der Maus, daher enthält der Wert die Windows-Zeigergeschwindigkeit. Für ein genaues Ergebnis 6/11 und „Zeigerbeschleunigung verbessern“ aus."
     }
+  },
+  "stores": {
+    "soon": "Bald",
+    "apple": "App Store",
+    "huawei": "Huawei AppGallery"
   }
 }

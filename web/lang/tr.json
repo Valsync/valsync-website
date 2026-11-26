@@ -773,5 +773,10 @@
       "cancel": "Kapat",
       "os_note": "Tarayıcın ham fare girdisi sunmuyor, bu yüzden ölçüm Windows işaretçi hızını da içeriyor. Doğru sonuç için 6/11’de ve gelişmiş hassasiyet kapalı tut."
     }
+  },
+  "stores": {
+    "soon": "Yakında",
+    "apple": "App Store",
+    "huawei": "Huawei AppGallery"
   }
 }

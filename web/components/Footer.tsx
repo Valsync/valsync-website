@@ -2,6 +2,8 @@
 import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
 import BracketLabel from "./hud/BracketLabel";
+import SoonBadges from "./hud/SoonBadge";
+import StoreIcon from "./hud/StoreIcon";
 
 const dev = process.env.NODE_ENV === "development";
 const PLAY_URL = "https://play.google.com/store/apps/details?id=com.valsync.app";
@@ -40,8 +42,10 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Elsewhere</h4>
             <a href={PLAY_URL} target="_blank" rel="noreferrer noopener">
+              <StoreIcon store="play" size={14} />
               Google Play
             </a>
+            <SoonBadges />
             <a href="https://discord.gg/5WHvNtskew" target="_blank" rel="noreferrer noopener">
               Discord
             </a>

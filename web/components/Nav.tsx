@@ -4,6 +4,8 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { WEB_APP_URL } from "@/lib/companion";
 import LangSwitch from "./LangSwitch";
+import SoonBadges from "./hud/SoonBadge";
+import StoreIcon from "./hud/StoreIcon";
 import { tapSpring } from "./hud/motion";
 
 // Dev serves the Next app at :3000 with real routes (/privacy); the static
@@ -63,8 +65,10 @@ export default function Nav() {
               whileTap={{ scale: 0.96 }}
               transition={tapSpring}
             >
+              <StoreIcon store="play" size={14} />
               {t("nav.download")}
             </motion.a>
+            <SoonBadges className="soon-badge--nav" />
             <motion.a
               className="btn btn-primary btn-sm nav-cta"
               href={`${B}${prefix}#final`}

@@ -927,6 +927,86 @@ img {
   font-size: 0.6875rem;
 }
 
+/* Inert companion marker for a CTA that has no destination yet. Same 1px
+   edge and chamfer as the ghost button, but muted and non-interactive. */
+.soon-badge {
+  --c: var(--cut-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fg-faint);
+  opacity: 0.68;
+  cursor: default;
+  user-select: none;
+  clip-path: polygon(var(--c) 0, 100% 0, 100% 100%, 0 100%, 0 var(--c));
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(var(--rule-strong), var(--rule-strong)) border-box;
+  border: 1px solid transparent;
+}
+.soon-badge-tag {
+  padding: 2px 5px;
+  border: 1px solid var(--rule-strong);
+  font-size: 0.5625rem;
+  letter-spacing: var(--track-mono);
+  line-height: 1;
+  color: var(--fg-dim);
+}
+.soon-badge--nav {
+  padding: 6px 10px;
+  font-size: 0.625rem;
+}
+.hero-cta .soon-badge,
+.fcta-actions .soon-badge {
+  padding: 11px 16px;
+  font-size: 0.75rem;
+}
+.footer-col .soon-badge {
+  display: flex;
+  width: fit-content;
+  margin-top: 6px;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+}
+/* Store marks: glyphs inherit the label colour and never squash in a row. */
+.store-icon {
+  flex-shrink: 0;
+}
+.footer-col a .store-icon {
+  display: inline-block;
+  margin-inline-end: 8px;
+  vertical-align: -2px;
+}
+/* The nav is tight: show the mark + SOON tag, keep the store name for AT. */
+.soon-badge--nav {
+  position: relative;
+  gap: 6px;
+}
+.soon-badge--nav .soon-badge-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.mobile-footer .soon-badge {
+  margin-inline-start: 8px;
+  padding: 9px 12px;
+}
+@media (max-width: 900px) {
+  .soon-badge--nav {
+    display: none;
+  }
+}
+
 /* Chip / filter pill — the app's WEAPONS / SPRAYS row. */
 .chip {
   --c: var(--cut-sm);

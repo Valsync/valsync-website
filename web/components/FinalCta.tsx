@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import Panel from "./hud/Panel";
 import BracketLabel from "./hud/BracketLabel";
+import SoonBadges from "./hud/SoonBadge";
+import StoreIcon from "./hud/StoreIcon";
 import { riseItem, staggerParent, tapSpring, viewportOnce } from "./hud/motion";
 
 const PLAY_URL = "https://play.google.com/store/apps/details?id=com.valsync.app";
@@ -49,8 +51,10 @@ export default function FinalCta() {
                 whileTap={{ scale: 0.97 }}
                 transition={tapSpring}
               >
+                <StoreIcon store="play" />
                 {t("fcta.download")}
               </motion.a>
+              <SoonBadges />
               <motion.a
                 className="btn btn-cyan"
                 href="https://liberapay.com/AbdullahElTiby/donate"

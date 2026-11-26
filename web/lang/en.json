@@ -792,5 +792,10 @@
         }
       }
     }
+  },
+  "stores": {
+    "soon": "Soon",
+    "apple": "App Store",
+    "huawei": "Huawei AppGallery"
   }
 }
